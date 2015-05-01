@@ -10,17 +10,23 @@
         <title>modal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/videos.css">
+
         <link rel="stylesheet" href="css/modal.css">
     </head>
 
     <body>
-        <div class="backdrop"></div>
-        <div class="lightbox">
-            <div class="topContainer">
-                <a class="close" href="#"><img src="img/btn-close-x.png" alt="Close"></a>
-                <img alt="Wells Fargo home page" src="img/wf-logo.gif">
-            </div>
-            <div class="contentContainer">
+        <div class="modal" style="display: block;">
+            <div class="back"></div>
+            <div class="dialog">
+                <div class="header">
+                    <a class="closer" href="#"><img src="img/btn-close-x.png" alt="Close"></a>
+                    <img alt="Wells Fargo home page" src="img/wf-logo.gif">
+                </div>
+                <div class="content">
                     <h2>
                         You are leaving this Wells Fargo website
                     </h2>
@@ -30,11 +36,11 @@
                         but does not endorse and is not responsible for the content,
                         links, privacy policy, or security policy of this website.
                     </p>
-            </div>
-            <div class="bottomButtons">
-                <a href="#" class="cancel">Cancel</a><a class="utilitybtn">Continue</a>
+                </div>
+                <div class="footer">
+                    <a href="#" class="cancel">Cancel</a><a class="utilitybtn">Continue</a>
+                </div>
             </div>
         </div>
-
     </body>
 </html>
