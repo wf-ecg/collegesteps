@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/cover.css">
         <!--[if gte IE 9]>
           <style type="text/css">
@@ -276,5 +277,30 @@
         <script src="js/main.js"></script>
         <script src="js/jquery-accessibleMegaMenu.js"></script>
         <script>$("nav:first").accessibleMegaMenu({uuidPrefix:"accessible-megamenu",menuClass:"nav-menu",topNavItemClass:"nav-item",panelClass:"sub-nav",panelGroupClass:"sub-nav-group",hoverClass:"hover",focusClass:"focus",openClass:"open"});</script>
+
+        <div class="modal">
+            <div class="dialog">
+                <div class="header">
+                    <a class="closer" href="#"><img src="img/btn-close-x.png" alt="Close"></a>
+                    <img alt="Wells Fargo home page" src="img/wf-logo.gif">
+                </div>
+                <div class="content">
+                    <h2>
+                        You are leaving this Wells Fargo website
+                    </h2>
+                    <p>
+                        You are leaving a Wells Fargo site and entering a website that Wells Fargo does not control.
+                        Wells Fargo has provided this link for your convenience,
+                        but does not endorse and is not responsible for the content,
+                        links, privacy policy, or security policy of this website.
+                    </p>
+                </div>
+                <div class="footer">
+                    <a href="#" class="cancel">Cancel</a><a class="utilitybtn">Continue</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/modal.js"></script>
+
     </body>
 </html>

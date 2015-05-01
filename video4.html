@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/videos.css">
         <link rel="stylesheet" href="http://wellsfargomedia.com/lib/video-js/3.2.2/video-js.css">
         <style type="text/css">
@@ -291,5 +292,30 @@
         <script>$("nav:first").accessibleMegaMenu({uuidPrefix:"accessible-megamenu",menuClass:"nav-menu",topNavItemClass:"nav-item",panelClass:"sub-nav",panelGroupClass:"sub-nav-group",hoverClass:"hover",focusClass:"focus",openClass:"open"});</script>
         <script type="text/javascript">_V_("video_1").ready(function(){var myPlayer=this;var aspectRatio=9/16;function resizeVideoJS(){var width=document.getElementById(myPlayer.id).parentElement.offsetWidth;myPlayer.width(width).height(width*aspectRatio)}resizeVideoJS();window.onresize=resizeVideoJS});
         </script>
+
+        <div class="modal">
+            <div class="dialog">
+                <div class="header">
+                    <a class="closer" href="#"><img src="img/btn-close-x.png" alt="Close"></a>
+                    <img alt="Wells Fargo home page" src="img/wf-logo.gif">
+                </div>
+                <div class="content">
+                    <h2>
+                        You are leaving this Wells Fargo website
+                    </h2>
+                    <p>
+                        You are leaving a Wells Fargo site and entering a website that Wells Fargo does not control.
+                        Wells Fargo has provided this link for your convenience,
+                        but does not endorse and is not responsible for the content,
+                        links, privacy policy, or security policy of this website.
+                    </p>
+                </div>
+                <div class="footer">
+                    <a href="#" class="cancel">Cancel</a><a class="utilitybtn">Continue</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/modal.js"></script>
+
     </body>
 </html>
