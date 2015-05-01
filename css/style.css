@@ -1,6 +1,5 @@
-@import  "css/socialcount.min.css";
-
-@import  "css/pill.css";
+@import  'socialcount.min.css';
+@import  'pill.css';
 
 body {
     background: #fff;
@@ -838,7 +837,7 @@ header {
     color: #00a5d9;
 }
 #page-header {
-    background: url(img/home-bg.jpg) bottom center;
+    background: url('../img/home-bg.jpg') bottom center;
     background-attachment: fixed!important;
     background-size: cover!important;
     position: relative;
@@ -893,7 +892,7 @@ header {
     color: #fff;
 }
 .page-content {
-    background: url(img/map-bg.jpg) no-repeat center top #fff 50% -300px;
+    background: url('../img/map-bg.jpg') no-repeat center top #fff 50% -300px;
 }
 .page-content .section {
     background: 0;
@@ -1517,7 +1516,7 @@ footer .copyrights a {
     margin-top: 0;
 }
 .lightbulb {
-    background-image: url(img/bubble-lightbulb.png);
+    background-image: url('../img/bubble-lightbulb.png');
     background-position: right;
     background-repeat: no-repeat;
     font-size: 14px;
