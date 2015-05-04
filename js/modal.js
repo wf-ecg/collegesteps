@@ -11,14 +11,25 @@ var Modal = (function ($) { // IIFE
     ,   Acts = 'keypress click'
     ,   Df, El;
 
+    // EXTEND
+    $.reify = function (x, y) { // jq-reify props w/selector vals
+        $.each(x, function (i, e) {
+            x[i] = $(e);
+        });
+        return y ? $.extend(y, x) : x; // extend optional host
+    };
+
+    $.fn.contains = function (x) {
+        return Boolean(this.is(x) || this.has(x).length);
+    };
+
     Df = { // DEFAULTS
         El: {},
         modal: {},
         inits: function () {
-            // provide access to elements
+            // expose elements
             this.El = $.reify(El);
-
-            Df.inited = true;
+            this.inited = true;
         },
     };
     El = { // ELEMENTS
@@ -56,16 +67,6 @@ var Modal = (function ($) { // IIFE
         }
     };
 
-    $.reify = function (x, y) { // jq-reify props w/selector vals
-        $.each(x, function (i, e) {
-            x[i] = $(e);
-        });
-        return y ? $.extend(y, x) : x; // extend optional host
-    };
-    $.fn.contains = function (x) {
-        return Boolean(this.is(x) || this.has(x).length);
-    };
-    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     function _bindings() {
         Df.modal.init();
