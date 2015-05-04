@@ -11,59 +11,62 @@ var Modal = (function ($) { // IIFE
         Df, El, ACT = 'keypress click';
 
     Df = { // DEFAULTS
-        El: null,
-        modal: null,
-        player: null,
-        video: null,
+        El: {},
+        modal: {},
         inits: function () {
-            El.body = $(El.body);
-            El.modal = $(El.modal);
-            El.dialog = $(El.dialog);
-            El.social = $(El.social);
-
-            this.El = El;
+            // provide access to elements
+            this.El = $.reify(El);
 
             Df.inited = true;
         },
     };
     El = { // ELEMENTS
         body: 'body',
-        modal: 'body > .modal, body > .modal .back',
+        modal: 'body > div.modal', // only top level containers
         social: '#stickyBar .sidesocial a',
         dialog: 'body > .modal .dialog',
     };
 
     Df.modal = {
-        cleanup: $.Callbacks(),
-        closer: $('.closer'),
+        cleanup: $.Callbacks(), //          clean routines
+        closers: $('.closer, .cancel'), //  all "closers"
         show: function (ele) {
-            El.modal.addClass('active').children().hide();
-            if (ele) {
-                $(ele).fadeIn(); //this.closer.insertAfter(ele);
-            }
+            El.modal.addClass('active') //  activate modal layer
+            .children().hide(); //          and hide all kids
+            if (ele) $(ele).fadeIn(); //    feature an item
+
             return this;
         },
         hide: function () {
-            El.modal.removeClass('active');
-            this.cleanup.fire();
+            El.modal.removeClass('active'); //  deactivate container
+            this.cleanup.fire(); //             do whatever cleaning
+            return this;
         },
         init: function () {
+            // bind container actions to .hide
             El.modal.on(ACT, function (evt) {
                 var ele = $(evt.target);
 
-                if (ele.is('.modal, img') || evt.offsetX > evt.target.offsetWidth) {
+                if (Df.modal.closers.contains(ele) || ele.is(El.modal)) {
                     Df.modal.hide();
                 }
-
             }).on('keyup', function (evt) {
-                if (evt.which === 27) {
-                    Df.modal.hide();
-                }
+                // bind escape key to .hide
+                if (evt.which === 27) Df.modal.hide();
             });
             return this;
         }
     };
 
+    $.reify = function (x, y) { // jq-reify props w/selector vals
+        $.each(x, function (i, e) {
+            x[i] = $(e);
+        });
+        return y ? $.extend(y, x) : x; // extend optional host
+    };
+    $.fn.contains = function (x) {
+        return Boolean(this.is(x) || this.has(x).length);
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     function bindings() {
