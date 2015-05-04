@@ -4,11 +4,12 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 var Modal = (function ($) { // IIFE
     'use strict';
-    var name = 'Modal',
-        self =  {},
-        W = window,
-        C = console,
-        Df, El, ACT = 'keypress click';
+    var self =  {
+        name: 'Modal',
+    },  W = window
+    ,   C = console
+    ,   Acts = 'keypress click'
+    ,   Df, El;
 
     Df = { // DEFAULTS
         El: {},
@@ -26,31 +27,30 @@ var Modal = (function ($) { // IIFE
     };
 
     Df.modal = {
-        cleanup: $.Callbacks(), //          clean routines
-        closers: $('.closer, .cancel'), //  all "closers"
+        cleanup: $.Callbacks(), // clean routines
+        closers: $('.closer, .cancel'), // all "closers"
         show: function (ele) {
-            El.modal.addClass('active') //  activate modal layer
-            .children().hide(); //          and hide all kids
-            if (ele) $(ele).fadeIn(); //    feature an item
-
+            /// activate container, hide all kids, then feature one
+            El.modal.addClass('active').children().hide();
+            if (ele) $(ele).fadeIn();
             return this;
         },
         hide: function () {
-            El.modal.removeClass('active'); //  deactivate container
-            this.cleanup.fire(); //             do whatever cleaning
+            /// deactivate container and do whatever cleaning
+            El.modal.removeClass('active');
+            this.cleanup.fire();
             return this;
         },
         init: function () {
-            // bind container actions to .hide
-            El.modal.on(ACT, function (evt) {
+            /// bind container actions to .hide
+            El.modal.on(Acts, function (evt) {
                 var ele = $(evt.target);
-
                 if (Df.modal.closers.contains(ele) || ele.is(El.modal)) {
                     Df.modal.hide();
                 }
-            }).on('keyup', function (evt) {
-                // bind escape key to .hide
-                if (evt.which === 27) Df.modal.hide();
+            });
+            El.body.on('keydown', function (evt) {
+                if (evt.keyCode === 27) Df.modal.hide(); // escape key
             });
             return this;
         }
@@ -67,32 +67,20 @@ var Modal = (function ($) { // IIFE
     };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    function bindings() {
+    function _bindings() {
+        Df.modal.init();
+
         $.reify({
             social: '#stickyBar .sidesocial a',
-            dialog: 'body > .modal .dialog',
+            dialog: '.modal .dialog',
         }, El);
 
-        El.social.on(ACT, function (evt) {
+        El.social.on(Acts, function (evt) {
             evt.preventDefault();
-
             Df.modal.show(El.dialog);
-            El.dialog.find('.utilitybtn').attr('href', evt.delegateTarget.href);
-        });
 
-        Df.modal.init();
-        Df.modal.cleanup.add(function () {
-            try {
-                //risk();
-            } catch (err) {
-                C.error(err);
-            }
-        });
-
-        El.body.on('keydown', function (evt) {
-            if (evt.keyCode === 27) { // react to escape key
-                Df.modal.hide();
-            }
+            El.dialog.find('.utilitybtn') // transfer destination url
+            .attr('href', evt.delegateTarget.href);
         });
 
     }
@@ -105,7 +93,8 @@ var Modal = (function ($) { // IIFE
         Df.inits();
         C.info('Modal init @ ' + Date() + ' debug:', W.debug);
 
-        $(bindings);
+        $(_bindings);
+        return self;
     }
 
     $.extend(self, {
@@ -115,8 +104,8 @@ var Modal = (function ($) { // IIFE
         __: Df,
         init: _init,
     });
-    self.init();
-    return self;
+
+    return self.init();
 }(jQuery));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
