@@ -8,7 +8,7 @@ var Modal = (function ($) { // IIFE
         name: 'Modal',
     },  W = window
     ,   C = console
-    ,   Acts = 'keypress click'
+    ,   ACT = 'keypress click'
     ,   Df, El;
 
     // EXTEND
@@ -40,6 +40,14 @@ var Modal = (function ($) { // IIFE
     Df.modal = {
         cleanup: $.Callbacks(), // clean routines
         closers: $('.closer, .cancel'), // all "closers"
+        bind: function (sel, cb) {
+            /// map selectors to trigger show and callback
+            $(sel).on(ACT, function (evt) {
+                evt.preventDefault();
+                Df.modal.show();
+                cb(evt);
+            });
+        },
         show: function (ele) {
             /// activate container, hide all kids, then feature one
             El.modal.addClass('active').children().hide();
@@ -49,12 +57,12 @@ var Modal = (function ($) { // IIFE
         hide: function () {
             /// deactivate container and do whatever cleaning
             El.modal.removeClass('active');
-            this.cleanup.fire();
+            Df.modal.cleanup.fire();
             return this;
         },
         init: function () {
             /// bind container actions to .hide
-            El.modal.on(Acts, function (evt) {
+            El.modal.on(ACT, function (evt) {
                 var ele = $(evt.target);
                 if (Df.modal.closers.contains(ele) || ele.is(El.modal)) {
                     Df.modal.hide();
@@ -67,51 +75,40 @@ var Modal = (function ($) { // IIFE
         }
     };
 
-
-    function _bindings() {
-        Df.modal.init();
-
-        $.reify({
-            social: '#stickyBar .sidesocial a',
-            dialog: '.modal .dialog',
-        }, El);
-
-        El.social.on(Acts, function (evt) {
-            evt.preventDefault();
-            Df.modal.show(El.dialog);
-
-            El.dialog.find('.utilitybtn') // transfer destination url
-            .attr('href', evt.delegateTarget.href);
-        });
-
-    }
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    function _init() {
-        if (Df.inited) {
-            return null;
-        }
-        Df.inits();
-        C.info('Modal init @ ' + Date() + ' debug:', W.debug);
-
-        $(_bindings);
-        return self;
-    }
-
     $.extend(self, {
-        _: function () {
-            return Df;
-        },
         __: Df,
-        init: _init,
+        init: function () {
+            if (Df.inited) {
+                return null;
+            }
+            Df.inits();
+            C.info('Modal init @ ' + Date() + ' debug:', W.debug);
+
+            $(Df.modal.init);
+            return self;
+        },
+        bind: Df.modal.bind,
+        hide: Df.modal.hide,
+        show: Df.modal.show,
     });
 
     return self.init();
 }(jQuery));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*
+// Begin Customize
+jQuery(function () {
+    var dialog = $('.modal .dialog') // thing to show
+    var urls = $('#stickyBar .sidesocial a'); // intercept these
 
+    Modal.bind(urls, function (evt) {
+        dialog.fadeIn() // show it nicely
+        .find('.utilitybtn') // find the go button
+        .attr('href', evt.delegateTarget.href); // transfer url
+    });
 
-
-*/
+});
+// End Customize
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
