@@ -1,64 +1,75 @@
 /*jslint white:false */
-/*globals _, C, W, jQuery, Modal:true,
+/*globals _, console, window, jQuery, Modal:true,
         , */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 var Modal = (function ($) { // IIFE
     'use strict';
-    var name = 'Modal',
-        self =  {},
-        W = window,
-        C = console,
-        Df, El, ACT = 'keypress click';
+    var self =  {
+        name: 'Modal',
+    },  W = window
+    ,   C = console
+    ,   ACT = 'keypress click'
+    ,   Df, El;
+
+    // EXTEND
+    $.reify = function (x, y) { // jq-reify props w/selector vals
+        $.each(x, function (i, e) {
+            x[i] = $(e);
+        });
+        return y ? $.extend(y, x) : x; // extend optional host
+    };
+
+    $.fn.contains = function (x) {
+        return Boolean(this.is(x) || this.has(x).length);
+    };
 
     Df = { // DEFAULTS
-        El: null,
-        modal: null,
-        player: null,
-        video: null,
+        El: {},
+        modal: {},
         inits: function () {
-            El.body = $(El.body);
-            El.modal = $(El.modal);
-            El.dialog = $(El.dialog);
-            El.social = $(El.social);
-
-            this.El = El;
-
-            Df.inited = true;
+            // expose elements
+            this.El = $.reify(El);
+            this.inited = true;
         },
     };
     El = { // ELEMENTS
         body: 'body',
-        modal: 'body > .modal, body > .modal .back',
-        social: '#stickyBar .sidesocial a',
-        dialog: 'body > .modal .dialog',
+        modal: 'body > div.modal', // only top level containers
     };
 
     Df.modal = {
-        cleanup: $.Callbacks(),
-        closer: $('.closer'),
+        cleanup: $.Callbacks(), // clean routines
+        closers: $('.closer, .cancel'), // all "closers"
+        bind: function (sel, cb) {
+            /// map selectors to trigger show and callback
+            $(sel).on(ACT, function (evt) {
+                evt.preventDefault();
+                Df.modal.show();
+                cb(evt);
+            });
+        },
         show: function (ele) {
+            /// activate container, hide all kids, then feature one
             El.modal.addClass('active').children().hide();
-            if (ele) {
-                $(ele).fadeIn(); //this.closer.insertAfter(ele);
-            }
+            if (ele) $(ele).fadeIn();
             return this;
         },
         hide: function () {
+            /// deactivate container and do whatever cleaning
             El.modal.removeClass('active');
-            this.cleanup.fire();
+            Df.modal.cleanup.fire();
+            return this;
         },
         init: function () {
+            /// bind container actions to .hide
             El.modal.on(ACT, function (evt) {
                 var ele = $(evt.target);
-
-                if (ele.is('.modal, img') || evt.offsetX > evt.target.offsetWidth) {
+                if (Df.modal.closers.contains(ele) || ele.is(El.modal)) {
                     Df.modal.hide();
                 }
-
-            }).on('keyup', function (evt) {
-                if (evt.which === 27) {
-                    Df.modal.hide();
-                }
+            });
+            El.body.on('keydown', function (evt) {
+                if (evt.keyCode === 27) Df.modal.hide(); // escape key
             });
             return this;
         }
@@ -66,57 +77,38 @@ var Modal = (function ($) { // IIFE
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    function bindings() {
-
-        El.social.on(ACT, function (evt) {
-            evt.preventDefault();
-
-            Df.modal.show(El.dialog);
-            El.dialog.find('.utilitybtn').attr('href', evt.delegateTarget.href);
-        });
-
-        Df.modal.init();
-        Df.modal.cleanup.add(function () {
-            try {
-                //Df.player.pause();
-            } catch (err) {
-                C.log(err);
-            }
-        });
-
-        El.body.on('keydown', function (evt) {
-            if (evt.keyCode === 27) { // react to escape key
-                Df.modal.hide();
-            }
-        });
-
-    }
-    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-    function _init() {
-        if (Df.inited) {
-            return null;
-        }
-        Df.inits();
-        C.info('Modal init @ ' + Date() + ' debug:', W.debug);
-
-        $(bindings);
-    }
-
     $.extend(self, {
-        _: function () {
-            return Df;
-        },
         __: Df,
-        init: _init,
+        init: function () {
+            if (Df.inited) {
+                return null;
+            }
+            Df.inits();
+            C.info('Modal init @ ' + Date() + ' debug:', W.debug);
+
+            $(Df.modal.init);
+            return self;
+        },
+        bind: Df.modal.bind,
+        hide: Df.modal.hide,
+        show: Df.modal.show,
     });
-    self.init();
-    return self;
+
+    return self.init();
 }(jQuery));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*
+// Begin Customize
+jQuery(function () {
+    var dialog = $('.modal .dialog') // thing to show
+    var urls = $('#stickyBar .sidesocial a'); // intercept these
 
+    Modal.bind(urls, function (evt) {
+        dialog.fadeIn() // show it nicely
+        .find('.utilitybtn') // find the go button
+        .attr('href', evt.delegateTarget.href); // transfer url
+    });
 
-
-*/
+});
+// End Customize
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
