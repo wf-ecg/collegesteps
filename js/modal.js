@@ -1,5 +1,5 @@
 /*jslint white:false */
-/*globals _, C, W, jQuery, Modal:true,
+/*globals _, console, window, jQuery, Modal:true,
         , */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 var Modal = (function ($) { // IIFE
@@ -23,8 +23,6 @@ var Modal = (function ($) { // IIFE
     El = { // ELEMENTS
         body: 'body',
         modal: 'body > div.modal', // only top level containers
-        social: '#stickyBar .sidesocial a',
-        dialog: 'body > .modal .dialog',
     };
 
     Df.modal = {
@@ -70,6 +68,10 @@ var Modal = (function ($) { // IIFE
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     function bindings() {
+        $.reify({
+            social: '#stickyBar .sidesocial a',
+            dialog: 'body > .modal .dialog',
+        }, El);
 
         El.social.on(ACT, function (evt) {
             evt.preventDefault();
@@ -81,9 +83,9 @@ var Modal = (function ($) { // IIFE
         Df.modal.init();
         Df.modal.cleanup.add(function () {
             try {
-                //Df.player.pause();
+                //risk();
             } catch (err) {
-                C.log(err);
+                C.error(err);
             }
         });
 
