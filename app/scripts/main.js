@@ -196,3 +196,5 @@ $(window).load(function () {
     $(".loader").delay(300).fadeOut();
     $("#page-loader").delay(500).fadeOut("slow");
 });
+
+window.debug = 1;
