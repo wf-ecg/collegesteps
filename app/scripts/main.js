@@ -80,7 +80,7 @@
     function b() {
         $(".main-nav ul li a").click(function (l) {
             var k = $(this).attr("href");
-            if (k == "#" || k == "") {
+            if (k == "#" || k === "") {
                 l.preventDefault();
             }
         });

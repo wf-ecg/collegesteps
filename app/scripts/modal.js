@@ -1,4 +1,4 @@
-/*jslint white:false */
+/*jslint white:false, laxcomma:true */
 /*globals _, console, window, jQuery, Modal:true,
         , */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -100,7 +100,7 @@ var Modal = (function ($) { // IIFE
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 // Begin Customize
 jQuery(function () {
-    var dialog = $('.modal .dialog') // thing to show
+    var dialog = $('.modal .dialog'); // thing to show
     var urls = $('#stickyBar .sidesocial a'); // intercept these
 
     Modal.bind(urls, function (evt) {
