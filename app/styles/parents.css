@@ -1,1 +1,437 @@
-.parent-box{position:absolute;bottom:150px;width:100%}.parentbox{padding:20px;font-family:'Archer SSm A','Archer SSm B',serif;font-size:18px;background-color:#65368b;text-align:left;max-width:580px;width:60%;margin-right:auto;margin-left:auto;font-weight:100}.parentbox p{margin-top:10px;margin-bottom:0}.section-header-p1 h1{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:600;font-size:69px;margin-bottom:0;margin-top:0}.header-desc-p1{text-align:center;font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:300;color:#006991;font-size:18px}.teamingup{padding-top:69px}h1.light{font-weight:300!important}.parent1 h2{font-family:'Archer SSm A','Archer SSm B',serif;font-style:normal;font-weight:700;font-size:18px;margin-bottom:0;margin-top:20px;color:#006991}.parent1 h3{font-family:'Archer SSm A','Archer SSm B',serif;font-style:normal;font-weight:700;font-size:16px;margin-bottom:0;margin-top:0;color:#f99300}.parent1 ul{padding-left:20px}.parent1 ul li{padding-bottom:10px}.college-financing{padding:15px;background-color:#41b85a;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;z-index:2}.college-financing h1{font-family:"myriad-pro-condensed",sans-serif;font-style:normal;font-weight:400;font-size:40px;margin-top:0;margin-bottom:0;color:#fff}ul.college-financing-rolls{margin-top:50px}ul.college-financing-rolls li{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:400;font-size:16px;color:#000;padding-bottom:20px}ul.college-financing-rolls li a{font-weight:600;text-decoration:none;color:#000}ul.college-financing-rolls li a:hover{text-decoration:underline}ul.college-financing-rolls li span{font-weight:600;font-size:20px}.callout-g{margin-top:-20px;padding:25px 0 0;background-color:#ecf5e9;z-index:1}.callout-g p{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:400;font-size:16px;color:#000;padding:30px}.callout-g div{background-color:#fff;text-align:right}.below{z-index:1}ul.fa-ul li{font-size:16px;padding-bottom:10px}.checklist div h3{font-size:18px;font-family:'Archer SSm A','Archer SSm B',serif;font-weight:700;color:#438ba8;margin:0}.checklist div h4{font-size:18px;font-family:'Archer SSm A','Archer SSm B',serif;font-weight:700;text-transform:uppercase;color:#65368b;margin-top:20px}.checklist div a{font-weight:700;text-decoration:none}.checklist-item{padding-bottom:20px;font-size:16px}.parentCheckbox{width:18px;height:18px;position:absolute;border:2px solid #000;margin-top:5px}.parentCheckbox label{width:17px;height:17px;cursor:pointer;position:absolute;left:0;top:1px}.parentCheckbox label:after{content:'';width:9px;height:5px;position:absolute;top:3px;left:3px;border:2px solid #000;border-top:0;border-right:0;background:0;filter:alpha(opacity=0);opacity:0;-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.parentCheckbox label:hover::after{filter:alpha(opacity=30);opacity:.3}.parentCheckbox input[type=checkbox]{visibility:hidden}.parentCheckbox input[type=checkbox]:checked+label:after{filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity:1}#parents-planning-guide h1{font-family:"myriad-pro",sans-serif;font-weight:300;font-variant:normal;color:#000;text-align:center;font-size:60px;margin-bottom:50px}#parents-planning-guide h2{font-family:"myriad-pro",sans-serif;font-weight:400;font-variant:normal;color:#000;text-align:center;font-size:20px;line-height:2em;padding:20px}.money-icon{background-image:url(../img/money-icon.png);background-repeat:no-repeat;background-position:top right;background-size:150px 250px}.journey-icon{text-align:right}.section-header-p4 h1{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:400;font-size:40px;text-align:left;color:#093}.section-header-p4 h1 span{font-family:"myriad-pro-condensed",sans-serif;font-style:normal;font-weight:700;margin-bottom:10px;text-align:left;display:block;color:#000}.section-header-p4 h2{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:300;font-size:22px;border-top:solid 1px color:#000;margin-top:10px;text-align:right;margin-bottom:60px;display:block;border-top-width:1px;border-top-style:solid;border-top-color:#000;padding-top:10px}.parent4 p{font-size:14px;margin-top:0;margin-bottom:10px}.parent4 h3{font-style:normal;font-weight:700;color:#478731;font-size:18px;margin-bottom:10px;margin-top:20px}.parent4 img{margin-top:10px;margin-bottom:10px}.section-header-p4{paddin-top:100px}.orangebox{padding:15px;background:#bc5333;background:-moz-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);background:-webkit-gradient(linear,left top,right top,color-stop(0%,rgba(188,83,51,1)),color-stop(0%,rgba(226,100,31,1)),color-stop(100%,rgba(226,100,31,1)));background:-webkit-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);background:-o-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);background:-ms-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);background:linear-gradient(to right,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc5333',endColorstr='#e2641f',GradientType=1);font-family:"myriad-pro",sans-serif;color:#fff;font-weight:600;margin-bottom:5px}.orangebox h4{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:600;font-size:16px;margin:0;color:#fff}.orangebox1{padding:15px;background-color:#fffbf6;margin-bottom:5px}.orangebox2{padding:15px;background-color:#ffefdf;margin-bottom:5px}.orangebox3{padding:15px;background-color:#ffe1c1;margin-bottom:5px}.orangebox4{padding:15px;background-color:#fed3a6}.blockright h4{font-weight:600;font-family:"myriad-pro",sans-serif;font-style:italic;color:#006991;margin-top:0;margin-bottom:5px}.o-bold{font-weight:700;color:#df6420}.pad5 p{margin:0;font-size:16px}.pad5 a{font-weight:700}.pad5 a:hover{text-decoration:underline}.green-arrows{height:42px;background-image:url(../img/arrows-green.png);background-repeat:no-repeat;background-position:right}.topbott{margin-top:40px}.note ol{font-family:"myriad-pro",sans-serif;font-style:normal;font-weight:400;font-size:12px;color:#999;margin-left:0;padding-left:20px;margin-bottom:30px;list-style:none}.parent4 a{text-decoration:none;font-weight:700}.parent4 a:hover{color:rgba(51,51,51,.7)}@media(min-width:768px) and (max-width:991px){.green-arrows{background-image:url(../img/arrows-green-down.png)}.checklist{padding-top:40px}.teamingup{padding-top:0}}@media(min-width:481px) and (max-width:767px){.parentbox{display:none}.college-financing h1{text-align::center}ul.college-financing-rolls{margin-top:10px}#parents-planning-guide h1{font-size:40px;margin-bottom:20px}.green-arrows{background-image:url(../img/arrows-green-down.png)}.teamingup{padding-top:0}.section-header-p1 h1{font-size:40px!important;text-align:center}}@media only screen and (max-width:480px){.parentbox{display:none}.college-financing h1{text-align::center}ul.college-financing-rolls{margin-top:0}#parents-planning-guide h1{font-size:40px;margin-bottom:20px}#parents-planning-guide h2{padding-right:0}.journey-icon{display:none}.green-arrows{background-image:url(../img/arrows-green-down.png)}.teamingup{padding-top:0}.section-header-p1 h1{font-size:40px!important;text-align:center}}
+.parent-box {
+    position: absolute;
+    bottom: 150px;
+    width: 100%
+}
+.parentbox {
+    padding: 20px;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-size: 18px;
+    background-color: #65368b;
+    text-align: left;
+    max-width: 580px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 100
+}
+.parentbox p {
+    margin-top: 10px;
+    margin-bottom: 0
+}
+.section-header-p1 h1 {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 69px;
+    margin-bottom: 0;
+    margin-top: 0
+}
+.header-desc-p1 {
+    text-align: center;
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #006991;
+    font-size: 18px
+}
+.teamingup {
+    padding-top: 69px
+}
+h1.light {
+    font-weight: 300!important
+}
+.parent1 h2 {
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: #006991
+}
+.parent1 h3 {
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #f99300
+}
+.parent1 ul {
+    padding-left: 20px
+}
+.parent1 ul li {
+    padding-bottom: 10px
+}
+.college-financing {
+    padding: 15px;
+    background-color: #41b85a;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    z-index: 2
+}
+.college-financing h1 {
+    font-family: "myriad-pro-condensed",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff
+}
+ul.college-financing-rolls {
+    margin-top: 50px
+}
+ul.college-financing-rolls li {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 20px
+}
+ul.college-financing-rolls li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000
+}
+ul.college-financing-rolls li a:hover {
+    text-decoration: underline
+}
+ul.college-financing-rolls li span {
+    font-weight: 600;
+    font-size: 20px
+}
+.callout-g {
+    margin-top: -20px;
+    padding: 25px 0 0;
+    background-color: #ecf5e9;
+    z-index: 1
+}
+.callout-g p {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    padding: 30px
+}
+.callout-g div {
+    background-color: #fff;
+    text-align: right
+}
+.below {
+    z-index: 1
+}
+ul.fa-ul li {
+    font-size: 16px;
+    padding-bottom: 10px
+}
+.checklist div h3 {
+    font-size: 18px;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-weight: 700;
+    color: #438ba8;
+    margin: 0
+}
+.checklist div h4 {
+    font-size: 18px;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #65368b;
+    margin-top: 20px
+}
+.checklist div a {
+    font-weight: 700;
+    text-decoration: none
+}
+.checklist-item {
+    padding-bottom: 20px;
+    font-size: 16px
+}
+.parentCheckbox {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    border: 2px solid #000;
+    margin-top: 5px
+}
+.parentCheckbox label {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 1px
+}
+.parentCheckbox label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #000;
+    border-top: 0;
+    border-right: 0;
+    background: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+.parentCheckbox label:hover::after {
+    filter: alpha(opacity=30);
+    opacity: .3
+}
+.parentCheckbox input[type=checkbox] {
+    visibility: hidden
+}
+.parentCheckbox input[type=checkbox]:checked+label:after {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1
+}
+#parents-planning-guide h1 {
+    font-family: "myriad-pro",sans-serif;
+    font-weight: 300;
+    font-variant: normal;
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px
+}
+#parents-planning-guide h2 {
+    font-family: "myriad-pro",sans-serif;
+    font-weight: 400;
+    font-variant: normal;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+    padding: 20px
+}
+.money-icon {
+    background-image: url(../img/money-icon.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px 250px
+}
+.journey-icon {
+    text-align: right
+}
+.section-header-p4 h1 {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: left;
+    color: #093
+}
+.section-header-p4 h1 span {
+    font-family: "myriad-pro-condensed",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    color: #000
+}
+.section-header-p4 h2 {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    border-top: solid 1px color:#000;
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 60px;
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000;
+    padding-top: 10px
+}
+.parent4 p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px
+}
+.parent4 h3 {
+    font-style: normal;
+    font-weight: 700;
+    color: #478731;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+.parent4 img {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.section-header-p4 {
+    paddin-top: 100px
+}
+.orangebox {
+    padding: 15px;
+    background: #bc5333;
+    background: -moz-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(188,83,51,1)),color-stop(0%,rgba(226,100,31,1)),color-stop(100%,rgba(226,100,31,1)));
+    background: -webkit-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    background: -o-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    background: -ms-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    background: linear-gradient(to right,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc5333',endColorstr='#e2641f',GradientType=1);
+    font-family: "myriad-pro",sans-serif;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+.orangebox h4 {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    color: #fff
+}
+.orangebox1 {
+    padding: 15px;
+    background-color: #fffbf6;
+    margin-bottom: 5px
+}
+.orangebox2 {
+    padding: 15px;
+    background-color: #ffefdf;
+    margin-bottom: 5px
+}
+.orangebox3 {
+    padding: 15px;
+    background-color: #ffe1c1;
+    margin-bottom: 5px
+}
+.orangebox4 {
+    padding: 15px;
+    background-color: #fed3a6
+}
+.blockright h4 {
+    font-weight: 600;
+    font-family: "myriad-pro",sans-serif;
+    font-style: italic;
+    color: #006991;
+    margin-top: 0;
+    margin-bottom: 5px
+}
+.o-bold {
+    font-weight: 700;
+    color: #df6420
+}
+.pad5 p {
+    margin: 0;
+    font-size: 16px
+}
+.pad5 a {
+    font-weight: 700
+}
+.pad5 a:hover {
+    text-decoration: underline
+}
+.green-arrows {
+    height: 42px;
+    background-image: url(../img/arrows-green.png);
+    background-repeat: no-repeat;
+    background-position: right
+}
+.topbott {
+    margin-top: 40px
+}
+.note ol {
+    font-family: "myriad-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    margin-left: 0;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    list-style: none
+}
+.parent4 a {
+    text-decoration: none;
+    font-weight: 700
+}
+.parent4 a:hover {
+    color: rgba(51,51,51,.7)
+}
+@media(min-width:768px) and (max-width:991px) {.green-arrows {
+    background-image: url(../img/arrows-green-down.png)
+}
+.checklist {
+    padding-top: 40px
+}
+.teamingup {
+    padding-top: 0
+}
+
+}
+@media(min-width:481px) and (max-width:767px) {.parentbox {
+    display: none
+}
+.college-financing h1 {
+    text-align: :center
+}
+ul.college-financing-rolls {
+    margin-top: 10px
+}
+#parents-planning-guide h1 {
+    font-size: 40px;
+    margin-bottom: 20px
+}
+.green-arrows {
+    background-image: url(../img/arrows-green-down.png)
+}
+.teamingup {
+    padding-top: 0
+}
+.section-header-p1 h1 {
+    font-size: 40px!important;
+    text-align: center
+}
+
+}
+@media only screen and (max-width:480px) {.parentbox {
+    display: none
+}
+.college-financing h1 {
+    text-align: :center
+}
+ul.college-financing-rolls {
+    margin-top: 0
+}
+#parents-planning-guide h1 {
+    font-size: 40px;
+    margin-bottom: 20px
+}
+#parents-planning-guide h2 {
+    padding-right: 0
+}
+.journey-icon {
+    display: none
+}
+.green-arrows {
+    background-image: url(../img/arrows-green-down.png)
+}
+.teamingup {
+    padding-top: 0
+}
+.section-header-p1 h1 {
+    font-size: 40px!important;
+    text-align: center
+}
+
+}
