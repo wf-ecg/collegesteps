@@ -68,3 +68,9 @@ footer .back-to-top-v .btn::before {
     content: "\f100";
     padding-right: 10px
 }
+
+.vjs-default-skin .vjs-text-track { display: none; color: #fff; font-size: 1.4em; text-align: center; margin-bottom: 0.1em; line-height: 1.4em;
+                                    /* Transparent black background, or fallback to all black (IE6) */
+                                    background: rgb(0, 0, 0); background: rgba(0, 0, 0, .5); }
+.vjs-default-skin .vjs-subtitles { color: #fff; }
+.vjs-default-skin .vjs-captions { color: #fff; }
