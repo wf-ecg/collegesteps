@@ -19,7 +19,7 @@ module.exports = function (grunt) {
         'jshint:postcat',
         //'uglify',
         'sync:clean',
-        //'connect:full',
+        'connect:full',
         'watch',
     ]);
 
