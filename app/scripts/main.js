@@ -197,4 +197,10 @@ $(window).load(function () {
     $("#page-loader").delay(500).fadeOut("slow");
 });
 
+$(function(){
+    $.scrollUp && $.scrollUp({
+        animation: "fade",
+    });
+});
+
 window.debug = 1;

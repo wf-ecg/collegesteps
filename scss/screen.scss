@@ -16,11 +16,12 @@
 @import url('/mfal/lib/fonts/archer.ssm.css');
 @import url('/mfal/lib/fonts/myriad.css');
 @import url('/mfal/lib/fonts/myriad.con.css');
+@import "/lib/bootstrap/3.2.0/bootstrap.min.css";
+@import "/lib/font-awesome/4.3.0/css/font-awesome.min.css";
+@import "../vendor/socialcount.css";
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
-@import "_font-awesome";
-@import "_lightbox";
+@import "pages/_all";
 @import "_pill";
-@import "_socialcount";
 @import "_style";
 @import "_modal";
 /*

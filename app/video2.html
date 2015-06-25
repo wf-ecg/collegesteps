@@ -10,17 +10,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="./vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="./build/screen.css">
-        <link rel="stylesheet" href="./styles/videos.css">
-        <link rel="stylesheet" href="http://wellsfargomedia.com/lib/video-js/3.2.2/video-js.css">
+        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-git.js"></script>
+        <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
+        <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
 
+        <link href="./build/screen.css" rel="stylesheet">
+
+        <link href="http://wellsfargomedia.com/lib/video-js/3.2.2/video-js.css" rel="stylesheet">
         <script src="http://wellsfargomedia.com/lib/video-js/3.2.2/video.js"></script>
-        <script src="./vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
     </head>
 
-    <body>
+    <body class="p-video">
         <!--[if lt IE 9]><div class="upgradeframe"><h3>You are using an <strong>OUTDATED</strong> browser.</h3>
         <p>Please consider installing and using a <a href="http://whatbrowser.org">modern browser</a>
         to improve your web experience and view the Wells Fargo interactive online CollegeSTEPS magazine.
@@ -90,132 +91,140 @@
                             </div>
                             <!-- NAVBAR End -->
                         </header>
-                        <div id="contentcontainer">
-                            <!-- SHARE BAR SECTION Begin -->
-                            <div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s">
-                                <div id="stickySideBar">
-                                    <table cellpadding="1px" cellspacing="0">
-                                        <tr>
-                                            <td style="padding:5px 0px 0px 0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                                     data-url="http://www.wellsfargomedia.com/collegesteps/" data-counts="true" data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                    <li class="facebook sidesocial"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.wellsfargomedia.com/collegesteps/" title="Share on Facebook"><span class="social-icon icon-facebook"></span></a></li>
-                                                </ul></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                         data-url="http://www.wellsfargomedia.com/collegesteps/" data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                    <li class="twitter sidesocial"><a href="https://twitter.com/intent/tweet?text=http://www.wellsfargomedia.com/collegesteps/" title="Share on Twitter"><span class="social-icon icon-twitter"></span></a></li>
-                                                </ul></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                         data-url="http://www.wellsfargomedia.com/collegesteps/" data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                    <li class="googleplus sidesocial"><a href="https://plus.google.com/share?url=http://www.wellsfargomedia.com/collegesteps/" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span></a></li>
-                                                </ul></td>
-                                        </tr>
-                                        <tr>
-                                            <td style=" padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                          data-url="http://www.wellsfargomedia.com/collegesteps/" data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                    <li class="share sidesocial"><a href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20website&body=Check%20out%20this%20page%20http://www.wellsfargomedia.com/collegesteps." title="Share by Email"><span class="social-icon icon-share"></span></a></li>
-                                                </ul></td>
-                                        </tr>
-                                    </table>
-                                </div>
+
+                        <!-- SHARE BAR SECTION Begin -->
+                        <div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s">
+                            <div id="stickySideBar">
+                                <table cellpadding="1px" cellspacing="0">
+                                    <tr>
+                                        <td style="padding:5px 0px 0px 0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
+                                                                                 data-url="http://www.wellsfargomedia.com/collegesteps/" data-counts="true"
+                                                                                 data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
+                                                <li class="facebook sidesocial"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.wellsfargomedia.com/collegesteps/"
+                                                                                   title="Share on Facebook"><span class="social-icon icon-facebook"></span></a></li>
+                                            </ul></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
+                                                                     data-url="http://www.wellsfargomedia.com/collegesteps/"
+                                                                     data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
+                                                <li class="twitter sidesocial"><a href="https://twitter.com/intent/tweet?text=http://www.wellsfargomedia.com/collegesteps/"
+                                                                                  title="Share on Twitter"><span class="social-icon icon-twitter"></span></a></li>
+                                            </ul></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
+                                                                     data-url="http://www.wellsfargomedia.com/collegesteps/"
+                                                                     data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
+                                                <li class="googleplus sidesocial"><a href="https://plus.google.com/share?url=http://www.wellsfargomedia.com/collegesteps/"
+                                                                                     title="Share on Google Plus"><span class="social-icon icon-googleplus"></span></a></li>
+                                            </ul></td>
+                                    </tr>
+                                    <tr>
+                                        <td style=" padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
+                                                                      data-url="http://www.wellsfargomedia.com/collegesteps/"
+                                                                      data-share-text="Wells Fargo CollegeSteps Magazine" data-media="http://www.wellsfargomedia.com/collegesteps/img/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
+                                                <li class="share sidesocial"><a href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20website&body=Check%20out%20this%20page%20http://www.wellsfargomedia.com/collegesteps."
+                                                                                title="Share by Email"><span class="social-icon icon-share"></span></a></li>
+                                            </ul></td>
+                                    </tr>
+                                </table>
                             </div>
-                            <!-- SHARE BAR SECTION End -->
+                        </div>
+                        <!-- SHARE BAR SECTION End -->
 
-                            <!-- SECTION CONTAINER -->
-                            <section id="videos" data-scroll-index="0" style="padding-bottom:50px;">
-                                <section class="section">
-                                    <div class="container" id="content">
+                        <!-- SECTION CONTAINER -->
+                        <section id="videos" data-scroll-index="0" style="padding-bottom:50px;">
+                            <section class="section">
+                                <div class="container" id="content">
 
-                                        <!-- SECTION HEADER -->
-                                        <div class="section-header-v">
-                                            <h1>Financial Aid Journey Overview </h1>
-                                        </div>
-                                        <!-- SECTION HEADER End -->
+                                    <!-- SECTION HEADER -->
+                                    <div class="section-header-v">
+                                        <h1>Financial Aid Journey Overview </h1>
+                                    </div>
+                                    <!-- SECTION HEADER End -->
 
-                                        <div class="row">
-                                            <div class="col-sm-9">
-                                                <p>Most school websites offer a net price calculator that can give you an estimate of your total cost and your financial aid award at a particular school.
-                                                    Actual costs and awards may vary.</p>
-                                                <div class="videocontent">
-                                                    <video id="video_1" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto" alt="Play Video" poster="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.jpg" data-setup="{}">
-                                                        <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.mp4" type="video/mp4" />
-                                                        <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.webm" type="video/webm" />
-                                                        <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.ogv" type="video/ogg" />
-                                                        <track kind="captions" src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.vtt" srclang="en" label="English" />
-                                                    </video>
-                                                </div>
-                                                <!-- TOOGLE -->
-                                                <div class="panel-group" id="toogle">
-                                                    <div class="panel panel-default">
-                                                        <div class="panel-heading clearfix"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapse11">View the Transcript</a> </div>
-                                                        <div id="collapse11" class="panel-collapse collapse">
-                                                            <div class="panel-body">
-                                                                <div>Oh, hi, Mr. Fellows here once again to guide you on the five step journey to financial aid.
-                                                                    Today I'm going to talk about the Net Price Calculator.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Now, you might be saying to yourself...</div>
-                                                                <div>"But Mr. Fellows, I'm awful at math."</div>
-                                                                <div>That's okay...the Net Price Calculator is so easy, even Monty here can do it.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Ain't that right, Monty?</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Sure is friends!</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>You'll want to estimate your college's approximate costs by visiting the Net Price Calculator on your school's website.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>This fancy tool, just kidding...</div>
-                                                                <div>This fancy tool will estimate the total costs of college and help you understand what types of financing resources may be available to you.</div>
-                                                                <div>Now don't be afraid to play around with the variables to see how your total cost of college could change.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>For example, look closely at the differences between living on-campus, off-campus, or living at home with your parents. </div>
-                                                                <div>And keep in mind, this calculator will only give you an estimate.
-                                                                    Your actual costs may vary.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>To find this magical calculator,</div>
-                                                                <div>("pirate")</div>
-                                                                <div>use the search feature on your college's website and type in: NET...PRICE...CALCULATOR.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Shhh!</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Sorry.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Well, that, my friends, just about wraps it up for Step 2.
-                                                                    Thank you for watching this video. </div>
-                                                                <div>And remember what I always say...with college comes great knowledge.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Take care.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Sorry again.</div>
-                                                                <div>&nbsp;</div>
-                                                                <div>Sign up for the CollegeSTEPS<sup>®</sup> program and get handy information throughout the year</div>
-                                                                <div> <a href="students.html" title="visit the Wells Fargo CollegeSteps website">wellsfargo.com/collegesteps</a> </div>
-                                                            </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <p>Most school websites offer a net price calculator that can give you an estimate of your total cost and your financial aid award at a particular school.
+                                                Actual costs and awards may vary.</p>
+                                            <div class="videocontent">
+                                                <video id="video_1" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto" alt="Play Video" poster="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.jpg" data-setup="{}">
+                                                    <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.mp4" type="video/mp4" />
+                                                    <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.webm" type="video/webm" />
+                                                    <source src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.ogv" type="video/ogg" />
+                                                    <track kind="captions" src="http://www.wellsfargomedia.com/collegesteps/videos/financial_aid_5step-step2.vtt" srclang="en" label="English" />
+                                                </video>
+                                            </div>
+                                            <!-- TOOGLE -->
+                                            <div class="panel-group" id="toogle">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading clearfix"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapse11">View the Transcript</a> </div>
+                                                    <div id="collapse11" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <div>Oh, hi, Mr. Fellows here once again to guide you on the five step journey to financial aid.
+                                                                Today I'm going to talk about the Net Price Calculator.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Now, you might be saying to yourself...</div>
+                                                            <div>"But Mr. Fellows, I'm awful at math."</div>
+                                                            <div>That's okay...the Net Price Calculator is so easy, even Monty here can do it.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Ain't that right, Monty?</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Sure is friends!</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>You'll want to estimate your college's approximate costs by visiting the Net Price Calculator on your school's website.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>This fancy tool, just kidding...</div>
+                                                            <div>This fancy tool will estimate the total costs of college and help you understand what types of financing resources may be available to you.</div>
+                                                            <div>Now don't be afraid to play around with the variables to see how your total cost of college could change.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>For example, look closely at the differences between living on-campus, off-campus, or living at home with your parents. </div>
+                                                            <div>And keep in mind, this calculator will only give you an estimate.
+                                                                Your actual costs may vary.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>To find this magical calculator,</div>
+                                                            <div>("pirate")</div>
+                                                            <div>use the search feature on your college's website and type in: NET...PRICE...CALCULATOR.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Shhh!</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Sorry.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Well, that, my friends, just about wraps it up for Step 2.
+                                                                Thank you for watching this video. </div>
+                                                            <div>And remember what I always say...with college comes great knowledge.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Take care.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Sorry again.</div>
+                                                            <div>&nbsp;</div>
+                                                            <div>Sign up for the CollegeSTEPS<sup>®</sup> program and get handy information throughout the year</div>
+                                                            <div> <a href="students.html" title="visit the Wells Fargo CollegeSteps website">wellsfargo.com/collegesteps</a> </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- TOOGLE END -->
-
                                             </div>
-                                            <div class="col-sm-3">
-                                                <div class="video-links">
-                                                    <ul id="video-button">
-                                                        <li><a href="video.html">1: Fill Out the FAFSA</a></li>
-                                                        <li class="active"><a href="video2.html" class="playing">2: Estimate College Cost</a></li>
-                                                        <li><a href="video3.html">3: Determine Additional Expenses</a></li>
-                                                        <li><a href="video4.html">4: Explore Financing Options</a></li>
-                                                        <li><a href="video5.html">5: Know Your Deadlines</a></li>
-                                                    </ul>
-                                                </div>
+                                            <!-- TOOGLE END -->
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="video-links">
+                                                <ul id="video-button">
+                                                    <li><a href="video.html">1: Fill Out the FAFSA</a></li>
+                                                    <li class="active"><a href="video2.html" class="playing">2: Estimate College Cost</a></li>
+                                                    <li><a href="video3.html">3: Determine Additional Expenses</a></li>
+                                                    <li><a href="video4.html">4: Explore Financing Options</a></li>
+                                                    <li><a href="video5.html">5: Know Your Deadlines</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </section>
+                                </div>
                             </section>
-                            <!-- SECTION End -->
-                        </div>
+                        </section>
+                        <!-- SECTION End -->
+
                         <footer role="contentinfo">
                             <div class="back-to-top"><a href="video3.html" class="btn btn-primary" title="Next view the Determine Additional Expenses video">Next</a></div>
                             <span class="copyrights"><a href="index.html" title="Home page">Home</a>
@@ -256,23 +265,19 @@
         </div>
         <!-- /st-container -->
 
-        <script src="./vendor/jquery-1.10.1.min.js"></script>
-        <script src="./vendor/bootstrap.min.js"></script>
         <script src="./scripts/classie.js"></script>
         <script src="./scripts/sidebarEffects.js"></script>
         <script src="./vendor/waypoints.min.js"></script>
         <script src="./vendor/jquery-scrolltofixed-min.js"></script>
         <script src="./vendor/scrollIt.min.js"></script>
-        <!--<script src="./vendor/jquery.isotope.min.js"></script>-->
-        <script src="./vendor/isotope.pkgd.min.js"></script>
         <script src="./vendor/skrollr.min.js"></script>
         <script src="./vendor/socialcount.min.js"></script>
         <script src="./vendor/socialcount.pinterest.js"></script>
         <script src="./vendor/retina-1.1.0.min.js"></script>
-        <script src="./scripts/main.js"></script>
         <script src="./vendor/jquery-accessibleMegaMenu.js"></script>
+        <script src="./scripts/main.js"></script>
         <script>$("nav:first").accessibleMegaMenu({uuidPrefix:"accessible-megamenu",menuClass:"nav-menu",topNavItemClass:"nav-item",panelClass:"sub-nav",panelGroupClass:"sub-nav-group",hoverClass:"hover",focusClass:"focus",openClass:"open"});</script>
-        <script type="text/javascript">_V_("video_1").ready(function(){var myPlayer=this;var aspectRatio=9/16;function resizeVideoJS(){var width=document.getElementById(myPlayer.id).parentElement.offsetWidth;myPlayer.width(width).height(width*aspectRatio)}resizeVideoJS();window.onresize=resizeVideoJS});
+        <script>_V_("video_1").ready(function(){var myPlayer=this;var aspectRatio=9/16;function resizeVideoJS(){var width=document.getElementById(myPlayer.id).parentElement.offsetWidth;myPlayer.width(width).height(width*aspectRatio)}resizeVideoJS();window.onresize=resizeVideoJS});
         </script>
 
         <div class="modal">

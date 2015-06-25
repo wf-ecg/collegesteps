@@ -10,7 +10,7 @@ require.config({
     paths: {
         src: 'scripts',
         lib: 'scripts/libs',
-        jquery: '/mfal/lib/jquery/1.8.2/jquery',
+        jquery: '/mfal/lib/jquery/1.11.3/jquery',
         lodash: '/mfal/lib/underscore/js-1.4.4/lodash.underscore',
     }
 });
