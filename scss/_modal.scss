@@ -9,9 +9,9 @@
     display: block;
 }
 .modal > div {
-    background-color: #fff;
+    background-color: white;
     border-radius: 3px;
-    box-shadow: 0 3px 24px -4px #000;
+    box-shadow: 0 3px 24px -4px black;
     display: block;
     z-index: 1100;
     /* center */
@@ -70,7 +70,7 @@
     background-color: #5174b8;
     border: 0;
     border-radius: 4px;
-    color: #fff;
+    color: white;
     cursor: pointer;
     display: inline;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5174b8',endColorstr='#244a87',GradientType=0);

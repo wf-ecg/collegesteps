@@ -6,7 +6,7 @@
     -webkit-transition: background 200ms linear;
     background-color: #999;
     bottom: 3px;
-    color: #fff;
+    color: white;
     font-family: "myriad-pro",sans-serif;
     font-size: 12px;
     opacity: .9;
@@ -16,7 +16,7 @@
     transition: background 200ms linear;
 }
 #scrollUp:hover {
-    background-color: #000;
+    background-color: black;
 }
 #scrollUp::after {
     content: "\f102";

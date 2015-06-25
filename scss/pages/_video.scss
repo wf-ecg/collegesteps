@@ -16,7 +16,7 @@
     padding: 0;
 }
 #video-button li {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
     list-style: none;
     list-style-image: none;
     margin: 0;
@@ -40,7 +40,7 @@
     padding-right: 10px;
 }
 #video-button li a:hover {
-    background-color: #fff;
+    background-color: white;
     color: #4b4b4b;
 }
 .note ol {
@@ -69,9 +69,9 @@ footer .back-to-top-v .btn::before {
     padding-right: 10px;
 }
 .vjs-default-skin .vjs-text-track {
-    background: #000;
+    background: black;
     background: rgba(0,0,0,.5);
-    color: #fff;
+    color: white;
     display: none;
     font-size: 1.4em;
     line-height: 1.4em;
@@ -79,8 +79,8 @@ footer .back-to-top-v .btn::before {
     text-align: center;
 }
 .vjs-default-skin .vjs-subtitles {
-    color: #fff;
+    color: white;
 }
 .vjs-default-skin .vjs-captions {
-    color: #fff;
+    color: white;
 }

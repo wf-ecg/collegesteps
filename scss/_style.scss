@@ -1,5 +1,5 @@
 body {
-    background: #fff;
+    background: white;
     font-family: 'Archer SSm A','Archer SSm B',serif;
     font-size: 14px;
 }
@@ -8,7 +8,7 @@ body {
     -moz-opacity: .8;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8);
     background: #b10000;
-    color: #fff;
+    color: white;
     font-size: 40px;
     left: 0;
     opacity: .8;
@@ -22,7 +22,7 @@ body {
     z-index: 99999;
 }
 .upgradeframe h3 {
-    color: #fff;
+    color: white;
     font-family: "myriad-pro",sans-serif;
     font-size: 32px;
     margin-bottom: 10px;
@@ -30,7 +30,7 @@ body {
     text-transform: capitalize;
 }
 .upgradeframe p {
-    color: #fff;
+    color: white;
     font-family: "myriad-pro",sans-serif;
     font-size: 18px;
     line-height: 1.5em;
@@ -38,13 +38,13 @@ body {
     margin-top: 0;
 }
 .upgradeframe a {
-    color: #fff;
+    color: white;
     font-weight: 600;
     text-decoration: none;
     text-decoration: underline;
 }
 .upgradeframe a:hover {
-    color: #000;
+    color: black;
     text-decoration: underline;
 }
 .page-container {
@@ -125,7 +125,7 @@ img {
     padding-top: 20px;
 }
 .line-seperator {
-    background-color: #000;
+    background-color: black;
     clear: both;
     height: 1px;
     margin-bottom: 30px;
@@ -146,20 +146,20 @@ img {
     z-index: 999;
 }
 #navbar.nav-home-top a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 #navbar.nav-home-top a:hover {
     color: #191919;
 }
 #navbar.nav-home-top .active,#navbar.nav-home-top .active:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid white;
 }
 #navbar.nav-fixed-fixed {
     -moz-transition: all .2s;
     -o-transition: all .2s;
     -webkit-transition: all .2s;
-    background: #fff;
+    background: white;
     border-bottom: 1px solid #f2f2f2;
     position: fixed!important;
     top: 0;
@@ -179,7 +179,7 @@ img {
     border-bottom: 2px solid #666;
 }
 #navbar {
-    background: #fff;
+    background: white;
     border-bottom: 1px solid #f2f2f2;
     height: 70px;
     top: 0!important;
@@ -223,13 +223,13 @@ li.nav-item.active a {
     text-transform: uppercase;
 }
 .nav-item>a.open {
-    background-color: #fff;
+    background-color: white;
     border-bottom: 0;
     z-index: 1;
 }
 .sub-nav {
-    background-color: #000;
-    border-top: 1px solid #fff;
+    background-color: black;
+    border-top: 1px solid white;
     display: none;
     margin-left: -20px;
     margin-top: -1px;
@@ -256,7 +256,7 @@ li.nav-item.active a {
     padding: 0;
 }
 .sub-nav li a {
-    color: #fff!important;
+    color: white!important;
     display: block;
     font-family: 'Archer SSm A','Archer SSm B',serif;
     list-style-type: none;
@@ -336,7 +336,7 @@ li.nav-item.active a {
     position: relative;
 }
 #page-loader {
-    background: #fff;
+    background: white;
     height: 100%;
     left: 0;
     position: fixed;
@@ -472,7 +472,7 @@ li.nav-item.active a {
     }
 }
 .squaredTwo {
-    border: 3px solid #fff;
+    border: 3px solid white;
     height: 24px;
     margin-top: 5px;
     position: absolute;
@@ -516,12 +516,12 @@ li.nav-item.active a {
     opacity: 1;
 }
 header {
-    background: #fff;
+    background: white;
 }
 #home {
     background-attachment: fixed!important;
     background-size: cover!important;
-    color: #fff;
+    color: white;
     height: 700px;
     margin: 0 auto;
     position: relative;
@@ -604,7 +604,7 @@ header {
     bottom: -60px;
 }
 #home-slider .flex-control-paging li a.flex-active {
-    background: #fff;
+    background: white;
 }
 .home-slideshow-bg .slides,.home-slideshow-bg li {
     height: 100%;
@@ -620,7 +620,7 @@ header {
     margin-bottom: 100px;
 }
 .section {
-    background: #fff;
+    background: white;
     padding: 50px 0;
     position: relative;
 }
@@ -799,7 +799,7 @@ header {
     z-index: 9;
 }
 .small-header span {
-    background: #fff;
+    background: white;
     padding-right: 10px;
     position: relative;
     z-index: 10;
@@ -862,7 +862,7 @@ header {
     width: 100%;
 }
 #page-header .page-nav .btn-back-home {
-    color: #fff;
+    color: white;
     font: 14px sans-serif;
     text-decoration: none;
 }
@@ -886,10 +886,10 @@ header {
     width: 100%;
 }
 #page-header .page-title .header-desc span,#page-header .page-title h1,#page-header .page-title h2,#page-header .page-title h3,#page-header .page-title h4,#page-header .page-title h5,#page-header .page-title h6 {
-    color: #fff;
+    color: white;
 }
 .page-content {
-    background: url('../img/map-bg.jpg') no-repeat center top #fff 50% -300px;
+    background: url('../img/map-bg.jpg') no-repeat center top white 50% -300px;
 }
 .page-content .section {
     background: 0;
@@ -988,7 +988,7 @@ a.jp-unmute {
 }
 footer {
     background: #191919;
-    color: #fff;
+    color: white;
     padding: 100px 20px;
     position: relative;
     text-align: center;
@@ -1019,7 +1019,7 @@ footer .copyrights {
     max-width: 1000px;
 }
 footer .copyrights a {
-    color: #fff;
+    color: white;
     font-weight: 700;
     padding-left: 10px;
     padding-right: 10px;
@@ -1027,7 +1027,7 @@ footer .copyrights a {
 }
 .social-icons a {
     background: #ccc;
-    color: #fff;
+    color: white;
     display: inline-block;
     height: 35px;
     margin: 0 3px 6px 0;
@@ -1036,7 +1036,7 @@ footer .copyrights a {
     width: 35px;
 }
 .social-icons a:hover {
-    color: #FFF!important;
+    color: white!important;
 }
 .social-icons .fa-facebook:hover {
     background: #3b5998!important;
@@ -1048,7 +1048,7 @@ footer .copyrights a {
     background: #cb2027!important;
 }
 .social-icons .fa-github:hover {
-    background: #000!important;
+    background: black!important;
 }
 .social-icons .fa-linkedin:hover {
     background: #007bb6!important;
@@ -1091,7 +1091,7 @@ footer .copyrights a {
     background: #00a5d9;
     border: 0;
     border-radius: 0;
-    color: #fff;
+    color: white;
     font-family: "myriad-pro",sans-serif;
     font-size: 13px;
     margin-bottom: 3px;
@@ -1100,10 +1100,10 @@ footer .copyrights a {
 }
 .btn.active,.btn.disabled,.btn:active,.btn:focus,.btn:hover,.btn[disabled] {
     background-color: #191919;
-    color: #fff;
+    color: white;
 }
 .btn:focus,.btn:hover {
-    color: #fff;
+    color: white;
     outline: 0;
     text-decoration: none;
 }
@@ -1117,12 +1117,12 @@ footer .copyrights a {
 .btn-primary {
     background-color: #00a5d9;
     border-color: none;
-    color: #fff;
+    color: white;
     text-shadow: none;
 }
 .btn-danger.active,.btn-danger.disabled,.btn-danger:active,.btn-danger:focus,.btn-danger:hover,.btn-danger[disabled],.btn-info.active,.btn-info.disabled,.btn-info:active,.btn-info:focus,.btn-info:hover,.btn-info[disabled],.btn-primary.active,.btn-primary.disabled,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.btn-primary[disabled],.btn-success.active,.btn-success.disabled,.btn-success:active,.btn-success:focus,.btn-success:hover,.btn-success[disabled],.btn-warning.active,.btn-warning.disabled,.btn-warning:active,.btn-warning:focus,.btn-warning:hover,.btn-warning[disabled] {
     background-color: #191919!important;
-    color: #fff;
+    color: white;
 }
 .btn-warning {
     background-color: #faa732!important;
@@ -1164,12 +1164,12 @@ footer .copyrights a {
     background-color: #191919!important;
     background-image: none;
     border-color: none;
-    color: #fff;
+    color: white;
     text-shadow: none;
 }
 .btn-inverse.active,.btn-inverse.disabled,.btn-inverse:active,.btn-inverse:focus,.btn-inverse:hover,.btn-inverse[disabled] {
     background-color: #191919!important;
-    color: #fff;
+    color: white;
 }
 .btn-inverse.active,.btn-inverse:active {
     background-color: #191919 \9!important;
@@ -1216,14 +1216,14 @@ footer .copyrights a {
     cursor: default;
 }
 .section-diff .nav-tabs>li.active>a,.section-diff .nav-tabs>li.active>a:focus,.section-diff .nav-tabs>li.active>a:hover {
-    background-color: #fff;
+    background-color: white;
 }
 .tab-content {
     background-color: #f2f2f2;
     padding: 20px;
 }
 .section-diff .tab-content {
-    background-color: #fff;
+    background-color: white;
 }
 .tab-content p {
     margin: 0;
@@ -1233,7 +1233,7 @@ footer .copyrights a {
     border: 0;
 }
 .section-diff .nav>li>a:focus,.section-diff .nav>li>a:hover {
-    background-color: #fff;
+    background-color: white;
 }
 .panel {
     -moz-box-shadow: none;
@@ -1243,7 +1243,7 @@ footer .copyrights a {
     box-shadow: none;
 }
 .section-diff .panel {
-    background: #fff;
+    background: white;
 }
 .panel-body {
     padding: 20px;
@@ -1269,7 +1269,7 @@ footer .copyrights a {
     color: #191919;
 }
 .section-diff .panel-default>.panel-heading {
-    background: #fff;
+    background: white;
 }
 .panel-default>.panel-heading+.panel-collapse .panel-body {
     border-top: 1px dashed #d9d9d9;
@@ -1288,14 +1288,14 @@ footer .copyrights a {
     margin-bottom: 15px;
 }
 .section-diff .progress {
-    background-color: #fff;
+    background-color: white;
 }
 .progress-bar {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     background-color: #970e76;
     box-shadow: none;
-    color: #fff;
+    color: white;
     font: 13px myriad-pro,sans-serif;
     line-height: 30px;
     padding: 0 10px;
@@ -1305,7 +1305,7 @@ footer .copyrights a {
     -moz-transition: -moz-transform .5s;
     -o-transition: -o-transform .5s;
     -webkit-transition: -webkit-transform .5s;
-    background: #fff;
+    background: white;
     position: relative;
     transition: transform .5s;
 }
@@ -1414,7 +1414,7 @@ footer .copyrights a {
     -moz-transition: all .3s;
     -o-transition: all .3s;
     -webkit-transition: all .3s;
-    color: #fff;
+    color: white;
     display: block;
     font: 14px 'Archer SSm A','Archer SSm B',serif;
     padding: 7px 25px;
@@ -1427,11 +1427,11 @@ footer .copyrights a {
     padding-left: 8px;
 }
 .st-menu ul li a:hover {
-    background: #000;
-    color: #fff;
+    background: black;
+    color: white;
 }
 .st-menu ul li .active {
-    background: #000;
+    background: black;
 }
 .st-menu-logo {
     margin: 40px 25px;
@@ -1488,7 +1488,7 @@ footer .copyrights a {
     background: -o-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
     background: -ms-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
     background: linear-gradient(to right,#c4c4c4 0,#f2f2f2 100%);
-    color: #000;
+    color: black;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4c4c4',endColorstr='#f2f2f2',GradientType=1);
     float: right;
     font: 14px myriad-pro,sans-serif;

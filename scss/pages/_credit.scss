@@ -88,7 +88,7 @@
     background: -o-linear-gradient(left,rgba(105,4,145,1) 0,rgba(72,32,110,1) 100%);
     background: -ms-linear-gradient(left,rgba(105,4,145,1) 0,rgba(72,32,110,1) 100%);
     background: linear-gradient(to right,rgba(105,4,145,1) 0,rgba(72,32,110,1) 100%);
-    color: #FFF;
+    color: white;
     display: none;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#690491',endColorstr='#48206e',GradientType=1);
     font-size: 14px;
@@ -96,12 +96,12 @@
     padding: 20px;
 }
 div.feedback {
-    color: #fff;
+    color: white;
     font-size: 16px;
     font-weight: 800;
 }
 div.feedback div {
-    color: #fff;
+    color: white;
     font-size: 16px;
     font-weight: 500;
     padding-top: 5px;
@@ -109,7 +109,7 @@ div.feedback div {
 .submit {
     background-color: #ff8000;
     border: 0;
-    color: #fff;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: "myriad-pro",sans-serif;
@@ -130,7 +130,7 @@ div.feedback div {
 }
 .submit.disabled,.submit:active,.submit:focus,.submit:hover,.submit[disabled] {
     background-color: #191919!important;
-    color: #fff;
+    color: white;
 }
 .source {
     border-top: solid 1px #60C;
@@ -145,7 +145,7 @@ div.feedback div {
     text-decoration: underline;
 }
 .section-header-c1 h1 {
-    color: #000;
+    color: black;
     font-family: "myriad-pro",sans-serif;
     font-size: 60px;
     font-weight: 300;
@@ -225,7 +225,7 @@ div.feedback div {
     padding: 20px;
 }
 .goingup h3 {
-    color: #fff;
+    color: white;
     font-family: "myriad-pro-condensed",sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -239,7 +239,7 @@ div.feedback div {
     padding: 20px;
 }
 .pad20all4 p {
-    color: #fff;
+    color: white;
     font-family: "myriad-pro-condensed",sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -247,7 +247,7 @@ div.feedback div {
     line-height: 1.5em;
 }
 .pad20all4 p span {
-    color: #fff;
+    color: white;
     text-transform: capitalize;
 }
 .bigpad {
@@ -260,7 +260,7 @@ div.feedback div {
     -o-transform: rotate(-6deg);
     -webkit-box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     -webkit-transform: rotate(-6deg);
-    background-color: #fff;
+    background-color: white;
     border: 5px solid #ae132a;
     box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     color: #ae132a;
@@ -288,7 +288,7 @@ div.feedback div {
     line-height: 1.5em;
 }
 .line-divider {
-    background-color: #000;
+    background-color: black;
     height: 2px;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -340,7 +340,7 @@ div.feedback div {
 }
 .reminderbox {
     background-color: #ab0e7d;
-    color: #fff;
+    color: white;
     font-size: 26px;
     line-height: 1.7em;
     padding: 30px;
@@ -353,7 +353,7 @@ div.feedback div {
     background: -o-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
     background: -ms-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
     background: linear-gradient(to right,#c4c4c4 0,#f2f2f2 100%);
-    color: #000;
+    color: black;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4c4c4',endColorstr='#f2f2f2',GradientType=1);
     float: right;
     font: 14px myriad-pro,sans-serif;
@@ -422,7 +422,7 @@ div.feedback div {
     margin-bottom: 20px;
 }
 .credit5 ul li span {
-    color: #000;
+    color: black;
     font-size: 14px;
     font-weight: 500;
 }
@@ -437,7 +437,7 @@ div.feedback div {
     text-decoration: none;
 }
 .insurance {
-    border: 1px solid #000;
+    border: 1px solid black;
     max-width: 400px;
     padding: 5px;
 }
@@ -496,7 +496,7 @@ div.feedback div {
     z-index: 100;
 }
 .pickup2-overlay h1 {
-    color: #fff!important;
+    color: white!important;
     font-family: "myriad-pro",sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -542,7 +542,7 @@ div.feedback div {
     background: -o-linear-gradient(top,#00a3d8 0,#006991 100%);
     background: -ms-linear-gradient(top,#00a3d8 0,#006991 100%);
     background: linear-gradient(to bottom,#00a3d8 0,#006991 100%);
-    color: #fff;
+    color: white;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a3d8',endColorstr='#006991',GradientType=0);
     font-size: 50px;
     padding: 30px;
