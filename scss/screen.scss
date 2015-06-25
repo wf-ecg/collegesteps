@@ -17,10 +17,11 @@
 @import url('/mfal/lib/fonts/myriad.css');
 @import url('/mfal/lib/fonts/myriad.con.css');
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
-@import "_font-awesome";
+@import "../vendor/bootstrap.min.css";
+@import "../vendor/font-awesome.css";
+@import "../vendor/socialcount.css";
 @import "_lightbox";
 @import "_pill";
-@import "_socialcount";
 @import "_style";
 @import "_modal";
 /*
