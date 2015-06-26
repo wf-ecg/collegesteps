@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/students-leaving-class.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 .credit-box {
     bottom: 150px;
     position: absolute;
@@ -75,10 +81,10 @@
     top: 0;
 }
 .correct {
-    background: url(../img/right.png) right center no-repeat;
+    background: url('../images/right.png') right center no-repeat;
 }
 .wrong {
-    background: url(../img/wrong.png) right center no-repeat;
+    background: url('../images/wrong.png') right center no-repeat;
 }
 .feedback {
     background: rgba(105,4,145,1);
@@ -215,7 +221,7 @@ div.feedback div {
     background-color: #f4922d;
 }
 .goingup {
-    background-image: url(../img/stairs-up-icon.png);
+    background-image: url('../images/stairs-up-icon.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -361,7 +367,7 @@ div.feedback div {
     margin-left: 20%;
 }
 .left-arrow {
-    background-image: url(../img/leftarrow.png);
+    background-image: url('../images/leftarrow.png');
     background-position: left center;
     background-repeat: no-repeat;
     padding: 20px 20px 20px 70px;
@@ -480,7 +486,7 @@ div.feedback div {
     z-index: 99;
 }
 .pickup2-overlay {
-    background-image: url(../img/clock.png);
+    background-image: url('../images/clock.png');
     background-position: left center;
     background-repeat: no-repeat;
     height: 120px;
@@ -692,7 +698,7 @@ div.feedback div {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url(../img/clock.png);
+        background-image: url('../images/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;
@@ -780,7 +786,7 @@ div.feedback div {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url(../img/clock.png);
+        background-image: url('../images/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;

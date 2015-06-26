@@ -217,7 +217,7 @@ ul.fa-ul li {
     text-align: center;
 }
 .money-icon {
-    background-image: url(../img/money-icon.png);
+    background-image: url('../images/money-icon.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 150px 250px;
@@ -342,7 +342,7 @@ ul.fa-ul li {
     text-decoration: underline;
 }
 .green-arrows {
-    background-image: url(../img/arrows-green.png);
+    background-image: url('../images/arrows-green.png');
     background-position: right;
     background-repeat: no-repeat;
     height: 42px;
@@ -370,7 +370,7 @@ ul.fa-ul li {
 }
 @media(min-width:768px) and (max-width:991px) {
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .checklist {
         padding-top: 40px;
@@ -394,7 +394,7 @@ ul.fa-ul li {
         margin-bottom: 20px;
     }
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .teamingup {
         padding-top: 0;
@@ -425,7 +425,7 @@ ul.fa-ul li {
         display: none;
     }
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .teamingup {
         padding-top: 0;

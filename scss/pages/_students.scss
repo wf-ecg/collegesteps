@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/students-taking-a-selfie.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 .section-header-s {
     margin-bottom: 100px;
 }
@@ -379,7 +385,7 @@ h3.graph span {
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     background-color: #2492bc;
-    background-image: url(../img/mouse-icon-bg.png);
+    background-image: url('../images/mouse-icon-bg.png');
     background-repeat: no-repeat;
     border-radius: 15px;
     color: white;
@@ -416,7 +422,7 @@ h3.graph span {
     color: #970e76;
 }
 .collegestudent {
-    background-image: url(../img/college-student.jpg);
+    background-image: url('../images/college-student.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -559,7 +565,7 @@ blockquote.bubble-o p {
     -moz-border-radius-bottomright: 10px;
     -moz-border-radius-topright: 10px;
     -webkit-border-radius: 100px 10px 10px 100px;
-    background-image: url(../img/bubble-question-blue.png);
+    background-image: url('../images/bubble-question-blue.png');
     background-position: left;
     background-repeat: no-repeat;
     border-radius: 100px 10px 10px 100px;
@@ -800,7 +806,7 @@ ol.quiz li {
     padding: 60px;
 }
 .box-4 {
-    background-image: url(../img/graduates-taking-a-selfie.jpg);
+    background-image: url('../images/graduates-taking-a-selfie.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,7 +816,7 @@ ol.quiz li {
     height: 410px;
 }
 .box-11 {
-    background-image: url(../img/student-playing-mobile-game.jpg);
+    background-image: url('../images/student-playing-mobile-game.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -821,7 +827,7 @@ ol.quiz li {
     padding: 70px 60px 0 100px;
 }
 #balloons {
-    background-image: url(../img/balloons-icon.png);
+    background-image: url('../images/balloons-icon.png');
     background-position: 260px 35px;
     background-repeat: no-repeat;
     height: 370px;
@@ -1010,7 +1016,7 @@ ol.quiz li {
     margin-top: 0;
 }
 .arrow-blue-2 {
-    background-image: url(../img/arrow-blue-2.png);
+    background-image: url('../images/arrow-blue-2.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1020,7 +1026,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-3 {
-    background-image: url(../img/arrow-blue-3.png);
+    background-image: url('../images/arrow-blue-3.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1030,7 +1036,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-red-1 {
-    background-image: url(../img/arrow-red-1.png);
+    background-image: url('../images/arrow-red-1.png');
     background-repeat: no-repeat;
     height: 100%;
     position: absolute;
@@ -1040,7 +1046,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-1 {
-    background-image: url(../img/arrow-blue-1.png);
+    background-image: url('../images/arrow-blue-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 100px;
@@ -1050,7 +1056,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-pink-1 {
-    background-image: url(../img/arrow-pink-1.png);
+    background-image: url('../images/arrow-pink-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1060,7 +1066,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-green-1 {
-    background-image: url(../img/arrow-green-1.png);
+    background-image: url('../images/arrow-green-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 520px;
@@ -1070,7 +1076,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-purple-1 {
-    background-image: url(../img/arrow-purple-1.png);
+    background-image: url('../images/arrow-purple-1.png');
     background-repeat: no-repeat;
     bottom: -65px;
     height: 65px;
@@ -1080,7 +1086,7 @@ ol.quiz li {
     z-index: 11;
 }
 .arrow-orange-1 {
-    background-image: url(../img/arrow-orange-1.png);
+    background-image: url('../images/arrow-orange-1.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1255,7 +1261,7 @@ ol.quiz li {
         line-height: 1.3em;
     }
     .arrow-blue-2 {
-        background-image: url(../img/arrow-blue-2.png);
+        background-image: url('../images/arrow-blue-2.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1265,7 +1271,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-blue-3 {
-        background-image: url(../img/arrow-blue-3.png);
+        background-image: url('../images/arrow-blue-3.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1275,7 +1281,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-red-1 {
-        background-image: url(../img/arrow-red-1.png);
+        background-image: url('../images/arrow-red-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 390px;
@@ -1285,7 +1291,7 @@ ol.quiz li {
         z-index: 10;
     }
     arrow-blue-1 {
-        background-image: url(../img/arrow-blue-1.png);
+        background-image: url('../images/arrow-blue-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 100px;
@@ -1295,7 +1301,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-pink-1 {
-        background-image: url(../img/arrow-pink-1.png);
+        background-image: url('../images/arrow-pink-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1305,7 +1311,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-green-1 {
-        background-image: url(../img/arrow-green-1.png);
+        background-image: url('../images/arrow-green-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 520px;
@@ -1315,7 +1321,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-purple-1 {
-        background-image: url(../img/arrow-purple-1.png);
+        background-image: url('../images/arrow-purple-1.png');
         background-repeat: no-repeat;
         bottom: -310px;
         height: 100%;
@@ -1325,7 +1331,7 @@ ol.quiz li {
         z-index: 11;
     }
     .arrow-orange-1 {
-        background-image: url(../img/arrow-orange-1.png);
+        background-image: url('../images/arrow-orange-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
