@@ -2,6 +2,8 @@
 /*globals window, jQuery, $, skrollr */
 
 (function (W, $) {
+    W.debug = 1;
+
     function h() {
         return !!('ontouchstart' in W) || !!('onmsgesturechange' in W);
     }
@@ -204,6 +206,9 @@
         });
     });
 
-    W.debug = 1;
+    $('fieldset').on('click', 'input', function (evt) {
+        $(evt.delegateTarget).find('div').hide('fast');
+        $(evt.target).parent().next().show('fast');
+    });
 
 }(window, jQuery));
