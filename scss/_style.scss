@@ -110,10 +110,32 @@ header {
 .el-gap {
     margin-bottom: 100px;
 }
+
 .section {
     background: white;
     padding: 50px 0;
     position: relative;
+}
+.section-diff {
+    background: #f2f2f2;
+}
+.section-bg-overlay::before {
+    background: rgba(0,0,0,.7);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.section-bg-overlay .container {
+    position: relative;
+}
+.section-bg-overlay .small-header span {
+    background: 0 0!important;
+}
+.section-bg-attached {
+    background-attachment: fixed!important;
+    background-size: cover!important;
 }
 
 .bottom-gap {
