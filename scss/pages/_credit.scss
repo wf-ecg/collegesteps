@@ -260,11 +260,9 @@ div.feedback div {
     margin-top: 150px;
 }
 .section-header-c3 h1 {
-    -moz-box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     -moz-transform: rotate(-6deg);
     -ms-transform: rotate(-6deg);
     -o-transform: rotate(-6deg);
-    -webkit-box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     -webkit-transform: rotate(-6deg);
     background-color: white;
     border: 5px solid #ae132a;
@@ -464,8 +462,6 @@ div.feedback div {
     position: relative;
 }
 .pickup-overlay {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
     background: #2cb34a;
     background: -moz-linear-gradient(top,#2cb34a 26%,#478831 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(26%,#2cb34a),color-stop(100%,#478831));

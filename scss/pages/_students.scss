@@ -382,8 +382,6 @@ h3.graph span {
     width: 180px;
 }
 .mousebox {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
     background-color: #2492bc;
     background-image: url('../images/mouse-icon-bg.png');
     background-repeat: no-repeat;
@@ -429,8 +427,6 @@ h3.graph span {
     height: 780px;
 }
 .bubble-b {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #006893;
     background: -moz-linear-gradient(left,#006893 0,#0097cd 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,#006893),color-stop(100%,#0097cd));
@@ -456,8 +452,6 @@ blockquote.bubble-b p {
     font-style: italic;
 }
 .bubble-p {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #48206e;
     background: -moz-linear-gradient(left,rgba(72,32,110,1) 0,rgba(72,32,110,1) 12%,rgba(106,44,145,1) 79%,rgba(106,44,145,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(72,32,110,1)),color-stop(12%,rgba(72,32,110,1)),color-stop(79%,rgba(106,44,145,1)),color-stop(100%,rgba(106,44,145,1)));
@@ -483,8 +477,6 @@ blockquote.bubble-p p {
     font-family: "myriad-pro",sans-serif;
 }
 .bubble-g {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #2cb34a;
     background: -moz-linear-gradient(left,rgba(44,179,74,1) 0,rgba(44,179,74,1) 12%,rgba(0,148,72,1) 79%,rgba(0,148,72,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(44,179,74,1)),color-stop(12%,rgba(44,179,74,1)),color-stop(79%,rgba(0,148,72,1)),color-stop(100%,rgba(0,148,72,1)));
@@ -510,8 +502,6 @@ blockquote.bubble-g p {
     font-family: "myriad-pro-condensed",sans-serif;
 }
 .bubble-o {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #bc5333;
     background: -moz-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(188,83,51,1)),color-stop(0%,rgba(226,100,31,1)),color-stop(100%,rgba(226,100,31,1)));
@@ -541,10 +531,6 @@ blockquote.bubble-o p {
     text-align: center;
 }
 .bubble-Q {
-    -moz-border-radius: 100px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-radius: 100px 10px 10px 100px;
     background: #006893 no-repeat;
     background: -moz-linear-gradient(left,#006893 0,#0097cd 100%) no-repeat;
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,#006893),color-stop(100%,#0097cd)) no-repeat;
@@ -561,10 +547,6 @@ blockquote.bubble-o p {
     width: 520px;
 }
 .bubble-Q-inner {
-    -moz-border-radius: 100px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-radius: 100px 10px 10px 100px;
     background-image: url('../images/bubble-question-blue.png');
     background-position: left;
     background-repeat: no-repeat;
@@ -660,8 +642,6 @@ ol.quiz li {
     text-decoration: none;
 }
 .bluebox {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
     background: #00a3d8;
     background: -moz-linear-gradient(top,#00a3d8 0,#006991 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#00a3d8),color-stop(100%,#006991));
@@ -722,8 +702,6 @@ ol.quiz li {
     padding-top: 5px;
 }
 .correct {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     background-color: white;
     border-radius: 5px;
     color: #ba0c82;
@@ -1442,8 +1420,6 @@ ol.quiz li {
         padding-left: 22px!important;
     }
     .bubble-Q {
-        -moz-border-radius: 10px!important;
-        -webkit-border-radius: 10px!important;
         border-radius: 10px!important;
         height: auto;
         padding-bottom: 20px;
