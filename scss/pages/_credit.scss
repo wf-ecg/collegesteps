@@ -802,3 +802,53 @@ div.feedback div {
         margin-top: 10px;
     }
 }
+
+
+.section-header-c {
+    margin-bottom: 100px;
+}
+.section-header-c h1 {
+    color: #191919;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+}
+.section-header-c h1 span {
+    position: relative;
+}
+.section-header-c h1 span::after,.section-header-c h1 span::before {
+    border-bottom: 75px solid #00a3d8;
+    content: "";
+    position: absolute;
+    width: 4px;
+}
+.section-header-c h1 span::before {
+    left: -15px;
+}
+.section-header-c h1 span::after {
+    right: -15px;
+}
+.section-header-c h1 span::after,.section-header-c h1 span::before {
+    top: -25px;
+}
+.section-header-c .header-desc::before {
+    border-bottom: 0;
+    content: "";
+}
+@media only screen and (max-width:768px) {
+    .section-header-c h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-c h1 span::after,.section-header-c h1 span::before {
+        top: -50px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .section-header-c h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-c h1 span::after,.section-header-c h1 span::before {
+        top: -50px;
+    }
+}

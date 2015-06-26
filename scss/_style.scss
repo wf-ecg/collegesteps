@@ -562,53 +562,7 @@ header {
     background-attachment: fixed!important;
     background-size: cover!important;
 }
-.section-header {
-    margin-bottom: 100px;
-}
-.section-header h1,.section-header h2,.section-header h3,.section-header h4,.section-header h5,.section-header h6 {
-    color: #191919;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-weight: 800;
-    margin-top: 25px;
-    text-align: center;
-}
-.section-header h1 span,.section-header h2 span,.section-header h3 span,.section-header h4 span,.section-header h5 span,.section-header h6 span {
-    position: relative;
-}
-.section-header h1 span::after,.section-header h1 span::before,.section-header h2 span::after,.section-header h2 span::before,.section-header h3 span::after,.section-header h3 span::before,.section-header h4 span::after,.section-header h4 span::before,.section-header h5 span::after,.section-header h5 span::before,.section-header h6 span::after,.section-header h6 span::before {
-    border-bottom: 75px solid #bb0e82;
-    content: "";
-    position: absolute;
-    width: 4px;
-}
-.section-header h1 span::before,.section-header h2 span::before,.section-header h3 span::before,.section-header h4 span::before,.section-header h5 span::before,.section-header h6 span::before {
-    left: -15px;
-}
-.section-header h1 span::after,.section-header h2 span::after,.section-header h3 span::after,.section-header h4 span::after,.section-header h5 span::after,.section-header h6 span::after {
-    right: -15px;
-}
-.section-header h1 span::after,.section-header h1 span::before {
-    top: -25px;
-}
-.section-header h2 span::after,.section-header h2 span::before {
-    top: 18px;
-}
-.section-header h3 span::after,.section-header h3 span::before {
-    top: 14px;
-}
-.section-header h4 span::after,.section-header h4 span::before {
-    top: 12px;
-}
-.section-header h5 span::after,.section-header h5 span::before {
-    top: 10px;
-}
-.section-header h6 span::after,.section-header h6 span::before {
-    top: 8.5px;
-}
-.section-header .header-desc::before {
-    border-bottom: 0;
-    content: "";
-}
+
 .header-desc span {
     color: #666;
     display: block;
@@ -636,70 +590,8 @@ header {
     margin: 0;
     text-align: left;
 }
-.section-header-c {
-    margin-bottom: 100px;
-}
-.section-header-c h1 {
-    color: #191919;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-weight: 700;
-    margin-top: 25px;
-    text-align: center;
-}
-.section-header-c h1 span {
-    position: relative;
-}
-.section-header-c h1 span::after,.section-header-c h1 span::before {
-    border-bottom: 75px solid #00a3d8;
-    content: "";
-    position: absolute;
-    width: 4px;
-}
-.section-header-c h1 span::before {
-    left: -15px;
-}
-.section-header-c h1 span::after {
-    right: -15px;
-}
-.section-header-c h1 span::after,.section-header-c h1 span::before {
-    top: -25px;
-}
-.section-header-c .header-desc::before {
-    border-bottom: 0;
-    content: "";
-}
-.section-header-p {
-    margin-bottom: 50px;
-}
-.section-header-p h1 {
-    color: #191919;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-weight: 700;
-    margin-top: 25px;
-    text-align: center;
-}
-.section-header-p h1 span {
-    position: relative;
-}
-.section-header-p h1 span::after,.section-header-p h1 span::before {
-    border-bottom: 75px solid #6a2c9c;
-    content: "";
-    position: absolute;
-    width: 4px;
-}
-.section-header-p h1 span::before {
-    left: -15px;
-}
-.section-header-p h1 span::after {
-    right: -15px;
-}
-.section-header-p h1 span::after,.section-header-p h1 span::before {
-    top: -25px;
-}
-.section-header-p .header-desc::before {
-    border-bottom: 0;
-    content: "";
-}
+
+
 .small-header {
     color: #191919;
     font: 18px 'Archer SSm A','Archer SSm B',serif;
@@ -1485,24 +1377,6 @@ footer .copyrights a {
     .goto-blog .btn,.portfolio-item {
         width: 50%;
     }
-    .section-header h1 span,.section-header h2 span,.section-header h3 span,.section-header h4 span,.section-header h5 span,.section-header h6 span {
-        font-size: 18px!important;
-    }
-    .section-header h1 span::after,.section-header h1 span::before {
-        top: -50px;
-    }
-    .section-header-p h1 span {
-        font-size: 18px!important;
-    }
-    .section-header-p h1 span::after,.section-header-p h1 span::before {
-        top: -50px;
-    }
-    .section-header-c h1 span {
-        font-size: 18px!important;
-    }
-    .section-header-c h1 span::after,.section-header-c h1 span::before {
-        top: -50px;
-    }
     .idea {
         display: none;
     }
@@ -1551,24 +1425,6 @@ footer .copyrights a {
     }
     .executive-info {
         padding-left: 0!important;
-    }
-    .section-header h1 span,.section-header h2 span,.section-header h3 span,.section-header h4 span,.section-header h5 span,.section-header h6 span {
-        font-size: 18px!important;
-    }
-    .section-header h1 span::after,.section-header h1 span::before {
-        top: -50px;
-    }
-    .section-header-p h1 span {
-        font-size: 18px!important;
-    }
-    .section-header-p h1 span::after,.section-header-p h1 span::before {
-        top: -50px;
-    }
-    .section-header-c h1 span {
-        font-size: 18px!important;
-    }
-    .section-header-c h1 span::after,.section-header-c h1 span::before {
-        top: -50px;
     }
     .learnmore-box-3 h3 {
         margin-bottom: 10px!important;
