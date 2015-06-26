@@ -472,50 +472,6 @@ li.nav-item.active a {
         transform: scale(1);
     }
 }
-.squaredTwo {
-    border: 3px solid white;
-    height: 24px;
-    margin-top: 5px;
-    position: absolute;
-    width: 24px;
-}
-.squaredTwo label {
-    cursor: pointer;
-    height: 18px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 18px;
-}
-.squaredTwo label:after {
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    background: 0;
-    border: 3px solid #fcfff4;
-    border-right: 0;
-    border-top: 0;
-    content: '';
-    filter: alpha(Opacity=0);
-    height: 5px;
-    left: 3px;
-    opacity: 0;
-    position: absolute;
-    top: 3px;
-    transform: rotate(-45deg);
-    width: 9px;
-}
-.squaredTwo label:hover::after {
-    filter: alpha(Opacity=30);
-    opacity: .3;
-}
-.squaredTwo input[type=checkbox] {
-    visibility: hidden;
-}
-.squaredTwo input[type=checkbox]:checked+label:after {
-    filter: alpha(enabled=false);
-    opacity: 1;
-}
 header {
     background: white;
 }
