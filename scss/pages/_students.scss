@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/students-taking-a-selfie.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 .section-header-s {
     margin-bottom: 100px;
 }
@@ -376,10 +382,8 @@ h3.graph span {
     width: 180px;
 }
 .mousebox {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
     background-color: #2492bc;
-    background-image: url(../img/mouse-icon-bg.png);
+    background-image: url('../images/mouse-icon-bg.png');
     background-repeat: no-repeat;
     border-radius: 15px;
     color: white;
@@ -416,15 +420,13 @@ h3.graph span {
     color: #970e76;
 }
 .collegestudent {
-    background-image: url(../img/college-student.jpg);
+    background-image: url('../images/college-student.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 780px;
 }
 .bubble-b {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #006893;
     background: -moz-linear-gradient(left,#006893 0,#0097cd 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,#006893),color-stop(100%,#0097cd));
@@ -450,8 +452,6 @@ blockquote.bubble-b p {
     font-style: italic;
 }
 .bubble-p {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #48206e;
     background: -moz-linear-gradient(left,rgba(72,32,110,1) 0,rgba(72,32,110,1) 12%,rgba(106,44,145,1) 79%,rgba(106,44,145,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(72,32,110,1)),color-stop(12%,rgba(72,32,110,1)),color-stop(79%,rgba(106,44,145,1)),color-stop(100%,rgba(106,44,145,1)));
@@ -477,8 +477,6 @@ blockquote.bubble-p p {
     font-family: "myriad-pro",sans-serif;
 }
 .bubble-g {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #2cb34a;
     background: -moz-linear-gradient(left,rgba(44,179,74,1) 0,rgba(44,179,74,1) 12%,rgba(0,148,72,1) 79%,rgba(0,148,72,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(44,179,74,1)),color-stop(12%,rgba(44,179,74,1)),color-stop(79%,rgba(0,148,72,1)),color-stop(100%,rgba(0,148,72,1)));
@@ -504,8 +502,6 @@ blockquote.bubble-g p {
     font-family: "myriad-pro-condensed",sans-serif;
 }
 .bubble-o {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     background: #bc5333;
     background: -moz-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(188,83,51,1)),color-stop(0%,rgba(226,100,31,1)),color-stop(100%,rgba(226,100,31,1)));
@@ -535,10 +531,6 @@ blockquote.bubble-o p {
     text-align: center;
 }
 .bubble-Q {
-    -moz-border-radius: 100px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-radius: 100px 10px 10px 100px;
     background: #006893 no-repeat;
     background: -moz-linear-gradient(left,#006893 0,#0097cd 100%) no-repeat;
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,#006893),color-stop(100%,#0097cd)) no-repeat;
@@ -555,11 +547,7 @@ blockquote.bubble-o p {
     width: 520px;
 }
 .bubble-Q-inner {
-    -moz-border-radius: 100px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-topright: 10px;
-    -webkit-border-radius: 100px 10px 10px 100px;
-    background-image: url(../img/bubble-question-blue.png);
+    background-image: url('../images/bubble-question-blue.png');
     background-position: left;
     background-repeat: no-repeat;
     border-radius: 100px 10px 10px 100px;
@@ -604,12 +592,22 @@ legend {
     font-weight: 600;
     line-height: inherit;
     margin-bottom: 10px;
-    padding: 0;
+    padding-left: 20px;
+    text-indent: -20px;
     width: 100%;
 }
 label {
+    display: block;
     font-weight: 400;
-    padding-left: 20px;
+    padding-left: 40px;
+    text-indent: -20px;
+}
+fieldset {
+    margin-bottom: 1em;
+    padding-right: 1em;
+}
+fieldset input {
+    margin-right: 3px;
 }
 h2.answers {
     font-family: "myriad-pro-condensed",sans-serif;
@@ -654,8 +652,6 @@ ol.quiz li {
     text-decoration: none;
 }
 .bluebox {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
     background: #00a3d8;
     background: -moz-linear-gradient(top,#00a3d8 0,#006991 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#00a3d8),color-stop(100%,#006991));
@@ -704,11 +700,9 @@ ol.quiz li {
     font-size: 12px;
     font-style: italic;
 }
-#div1,#div10,#div11,#div12,#div13,#div14,#div15,#div16,#div17,#div18,#div19,#div2,#div20,#div21,#div22,#div23,#div24,#div25,#div26,#div27,#div28,#div29,#div3,#div30,#div31,#div32,#div33,#div34,#div35,#div36,#div37,#div38,#div39,#div4,#div40,#div5,#div6,#div7,#div8,#div9 {
-    display: none;
-}
 .wrong {
     color: #ff9930;
+    display: none;
     font-weight: 700;
     margin-left: 20px;
     padding-bottom: 5px;
@@ -716,11 +710,10 @@ ol.quiz li {
     padding-top: 5px;
 }
 .correct {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     background-color: white;
     border-radius: 5px;
     color: #ba0c82;
+    display: none;
     font-weight: 700;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -800,7 +793,7 @@ ol.quiz li {
     padding: 60px;
 }
 .box-4 {
-    background-image: url(../img/graduates-taking-a-selfie.jpg);
+    background-image: url('../images/graduates-taking-a-selfie.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,7 +803,7 @@ ol.quiz li {
     height: 410px;
 }
 .box-11 {
-    background-image: url(../img/student-playing-mobile-game.jpg);
+    background-image: url('../images/student-playing-mobile-game.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -821,7 +814,7 @@ ol.quiz li {
     padding: 70px 60px 0 100px;
 }
 #balloons {
-    background-image: url(../img/balloons-icon.png);
+    background-image: url('../images/balloons-icon.png');
     background-position: 260px 35px;
     background-repeat: no-repeat;
     height: 370px;
@@ -1010,7 +1003,7 @@ ol.quiz li {
     margin-top: 0;
 }
 .arrow-blue-2 {
-    background-image: url(../img/arrow-blue-2.png);
+    background-image: url('../images/arrow-blue-2.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1020,7 +1013,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-3 {
-    background-image: url(../img/arrow-blue-3.png);
+    background-image: url('../images/arrow-blue-3.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1030,7 +1023,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-red-1 {
-    background-image: url(../img/arrow-red-1.png);
+    background-image: url('../images/arrow-red-1.png');
     background-repeat: no-repeat;
     height: 100%;
     position: absolute;
@@ -1040,7 +1033,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-1 {
-    background-image: url(../img/arrow-blue-1.png);
+    background-image: url('../images/arrow-blue-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 100px;
@@ -1050,7 +1043,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-pink-1 {
-    background-image: url(../img/arrow-pink-1.png);
+    background-image: url('../images/arrow-pink-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1060,7 +1053,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-green-1 {
-    background-image: url(../img/arrow-green-1.png);
+    background-image: url('../images/arrow-green-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 520px;
@@ -1070,7 +1063,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-purple-1 {
-    background-image: url(../img/arrow-purple-1.png);
+    background-image: url('../images/arrow-purple-1.png');
     background-repeat: no-repeat;
     bottom: -65px;
     height: 65px;
@@ -1080,7 +1073,7 @@ ol.quiz li {
     z-index: 11;
 }
 .arrow-orange-1 {
-    background-image: url(../img/arrow-orange-1.png);
+    background-image: url('../images/arrow-orange-1.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1095,6 +1088,7 @@ ol.quiz li {
     margin-top: 5px;
     position: absolute;
     width: 24px;
+    z-index: 11;
 }
 .squaredTwo label {
     cursor: pointer;
@@ -1255,7 +1249,7 @@ ol.quiz li {
         line-height: 1.3em;
     }
     .arrow-blue-2 {
-        background-image: url(../img/arrow-blue-2.png);
+        background-image: url('../images/arrow-blue-2.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1265,7 +1259,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-blue-3 {
-        background-image: url(../img/arrow-blue-3.png);
+        background-image: url('../images/arrow-blue-3.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1275,7 +1269,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-red-1 {
-        background-image: url(../img/arrow-red-1.png);
+        background-image: url('../images/arrow-red-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 390px;
@@ -1285,7 +1279,7 @@ ol.quiz li {
         z-index: 10;
     }
     arrow-blue-1 {
-        background-image: url(../img/arrow-blue-1.png);
+        background-image: url('../images/arrow-blue-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 100px;
@@ -1295,7 +1289,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-pink-1 {
-        background-image: url(../img/arrow-pink-1.png);
+        background-image: url('../images/arrow-pink-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1305,7 +1299,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-green-1 {
-        background-image: url(../img/arrow-green-1.png);
+        background-image: url('../images/arrow-green-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 520px;
@@ -1315,7 +1309,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-purple-1 {
-        background-image: url(../img/arrow-purple-1.png);
+        background-image: url('../images/arrow-purple-1.png');
         background-repeat: no-repeat;
         bottom: -310px;
         height: 100%;
@@ -1325,7 +1319,7 @@ ol.quiz li {
         z-index: 11;
     }
     .arrow-orange-1 {
-        background-image: url(../img/arrow-orange-1.png);
+        background-image: url('../images/arrow-orange-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1436,8 +1430,6 @@ ol.quiz li {
         padding-left: 22px!important;
     }
     .bubble-Q {
-        -moz-border-radius: 10px!important;
-        -webkit-border-radius: 10px!important;
         border-radius: 10px!important;
         height: auto;
         padding-bottom: 20px;

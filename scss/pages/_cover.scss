@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/cover.jpg') center 218px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 #logoBox {
     float: left;
     padding-left: 60px;
@@ -54,8 +60,6 @@
     position: relative;
 }
 .welcome-overlay {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
     background: #00a5d9;
     background: -moz-linear-gradient(top,#00a5d9 0,#006991 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#00a5d9),color-stop(100%,#006991));
@@ -233,18 +237,8 @@
     .comment-container .avatar img {
         width: 45px;
     }
-    #page-header .page-title h1 span::after,#page-header .page-title h2 span::after,#page-header .page-title h3 span::after,#page-header .page-title h4 span::after,#page-header .page-title h5 span::after,#page-header .page-title h6 span::after {
-        border: 0;
-    }
-    #page-header .header-desc span {
-        width: 100%;
-    }
     .bottom-gap,.resp-no-gap {
         margin-bottom: 0;
-    }
-    .home-text .big-text {
-        font-size: 80px;
-        line-height: 66.66667px;
     }
     .trigger-fixed {
         position: absolute!important;
@@ -320,13 +314,7 @@
     .goto-blog .btn {
         width: 50%;
     }
-    .home-text .big-text {
-        font-size: 60px;
-        line-height: 50px;
-    }
     .welcome-overlay {
-        -moz-border-radius: 0!important;
-        -webkit-border-radius: 0!important;
         border-radius: 0!important;
         height: 90px;
         margin-left: 0!important;
@@ -382,8 +370,6 @@
         text-align: center;
     }
     .welcome-overlay {
-        -moz-border-radius: 0!important;
-        -webkit-border-radius: 0!important;
         border-radius: 0!important;
         height: 90px;
         margin-left: 0!important;

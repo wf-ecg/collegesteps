@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/students-leaving-class.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 .credit-box {
     bottom: 150px;
     position: absolute;
@@ -75,10 +81,10 @@
     top: 0;
 }
 .correct {
-    background: url(../img/right.png) right center no-repeat;
+    background: url('../images/right.png') right center no-repeat;
 }
 .wrong {
-    background: url(../img/wrong.png) right center no-repeat;
+    background: url('../images/wrong.png') right center no-repeat;
 }
 .feedback {
     background: rgba(105,4,145,1);
@@ -215,7 +221,7 @@ div.feedback div {
     background-color: #f4922d;
 }
 .goingup {
-    background-image: url(../img/stairs-up-icon.png);
+    background-image: url('../images/stairs-up-icon.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -254,11 +260,9 @@ div.feedback div {
     margin-top: 150px;
 }
 .section-header-c3 h1 {
-    -moz-box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     -moz-transform: rotate(-6deg);
     -ms-transform: rotate(-6deg);
     -o-transform: rotate(-6deg);
-    -webkit-box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
     -webkit-transform: rotate(-6deg);
     background-color: white;
     border: 5px solid #ae132a;
@@ -361,7 +365,7 @@ div.feedback div {
     margin-left: 20%;
 }
 .left-arrow {
-    background-image: url(../img/leftarrow.png);
+    background-image: url('../images/leftarrow.png');
     background-position: left center;
     background-repeat: no-repeat;
     padding: 20px 20px 20px 70px;
@@ -458,8 +462,6 @@ div.feedback div {
     position: relative;
 }
 .pickup-overlay {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
     background: #2cb34a;
     background: -moz-linear-gradient(top,#2cb34a 26%,#478831 100%);
     background: -webkit-gradient(linear,left top,left bottom,color-stop(26%,#2cb34a),color-stop(100%,#478831));
@@ -480,7 +482,7 @@ div.feedback div {
     z-index: 99;
 }
 .pickup2-overlay {
-    background-image: url(../img/clock.png);
+    background-image: url('../images/clock.png');
     background-position: left center;
     background-repeat: no-repeat;
     height: 120px;
@@ -692,7 +694,7 @@ div.feedback div {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url(../img/clock.png);
+        background-image: url('../images/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;
@@ -780,7 +782,7 @@ div.feedback div {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url(../img/clock.png);
+        background-image: url('../images/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;
@@ -798,5 +800,55 @@ div.feedback div {
         margin-bottom: 20px;
         margin-right: 0;
         margin-top: 10px;
+    }
+}
+
+
+.section-header-c {
+    margin-bottom: 100px;
+}
+.section-header-c h1 {
+    color: #191919;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+}
+.section-header-c h1 span {
+    position: relative;
+}
+.section-header-c h1 span::after,.section-header-c h1 span::before {
+    border-bottom: 75px solid #00a3d8;
+    content: "";
+    position: absolute;
+    width: 4px;
+}
+.section-header-c h1 span::before {
+    left: -15px;
+}
+.section-header-c h1 span::after {
+    right: -15px;
+}
+.section-header-c h1 span::after,.section-header-c h1 span::before {
+    top: -25px;
+}
+.section-header-c .header-desc::before {
+    border-bottom: 0;
+    content: "";
+}
+@media only screen and (max-width:768px) {
+    .section-header-c h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-c h1 span::after,.section-header-c h1 span::before {
+        top: -50px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .section-header-c h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-c h1 span::after,.section-header-c h1 span::before {
+        top: -50px;
     }
 }

@@ -13,26 +13,22 @@
 */
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
 /* CORE / define */
-@import url('/mfal/lib/fonts/archer.ssm.css');
-@import url('/mfal/lib/fonts/myriad.css');
-@import url('/mfal/lib/fonts/myriad.con.css');
-@import "/lib/bootstrap/3.2.0/bootstrap.min.css";
-@import "/lib/font-awesome/4.3.0/css/font-awesome.min.css";
-@import "../vendor/socialcount.css";
+@import url('/lib/fonts/archer.ssm.css'); @import url('/lib/fonts/myriad.css'); @import url('/lib/fonts/myriad.con.css');
+@import url('/lib/bootstrap/3.2.0/bootstrap.min.css');
+@import url('/lib/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('../vendor/socialcount/socialcount-with-icons.css');
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
 @import "pages/_all";
+@import "_ani";
+@import "_base";
+@import "_btn";
+@import "_header";
+@import "_jp";
+@import "_nav";
 @import "_pill";
 @import "_style";
 @import "_modal";
-/*
-@import "cover.css";
-@import "credit.css";
-@import "parents.css";
-@import "students.css";
-@import "videos.css";
-*/
-
-// html:not(.lt-ie9){ .gradient { filter: none !important; } }
 
 /*@import "_misc";*/
+
 /* >^º!º^< */

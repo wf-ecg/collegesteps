@@ -1,3 +1,9 @@
+.home-bg-container {
+    background: url('../images/father-and-son-discussing-student-loans.jpg') center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
 .parent-box {
     bottom: 150px;
     position: absolute;
@@ -66,8 +72,6 @@ h1.light {
     padding-bottom: 10px;
 }
 .college-financing {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
     background-color: #41b85a;
     border-radius: 20px;
     padding: 15px;
@@ -217,7 +221,7 @@ ul.fa-ul li {
     text-align: center;
 }
 .money-icon {
-    background-image: url(../img/money-icon.png);
+    background-image: url('../images/money-icon.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 150px 250px;
@@ -342,7 +346,7 @@ ul.fa-ul li {
     text-decoration: underline;
 }
 .green-arrows {
-    background-image: url(../img/arrows-green.png);
+    background-image: url('../images/arrows-green.png');
     background-position: right;
     background-repeat: no-repeat;
     height: 42px;
@@ -370,7 +374,7 @@ ul.fa-ul li {
 }
 @media(min-width:768px) and (max-width:991px) {
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .checklist {
         padding-top: 40px;
@@ -394,7 +398,7 @@ ul.fa-ul li {
         margin-bottom: 20px;
     }
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .teamingup {
         padding-top: 0;
@@ -425,7 +429,7 @@ ul.fa-ul li {
         display: none;
     }
     .green-arrows {
-        background-image: url(../img/arrows-green-down.png);
+        background-image: url('../images/arrows-green-down.png');
     }
     .teamingup {
         padding-top: 0;
@@ -433,5 +437,55 @@ ul.fa-ul li {
     .section-header-p1 h1 {
         font-size: 40px!important;
         text-align: center;
+    }
+}
+
+
+.section-header-p {
+    margin-bottom: 50px;
+}
+.section-header-p h1 {
+    color: #191919;
+    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: center;
+}
+.section-header-p h1 span {
+    position: relative;
+}
+.section-header-p h1 span::after,.section-header-p h1 span::before {
+    border-bottom: 75px solid #6a2c9c;
+    content: "";
+    position: absolute;
+    width: 4px;
+}
+.section-header-p h1 span::before {
+    left: -15px;
+}
+.section-header-p h1 span::after {
+    right: -15px;
+}
+.section-header-p h1 span::after,.section-header-p h1 span::before {
+    top: -25px;
+}
+.section-header-p .header-desc::before {
+    border-bottom: 0;
+    content: "";
+}
+@media only screen and (max-width:768px) {
+    .section-header-p h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-p h1 span::after,.section-header-p h1 span::before {
+        top: -50px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .section-header-p h1 span {
+        font-size: 18px!important;
+    }
+    .section-header-p h1 span::after,.section-header-p h1 span::before {
+        top: -50px;
     }
 }
