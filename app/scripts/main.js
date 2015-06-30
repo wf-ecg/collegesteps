@@ -208,7 +208,20 @@
             focusClass: 'focus',
             openClass: 'open',
         });
-    });
 
+        if (W._V_) _V_('video_1').ready(function () {
+            var myPlayer = this;
+            var aspectRatio = 9 / 16;
+
+            function resizeVideoJS() {
+                var width = W.document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                myPlayer.width(width).height(width * aspectRatio);
+            }
+
+            resizeVideoJS();
+            W.onresize = resizeVideoJS;
+        });
+
+    });
 
 }(window, jQuery));
