@@ -1,4 +1,4 @@
-/*jslint white:false */
+/*jslint white:false, evil:true */
 /*globals window, jQuery, $, skrollr */
 
 document.writeln('<script src="./scripts/modal.js"><\/script>');
