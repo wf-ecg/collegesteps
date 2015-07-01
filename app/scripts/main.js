@@ -1,6 +1,17 @@
 /*jslint white:false */
 /*globals window, jQuery, $, skrollr */
 
+document.writeln('<script src="./scripts/modal.js"><\/script>');
+document.writeln('<script src="./scripts/classie.js"><\/script>');
+document.writeln('<script src="./scripts/sidebarEffects.js"><\/script>');
+document.writeln('<script src="./vendor/waypoints.min.js"><\/script>');
+document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>');
+document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
+document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
+document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
+document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
+document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
+
 (function (W, $) {
     W.debug = 1;
 
