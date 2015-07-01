@@ -107,3 +107,18 @@
     color: #666!important;
     text-decoration: underline;
 }
+
+.sidesocial {
+    height: 33px;
+    width: 33px;
+
+    &:hover {
+        background: #777;
+    }
+    a {
+        height: 100%;
+    }
+    .social-icon {
+        vertical-align: -webkit-baseline-middle;
+    }
+}

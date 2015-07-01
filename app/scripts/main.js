@@ -1,5 +1,17 @@
-/*jslint white:false */
+/*jslint white:false, evil:true */
 /*globals window, jQuery, $, skrollr */
+
+document.writeln('<script src="./scripts/modal.js"><\/script>');
+document.writeln('<script src="./scripts/classie.js"><\/script>');
+document.writeln('<script src="./scripts/sidebarEffects.js"><\/script>');
+document.writeln('<script src="./vendor/waypoints.min.js"><\/script>');
+document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>');
+document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
+document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
+document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
+document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
+document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
+document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 (function (W, $) {
     W.debug = 1;
@@ -8,6 +20,7 @@
         return this.attr(attr) !== undefined;
     };
 
+    var Skrollr = W.skrollr;
     var navbar = $('#navbar');
 
     function navsize1() {
@@ -183,7 +196,7 @@
         quizzer();
 
         if (!Boolean('ontouchstart' in W || 'onmsgesturechange' in W)) {
-            skrollr.init();
+            if (Skrollr) Skrollr.init();
         }
 
         $(W).load(function () {
@@ -197,7 +210,33 @@
         if ($.scrollUp) $.scrollUp({
             animation: 'fade',
         });
+
+        $('nav:first').accessibleMegaMenu({
+            uuidPrefix: 'accessible-megamenu',
+            menuClass: 'nav-menu',
+            topNavItemClass: 'nav-item',
+            panelClass: 'sub-nav',
+            panelGroupClass: 'sub-nav-group',
+            hoverClass: 'hover',
+            focusClass: 'focus',
+            openClass: 'open',
+        });
+
+        if (W._V_) _V_('video_1').ready(function () {
+            var myPlayer = this;
+            var aspectRatio = 9 / 16;
+            var resizeVideoJS = function () {
+                var width = W.document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                myPlayer.width(width).height(width * aspectRatio);
+            };
+
+            resizeVideoJS();
+            W.onresize = resizeVideoJS;
+        });
+
     });
 
-
 }(window, jQuery));
+
+// document.writeln('<script src="./scripts/libs/ecg-beacon.js"><\/script>');
+document.writeln('<script src="http://localhost:7200/livereload.js?snipver=1"><\/script>');

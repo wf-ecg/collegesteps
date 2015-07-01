@@ -37,13 +37,6 @@ looose gol bals
     "respond"
     "yepnope"
 
-// quiz
-    "checkQuiz"
-    "getData"
-    "imgpath"
-    "jsonfile"
-    "jsonpath"
-
 // retina
     "Retina"
     "RetinaImage"
