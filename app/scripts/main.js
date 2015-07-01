@@ -19,6 +19,7 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
         return this.attr(attr) !== undefined;
     };
 
+    var Skrollr = W.skrollr;
     var navbar = $('#navbar');
 
     function navsize1() {
@@ -194,7 +195,7 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
         quizzer();
 
         if (!Boolean('ontouchstart' in W || 'onmsgesturechange' in W)) {
-            skrollr.init();
+            if (Skrollr) Skrollr.init();
         }
 
         $(W).load(function () {
@@ -223,11 +224,10 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
         if (W._V_) _V_('video_1').ready(function () {
             var myPlayer = this;
             var aspectRatio = 9 / 16;
-
-            function resizeVideoJS() {
+            var resizeVideoJS = function () {
                 var width = W.document.getElementById(myPlayer.id).parentElement.offsetWidth;
                 myPlayer.width(width).height(width * aspectRatio);
-            }
+            };
 
             resizeVideoJS();
             W.onresize = resizeVideoJS;
