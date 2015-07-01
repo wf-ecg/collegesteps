@@ -11,6 +11,7 @@ document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
 document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
 document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
+document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 (function (W, $) {
     W.debug = 1;
@@ -236,3 +237,6 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
     });
 
 }(window, jQuery));
+
+// document.writeln('<script src="./scripts/libs/ecg-beacon.js"><\/script>');
+document.writeln('<script src="http://localhost:7200/livereload.js?snipver=1"><\/script>');
