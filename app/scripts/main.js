@@ -22,6 +22,20 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
     var Skrollr = W.skrollr;
     var navbar = $('#navbar');
+    var Cache = $('<div>');
+
+    Cache.load('_parts.html', function () {
+        usurp('#page-loader');
+        usurp('#navbar');
+        usurp('.copyrights');
+    });
+
+    function usurp(sel) {
+        var self = $(sel);
+        var fill = Cache.find(sel);
+
+        self.append(fill.children());
+    }
 
     function navsize1() {
         var winh = $(W).height();
