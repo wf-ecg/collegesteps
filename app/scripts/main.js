@@ -259,10 +259,9 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
             W.location = this.href;
         });
 
-        navi.addClass('active').attr('data-scroll-nav', 0) //
+        navi.addClass('active') //
         .find('a').first().attr('href', '#') //
-        ;
-        console.log(navi);
+        .attr('data-scroll-nav', 0);
     }
 
     $(function init() {
