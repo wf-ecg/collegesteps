@@ -186,19 +186,13 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         });
     }
 
-    $(function init() {
-        navsize1();
-        navTrig();
-        navClick();
-        trifEff();
-        faders();
-        navsize2();
-        quizzer();
-
+    function drSkroll() {
         if (!Boolean('ontouchstart' in W || 'onmsgesturechange' in W)) {
             if (Skrollr) Skrollr.init();
         }
+    }
 
+    function drEtc() {
         $(W).load(function () {
             $('.loader').delay(300).fadeOut();
             $('#page-loader').delay(500).fadeOut('slow');
@@ -221,7 +215,9 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
             focusClass: 'focus',
             openClass: 'open',
         });
+    }
 
+    function drVid() {
         if (W._V_) _V_('video_1').ready(function () {
             var myPlayer = this;
             var aspectRatio = 9 / 16;
@@ -233,7 +229,19 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
             resizeVideoJS();
             W.onresize = resizeVideoJS;
         });
+    }
 
+    $(function init() {
+        navsize1();
+        navTrig();
+        navClick();
+        trifEff();
+        faders();
+        navsize2();
+        quizzer();
+        drSkroll();
+        drEtc();
+        drVid();
     });
 
 }(window, jQuery));
