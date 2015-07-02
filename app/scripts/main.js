@@ -28,6 +28,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         usurp('#page-loader');
         usurp('#navbar');
         usurp('#stickyBar');
+        usurp('#menu-4');
         usurp('.copyrights');
     });
 
@@ -247,12 +248,13 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     }
 
     function drSetnav() {
-        var navb, navi = W.navi;
+        if (!W.navi) return;
 
-        if (!navi) return;
+        var navb, navi, navs, i = W.navi - 1;
 
         navb = $('#navbar');
-        navi = navb.find('.nav-item').eq(navi - 1);
+        navi = navb.find('.nav-item').eq(i);
+        navs = $('#menu-4');
 
         navb.find('.nav-item').not(navi) //
         .find('.sub-nav-group a').attr('data-scroll-nav', -1) //
@@ -263,6 +265,11 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         navi.addClass('active') //
         .find('a').first().attr('href', '#') //
         .attr('data-scroll-nav', 0);
+
+        navs.find('a').eq(i) //
+        .attr('data-scroll-nav', 0) //
+        .attr('href', '#') //
+        .addClass('active');
     }
 
     $(function init() {
