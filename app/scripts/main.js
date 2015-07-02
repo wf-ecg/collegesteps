@@ -27,6 +27,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     Cache.load('_parts.html', function () {
         usurp('#page-loader');
         usurp('#navbar');
+        usurp('#stickyBar');
         usurp('.copyrights');
     });
 
