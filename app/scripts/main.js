@@ -231,6 +231,26 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         });
     }
 
+    function drSetnav() {
+        var navb, navi = W.navi;
+
+        if (!navi) return;
+
+        navb = $('#navbar');
+        navi = navb.find('.nav-item').eq(navi - 1);
+
+        navb.find('.nav-item').not(navi) //
+        .find('.sub-nav-group a').attr('data-scroll-nav', -1) //
+        .mouseup(function () {
+            W.location = this.href;
+        });
+
+        navi.addClass('active').attr('data-scroll-nav', 0) //
+        .find('a').first().attr('href', '#') //
+        ;
+        console.log(navi);
+    }
+
     $(function init() {
         navsize1();
         navTrig();
@@ -242,6 +262,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         drSkroll();
         drEtc();
         drVid();
+        drSetnav();
     });
 
 }(window, jQuery));
