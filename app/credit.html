@@ -16,6 +16,7 @@
         <script src="http://code.jquery.com/jquery-migrate-git.js"></script>
         <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="./scripts/xhr.js"></script>
     </head>
 
     <body class="p-credit">
@@ -25,35 +26,11 @@
         You may also download the <a href="./docs/CollegeSTEPS_online_magazine.pdf">CollegeSTEPS magazine PDF</a>.</p>
         </div><![endif]-->
         <a href="#whats-your-credit-iq" class="sr-only sr-only-focusable">Skip to main content</a>
-        <!-- PAGE LOADER -->
-        <div id="page-loader">
-            <div class="loader">
-                <div class="spinner">
-                    <div class="spinner-container container1">
-                        <div class="circle1"></div>
-                        <div class="circle2"></div>
-                        <div class="circle3"></div>
-                        <div class="circle4"></div>
-                    </div>
-                    <div class="spinner-container container2">
-                        <div class="circle1"></div>
-                        <div class="circle2"></div>
-                        <div class="circle3"></div>
-                        <div class="circle4"></div>
-                    </div>
-                    <div class="spinner-container container3">
-                        <div class="circle1"></div>
-                        <div class="circle2"></div>
-                        <div class="circle3"></div>
-                        <div class="circle4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- PAGE LOADER End -->
-        <!-- SIDEBAR / RESPONSIVE NAVIGATION -->
+
+        <!-- PAGELOADER XHR --><div id="page-loader"></div>
+
         <div id="st-trigger-effects" class="trigger-fixed visible-xs visible-sm"> <a href="#" data-effect="st-effect-2">Menu<i class="fa fa-bars"></i></a> </div>
-        <!-- SIDEBAR / RESPONSIVE NAVIGATION End -->
+
         <!-- st-container -->
         <div id="st-container" class="st-container">
             <!-- content push wrapper -->
@@ -62,6 +39,7 @@
                     <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 
                         <header data-scroll-index="0" role="banner" style="z-index:5">
+                            <!-- HOME FULLSCREEN -->
                             <div id="home" class="home-fullscreen" data-100="opacity:1" data-500="opacity:0.5">
                                 <div class="home-bg-container"></div>
                                 <div class="overlay">
@@ -74,7 +52,6 @@
                                             <div class="section-header-c">
                                                 <h1> <span>Credit</span> </h1>
                                             </div>
-                                            <!-- SECTION HEADER End -->
                                         </div>
                                         <!-- HOME TEXT End -->
                                         <div class="credit-box">
@@ -85,106 +62,16 @@
                                         </div>
                                         <!-- HOME READ MORE BUTTON -->
                                         <div class="home-more"> <a href="#" class="btn btn-primary" data-scroll-nav="1" title="read more">read more</a> </div>
-                                        <!-- HOME READ MORE BUTTON End -->
-
                                     </div>
                                 </div>
                             </div>
                             <!-- HOME FULLSCREEN End -->
 
-                            <!-- NAVBAR -->
-                            <div id="navbar" class="nav-fixed hidden-xs hidden-sm">
-                                <div class="container"> <a href="index.html" title="Home page" class="nav-logo"><img src="./images/Wells_Fargo_logo.jpg" alt="Wells Fargo" width="50" height="50"></a>
-                                    <nav>
-                                        <ul class="nav-menu" role="navigation">
-                                            <li class="nav-item"> <a href="index.html" title="Home page">Home</a> </li>
-                                            <li class="nav-item"> <a href="students.html" title="Students Page">Students</a>
-                                                <div class="sub-nav">
-                                                    <ul class="sub-nav-group">
-                                                        <li><a href="students.html#set-yourself-up-for-success" title="Set yourself up for successs">Set yourself up for successs</a></li>
-                                                        <li><a href="students.html#junior-year-checklist" title="Junior and Senior year checklists<">Junior and Senior year checklists</a></li>
-                                                        <li><a href="students.html#school-counselor" title="Get to know your school counselor">Get to know your school counselor</a></li>
-                                                        <li><a href="students.html#college-application-essays" title="College application essays: How to stand out from the crowd">College application essays: How to stand out from the crowd</a></li>
-                                                        <li><a href="students.html#pop-quiz" title="Pop quiz: What do you know about the ACT/SAT?">Pop quiz: What do you know about the ACT/SAT?</a></li>
-                                                        <li><a href="students.html#wise-study-habbits" title="Wise study habits for your college classes">Wise study habits for your college classes</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item"> <a href="parents.html" title="Parents Page">Parents</a>
-                                                <div class="sub-nav">
-                                                    <ul class="sub-nav-group">
-                                                        <li><a href="parents.html#prepare-for-college" title="Teaming up to prepare for college">Teaming up to prepare for college</a></li>
-                                                        <li><a href="parents.html#parents-planning-guide" title="Parents’ planning guide">Parents’ planning guide</a></li>
-                                                        <li><a href="parents.html#options-for-financing" title="Options for financing">Options for financing</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item active"> <a href="#" data-scroll-nav="0" title="Credit page">Credit</a>
-                                                <div class="sub-nav" style="margin-left: -75px;">
-                                                    <ul class="sub-nav-group">
-                                                        <li><a href="#" data-scroll-nav="1" title="What’s your credit IQ?">What’s your credit IQ?</a></li>
-                                                        <li><a href="#" data-scroll-nav="2" title="Getting down to credit basics">Getting down to credit basics</a></li>
-                                                        <li><a href="#" data-scroll-nav="3" title="Surviving on a college budget">Surviving on a college budget</a></li>
-                                                        <li><a href="#" data-scroll-nav="4" title="Successful student loan repayment">Successful student loan repayment</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item"> <a href="video1.html" title="Videos">Videos</a>
-                                                <div class="sub-nav" style="margin-left: -125px;">
-                                                    <ul class="sub-nav-group">
-                                                        <li><a href="video1.html" title="Financial Aid Journey Overview">Financial Aid Journey Overview</a></li>
-                                                        <li><a href="https://mrm.wellsfargobank.com/pathtogoodcredit/index.php" title="The Path To Good Credit" target="_blank">Path To Credit</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <!-- NAVBAR End -->
+                            <!-- NAVBAR XHR --><script>var navi = 4;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
+
                         </header>
 
-                        <!-- SHARE BAR SECTION Begin -->
-                        <div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s">
-                            <div id="stickySideBar">
-                                <table cellpadding="1px" cellspacing="0">
-                                    <tr>
-                                        <td style="padding:5px 0px 0px 0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                                 data-url="http://www.wellsfargomedia.com/collegesteps/" data-counts="true"
-                                                                                 data-share-text="Wells Fargo CollegeSteps Magazine" data-media="./images/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                <li class="facebook sidesocial"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.wellsfargomedia.com/collegesteps/"
-                                                                                   title="Share on Facebook"><span class="social-icon icon-facebook"></span></a></li>
-                                            </ul></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                     data-url="http://www.wellsfargomedia.com/collegesteps/"
-                                                                     data-share-text="Wells Fargo CollegeSteps Magazine" data-media="./images/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                <li class="twitter sidesocial"><a href="https://twitter.com/intent/tweet?text=http://www.wellsfargomedia.com/collegesteps/"
-                                                                                  title="Share on Twitter"><span class="social-icon icon-twitter"></span></a></li>
-                                            </ul></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                     data-url="http://www.wellsfargomedia.com/collegesteps/"
-                                                                     data-share-text="Wells Fargo CollegeSteps Magazine" data-media="./images/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                <li class="googleplus sidesocial"><a href="https://plus.google.com/share?url=http://www.wellsfargomedia.com/collegesteps/"
-                                                                                     title="Share on Google Plus"><span class="social-icon icon-googleplus"></span></a></li>
-                                            </ul></td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <td style=" padding:0px;"><ul class="socialcount socialcount-small" style="margin: 0px 0 .3em;"
-                                                                      data-url="http://www.wellsfargomedia.com/collegesteps/"
-                                                                      data-share-text="Wells Fargo CollegeSteps Magazine" data-media="./images/Wells_Fargo_cover.jpg" data-description="Wells Fargo CollegeSteps Magazine">
-                                                <li class="share sidesocial"><a href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20website&body=Check%20out%20this%20page%20http://www.wellsfargomedia.com/collegesteps."
-                                                                                title="Share by Email"><span class="social-icon icon-share"></span></a></li>
-                                            </ul></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- SHARE BAR SECTION End -->
+                        <!-- SHAREBAR XHR --><div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s"></div>
 
                         <!-- SECTION CONTAINER -->
                         <section id="whats-your-credit-iq" data-scroll-index="1">
@@ -773,22 +660,7 @@
 
                         <footer role="contentinfo">
                             <div class="back-to-top"><a href="index.html" class="btn btn-primary" title="Next view the Financial Aid Journey Overview videos">Next</a></div>
-                            <span class="copyrights"><a href="index.html" title="Home page">Home</a>
-                                | <a href="students.html" title="Students Page">Students</a>
-                                | <a href="parents.html" title="Parents page">Parents</a>
-                                | <a href="credit.html" title="Credit page">Credit</a>
-                                | <a href="video1.html" title="Video: Financial Aid Journey Overview">Videos</a>
-                                | <a href="http://wellsfargo.com" title="Wells Fargo">Wellsfargo.com</a><br>
-                                <br>
-                                <strong>CollegeSTEPS</strong> <em>magazine</em> is produced by Wells Fargo Bank, N.A.
-                                Nothing in this magazine may be reproduced in whole or in part without written permission.
-                                Wells Fargo reserves the right to accept or reject all advertising matter and assumes no liability for return or safety of unsolicited art, photographs, or manuscripts.<br>
-                                We provide links to external websites for your convenience.
-                                Wells Fargo does not endorse and is not responsible for their content, links, privacy policies, or security policies.
-                                <br>
-                                Wells Fargo Bank, N.A. — Equal Credit Opportunity Lender.<br>
-                                Information is accurate as of the date of printing and is subject to change without notice.<br>
-                                &copy; 2015 Wells Fargo Bank, N.A. All rights reserved. Member FDIC. &nbsp; ECG-1256200</span>
+                            <!-- COPYRIGHTS XHR --><span class="copyrights"></span>
                         </footer>
                     </div>
                     <!-- /st-content-inner -->
@@ -796,45 +668,14 @@
                 <!-- /st-content -->
             </div>
             <!-- /st-pusher -->
-            <!-- SIDEBAR / RESPONSIVE NAVIGATION -->
-            <nav class="st-menu st-effect-2" id="menu-4">
-                <ul>
-                    <li><a href="index.html" title="Home page">Home</a></li>
-                    <li><a href="students.html" title="Students page">Students</a></li>
-                    <li><a href="parents.html" title="Parents page">Parents</a></li>
-                    <li><a href="#" data-scroll-nav="0" class="active" title="Credit page">Credit</a></li>
-                    <li><a href="video1.html" title="Video: Financial Aid Journey Overview">Video: Financial Aid Journey Overview</a></li>
-                    <li><a href="https://mrm.wellsfargobank.com/pathtogoodcredit/index.php" title="The Path To Good Credit" target="_blank">Video: Path To Credit</a></li>
-                </ul>
-            </nav>
-            <!-- SIDEBAR / RESPONSIVE NAVIGATION End -->
+
+            <!-- SIDEBAR XHR --><nav class="st-menu st-effect-2" id="menu-4"></nav>
+
         </div>
         <!-- /st-container -->
 
-        <div class="modal">
-            <div class="dialog">
-                <div class="header">
-                    <a href="javascript:;" class="closer"><img src="./images/btn-close-x.png" alt="Close"></a>
-                    <img alt="Wells Fargo home page" src="./images/wf-logo.gif">
-                </div>
-                <div class="content">
-                    <h2>
-                        You are leaving this Wells Fargo website
-                    </h2>
-                    <p>
-                        You are leaving a Wells Fargo site and entering a website that Wells Fargo does not control.
-                        Wells Fargo has provided this link for your convenience,
-                        but does not endorse and is not responsible for the content,
-                        links, privacy policy, or security policy of this website.
-                    </p>
-                </div>
-                <div class="footer">
-                    <a href="javascript:;" class="cancel">Cancel</a><a class="utilitybtn">Continue</a>
-                </div>
-            </div>
-        </div>
+        <!-- MODAL XHR --><div class="modal"></div>
 
-        <script src="./scripts/quiz.js"></script>
-        <script src="./scripts/main.js"></script>
+        <script src="./scripts/quiz.js"></script><script src="./scripts/main.js"></script>
     </body>
 </html>
