@@ -19,6 +19,7 @@
         usurp('#stickyBar');
         usurp('#menu-4');
         usurp('.copyrights');
+        usurp('.modal');
     });
 
 }());
