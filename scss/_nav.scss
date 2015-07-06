@@ -1,50 +1,8 @@
 /* _nav.scss */
 .nav-logo {
     display: inline-block;
-}
-#navbar.nav-home-top {
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -webkit-transition: all .2s;
-    background: rgba(255,255,255,.1);
-    border-bottom: 1px solid rgba(255,255,255,.1);
-    position: absolute!important;
-    top: 0;
-    transition: all .2s;
-    z-index: 999;
-}
-#navbar.nav-home-top a {
-    color: white;
-    text-decoration: none;
-}
-#navbar.nav-home-top a:hover {
-    color: #191919;
-}
-#navbar.nav-home-top .active,#navbar.nav-home-top .active:hover {
-    border-bottom: 2px solid white;
-}
-#navbar.nav-fixed-fixed {
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -webkit-transition: all .2s;
-    background: white;
-    border-bottom: 1px solid #f2f2f2;
-    position: fixed!important;
-    top: 0;
-    transition: all .2s;
-}
-#navbar.nav-fixed-fixed a {
-    color: #191919;
-    text-decoration: none;
-}
-#navbar.nav-fixed-fixed a:hover {
-    color: #666;
-}
-#navbar.nav-fixed-fixed .active {
-    border-bottom: 2px solid #191919;
-}
-#navbar.nav-fixed-fixed .active:hover {
-    border-bottom: 2px solid #666;
+    float: left;
+    padding: .7em 1em;
 }
 #navbar {
     background: white;
@@ -53,6 +11,52 @@
     top: 0!important;
     width: 100%;
     z-index: 9999;
+    &.nav-home-top {
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        background: rgba(255,255,255,.1);
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        position: absolute!important;
+        top: 0;
+        transition: all .2s;
+        z-index: 999;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: #191919;
+            }
+        }
+        .active {
+            &:hover {
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+    &.nav-fixed-fixed {
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        background: white;
+        border-bottom: 1px solid #f2f2f2;
+        position: fixed!important;
+        top: 0;
+        transition: all .2s;
+        a {
+            color: #191919;
+            text-decoration: none;
+            &:hover {
+                color: #666;
+            }
+        }
+        .active {
+            border-bottom: 2px solid #191919;
+            &:hover {
+                border-bottom: 2px solid #666;
+            }
+        }
+    }
 }
 .nav-menu {
     float: right;
@@ -71,29 +75,25 @@
     padding-left: 20px;
     padding-right: 0;
     padding-top: 25px;
-}
-.nav-logo {
-    float: left;
-    padding: .7em 1em;
+    &>a {
+        color: #191919;
+        display: inline-block;
+        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-size: 14px;
+        margin: 0 0 -1px;
+        padding: 0;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        &.open {
+            background-color: white;
+            border-bottom: 0;
+            z-index: 1;
+        }
+    }
 }
 li.nav-item.active a {
     border-bottom: 2px solid #191919;
-}
-.nav-item>a {
-    color: #191919;
-    display: inline-block;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-size: 14px;
-    margin: 0 0 -1px;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.nav-item>a.open {
-    background-color: white;
-    border-bottom: 0;
-    z-index: 1;
 }
 .sub-nav {
     background-color: black;
@@ -107,31 +107,31 @@ li.nav-item.active a {
     padding-top: 20px;
     position: absolute;
     top: 5em;
-}
-.sub-nav.open {
-    display: block;
-}
-.sub-nav ul {
-    display: inline-block;
-    margin: 0 1em 0 0;
-    padding: 0;
-    vertical-align: top;
-}
-.sub-nav li {
-    display: block;
-    list-style-type: none;
-    margin: 0 0 20px;
-    padding: 0;
-}
-.sub-nav li a {
-    color: white!important;
-    display: block;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-.sub-nav li a:hover,.sub-nav li a:focus {
-    color: #fc0!important;
+    &.open {
+        display: block;
+    }
+    ul {
+        display: inline-block;
+        margin: 0 1em 0 0;
+        padding: 0;
+        vertical-align: top;
+    }
+    li {
+        display: block;
+        list-style-type: none;
+        margin: 0 0 20px;
+        padding: 0;
+        a {
+            color: white!important;
+            display: block;
+            font-family: 'Archer SSm A','Archer SSm B',serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            &:hover, &:focus {
+                color: #fc0!important;
+            }
+        }
+    }
 }

@@ -6,25 +6,25 @@
 }
 .section-header-s {
     margin-bottom: 100px;
-}
-.section-header-s h1 {
-    color: #6a2c91;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 43px;
-    font-weight: 400;
-    margin-top: 25px;
-    text-align: center;
-}
-.section-header-s h1 span {
-    color: black;
-    display: block;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 100px;
-    font-weight: 400;
-    letter-spacing: 10px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    text-transform: uppercase;
+    h1 {
+        color: #6a2c91;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 43px;
+        font-weight: 400;
+        margin-top: 25px;
+        text-align: center;
+        span {
+            color: black;
+            display: block;
+            font-family: 'myriad-pro-condensed',sans-serif;
+            font-size: 100px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+    }
 }
 .studentbox {
     background-color: #8f106e;
@@ -36,27 +36,27 @@
     padding: 20px;
     text-align: left;
     width: 610px;
-}
-.studentbox p {
-    margin-bottom: 0;
-    margin-top: 10px;
+    p {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
 }
 .student1 {
     margin-bottom: 0;
     margin-top: 0;
-}
-.student1 p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 30px;
-    margin-top: 0;
-}
-.student1 h3 {
-    color: #006991;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 0;
+    p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    h3 {
+        color: #006991;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
 }
 .offsetphoto img {
     height: auto;
@@ -68,7 +68,7 @@
 .section-header h6 span {
     color: black;
     display: block;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 66px;
     font-weight: 300;
     letter-spacing: .25em;
@@ -86,127 +86,131 @@
 }
 .section-header-s4 {
     margin-bottom: 70px;
+    h1 {
+        color: #191919;
+        font-family: 'myriad-pro',sans-serif;
+        font-weight: 400;
+        margin-top: 25px;
+        text-align: center;
+        span {
+            color: #ee3124;
+            display: block;
+            font-family: 'myriad-pro-condensed',sans-serif;
+            font-size: 80px;
+            font-weight: 300;
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
 }
-.section-header-s4 h1 {
-    color: #191919;
-    font-family: "myriad-pro",sans-serif;
-    font-weight: 400;
-    margin-top: 25px;
-    text-align: center;
-}
-.section-header-s4 h1 span {
-    color: #ee3124;
-    display: block;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 80px;
-    font-weight: 300;
-    margin-top: 5px;
-    text-align: center;
-}
-.student4 p {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student4 h3 {
-    color: #006991;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 0;
+.student4 {
+    p {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h3 {
+        color: #006991;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
 }
 .section-header-s5 {
     margin-bottom: 240px;
-}
-.section-header-s5 h1 {
-    color: #191919;
-    font-family: "myriad-pro",sans-serif!important;
-    font-size: 60px;
-    font-weight: 300;
-    margin-top: 0;
-    text-align: center;
-}
-.section-header-s5 h1 span {
-    color: #2cb44b;
-    display: block;
-    font-family: "myriad-pro",sans-serif!important;
-    font-weight: 300;
-    margin-top: 5px;
-    text-align: center;
-}
-.student5 p {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student5 h2 {
-    color: #2cb44b;
-    font-size: 24px;
-    line-height: 1.5em;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student5 h3 {
-    color: #960d70;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student5 h4 {
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    line-height: .8em;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student5 h4 span {
-    color: #65298b;
-    display: block;
-    font-size: 22px;
-    margin-bottom: 10px;
-    margin-top: 0;
+    h1 {
+        color: #191919;
+        font-family: 'myriad-pro',sans-serif!important;
+        font-size: 60px;
+        font-weight: 300;
+        margin-top: 0;
+        text-align: center;
+        span {
+            color: #2cb44b;
+            display: block;
+            font-family: 'myriad-pro',sans-serif!important;
+            font-weight: 300;
+            margin-top: 5px;
+            text-align: center;
+        }
+    }
 }
 .student5 {
     margin-bottom: 50px;
     margin-top: 50px;
+    p {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h2 {
+        color: #2cb44b;
+        font-size: 24px;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h3 {
+        color: #960d70;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h4 {
+        font-family: 'myriad-pro-condensed',sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: .8em;
+        margin-bottom: 10px;
+        margin-top: 0;
+        span {
+            color: #65298b;
+            display: block;
+            font-size: 22px;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+    }
 }
-.section-header-s6 img {
-    float: left;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-.section-header-s6 .header-6 {
-    float: left;
-    max-width: 550px;
-}
-.section-header-s6 .header-6 h1 {
-    color: #ff9930;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-.section-header-s6 .header-6 h2 {
-    color: black;
-    font-family: "myriad-pro",sans-serif;
-    font-style: italic;
-    font-weight: 300;
-}
-.section-header-s6 .header-6 .header-desc-6 {
-    color: black;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-}
-.section-header-s6 .header-6 .header-desc-6 span {
-    color: #960d76;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    text-align: left;
+.section-header-s6 {
+    img {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .header-6 {
+        float: left;
+        max-width: 550px;
+        h1 {
+            color: #ff9930;
+            font-family: 'myriad-pro-condensed',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: black;
+            font-family: 'myriad-pro',sans-serif;
+            font-style: italic;
+            font-weight: 300;
+        }
+        .header-desc-6 {
+            color: black;
+            font-family: 'myriad-pro-condensed',sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: left;
+            span {
+                color: #960d76;
+                font-family: 'myriad-pro',sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
 }
 .student7b h3 {
     color: #f99300;
@@ -220,31 +224,31 @@
 .section-header-s7 {
     margin-bottom: 20px;
     margin-top: 0;
-}
-.section-header-s7 h1 {
-    font-family: "myriad-pro",sans-serif;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.section-header-s7 h1 span {
-    color: #f99300;
-    display: block;
-    font-weight: 400;
-}
-.section-header-s7 .header-desc-s7 span {
-    color: black;
-    display: block;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.8em;
-    margin: 0 auto;
-    text-align: center;
-    width: 48%;
+    h1 {
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 300;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    h1 span {
+        color: #f99300;
+        display: block;
+        font-weight: 400;
+    }
+    .header-desc-s7 span {
+        color: black;
+        display: block;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.8em;
+        margin: 0 auto;
+        text-align: center;
+        width: 48%;
+    }
 }
 .student7 p {
     margin-bottom: 10px;
@@ -269,56 +273,59 @@
     color: #471f6e;
     font-weight: 700;
 }
-.student8 h2 {
-    color: #b51630;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    margin-bottom: 5px;
-    margin-top: 0;
-}
-.student8 h3 {
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student8 h4 {
-    color: #970d76;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student8 h4 a {
-    color: #970d76;
-    font-weight: 400;
-    text-decoration: none;
-}
-.student8 p {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-.student8 p a {
-    color: #b51630;
-    font-weight: 700;
-    text-decoration: none;
+.student8 {
+    h2 {
+        color: #b51630;
+        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    h3 {
+        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h4 {
+        color: #970d76;
+        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-top: 0;
+        a {
+            color: #970d76;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        margin-top: 0;
+        a {
+            color: #b51630;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+    ul {
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 30px;
+        li {
+            padding-bottom: 10px;
+        }
+    }
+
 }
 a:hover {
     color: black;
-}
-.student8 ul {
-    margin-left: 0;
-    margin-top: 0;
-    padding-left: 30px;
-}
-.student8 ul li {
-    padding-bottom: 10px;
 }
 .quote-s {
     color: #970e76;
@@ -326,10 +333,10 @@ a:hover {
     font-size: 38px;
     font-weight: 500;
     margin-bottom: 40px;
-}
-.quote-s strong {
-    font-style: italic;
-    font-weight: 700;
+    strong {
+        font-style: italic;
+        font-weight: 700;
+    }
 }
 .blue400 {
     color: #296991;
@@ -339,7 +346,7 @@ a:hover {
 }
 h2.graph {
     color: #970e76;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -350,21 +357,21 @@ h3.graph {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     color: #970e76;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
     margin-top: 0;
     padding-bottom: 20px;
-}
-h3.graph span {
-    color: black;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    margin-top: 0;
-    padding-bottom: 20px;
+    span {
+        color: black;
+        font-family: 'myriad-pro-condensed',sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
 }
 .graphRight {
     float: left;
@@ -374,7 +381,7 @@ h3.graph span {
     clear: both;
     color: black;
     float: left;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -390,20 +397,20 @@ h3.graph span {
     margin-top: 30px;
     padding: 20px;
     width: 100%;
-}
-.mousebox h4 {
-    color: white;
-    font-weight: 700;
-    margin-bottom: 5px;
-    margin-top: 0;
-}
-.mousebox a {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
-.mousebox a:hover {
-    color: rgba(255,255,255,.7);
+    h4 {
+        color: white;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgba(255,255,255,.7);
+    }
 }
 .tinytext {
     font-size: 10px;
@@ -415,9 +422,9 @@ h3.graph span {
     font-weight: 500;
     line-height: 1.8em;
     padding: 20px;
-}
-.quote-stats span {
-    color: #970e76;
+    span {
+        color: #970e76;
+    }
 }
 .collegestudent {
     background-image: url('../images/college-student.jpg');
@@ -448,7 +455,7 @@ h3.graph span {
 }
 blockquote.bubble-b p {
     color: white;
-    font-family: "myriad-pro-condensed",sans-serif;
+    font-family: 'myriad-pro-condensed',sans-serif;
     font-style: italic;
 }
 .bubble-p {
@@ -474,7 +481,7 @@ blockquote.bubble-b p {
 }
 blockquote.bubble-p p {
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
 }
 .bubble-g {
     background: #2cb34a;
@@ -499,7 +506,7 @@ blockquote.bubble-p p {
 }
 blockquote.bubble-g p {
     color: white;
-    font-family: "myriad-pro-condensed",sans-serif;
+    font-family: 'myriad-pro-condensed',sans-serif;
 }
 .bubble-o {
     background: #bc5333;
@@ -524,7 +531,7 @@ blockquote.bubble-g p {
 }
 blockquote.bubble-o p {
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
 }
 .idea {
     margin-top: -270px;
@@ -560,7 +567,7 @@ blockquote.bubble-o p {
 }
 .bubble-Q-inner h4 {
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 8px;
@@ -568,7 +575,7 @@ blockquote.bubble-o p {
 }
 .bubble-Q-inner p {
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 0;
@@ -610,7 +617,7 @@ fieldset input {
     margin-right: 3px;
 }
 h2.answers {
-    font-family: "myriad-pro-condensed",sans-serif;
+    font-family: 'myriad-pro-condensed',sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
@@ -637,7 +644,7 @@ ol.quiz li {
 }
 .note ol {
     color: #999;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -665,40 +672,40 @@ ol.quiz li {
 }
 .bluebox-inner {
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-style: normal;
     font-weight: 400;
-}
-.bluebox-inner h3 {
-    color: white;
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.bluebox-inner p {
-    font-size: 16px;
-}
-.bluebox-inner small {
-    font-size: 12px;
-}
-.bluebox-inner span {
-    font-family: "myriad-pro-condensed",sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 30px;
-}
-.bluebox-inner img {
-    float: right;
-    margin-left: 20px;
-}
-.bluebox-inner .note {
-    font-size: 12px;
-    font-style: italic;
+    h3 {
+        color: white;
+        font-family: 'myriad-pro-condensed',sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    p {
+        font-size: 16px;
+    }
+    small {
+        font-size: 12px;
+    }
+    span {
+        font-family: 'myriad-pro-condensed',sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    img {
+        float: right;
+        margin-left: 20px;
+    }
+    .note {
+        font-size: 12px;
+        font-style: italic;
+    }
 }
 .wrong {
     color: #ff9930;
@@ -718,17 +725,17 @@ ol.quiz li {
     margin-bottom: 10px;
     margin-left: 20px;
     padding: 15px;
-}
-.correct span {
-    color: black;
-    font-weight: 400;
-}
-.correct a {
-    font-weight: 700;
-    text-decoration: none;
-}
-.correct a:hover {
-    text-decoration: underline;
+    span {
+        color: black;
+        font-weight: 400;
+    }
+    a {
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .listbox-1 {
     -ms-transform: rotate(-2deg);
@@ -819,23 +826,23 @@ ol.quiz li {
     background-repeat: no-repeat;
     height: 370px;
     padding: 60px 80px 0 50px;
-}
-#balloons h4 {
-    color: white;
-    font-family: 'Archer SSm A','Archer SSm B' serif;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    margin-top: 0;
-}
-#balloons p {
-    color: white;
-    font-family: 'Archer SSm A','Archer SSm B' serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.4em;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    h4 {
+        color: white;
+        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    p {
+        color: white;
+        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.4em;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
 }
 .g-pink {
     background: -moz-linear-gradient(left,rgba(151,14,118,1) 0,rgba(151,14,118,1) 100%);
@@ -906,31 +913,34 @@ ol.quiz li {
     background: linear-gradient(to right,#006893 0,#0097cd 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006893',endColorstr='#0097cd',GradientType=1);
 }
-.gradient h4 {
-    color: white;
-    font-family: 'Archer SSm A','Archer SSm B' serif;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    margin-top: 0;
+.gradient {
+    h4 {
+        color: white;
+        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    p {
+        color: white;
+        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.4em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgba(255,255,255,.7);
+    }
 }
-.gradient p {
-    color: white;
-    font-family: 'Archer SSm A','Archer SSm B' serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.4em;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.gradient a {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
-.gradient a:hover {
-    color: rgba(255,255,255,.7);
-}
+
 .junior-year h2 {
     background: -moz-linear-gradient(left,rgba(151,14,118,1) 0,rgba(151,14,118,1) 100%);
     background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(151,14,118,1)),color-stop(100%,rgba(151,14,118,1)));
@@ -950,58 +960,61 @@ ol.quiz li {
     text-transform: uppercase;
     width: 240px;
 }
-.senior-year h1 {
-    background: #a80303;
-    background: -moz-linear-gradient(top,#a80303 0,#ff3019 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#a80303),color-stop(100%,#ff3019));
-    background: -webkit-linear-gradient(top,#a80303 0,#ff3019 100%);
-    background: -o-linear-gradient(top,#a80303 0,#ff3019 100%);
-    background: -ms-linear-gradient(top,#a80303 0,#ff3019 100%);
-    background: linear-gradient(to bottom,#a80303 0,#ff3019 100%);
-    border: 1px solid black;
-    color: white;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a80303',endColorstr='#ff3019',GradientType=0);
-    font-family: 'Archer SSm A','Archer SSm B' serif;
-    font-size: 30px;
-    font-weight: 500;
-    margin-right: auto;
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 230px;
+.senior-year {
+    h1 {
+        background: #a80303;
+        background: -moz-linear-gradient(top,#a80303 0,#ff3019 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#a80303),color-stop(100%,#ff3019));
+        background: -webkit-linear-gradient(top,#a80303 0,#ff3019 100%);
+        background: -o-linear-gradient(top,#a80303 0,#ff3019 100%);
+        background: -ms-linear-gradient(top,#a80303 0,#ff3019 100%);
+        background: linear-gradient(to bottom,#a80303 0,#ff3019 100%);
+        border: 1px solid black;
+        color: white;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a80303',endColorstr='#ff3019',GradientType=0);
+        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-right: auto;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 230px;
+    }
+    h2 {
+        color: black;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    h3 {
+        color: black;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    h4 {
+        color: #006991;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 2px;
+        margin-top: 30px;
+    }
+    h5 {
+        color: #006991;
+        font-family: 'myriad-pro',sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
 }
-.senior-year h2 {
-    color: black;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-.senior-year h3 {
-    color: black;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.senior-year h4 {
-    color: #006991;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 2px;
-    margin-top: 30px;
-}
-.senior-year h5 {
-    color: #006991;
-    font-family: "myriad-pro",sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 0;
-}
+
 .arrow-blue-2 {
     background-image: url('../images/arrow-blue-2.png');
     background-repeat: no-repeat;
@@ -1098,7 +1111,7 @@ ol.quiz li {
     top: 2px;
     width: 18px;
 }
-.squaredTwo label:after {
+.squaredTwo label::after {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -1123,7 +1136,7 @@ ol.quiz li {
 .squaredTwo input[type=checkbox] {
     visibility: hidden;
 }
-.squaredTwo input[type=checkbox]:checked+label:after {
+.squaredTwo input[type=checkbox]:checked+label::after {
     filter: alpha(enabled=false);
     opacity: 1;
 }
@@ -1150,7 +1163,7 @@ ol.quiz li {
 }
 .progress h4 {
     color: black;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 18px;
     font-weight: 400;
     height: 30px;
@@ -1195,25 +1208,25 @@ ol.quiz li {
         background-image: none;
         height: auto;
         padding: 0;
+        h4 {
+            color: white;
+            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        p {
+            color: white;
+            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.4em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
     }
-    #balloons h4 {
-        color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
-        font-size: 25px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        margin-top: 0;
-    }
-    #balloons p {
-        color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 1.4em;
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-    .arrow-blue-2,.arrow-blue-3,.arrow-green-1,.arrow-orange-1,.arrow-pink-1,.arrow-purple-1,.arrow-red-1,arrow-blue-1 {
+    .arrow-blue-2,.arrow-blue-3,.arrow-green-1,.arrow-orange-1,.arrow-pink-1,.arrow-purple-1,.arrow-red-1 {
         display: none;
     }
 }
@@ -1278,16 +1291,6 @@ ol.quiz li {
         width: 100%;
         z-index: 10;
     }
-    arrow-blue-1 {
-        background-image: url('../images/arrow-blue-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 100px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
     .arrow-pink-1 {
         background-image: url('../images/arrow-pink-1.png');
         background-repeat: no-repeat;
@@ -1347,23 +1350,23 @@ ol.quiz li {
         background-image: none;
         height: auto;
         padding: 0;
-    }
-    #balloons h4 {
-        color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
-        font-size: 30px;
-        font-weight: 800;
-        margin-bottom: 15px;
-        margin-top: 0;
-    }
-    #balloons p {
-        color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 1.4em;
-        margin-bottom: 5px;
-        margin-top: 10px;
+        h4 {
+            color: white;
+            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        p {
+            color: white;
+            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.4em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
     }
     .box-11 {
         height: 352px;
@@ -1395,12 +1398,12 @@ ol.quiz li {
     }
     .section-header-s5 {
         margin-bottom: 20px;
-    }
-    .section-header-s5 h1 {
-        font-size: 32px;
-    }
-    .section-header-s5 h2 {
-        font-size: 20px;
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+        }
     }
     .section-header-s7 h1 {
         font-size: 40px;
@@ -1456,13 +1459,13 @@ ol.quiz li {
     }
     .section-header-s4 {
         margin-bottom: 30px;
-    }
-    .section-header-s4 h1 {
-        font-size: 40px;
-        margin-top: 0;
-    }
-    .section-header-s4 h1 span {
-        font-size: 64px;
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+        h1 span {
+            font-size: 64px;
+        }
     }
     .student4 p {
         margin-bottom: 0;
@@ -1481,18 +1484,18 @@ ol.quiz li {
     }
     .section-header-s5 {
         margin-bottom: 20px;
-    }
-    .section-header-s5 h1 {
-        font-size: 32px;
-    }
-    .section-header-s5 h2 {
-        font-size: 20px;
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+        }
     }
     .student5 {
         margin-top: 10px;
-    }
-    .student5 h3 {
-        margin-top: 30px;
+        h3 {
+            margin-top: 30px;
+        }
     }
     .section-header-s6 .header-6 h1 {
         font-size: 36px;

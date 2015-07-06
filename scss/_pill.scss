@@ -14,12 +14,12 @@
     right: 18px;
     text-decoration: none;
     transition: background 200ms linear;
-}
-#scrollUp:hover {
-    background-color: black;
-}
-#scrollUp::after {
-    content: "\f102";
-    font-family: FontAwesome;
-    padding-left: 10px;
+    &:hover {
+        background-color: black;
+    }
+    &::after {
+        content: "\f102";
+        font-family: FontAwesome;
+        padding-left: 10px;
+    }
 }

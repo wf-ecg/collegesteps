@@ -5,20 +5,20 @@
     border: 0;
     border-radius: 0;
     color: white;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 13px;
     margin-bottom: 3px;
     text-decoration: none;
     text-shadow: none;
-}
-.btn.active,.btn.disabled,.btn:active,.btn:focus,.btn:hover,.btn[disabled] {
-    background-color: #191919;
-    color: white;
-}
-.btn:focus,.btn:hover {
-    color: white;
-    outline: 0;
-    text-decoration: none;
+    &.active, &.disabled, &:active, &:focus, &:hover, &[disabled] {
+        background-color: #191919;
+        color: white;
+    }
+    &:focus, &:hover {
+        color: white;
+        outline: 0;
+        text-decoration: none;
+    }
 }
 .btn-lg {
     font-size: 13px;
@@ -46,36 +46,37 @@
     background-image: none;
     border-color: none;
     text-shadow: none;
-}
-.btn-warning.active,.btn-warning:active {
-    background-color: #faa732 \9!important;
+    &.active,
+    &:active {
+        background-color: #faa732 \9!important;
+    }
 }
 .btn-danger {
     background-color: #da4f49!important;
     background-image: none;
     border-color: none;
     text-shadow: none;
-}
-.btn-danger.active,.btn-danger:active {
-    background-color: #da4f49 \9!important;
+    &.active, &:active {
+        background-color: #da4f49 \9!important;
+    }
 }
 .btn-success {
     background-color: #5bb75b!important;
     background-image: none;
     border-color: none;
     text-shadow: none;
-}
-.btn-success.active,.btn-success:active {
-    background-color: #5bb75b \9!important;
+    &.active, &:active {
+        background-color: #5bb75b \9!important;
+    }
 }
 .btn-info {
     background-color: #49afcd!important;
     background-image: none;
     border-color: none;
     text-shadow: none;
-}
-.btn-info.active,.btn-info:active {
-    background-color: #49afcd \9!important;
+    &.active, &:active {
+        background-color: #49afcd \9!important;
+    }
 }
 .btn-inverse {
     background-color: #191919!important;
@@ -83,29 +84,29 @@
     border-color: none;
     color: white;
     text-shadow: none;
-}
-.btn-inverse.active,.btn-inverse.disabled,.btn-inverse:active,.btn-inverse:focus,.btn-inverse:hover,.btn-inverse[disabled] {
-    background-color: #191919!important;
-    color: white;
-}
-.btn-inverse.active,.btn-inverse:active {
-    background-color: #191919 \9!important;
-}
-.btn-link,.btn-link:active,.btn-link[disabled] {
-    background-color: transparent!important;
-    background-image: none;
-    box-shadow: none;
+    &.active, &.disabled, &:active, &:focus, &:hover, &[disabled] {
+        background-color: #191919!important;
+        color: white;
+    }
+    &.active, &:active {
+        background-color: #191919 \9!important;
+    }
 }
 .btn-link {
     border-color: transparent;
     border-radius: 0;
     color: #191919;
     cursor: pointer;
-}
-.btn-link:focus,.btn-link:hover {
-    background-color: transparent;
-    color: #666!important;
-    text-decoration: underline;
+    &, &:active, &[disabled] {
+        background-color: transparent!important;
+        background-image: none;
+        box-shadow: none;
+    }
+    &:focus, &:hover {
+        background-color: transparent;
+        color: #666!important;
+        text-decoration: underline;
+    }
 }
 
 .sidesocial {

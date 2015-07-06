@@ -11,10 +11,10 @@ a {
     color: #191919;
     text-decoration: underline;
     transition: all .2s;
-}
-a:hover {
-    color: #666;
-    text-decoration: none;
+    &:hover {
+        color: #666;
+        text-decoration: none;
+    }
 }
 h1,h2,h3,h4,h5,h6 {
     color: #191919;
@@ -45,66 +45,66 @@ blockquote {
     border: 0;
     margin: 0;
     padding: 0 20px;
-}
-blockquote p {
-    color: #191919;
-    font: 300 20px/26px 'Archer SSm A','Archer SSm B',serif;
-}
-blockquote p::after,blockquote p::before {
-    color: rgba(0,0,0,.5);
-}
-blockquote small {
-    color: #00a5d9;
-    font: 16px 'Archer SSm A','Archer SSm B',serif;
-}
-blockquote small::before {
-    content: "";
-}
-blockquote small .occupation {
-    color: #999;
-    display: block;
-    font: 13px 'Archer SSm A','Archer SSm B',serif;
+    p {
+        color: #191919;
+        font: 300 20px/26px 'Archer SSm A','Archer SSm B',serif;
+        &::after,
+        &::before {
+            color: rgba(0,0,0,.5);
+        }
+    }
+    small {
+        color: #00a5d9;
+        font: 16px 'Archer SSm A','Archer SSm B',serif;
+        &::before {
+            content: "";
+        }
+        .occupation {
+            color: #999;
+            display: block;
+            font: 13px 'Archer SSm A','Archer SSm B',serif;
+        }
+    }
 }
 img {
     max-width: 100%;
 }
-
 footer {
     background: #191919;
     color: white;
     padding: 100px 20px;
     position: relative;
     text-align: center;
-}
-footer .back-to-top {
-    padding-right: 35px;
-    position: absolute;
-    top: -16px;
-    width: 100%;
-}
-footer .back-to-top .btn {
-    width: 150px;
-}
-footer .back-to-top .btn::after {
-    content: "\f101";
-    font-family: FontAwesome;
-    padding-left: 10px;
-}
-footer .copyrights {
-    display: block;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    max-width: 1000px;
-}
-footer .copyrights a {
-    color: white;
-    font-weight: 700;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
+    .back-to-top {
+        padding-right: 35px;
+        position: absolute;
+        top: -16px;
+        width: 100%;
+        .btn {
+            width: 150px;
+            &::after {
+                content: "\f101";
+                font-family: FontAwesome;
+                padding-left: 10px;
+            }
+        }
+    }
+    .copyrights {
+        display: block;
+        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        max-width: 1000px;
+        a {
+            color: white;
+            font-weight: 700;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+        }
+    }
 }

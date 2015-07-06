@@ -5,7 +5,7 @@
 }
 #video-button {
     color: #333;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     margin-bottom: 1em;
     padding: 0 0 1em;
 }
@@ -35,7 +35,7 @@
     width: 100%;
 }
 #video-button .active .playing::before {
-    content: "\f100";
+    content: '\f100';
     font-family: FontAwesome;
     padding-right: 10px;
 }
@@ -45,7 +45,7 @@
 }
 .note ol {
     color: #999;
-    font-family: "myriad-pro",sans-serif;
+    font-family: 'myriad-pro',sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -64,7 +64,7 @@ footer .back-to-top-v .btn {
     width: 150px;
 }
 footer .back-to-top-v .btn::before {
-    content: "\f100";
+    content: '\f100';
     font-family: FontAwesome;
     padding-right: 10px;
 }
