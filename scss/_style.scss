@@ -123,7 +123,7 @@ header {
 .section-bg-overlay {
     &::before {
         background: rgba(0,0,0,.7);
-        content: "";
+        content: '';
         height: 100%;
         position: absolute;
         top: 0;

@@ -10,7 +10,7 @@
         background-image: -moz-linear-gradient(rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 40%,rgba(0,0,0,.4) 100%);
         background-image: -o-linear-gradient(rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 40%,rgba(0,0,0,.4) 100%);
         background-image: linear-gradient(rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 40%,rgba(0,0,0,.4) 100%);
-        content: "";
+        content: '';
         height: 100%;
         position: absolute;
         top: 0;
@@ -33,7 +33,7 @@
                 color: #e6e6e6;
             }
             &::before {
-                content: "\f060\2003";
+                content: '\f060\2003';
                 font: 12px FontAwesome;
                 text-decoration: none;
             }
@@ -78,7 +78,7 @@
             position: relative;
             &::after, &::before {
                 border-bottom: 75px solid #bb0e82;
-                content: "";
+                content: '';
                 position: absolute;
                 width: 4px;
             }
@@ -94,6 +94,6 @@
     h6 span::after, h6 span::before { top: 8.5px; }
     .header-desc::before {
         border-bottom: 0;
-        content: "";
+        content: '';
     }
 }

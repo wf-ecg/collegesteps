@@ -57,7 +57,7 @@ blockquote {
         color: #00a5d9;
         font: 16px $serif;
         &::before {
-            content: "";
+            content: '';
         }
         .occupation {
             color: #999;
@@ -83,7 +83,7 @@ footer {
         .btn {
             width: 150px;
             &::after {
-                content: "\f101";
+                content: '\f101';
                 font-family: FontAwesome;
                 padding-left: 10px;
             }
