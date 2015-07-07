@@ -5,7 +5,7 @@
 }
 #video-button {
     color: #333;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     margin-bottom: 1em;
     padding: 0 0 1em;
 }
@@ -45,7 +45,7 @@
 }
 .note ol {
     color: #999;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
