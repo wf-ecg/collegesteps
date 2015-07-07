@@ -1,13 +1,21 @@
 .p-cover {
+    $top_bkgr: '../images/bkgr/cover.jpg';
+
     @import '_cover';
 }
 .p-credit {
+    $top_bkgr: '../images/bkgr/students-leaving-class.jpg';
+
     @import '_credit';
 }
 .p-parents {
+    $top_bkgr: '../images/bkgr/father-and-son-discussing-student-loans.jpg';
+
     @import '_parents';
 }
 .p-students {
+    $top_bkgr: '../images/bkgr/students-taking-a-selfie.jpg';
+
     @import '_students';
 }
 .p-video {

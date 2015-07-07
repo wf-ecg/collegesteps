@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url('../images/cover.jpg') center 218px;
+    background: url($top_bkgr) center 218px;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;

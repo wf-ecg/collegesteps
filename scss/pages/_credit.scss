@@ -8,7 +8,7 @@ $col7: #2cb34a;
 $col8: #478831;
 
 .home-bg-container {
-    background: url('../images/students-leaving-class.jpg') center top;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;

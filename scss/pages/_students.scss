@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url('../images/students-taking-a-selfie.jpg') center top;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
