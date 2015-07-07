@@ -1,3 +1,5 @@
+/* students */
+
 .home-bg-container {
     background: url($top_bkgr) center top;
     background-size: cover;
@@ -27,7 +29,7 @@
     }
 }
 .studentbox {
-    background-color: $plum2;
+    background-color: transparentize($purple3, 0.1);
     font-family: $serif;
     font-size: 20px;
     margin-left: auto;
@@ -41,6 +43,7 @@
         margin-top: 10px;
     }
 }
+/* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
 .student1 {
     margin-bottom: 0;
     margin-top: 0;
@@ -103,6 +106,7 @@
         }
     }
 }
+/* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .student4 {
     p {
         margin-bottom: 10px;
@@ -116,7 +120,8 @@
         margin-top: 0;
     }
 }
-.section-header-s5 {
+/* 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
+.student5 header {
     margin-bottom: 240px;
     h1 {
         color: $gray3;
@@ -172,15 +177,16 @@
         }
     }
 }
-.section-header-s6 {
-    img {
-        float: left;
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
-    .header-6 {
+/* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
+.student6 {
+    header {
         float: left;
         max-width: 550px;
+        img {
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
         h1 {
             color: #ff9930;
             font-family: $sans_cn;
@@ -212,6 +218,7 @@
         }
     }
 }
+/* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
 .student7b h3 {
     color: #f99300;
     font-family: $serif;
@@ -250,29 +257,34 @@
         width: 48%;
     }
 }
-.student7 p {
-    margin-bottom: 10px;
-    margin-top: 0;
+.student7 {
+    p {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    h3 {
+        color: $blue1;
+        font-family: $serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
 }
-.student7 h3 {
-    color: $blue1;
-    font-family: $serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 0;
+.student7b {
+    ul {
+        padding-left: 18px;
+        li {
+            padding-bottom: 10px;
+            span {
+                color: #471f6e;
+                font-weight: 700;
+            }
+        }
+    }
 }
-.student7b ul {
-    padding-left: 18px;
-}
-.student7b ul li {
-    padding-bottom: 10px;
-}
-.student7b ul li span {
-    color: #471f6e;
-    font-weight: 700;
-}
+/* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
 .student8 {
     h2 {
         color: #b51630;
@@ -433,160 +445,12 @@ h3.graph {
     background-size: cover;
     height: 780px;
 }
-.bubble-b {
-    background: $dark1;
-    background: -moz-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$dark1),color-stop(100%,$dark2));
-    background: -webkit-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -o-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -ms-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: linear-gradient(to right,$dark1 0,$dark2 100%);
-    border-radius: 10px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark1',endColorstr='$dark2',GradientType=1);
-    margin: 0 auto;
-    max-width: 277px;
-    padding: 15px 30px;
-    position: relative;
-}
-.bubble-b+p {
-    font-style: italic;
-    margin: 10px 150px 2em 0;
-    text-align: right;
-}
-blockquote.bubble-b p {
-    color: white;
-    font-family: $sans_cn;
-    font-style: italic;
-}
-.bubble-p {
-    background: $purple1;
-    background: -moz-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$purple1),color-stop(12%,$purple1),color-stop(79%,$purple2),color-stop(100%,$purple2));
-    background: -webkit-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -o-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -ms-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: linear-gradient(to right,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    border-radius: 10px;
-    color: white;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$purple1',endColorstr='$purple2',GradientType=1);
-    margin: 50px auto 0;
-    max-width: 277px;
-    padding: 15px 30px;
-    position: relative;
-}
-.bubble-p+p {
-    font-style: italic;
-    margin: 10px 150px 2em 0;
-    text-align: right;
-}
-blockquote.bubble-p p {
-    color: white;
-    font-family: $sans;
-}
-.bubble-g {
-    background: $green1;
-    background: -moz-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$green1),color-stop(12%,$green1),color-stop(79%,$green2),color-stop(100%,$green2));
-    background: -webkit-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -o-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -ms-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: linear-gradient(to right,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    border-radius: 10px;
-    color: white;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$green1',endColorstr='$green2',GradientType=1);
-    margin: 0 auto;
-    max-width: 277px;
-    padding: 15px 30px;
-    position: relative;
-}
-.bubble-g+p {
-    font-style: italic;
-    margin: 10px 150px 2em 0;
-    text-align: right;
-}
-blockquote.bubble-g p {
-    color: white;
-    font-family: $sans_cn;
-}
-.bubble-o {
-    background: $orange1;
-    background: -moz-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$orange1),color-stop(0%,$orange2),color-stop(100%,$orange2));
-    background: -webkit-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -o-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -ms-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: linear-gradient(to right,$orange1 0,$orange2 0,$orange2 100%);
-    border-radius: 10px;
-    color: white;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange1',endColorstr='$orange2',GradientType=1);
-    margin: 50px auto 0;
-    max-width: 277px;
-    padding: 15px 30px;
-    position: relative;
-}
-.bubble-o+p {
-    font-style: italic;
-    margin: 10px 150px 2em 0;
-    text-align: right;
-}
-blockquote.bubble-o p {
-    color: white;
-    font-family: $sans;
-}
+
 .idea {
     margin-top: -270px;
     text-align: center;
 }
-.bubble-Q {
-    background: $dark1 no-repeat;
-    background: -moz-linear-gradient(left,$dark1 0,$dark2 100%) no-repeat;
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$dark1),color-stop(100%,$dark2)) no-repeat;
-    background: -webkit-linear-gradient(left,$dark1 0,$dark2 100%) no-repeat;
-    background: -o-linear-gradient(left,$dark1 0,$dark2 100%) no-repeat;
-    background: -ms-linear-gradient(left,$dark1 0,$dark2 100%) no-repeat;
-    background: linear-gradient(to right,$dark1 0,$dark2 100%) no-repeat;
-    border-radius: 100px 10px 10px 100px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark1',endColorstr='$dark2',GradientType=1);
-    height: 125px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: 520px;
-}
-.bubble-Q-inner {
-    background-image: url('../images/icon/bubble-question-blue.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    border-radius: 100px 10px 10px 100px;
-    height: 125px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 140px;
-    padding-top: 22px;
-    position: relative;
-}
-.bubble-Q-inner h4 {
-    color: white;
-    font-family: $sans;
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 8px;
-    margin-top: 0;
-}
-.bubble-Q-inner p {
-    color: white;
-    font-family: $sans;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.bubble-Q-inner p a {
-    color: white;
-    font-style: normal;
-    font-weight: 700;
-    text-decoration: none;
-}
+
 .greybg {
     background-color: #e6e6e6;
 }
@@ -844,75 +708,7 @@ ol.quiz li {
         margin-top: 10px;
     }
 }
-.g-pink {
-    background: -moz-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$plum1),color-stop(100%,$plum1));
-    background: -webkit-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -o-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -ms-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: linear-gradient(to right,$plum1 0,$plum1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$plum1',endColorstr='$plum1',GradientType=1);
-}
-.g-blue {
-    background: $blue1;
-    background: -moz-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$blue1),color-stop(79%,$blue2),color-stop(100%,$blue2));
-    background: -webkit-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -o-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -ms-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: linear-gradient(to right,$blue1 0,$blue2 79%,$blue2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue1',endColorstr='$blue2',GradientType=1);
-}
-.g-purple {
-    background: $purple1;
-    background: -moz-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$purple1),color-stop(12%,$purple1),color-stop(79%,$purple2),color-stop(100%,$purple2));
-    background: -webkit-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -o-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -ms-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: linear-gradient(to right,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$purple1',endColorstr='$purple2',GradientType=1);
-}
-.g-green {
-    background: $green1;
-    background: -moz-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$green1),color-stop(12%,$green1),color-stop(79%,$green2),color-stop(100%,$green2));
-    background: -webkit-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -o-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -ms-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: linear-gradient(to right,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$green1',endColorstr='$green2',GradientType=1);
-}
-.g-orange {
-    background: $orange1;
-    background: -moz-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$orange1),color-stop(0%,$orange2),color-stop(100%,$orange2));
-    background: -webkit-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -o-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -ms-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: linear-gradient(to right,$orange1 0,$orange2 0,$orange2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange1',endColorstr='$orange2',GradientType=1);
-}
-.g-red {
-    background: $red1;
-    background: -moz-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$red1),color-stop(24%,$red1),color-stop(100%,$red2),color-stop(100%,$red3));
-    background: -webkit-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -o-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -ms-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: linear-gradient(to right,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$red1',endColorstr='$red3',GradientType=1);
-}
-.g-dkblue {
-    background: $dark1;
-    background: -moz-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$dark1),color-stop(100%,$dark2));
-    background: -webkit-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -o-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -ms-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: linear-gradient(to right,$dark1 0,$dark2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark1',endColorstr='$dark2',GradientType=1);
-}
+
 .gradient {
     h4 {
         color: white;
@@ -1017,86 +813,6 @@ ol.quiz li {
     }
 }
 
-.arrow-blue-2 {
-    background-image: url('../images/checklist/arrow-blue-2.png');
-    background-repeat: no-repeat;
-    height: 70px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-.arrow-blue-3 {
-    background-image: url('../images/checklist/arrow-blue-3.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 60px;
-    z-index: 10;
-}
-.arrow-red-1 {
-    background-image: url('../images/checklist/arrow-red-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    position: absolute;
-    right: -70px;
-    top: 0;
-    width: 70px;
-    z-index: 10;
-}
-.arrow-blue-1 {
-    background-image: url('../images/checklist/arrow-blue-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 100px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-.arrow-pink-1 {
-    background-image: url('../images/checklist/arrow-pink-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 70px;
-    z-index: 10;
-}
-.arrow-green-1 {
-    background-image: url('../images/checklist/arrow-green-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 520px;
-    position: absolute;
-    top: 0;
-    width: 70px;
-    z-index: 10;
-}
-.arrow-purple-1 {
-    background-image: url('../images/checklist/arrow-purple-1.png');
-    background-repeat: no-repeat;
-    bottom: -65px;
-    height: 65px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 11;
-}
-.arrow-orange-1 {
-    background-image: url('../images/checklist/arrow-orange-1.png');
-    background-repeat: no-repeat;
-    height: 70px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
 .squaredTwo {
     border: 3px solid white;
     height: 24px;
@@ -1104,44 +820,45 @@ ol.quiz li {
     position: absolute;
     width: 24px;
     z-index: 11;
+    label {
+        cursor: pointer;
+        height: 18px;
+        left: 2px;
+        position: absolute;
+        top: 2px;
+        width: 18px;
+        &::after {
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            background: 0;
+            border: 3px solid #fcfff4;
+            border-right: 0;
+            border-top: 0;
+            content: '';
+            filter: alpha(Opacity=0);
+            height: 5px;
+            left: 3px;
+            opacity: 0;
+            position: absolute;
+            top: 3px;
+            transform: rotate(-45deg);
+            width: 9px;
+        }
+    }
+    label:hover::after {
+        filter: alpha(Opacity=30);
+        opacity: .3;
+    }
+    input[type=checkbox] {
+        visibility: hidden;
+    }
+    input[type=checkbox]:checked+label::after {
+        filter: alpha(enabled=false);
+        opacity: 1;
+    }
 }
-.squaredTwo label {
-    cursor: pointer;
-    height: 18px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 18px;
-}
-.squaredTwo label::after {
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    background: 0;
-    border: 3px solid #fcfff4;
-    border-right: 0;
-    border-top: 0;
-    content: '';
-    filter: alpha(Opacity=0);
-    height: 5px;
-    left: 3px;
-    opacity: 0;
-    position: absolute;
-    top: 3px;
-    transform: rotate(-45deg);
-    width: 9px;
-}
-.squaredTwo label:hover::after {
-    filter: alpha(Opacity=30);
-    opacity: .3;
-}
-.squaredTwo input[type=checkbox] {
-    visibility: hidden;
-}
-.squaredTwo input[type=checkbox]:checked+label::after {
-    filter: alpha(enabled=false);
-    opacity: 1;
-}
+
 #flowcol div h3 {
     color: $purple2;
     font-size: 16px;
@@ -1156,12 +873,14 @@ ol.quiz li {
 .topbott {
     margin-top: 40px;
 }
-.student1 a {
-    font-weight: 700;
-    text-decoration: none;
-}
-.student1 a:hover {
-    color: rgba(51,51,51,.7);
+.student1 {
+    a {
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgba(51,51,51,.7);
+    }
 }
 .progress h4 {
     color: black;
@@ -1228,24 +947,25 @@ ol.quiz li {
             margin-top: 10px;
         }
     }
-    .arrow-blue-2,.arrow-blue-3,.arrow-green-1,.arrow-orange-1,.arrow-pink-1,.arrow-purple-1,.arrow-red-1 {
-        display: none;
-    }
 }
 @media(min-width:768px) and (max-width:991px) {
-    .section-header-s5 {
-        margin-bottom: 20px;
-    }
-    .section-header-s7 .header-desc-s7 span {
-        width: 80%;
-    }
-    .section-header-s7 h1 {
-        font-size: 40px;
-        margin-bottom: 30px;
+    .student5 {
+        header {
+            margin-bottom: 20px;
+        }
     }
     .student7 {
         padding-bottom: 20px;
         padding-top: 20px;
+        header {
+            span {
+                width: 80%;
+            }
+            h1 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+        }
     }
     .topbott {
         margin-bottom: 10px;
@@ -1260,76 +980,7 @@ ol.quiz li {
         font-size: 24px;
         line-height: 1.3em;
     }
-    .arrow-blue-2 {
-        background-image: url('../images/checklist/arrow-blue-2.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .arrow-blue-3 {
-        background-image: url('../images/checklist/arrow-blue-3.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .arrow-red-1 {
-        background-image: url('../images/checklist/arrow-red-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 390px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .arrow-pink-1 {
-        background-image: url('../images/checklist/arrow-pink-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .arrow-green-1 {
-        background-image: url('../images/checklist/arrow-green-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 520px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-    .arrow-purple-1 {
-        background-image: url('../images/checklist/arrow-purple-1.png');
-        background-repeat: no-repeat;
-        bottom: -310px;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        z-index: 11;
-    }
-    .arrow-orange-1 {
-        background-image: url('../images/checklist/arrow-orange-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
+
     .gradient p {
         font-size: 20px;
     }
@@ -1373,47 +1024,53 @@ ol.quiz li {
     .student4 {
         margin-bottom: 0;
         margin-top: 0;
-    }
-    .section-header-s4 {
-        margin-bottom: 30px;
-    }
-    .section-header-s4 h1 {
-        font-size: 40px;
-        margin-top: 0;
-    }
-    .section-header-s4 h1 span {
-        font-size: 50px;
-    }
-    .student4 p {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .student4 h3 {
-        margin-top: 30px;
-    }
-    .student4 img {
-        margin-bottom: 0;
-        margin-top: 20px;
-    }
-    .section-header-s5 {
-        margin-bottom: 20px;
-        h1 {
-            font-size: 32px;
+        header {
+            margin-bottom: 30px;
+            h1 {
+                font-size: 40px;
+                margin-top: 0;
+                span {
+                    font-size: 50px;
+                }
+            }
         }
-        h2 {
-            font-size: 20px;
+        .student4 {
+            p {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            h3 {
+                margin-top: 30px;
+            }
+            img {
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
         }
     }
-    .section-header-s7 h1 {
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-    .section-header-s7 .header-desc-s7 span {
-        width: 80%;
+    .student5 {
+        header {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
     }
     .student7 {
         padding-bottom: 20px;
         padding-top: 20px;
+        header {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            span {
+                width: 80%;
+            }
+        }
     }
     .topbott {
         margin-bottom: 30px;
@@ -1424,67 +1081,49 @@ ol.quiz li {
     .studentbox {
         display: none;
     }
-    .bubble-o,.bubble-p {
-        margin-top: 0;
-    }
-    .bubble-Q-inner {
-        background-image: none !important;
-        padding-left: 22px !important;
-    }
-    .bubble-Q {
-        border-radius: 10px !important;
-        height: auto;
-        padding-bottom: 20px;
-        width: 300px !important;
-    }
     .idea {
         display: none;
     }
-    .section-header-s {
+    .student0 header {
         margin-bottom: 30px;
-    }
-    .section-header-s h1 {
-        font-size: 36px;
-    }
-    .section-header-s h1 span {
-        font-size: 50px;
-    }
-    .header-desc-s span {
-        font-size: 14px;
-        width: 80%;
-    }
-    .section-header-s4 {
-        margin-bottom: 30px;
-        h1 {
-            font-size: 40px;
-            margin-top: 0;
-        }
-        h1 span {
-            font-size: 64px;
+        span {
+            font-size: 14px;
+            width: 80%;
         }
     }
-    .student4 p {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .student4 h3 {
-        margin-top: 30px;
-    }
-    .student4 img {
-        margin-bottom: 0;
-        margin-top: 20px;
+    .student1 {
+        header {
+            h1 {
+                font-size: 36px;
+                span {
+                    font-size: 50px;
+                }
+            }
+        }
     }
     .student4 {
         margin-bottom: 0;
         margin-top: 0;
-    }
-    .section-header-s5 {
-        margin-bottom: 20px;
-        h1 {
-            font-size: 32px;
+        header {
+            margin-bottom: 30px;
+            h1 {
+                font-size: 40px;
+                margin-top: 0;
+            }
+            h1 span {
+                font-size: 64px;
+            }
         }
-        h2 {
-            font-size: 20px;
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 30px;
+        }
+        img {
+            margin-bottom: 0;
+            margin-top: 20px;
         }
     }
     .student5 {
@@ -1492,21 +1131,34 @@ ol.quiz li {
         h3 {
             margin-top: 30px;
         }
+        header {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
     }
-    .section-header-s6 .header-6 h1 {
-        font-size: 36px;
-        margin-bottom: 30px;
-    }
-    .section-header-s7 h1 {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    .section-header-s7 .header-desc-s7 span {
-        width: 80%;
+    .student6 {
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
     }
     .student7 {
         padding-bottom: 0;
         padding-top: 40px;
+        header {
+            span {
+                width: 80%;
+            }
+            h1 {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
     }
     .negmargbtm {
         margin-bottom: -30px;
