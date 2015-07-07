@@ -8,7 +8,7 @@ $col7: #2cb34a;
 $col8: #478831;
 
 .home-bg-container {
-    background: url('../images/students-leaving-class.jpg') center top;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -27,7 +27,7 @@ $col8: #478831;
     background: -ms-linear-gradient(top,$col3 0,$col4 100%);
     background: linear-gradient(to bottom,$col3 0,$col4 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$col3',endColorstr='$col4',GradientType=0);
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 18px;
     font-weight: 100;
     margin-left: auto;
@@ -95,10 +95,10 @@ $col8: #478831;
     }
 }
 .correct {
-    background: url('../images/right.png') right center no-repeat;
+    background: url('../images/icon/right.png') right center no-repeat;
 }
 .wrong {
-    background: url('../images/wrong.png') right center no-repeat;
+    background: url('../images/icon/wrong.png') right center no-repeat;
 }
 .feedback {
     background: $col5;
@@ -132,7 +132,7 @@ div.feedback {
     color: white;
     cursor: pointer;
     display: inline-block;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -168,7 +168,7 @@ div.feedback {
 .section-header-c1 {
     h1 {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 60px;
         font-weight: 300;
         margin-bottom: 30px;
@@ -186,7 +186,7 @@ div.feedback {
     h1 span {
         display: block;
         float: left;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 70px;
         font-style: italic;
         font-weight: 300;
@@ -241,7 +241,7 @@ div.feedback {
     background-color: #f4922d;
 }
 .goingup {
-    background-image: url('../images/stairs-up-icon.png');
+    background-image: url('../images/icon/stairs-up-icon.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -252,7 +252,7 @@ div.feedback {
 
     h3 {
         color: white;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 36px;
         font-style: normal;
         font-weight: 400;
@@ -267,7 +267,7 @@ div.feedback {
     padding: 20px;
     p {
         color: white;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -291,7 +291,7 @@ div.feedback {
         border: 5px solid #ae132a;
         box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
         color: #ae132a;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 74px;
         font-style: normal;
         font-weight: 600;
@@ -301,7 +301,7 @@ div.feedback {
         width: 300px;
     }
     h2 {
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 40px;
         font-style: normal;
         font-weight: 300;
@@ -336,14 +336,14 @@ div.feedback {
 }
 .section-header-c4 {
     h1 {
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 65px;
         font-style: normal;
         font-weight: 600;
         margin-bottom: 25px;
     }
     h2 {
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 50px;
         font-style: normal;
         font-weight: 400;
@@ -388,7 +388,7 @@ div.feedback {
     color: black;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$col1',endColorstr='$col2',GradientType=1);
     float: right;
-    font: 14px myriad-pro,sans-serif;
+    font: 14px $sans;
     line-height: 1.3em;
     margin-left: 20%;
     a {
@@ -397,7 +397,7 @@ div.feedback {
     }
     h3 {
         color: $col4 !important;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 22px !important;
         font-style: italic !important;
         margin-bottom: 5px;
@@ -405,7 +405,7 @@ div.feedback {
     }
 }
 .left-arrow {
-    background-image: url('../images/leftarrow.png');
+    background-image: url('../images/icon/leftarrow.png');
     background-position: left center;
     background-repeat: no-repeat;
     padding: 20px 20px 20px 70px;
@@ -416,7 +416,7 @@ div.feedback {
 
     ol {
         color: #999;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -514,7 +514,7 @@ div.feedback {
     z-index: 99;
 }
 .pickup2-overlay {
-    background-image: url('../images/clock.png');
+    background-image: url('../images/icon/clock.png');
     background-position: left center;
     background-repeat: no-repeat;
     height: 120px;
@@ -530,7 +530,7 @@ div.feedback {
     z-index: 100;
     h1 {
         color: white !important;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 24px;
         font-weight: 600;
         line-height: 1.3em;
@@ -540,7 +540,7 @@ div.feedback {
     margin-right: 20px;
     h4 {
         color: #45892b;
-        font-family: 'Archer SSm A','Archer SSm B';
+        font-family: $serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 800;
@@ -548,7 +548,7 @@ div.feedback {
         margin-top: 0;
     }
     p {
-        font-family: 'Archer SSm A','Archer SSm B';
+        font-family: $serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -591,7 +591,7 @@ div.feedback {
 }
 .accent-red {
     color: #ae132a;
-    font-family: 'Archer SSm A','Archer SSm B';
+    font-family: $serif;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 60px;
@@ -726,7 +726,7 @@ div.feedback {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url('../images/clock.png');
+        background-image: url('../images/icon/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;
@@ -820,7 +820,7 @@ div.feedback {
         z-index: 99;
     }
     .pickup2-overlay {
-        background-image: url('../images/clock.png');
+        background-image: url('../images/icon/clock.png');
         background-position: left center;
         background-repeat: no-repeat;
         height: 120px;
@@ -844,7 +844,7 @@ div.feedback {
     margin-bottom: 100px;
     h1 {
         color: #191919;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-weight: 700;
         margin-top: 25px;
         text-align: center;

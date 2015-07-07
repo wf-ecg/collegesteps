@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url('../images/cover.jpg') center 218px;
+    background: url($top_bkgr) center 218px;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -32,7 +32,7 @@
 }
 #box h1 {
     color: #b10000;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 6.2em;
     font-style: normal;
     font-weight: 700;
@@ -49,7 +49,7 @@
 }
 #mag h2 {
     color: black;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 3.2em;
     font-weight: 400;
     margin-top: 0;
@@ -92,7 +92,7 @@
 }
 .welcome2-overlay h1 {
     color: white!important;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 26px;
     font-style: italic;
     font-weight: 600;

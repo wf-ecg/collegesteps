@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url('../images/students-taking-a-selfie.jpg') center top;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -8,7 +8,7 @@
     margin-bottom: 100px;
     h1 {
         color: #6a2c91;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 43px;
         font-weight: 400;
         margin-top: 25px;
@@ -16,7 +16,7 @@
         span {
             color: black;
             display: block;
-            font-family: 'myriad-pro-condensed',sans-serif;
+            font-family: $sans_cn;
             font-size: 100px;
             font-weight: 400;
             letter-spacing: 10px;
@@ -28,7 +28,7 @@
 }
 .studentbox {
     background-color: #8f106e;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +68,7 @@
 .section-header h6 span {
     color: black;
     display: block;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 66px;
     font-weight: 300;
     letter-spacing: .25em;
@@ -78,7 +78,7 @@
 .header-desc-s span {
     color: black;
     display: block;
-    font: 400 17px myriad-pro,sans-serif;
+    font: 400 17px $sans;
     line-height: 1.5em;
     margin: 0 auto;
     text-align: center;
@@ -88,14 +88,14 @@
     margin-bottom: 70px;
     h1 {
         color: #191919;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-weight: 400;
         margin-top: 25px;
         text-align: center;
         span {
             color: #ee3124;
             display: block;
-            font-family: 'myriad-pro-condensed',sans-serif;
+            font-family: $sans_cn;
             font-size: 80px;
             font-weight: 300;
             margin-top: 5px;
@@ -120,7 +120,7 @@
     margin-bottom: 240px;
     h1 {
         color: #191919;
-        font-family: 'myriad-pro',sans-serif!important;
+        font-family: $sans!important;
         font-size: 60px;
         font-weight: 300;
         margin-top: 0;
@@ -128,7 +128,7 @@
         span {
             color: #2cb44b;
             display: block;
-            font-family: 'myriad-pro',sans-serif!important;
+            font-family: $sans!important;
             font-weight: 300;
             margin-top: 5px;
             text-align: center;
@@ -157,7 +157,7 @@
         margin-top: 0;
     }
     h4 {
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 50px;
         font-weight: 300;
         line-height: .8em;
@@ -183,27 +183,27 @@
         max-width: 550px;
         h1 {
             color: #ff9930;
-            font-family: 'myriad-pro-condensed',sans-serif;
+            font-family: $sans_cn;
             font-style: normal;
             font-weight: 400;
             margin-bottom: 50px;
         }
         h2 {
             color: black;
-            font-family: 'myriad-pro',sans-serif;
+            font-family: $sans;
             font-style: italic;
             font-weight: 300;
         }
         .header-desc-6 {
             color: black;
-            font-family: 'myriad-pro-condensed',sans-serif;
+            font-family: $sans_cn;
             font-size: 24px;
             font-style: normal;
             font-weight: 400;
             text-align: left;
             span {
                 color: #960d76;
-                font-family: 'myriad-pro',sans-serif;
+                font-family: $sans;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -214,7 +214,7 @@
 }
 .student7b h3 {
     color: #f99300;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -225,7 +225,7 @@
     margin-bottom: 20px;
     margin-top: 0;
     h1 {
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 60px;
         font-style: normal;
         font-weight: 300;
@@ -240,7 +240,7 @@
     .header-desc-s7 span {
         color: black;
         display: block;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -256,7 +256,7 @@
 }
 .student7 h3 {
     color: #006991;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -276,7 +276,7 @@
 .student8 {
     h2 {
         color: #b51630;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 36px;
         font-style: normal;
         font-weight: 500;
@@ -284,7 +284,7 @@
         margin-top: 0;
     }
     h3 {
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 18px;
         font-style: italic;
         font-weight: 500;
@@ -293,7 +293,7 @@
     }
     h4 {
         color: #970d76;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -329,7 +329,7 @@ a:hover {
 }
 .quote-s {
     color: #970e76;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 38px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -346,7 +346,7 @@ a:hover {
 }
 h2.graph {
     color: #970e76;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -357,7 +357,7 @@ h3.graph {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     color: #970e76;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -365,7 +365,7 @@ h3.graph {
     padding-bottom: 20px;
     span {
         color: black;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 20px;
@@ -381,7 +381,7 @@ h3.graph {
     clear: both;
     color: black;
     float: left;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -390,7 +390,7 @@ h3.graph {
 }
 .mousebox {
     background-color: #2492bc;
-    background-image: url('../images/mouse-icon-bg.png');
+    background-image: url('../images/icon/mouse-icon-bg.png');
     background-repeat: no-repeat;
     border-radius: 15px;
     color: white;
@@ -417,7 +417,7 @@ h3.graph {
     margin-bottom: 10px;
 }
 .quote-stats {
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 30px;
     font-weight: 500;
     line-height: 1.8em;
@@ -427,7 +427,7 @@ h3.graph {
     }
 }
 .collegestudent {
-    background-image: url('../images/college-student.jpg');
+    background-image: url('../images/photo/college-student.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -455,7 +455,7 @@ h3.graph {
 }
 blockquote.bubble-b p {
     color: white;
-    font-family: 'myriad-pro-condensed',sans-serif;
+    font-family: $sans_cn;
     font-style: italic;
 }
 .bubble-p {
@@ -481,7 +481,7 @@ blockquote.bubble-b p {
 }
 blockquote.bubble-p p {
     color: white;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
 }
 .bubble-g {
     background: #2cb34a;
@@ -506,7 +506,7 @@ blockquote.bubble-p p {
 }
 blockquote.bubble-g p {
     color: white;
-    font-family: 'myriad-pro-condensed',sans-serif;
+    font-family: $sans_cn;
 }
 .bubble-o {
     background: #bc5333;
@@ -531,7 +531,7 @@ blockquote.bubble-g p {
 }
 blockquote.bubble-o p {
     color: white;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
 }
 .idea {
     margin-top: -270px;
@@ -554,7 +554,7 @@ blockquote.bubble-o p {
     width: 520px;
 }
 .bubble-Q-inner {
-    background-image: url('../images/bubble-question-blue.png');
+    background-image: url('../images/icon/bubble-question-blue.png');
     background-position: left;
     background-repeat: no-repeat;
     border-radius: 100px 10px 10px 100px;
@@ -567,7 +567,7 @@ blockquote.bubble-o p {
 }
 .bubble-Q-inner h4 {
     color: white;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 8px;
@@ -575,7 +575,7 @@ blockquote.bubble-o p {
 }
 .bubble-Q-inner p {
     color: white;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 0;
@@ -617,7 +617,7 @@ fieldset input {
     margin-right: 3px;
 }
 h2.answers {
-    font-family: 'myriad-pro-condensed',sans-serif;
+    font-family: $sans_cn;
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
@@ -644,7 +644,7 @@ ol.quiz li {
 }
 .note ol {
     color: #999;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -672,12 +672,12 @@ ol.quiz li {
 }
 .bluebox-inner {
     color: white;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: 400;
     h3 {
         color: white;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
@@ -691,7 +691,7 @@ ol.quiz li {
         font-size: 12px;
     }
     span {
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -800,7 +800,7 @@ ol.quiz li {
     padding: 60px;
 }
 .box-4 {
-    background-image: url('../images/graduates-taking-a-selfie.jpg');
+    background-image: url('../images/photo/graduates-taking-a-selfie.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -810,7 +810,7 @@ ol.quiz li {
     height: 410px;
 }
 .box-11 {
-    background-image: url('../images/student-playing-mobile-game.jpg');
+    background-image: url('../images/photo/student-playing-mobile-game.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -821,14 +821,14 @@ ol.quiz li {
     padding: 70px 60px 0 100px;
 }
 #balloons {
-    background-image: url('../images/balloons-icon.png');
+    background-image: url('../images/icon/balloons-icon.png');
     background-position: 260px 35px;
     background-repeat: no-repeat;
     height: 370px;
     padding: 60px 80px 0 50px;
     h4 {
         color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-family: $serif;
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 15px;
@@ -836,7 +836,7 @@ ol.quiz li {
     }
     p {
         color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-family: $serif;
         font-size: 22px;
         font-weight: 500;
         line-height: 1.4em;
@@ -916,7 +916,7 @@ ol.quiz li {
 .gradient {
     h4 {
         color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-family: $serif;
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -924,7 +924,7 @@ ol.quiz li {
     }
     p {
         color: white;
-        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-family: $serif;
         font-size: 22px;
         font-weight: 500;
         line-height: 1.4em;
@@ -951,7 +951,7 @@ ol.quiz li {
     border: 1px solid black;
     color: white;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#970e76',endColorstr='#970e76',GradientType=1);
-    font-family: 'Archer SSm A','Archer SSm B' serif;
+    font-family: $serif;
     font-size: 30px;
     font-weight: 500;
     margin-right: auto;
@@ -972,7 +972,7 @@ ol.quiz li {
         border: 1px solid black;
         color: white;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a80303',endColorstr='#ff3019',GradientType=0);
-        font-family: 'Archer SSm A','Archer SSm B' serif;
+        font-family: $serif;
         font-size: 30px;
         font-weight: 500;
         margin-right: auto;
@@ -983,7 +983,7 @@ ol.quiz li {
     }
     h2 {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 20px;
@@ -991,7 +991,7 @@ ol.quiz li {
     }
     h3 {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 0;
@@ -999,7 +999,7 @@ ol.quiz li {
     }
     h4 {
         color: #006991;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 2px;
@@ -1007,7 +1007,7 @@ ol.quiz li {
     }
     h5 {
         color: #006991;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 34px;
         font-weight: 700;
         margin-bottom: 20px;
@@ -1016,7 +1016,7 @@ ol.quiz li {
 }
 
 .arrow-blue-2 {
-    background-image: url('../images/arrow-blue-2.png');
+    background-image: url('../images/checklist/arrow-blue-2.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1026,7 +1026,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-3 {
-    background-image: url('../images/arrow-blue-3.png');
+    background-image: url('../images/checklist/arrow-blue-3.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1036,7 +1036,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-red-1 {
-    background-image: url('../images/arrow-red-1.png');
+    background-image: url('../images/checklist/arrow-red-1.png');
     background-repeat: no-repeat;
     height: 100%;
     position: absolute;
@@ -1046,7 +1046,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-blue-1 {
-    background-image: url('../images/arrow-blue-1.png');
+    background-image: url('../images/checklist/arrow-blue-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 100px;
@@ -1056,7 +1056,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-pink-1 {
-    background-image: url('../images/arrow-pink-1.png');
+    background-image: url('../images/checklist/arrow-pink-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 0;
@@ -1066,7 +1066,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-green-1 {
-    background-image: url('../images/arrow-green-1.png');
+    background-image: url('../images/checklist/arrow-green-1.png');
     background-repeat: no-repeat;
     height: 100%;
     left: 520px;
@@ -1076,7 +1076,7 @@ ol.quiz li {
     z-index: 10;
 }
 .arrow-purple-1 {
-    background-image: url('../images/arrow-purple-1.png');
+    background-image: url('../images/checklist/arrow-purple-1.png');
     background-repeat: no-repeat;
     bottom: -65px;
     height: 65px;
@@ -1086,7 +1086,7 @@ ol.quiz li {
     z-index: 11;
 }
 .arrow-orange-1 {
-    background-image: url('../images/arrow-orange-1.png');
+    background-image: url('../images/checklist/arrow-orange-1.png');
     background-repeat: no-repeat;
     height: 70px;
     left: 0;
@@ -1163,7 +1163,7 @@ ol.quiz li {
 }
 .progress h4 {
     color: black;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-size: 18px;
     font-weight: 400;
     height: 30px;
@@ -1210,7 +1210,7 @@ ol.quiz li {
         padding: 0;
         h4 {
             color: white;
-            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-family: $serif;
             font-size: 25px;
             font-weight: 700;
             margin-bottom: 15px;
@@ -1218,7 +1218,7 @@ ol.quiz li {
         }
         p {
             color: white;
-            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-family: $serif;
             font-size: 22px;
             font-weight: 500;
             line-height: 1.4em;
@@ -1262,7 +1262,7 @@ ol.quiz li {
         line-height: 1.3em;
     }
     .arrow-blue-2 {
-        background-image: url('../images/arrow-blue-2.png');
+        background-image: url('../images/checklist/arrow-blue-2.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1272,7 +1272,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-blue-3 {
-        background-image: url('../images/arrow-blue-3.png');
+        background-image: url('../images/checklist/arrow-blue-3.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1282,7 +1282,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-red-1 {
-        background-image: url('../images/arrow-red-1.png');
+        background-image: url('../images/checklist/arrow-red-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 390px;
@@ -1292,7 +1292,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-pink-1 {
-        background-image: url('../images/arrow-pink-1.png');
+        background-image: url('../images/checklist/arrow-pink-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1302,7 +1302,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-green-1 {
-        background-image: url('../images/arrow-green-1.png');
+        background-image: url('../images/checklist/arrow-green-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 520px;
@@ -1312,7 +1312,7 @@ ol.quiz li {
         z-index: 10;
     }
     .arrow-purple-1 {
-        background-image: url('../images/arrow-purple-1.png');
+        background-image: url('../images/checklist/arrow-purple-1.png');
         background-repeat: no-repeat;
         bottom: -310px;
         height: 100%;
@@ -1322,7 +1322,7 @@ ol.quiz li {
         z-index: 11;
     }
     .arrow-orange-1 {
-        background-image: url('../images/arrow-orange-1.png');
+        background-image: url('../images/checklist/arrow-orange-1.png');
         background-repeat: no-repeat;
         height: 100%;
         left: 0;
@@ -1352,7 +1352,7 @@ ol.quiz li {
         padding: 0;
         h4 {
             color: white;
-            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-family: $serif;
             font-size: 30px;
             font-weight: 800;
             margin-bottom: 15px;
@@ -1360,7 +1360,7 @@ ol.quiz li {
         }
         p {
             color: white;
-            font-family: 'Archer SSm A','Archer SSm B' serif;
+            font-family: $serif;
             font-size: 22px;
             font-weight: 500;
             line-height: 1.4em;
@@ -1530,7 +1530,7 @@ ol.quiz li {
         margin-top: 0;
     }
     .progress-bar {
-        font: 11px/32px myriad-pro,sans-serif;
+        font: 11px/32px $sans;
         padding: 0 5px;
     }
     .note ol {

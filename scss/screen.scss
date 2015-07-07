@@ -17,6 +17,10 @@
 @import url('/lib/bootstrap/3.2.0/bootstrap.min.css');
 @import url('/lib/font-awesome/4.3.0/css/font-awesome.min.css');
 @import url('../vendor/socialcount/socialcount-with-icons.css');
+
+$serif: 'Archer SSm A','Archer SSm B',serif;
+$sans: 'myriad-pro',sans-serif;
+$sans_cn: 'myriad-pro-condensed',sans-serif;
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
 @import "pages/_all";
 @import "_ani";

@@ -18,7 +18,7 @@
     z-index: 99999;
     h3 {
         color: white;
-        font-family: "myriad-pro",sans-serif;
+        font-family: $sans;
         font-size: 32px;
         margin-bottom: 10px;
         margin-top: 0;
@@ -26,7 +26,7 @@
     }
     p {
         color: white;
-        font-family: "myriad-pro",sans-serif;
+        font-family: $sans;
         font-size: 18px;
         line-height: 1.5em;
         margin-bottom: 0;
@@ -145,17 +145,10 @@ header {
     margin-bottom: 50px;
 }
 .p-big-desc {
-    font: 28px/30px 'Archer SSm A','Archer SSm B',serif;
+    font: 28px/30px $serif;
 }
 .accent-color {
     color: #00a5d9;
-}
-
-.page-content {
-    background: url('../images/map-bg.jpg') no-repeat center top white 50% -300px;
-    .section {
-        background: 0;
-    }
 }
 
 .nav>li>a:focus,.nav>li>a:hover {
@@ -177,7 +170,7 @@ header {
     padding: 0;
     a {
         display: block;
-        font: 14px myriad-pro,sans-serif;
+        font: 14px $sans;
         padding: 15px 20px;
         text-decoration: none;
     }
@@ -200,7 +193,7 @@ header {
     background-color: #970e76;
     box-shadow: none;
     color: white;
-    font: 13px myriad-pro,sans-serif;
+    font: 13px $sans;
     line-height: 30px;
     padding: 0 10px;
     text-align: right;
@@ -280,7 +273,7 @@ header {
                 -webkit-transition: all .3s;
                 color: white;
                 display: block;
-                font: 14px 'Archer SSm A','Archer SSm B',serif;
+                font: 14px $serif;
                 padding: 7px 25px;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -331,7 +324,7 @@ header {
     z-index: 9999999;
     a {
         color: #191919;
-        font: 16px 'Archer SSm A','Archer SSm B',serif;
+        font: 16px $serif;
         text-decoration: none;
         text-transform: uppercase;
         i {
@@ -372,7 +365,7 @@ header {
 .learnmore-box-2 .lightbulb-2 h3,
 .learnmore-box-3 h3 {
     color: #006991;
-    font-family: "myriad-pro",sans-serif;
+    font-family: $sans;
     font-size: 22px;
     font-style: italic;
     margin-bottom: 5px;
@@ -406,7 +399,7 @@ header {
     color: black;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4c4c4',endColorstr='#f2f2f2',GradientType=1);
     float: right;
-    font: 14px myriad-pro,sans-serif;
+    font: 14px $sans;
     line-height: 1.3em;
     padding: 20px;
 }
@@ -425,14 +418,14 @@ header {
 .learnmore-box-3 h3,
 .learnmore-box-4 h3 {
     color: #006991!important;
-    font-family: "myriad-pro",sans-serif;
+    font-family: $sans;
     font-size: 22px!important;
     font-style: italic!important;
     margin-bottom: 5px;
     margin-top: 0;
 }
 .lightbulb {
-    background-image: url('../images/bubble-lightbulb.png');
+    background-image: url('../images/icon/bubble-lightbulb.png');
     background-position: right;
     background-repeat: no-repeat;
     font-size: 14px;

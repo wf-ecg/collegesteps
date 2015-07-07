@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url('../images/father-and-son-discussing-student-loans.jpg') center top;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -11,7 +11,7 @@
 }
 .parentbox {
     background-color: #65368b;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 18px;
     font-weight: 100;
     margin-left: auto;
@@ -41,7 +41,7 @@ h1.light {
     .section-header-p1 {
         h1 {
             color: #a0006a;
-            font-family: 'myriad-pro',sans-serif;
+            font-family: $sans;
             font-size: 69px;
             font-style: normal;
             font-weight: 600;
@@ -57,7 +57,7 @@ h1.light {
         }
         h2, h3 {
             color: black;
-            font-family: 'myriad-pro',sans-serif;
+            font-family: $sans;
             font-size: 32px;
             font-style: normal;
             font-weight: 100;
@@ -70,7 +70,7 @@ h1.light {
     }
     h2 {
         color: #006991;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -79,7 +79,7 @@ h1.light {
     }
     h3 {
         color: #f99300;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
@@ -101,7 +101,7 @@ h1.light {
     z-index: 2;
     h1 {
         color: #006991;
-        font-family: 'myriad-pro-condensed',sans-serif;
+        font-family: $sans_cn;
         font-size: 100px;
         font-style: normal;
         font-weight: 100;
@@ -124,7 +124,7 @@ ul.college-financing-rolls {
     margin-top: 50px;
     li {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -149,7 +149,7 @@ ul.college-financing-rolls {
     padding: 25px 0 0;
     p {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -174,14 +174,14 @@ ul.fa-ul li {
 .checklist div {
     h3 {
         color: #438ba8;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 18px;
         font-weight: 700;
         margin: 0;
     }
     h4 {
         color: #65368b;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 18px;
         font-weight: 700;
         margin-top: 20px;
@@ -243,7 +243,7 @@ ul.fa-ul li {
 #parents-planning-guide {
     h1 {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 60px;
         font-variant: normal;
         font-weight: 300;
@@ -252,7 +252,7 @@ ul.fa-ul li {
     }
     h2 {
         color: black;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 20px;
         font-variant: normal;
         font-weight: 400;
@@ -266,7 +266,7 @@ ul.fa-ul li {
 }
 /* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .money-icon {
-    background-image: url('../images/money-icon.png');
+    background-image: url('../images/icon/money-icon.png');
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 150px 250px;
@@ -277,7 +277,7 @@ ul.fa-ul li {
 .section-header-p4 {
     h1 {
         color: #093;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
@@ -285,7 +285,7 @@ ul.fa-ul li {
         span {
             color: black;
             display: block;
-            font-family: 'myriad-pro-condensed',sans-serif;
+            font-family: $sans_cn;
             font-style: normal;
             font-weight: 700;
             margin-bottom: 10px;
@@ -298,7 +298,7 @@ ul.fa-ul li {
         border-top-style: solid;
         border-top-width: 1px;
         display: block;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 22px;
         font-style: normal;
         font-weight: 300;
@@ -344,13 +344,13 @@ ul.fa-ul li {
     background: linear-gradient(to right,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
     color: white;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc5333',endColorstr='#e2641f',GradientType=1);
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-weight: 600;
     margin-bottom: 5px;
     padding: 15px;
     h4 {
         color: white;
-        font-family: 'myriad-pro',sans-serif;
+        font-family: $sans;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -378,7 +378,7 @@ ul.fa-ul li {
 }
 .blockright h4 {
     color: #006991;
-    font-family: 'myriad-pro',sans-serif;
+    font-family: $sans;
     font-style: italic;
     font-weight: 600;
     margin-bottom: 5px;
@@ -473,7 +473,7 @@ ul.fa-ul li {
     margin-bottom: 50px;
     h1 {
         color: #191919;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-weight: 700;
         margin-top: 25px;
         text-align: center;

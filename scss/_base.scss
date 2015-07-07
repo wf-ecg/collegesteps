@@ -1,7 +1,7 @@
 /* _base.scss */
 body {
     background: white;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-size: 14px;
 }
 a {
@@ -18,7 +18,7 @@ a {
 }
 h1,h2,h3,h4,h5,h6 {
     color: #191919;
-    font-family: 'Archer SSm A','Archer SSm B',serif;
+    font-family: $serif;
     font-weight: 500;
     line-height: 1.3em;
     margin: 0 0 20px;
@@ -47,7 +47,7 @@ blockquote {
     padding: 0 20px;
     p {
         color: #191919;
-        font: 300 20px/26px 'Archer SSm A','Archer SSm B',serif;
+        font: 300 20px/26px $serif;
         &::after,
         &::before {
             color: rgba(0,0,0,.5);
@@ -55,14 +55,14 @@ blockquote {
     }
     small {
         color: #00a5d9;
-        font: 16px 'Archer SSm A','Archer SSm B',serif;
+        font: 16px $serif;
         &::before {
             content: "";
         }
         .occupation {
             color: #999;
             display: block;
-            font: 13px 'Archer SSm A','Archer SSm B',serif;
+            font: 13px $serif;
         }
     }
 }
@@ -91,7 +91,7 @@ footer {
     }
     .copyrights {
         display: block;
-        font-family: 'Archer SSm A','Archer SSm B',serif;
+        font-family: $serif;
         font-size: 11px;
         font-weight: 500;
         line-height: 1.5em;
