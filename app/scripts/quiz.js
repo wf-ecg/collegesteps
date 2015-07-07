@@ -42,7 +42,7 @@
                 var cla = $('#' + id + ' input:checked').closest('li').attr('class');
 
                 obj[id] = cla;
-                $('#' + id + ' .' + keys[id]).append('<img src="' + imgpath + 'circle.png" class="png_bg" alt="correct answer">');
+                $('#' + id + ' .' + keys[id]).append('<img src="' + imgpath + 'icon/circle.png" class="png_bg" alt="correct answer">');
 
                 if (keys[id] == cla) {
                     me.addClass('correct');
