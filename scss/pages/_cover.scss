@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url($top_bkgr) center 218px;
+    background: url($top_bkgr) center top;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -11,92 +11,89 @@
     text-align: left;
     width: 160px;
     z-index: 4;
-}
-#logo {
-    height: 100px;
-    width: 100px;
+    img {
+        height: 100px;
+        width: 100px;
+    }
 }
 #box {
     padding-right: 75px;
     position: absolute;
-    top: 134px;
+    top: 44px;
     width: 100%;
     z-index: 5;
-}
-#box sup {
-    font-size: 50%;
-    line-height: 0;
-    position: relative;
-    top: -1em;
-    vertical-align: baseline;
-}
-#box h1 {
-    color: #b10000;
-    font-family: $serif;
-    font-size: 6.2em;
-    font-style: normal;
-    font-weight: 700;
-    margin: 0;
-    text-align: right;
+    h1 {
+        color: #b10000;
+        font-family: $serif;
+        font-size: 6.2em;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0;
+        text-align: right;
+        sup {
+            font-size: 50%;
+            line-height: 0;
+            position: relative;
+            top: -1em;
+            vertical-align: baseline;
+        }
+    }
 }
 #mag {
-    padding-right: 440px;
+    padding-right: 475px;
     position: absolute;
     text-align: right;
-    top: 224px;
+    top: 134px;
     width: 100%;
     z-index: 6;
+    h2 {
+        color: black;
+        font-family: $serif;
+        font-size: 3.2em;
+        font-weight: 400;
+        margin-top: 0;
+        text-align: right;
+    }
 }
-#mag h2 {
-    color: black;
-    font-family: $serif;
-    font-size: 3.2em;
-    font-weight: 400;
-    margin-top: 0;
-    text-align: right;
-}
-#welcome {
+header {
     display: table;
     position: relative;
 }
 .welcome-overlay {
-    background: $blue2;
-    background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
-    background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
-    border-radius: 15px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
-    height: 100px;
     margin-left: 60%;
-    opacity: .9;
-    padding: 20px;
     position: absolute;
     top: 88%;
     vertical-align: middle;
     width: 350px;
-    z-index: 2;
-}
-.welcome2-overlay {
-    height: auto;
-    margin-left: 60%;
-    opacity: 1;
-    padding: 15px;
-    position: absolute;
-    top: 88%;
-    vertical-align: middle;
-    width: 350px;
-    z-index: 3;
-}
-.welcome2-overlay h1 {
-    color: white!important;
-    font-family: $sans;
-    font-size: 26px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 1.3em;
+    &.back {
+        background: $blue2;
+        background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
+        background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
+        background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
+        background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
+        background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
+        border-radius: 15px;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
+        height: 100px;
+        opacity: .9;
+        padding: 20px;
+        z-index: 2;
+    }
+    &.fore {
+        height: auto;
+        opacity: 1;
+        padding: 15px;
+        z-index: 3;
+        h1 {
+            color: white!important;
+            font-family: $sans;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+    }
 }
 .letter {
     font-size: 16px;
@@ -116,50 +113,12 @@
     padding-top: 20px;
     width: 350px;
 }
-.line-seperator {
-    background-color: black;
-    clear: both;
-    height: 1px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.publishing-info {
-    font-size: 14px;
-    font-weight: 300;
-}
-.latest-post-item h1,.latest-post-item h2,.latest-post-item h3,.latest-post-item h4,.latest-post-item h5,.latest-post-item h6 {
-    color: #369;
-    margin-bottom: 3px;
-    text-transform: uppercase;
-}
-.latest-post-item p {
-    color: #369;
-    font-size: 14px;
-    margin: 20px 0 10px;
-}
-.latest-post-item img {
-    margin-bottom: 20px;
-    width: 100%;
-}
-.post-info {
-    color: #b2b2b2;
-}
-.read-more-btn {
-    text-align: right;
-}
-.read-more-btn a {
-    color: $blue2;
-}
-.read-more-btn a::after {
-    content: '\2003\f054';
-    font: 11px FontAwesome;
-}
 .letter a {
     font-weight: 700;
     text-decoration: none;
-}
-.letter a:hover {
-    color: rgba(51,51,51,.7);
+    &:hover {
+        color: rgba(51,51,51,.7);
+    }
 }
 @media(max-width:991px) {
     #logoBox {
@@ -168,35 +127,30 @@
         padding-top: 25px;
         text-align: center;
         width: 100%;
-    }
-    #logo {
-        height: 70px;
-        width: 70px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
     }
     #box {
         padding-right: 0;
-        position: absolute;
         top: 104px;
-        width: 100%;
-        z-index: 5;
-    }
-    #box h1 {
-        font-size: 4em;
-        text-align: center;
+        h1 {
+            font-size: 4em;
+            text-align: center;
+        }
     }
     #mag {
         padding-right: 0;
-        position: absolute;
         text-align: center;
         top: 165px;
-        width: 100%;
-        z-index: 6;
+        h2 {
+            font-size: 2.8em;
+            text-align: center;
+        }
     }
-    #mag h2 {
-        font-size: 2.8em;
-        text-align: center;
-    }
-    .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
+    .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,
+    .col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
         margin-bottom: 50px;
     }
     .si-desc {
@@ -244,12 +198,8 @@
         position: absolute!important;
     }
     .welcome-overlay {
-        margin-left: 45%!important;
-        top: 75%!important;
-    }
-    .welcome2-overlay {
-        margin-left: 45%!important;
-        top: 75%!important;
+        margin-left: 45% !important;
+        top: 75% !important;
     }
 }
 @media only screen and (max-width:768px) {
@@ -259,35 +209,31 @@
         padding-top: 25px;
         text-align: center;
         width: 100%;
-    }
-    #logo {
-        height: 70px;
-        width: 70px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
     }
     #box {
         padding-right: 0;
-        position: absolute;
         top: 104px;
-        width: 100%;
-        z-index: 5;
-    }
-    #box h1 {
-        font-size: 4em;
-        text-align: center;
+        h1 {
+            font-size: 4em;
+            text-align: center;
+        }
     }
     #mag {
         padding-right: 0;
-        position: absolute;
         text-align: center;
         top: 165px;
-        width: 100%;
-        z-index: 6;
+        h2 {
+            font-size: 2.8em;
+            text-align: center;
+        }
     }
-    #mag h2 {
-        font-size: 2.8em;
-        text-align: center;
-    }
-    .col-sm-1,.col-xs-1,.col-sm-2,.col-xs-2,.col-sm-3,.col-xs-3,.col-sm-4,.col-xs-4,.col-sm-5,.col-xs-5,.col-sm-6,.col-xs-6,.col-sm-7,.col-xs-7,.col-sm-8,.col-xs-8,.col-sm-9,.col-xs-9,.col-sm-10,.col-xs-10,.col-sm-11,.col-xs-11,.col-sm-12,.col-xs-12 {
+    .col-sm-1,.col-xs-1,.col-sm-2,.col-xs-2,.col-sm-3,.col-xs-3,.col-sm-4,.col-xs-4,
+    .col-sm-5,.col-xs-5,.col-sm-6,.col-xs-6,.col-sm-7,.col-xs-7,.col-sm-8,.col-xs-8,
+    .col-sm-9,.col-xs-9,.col-sm-10,.col-xs-10,.col-sm-11,.col-xs-11,.col-sm-12,.col-xs-12 {
         margin-bottom: 50px;
     }
     .story-item-content {
@@ -315,20 +261,18 @@
         width: 50%;
     }
     .welcome-overlay {
-        border-radius: 0!important;
         height: 90px;
-        margin-left: 0!important;
-        top: 100%!important;
-        width: 100%!important;
-    }
-    .welcome2-overlay {
-        height: 90px;
-        margin-left: 0!important;
-        top: 100%!important;
-        width: 100%!important;
-    }
-    .welcome2-overlay h1 {
-        font-size: 22px;
+        margin-left: 0 !important;
+        top: 100% !important;
+        width: 100% !important;
+        &.back {
+            border-radius: 0 !important;
+        }
+        &.fore {
+            h1 {
+                font-size: 22px;
+            }
+        }
     }
     .letter {
         padding: 140px 20px 20px!important;
@@ -341,49 +285,41 @@
         padding-top: 25px;
         text-align: center;
         width: 100%;
-    }
-    #logo {
-        height: 70px;
-        width: 70px;
+        img {
+            height: 70px;
+            width: 70px;
+        }
     }
     #box {
         padding-right: 0;
-        position: absolute;
         top: 104px;
-        width: 100%;
-        z-index: 5;
-    }
-    #box h1 {
-        font-size: 4em;
-        text-align: center;
+        h1 {
+            font-size: 4em;
+            text-align: center;
+        }
     }
     #mag {
         padding-right: 0;
-        position: absolute;
         text-align: center;
         top: 165px;
-        width: 100%;
-        z-index: 6;
-    }
-    #mag h2 {
-        font-size: 2.8em;
-        text-align: center;
+        h2 {
+            font-size: 2.8em;
+            text-align: center;
+        }
     }
     .welcome-overlay {
-        border-radius: 0!important;
         height: 90px;
-        margin-left: 0!important;
-        top: 100%!important;
-        width: 100%!important;
-    }
-    .welcome2-overlay {
-        height: 90px;
-        margin-left: 0!important;
-        top: 100%!important;
-        width: 100%!important;
-    }
-    .welcome2-overlay h1 {
-        font-size: 22px;
+        margin-left: 0 !important;
+        top: 100% !important;
+        width: 100% !important;
+        &.back {
+            border-radius: 0 !important;
+        }
+        &.fore {
+            h1 {
+                font-size: 22px;
+            }
+        }
     }
     .letter {
         padding: 140px 20px 20px!important;
