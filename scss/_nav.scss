@@ -6,7 +6,7 @@
 }
 #navbar {
     background: white;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid $gray2;
     height: 70px;
     top: 0!important;
     width: 100%;
@@ -25,7 +25,7 @@
             color: white;
             text-decoration: none;
             &:hover {
-                color: #191919;
+                color: $gray3;
             }
         }
         .active {
@@ -39,19 +39,19 @@
         -o-transition: all .2s;
         -webkit-transition: all .2s;
         background: white;
-        border-bottom: 1px solid #f2f2f2;
+        border-bottom: 1px solid $gray2;
         position: fixed!important;
         top: 0;
         transition: all .2s;
         a {
-            color: #191919;
+            color: $gray3;
             text-decoration: none;
             &:hover {
                 color: #666;
             }
         }
         .active {
-            border-bottom: 2px solid #191919;
+            border-bottom: 2px solid $gray3;
             &:hover {
                 border-bottom: 2px solid #666;
             }
@@ -76,7 +76,7 @@
     padding-right: 0;
     padding-top: 25px;
     &>a {
-        color: #191919;
+        color: $gray3;
         display: inline-block;
         font-family: $serif;
         font-size: 14px;
@@ -93,7 +93,7 @@
     }
 }
 li.nav-item.active a {
-    border-bottom: 2px solid #191919;
+    border-bottom: 2px solid $gray3;
 }
 .sub-nav {
     background-color: black;

@@ -118,7 +118,7 @@ header {
     position: relative;
 }
 .section-diff {
-    background: #f2f2f2;
+    background: $gray2;
 }
 .section-bg-overlay {
     &::before {
@@ -148,15 +148,15 @@ header {
     font: 28px/30px $serif;
 }
 .accent-color {
-    color: #00a5d9;
+    color: $blue2;
 }
 
 .nav>li>a:focus,.nav>li>a:hover {
-    background-color: #f2f2f2;
+    background-color: $gray2;
     border: 0;
 }
 .panel {
-    background: #f2f2f2;
+    background: $gray2;
     border: 0;
     box-shadow: none;
 }
@@ -176,21 +176,21 @@ header {
     }
 }
 .panel-default>.panel-heading {
-    background: #f2f2f2;
-    color: #191919;
+    background: $gray2;
+    color: $gray3;
 }
 .panel-default>.panel-heading+.panel-collapse .panel-body {
     border-top: 1px dashed #d9d9d9;
 }
 .progress {
-    background-color: #f2f2f2;
+    background-color: $gray2;
     border-radius: 0;
     box-shadow: none;
     height: 30px;
     margin-bottom: 15px;
 }
 .progress-bar {
-    background-color: #970e76;
+    background-color: $plum1;
     box-shadow: none;
     color: white;
     font: 13px $sans;
@@ -239,7 +239,7 @@ header {
 }
 .st-menu {
     -webkit-transition: all .5s;
-    background: #191919;
+    background: $gray3;
     height: 100%;
     position: fixed;
     right: 0;
@@ -323,7 +323,7 @@ header {
     top: 0;
     z-index: 9999999;
     a {
-        color: #191919;
+        color: $gray3;
         font: 16px $serif;
         text-decoration: none;
         text-transform: uppercase;
@@ -364,7 +364,7 @@ header {
 }
 .learnmore-box-2 .lightbulb-2 h3,
 .learnmore-box-3 h3 {
-    color: #006991;
+    color: $blue1;
     font-family: $sans;
     font-size: 22px;
     font-style: italic;
@@ -389,15 +389,15 @@ header {
 .learnmore-box-3,
 .learnmore-box-4,
 .smgreybox {
-    background: #c4c4c4;
-    background: -moz-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,#c4c4c4),color-stop(100%,#f2f2f2));
-    background: -webkit-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
-    background: -o-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
-    background: -ms-linear-gradient(left,#c4c4c4 0,#f2f2f2 100%);
-    background: linear-gradient(to right,#c4c4c4 0,#f2f2f2 100%);
+    background: $gray1;
+    background: -moz-linear-gradient(left,$gray1 0,$gray2 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$gray1),color-stop(100%,$gray2));
+    background: -webkit-linear-gradient(left,$gray1 0,$gray2 100%);
+    background: -o-linear-gradient(left,$gray1 0,$gray2 100%);
+    background: -ms-linear-gradient(left,$gray1 0,$gray2 100%);
+    background: linear-gradient(to right,$gray1 0,$gray2 100%);
     color: black;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4c4c4',endColorstr='#f2f2f2',GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray1',endColorstr='$gray2',GradientType=1);
     float: right;
     font: 14px $sans;
     line-height: 1.3em;
@@ -417,7 +417,7 @@ header {
 .learnmore-box .lightbulb h3,
 .learnmore-box-3 h3,
 .learnmore-box-4 h3 {
-    color: #006991!important;
+    color: $blue1!important;
     font-family: $sans;
     font-size: 22px!important;
     font-style: italic!important;

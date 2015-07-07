@@ -1,7 +1,7 @@
 /* _btn.scss */
 
 .btn {
-    background: #00a5d9;
+    background: $blue2;
     border: 0;
     border-radius: 0;
     color: white;
@@ -11,7 +11,7 @@
     text-decoration: none;
     text-shadow: none;
     &.active, &.disabled, &:active, &:focus, &:hover, &[disabled] {
-        background-color: #191919;
+        background-color: $gray3;
         color: white;
     }
     &:focus, &:hover {
@@ -28,7 +28,7 @@
     font-size: 13px;
 }
 .btn-primary {
-    background-color: #00a5d9;
+    background-color: $blue2;
     border-color: none;
     color: white;
     text-shadow: none;
@@ -38,17 +38,17 @@
 .btn-primary.active,.btn-primary.disabled,.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.btn-primary[disabled],
 .btn-success.active,.btn-success.disabled,.btn-success:active,.btn-success:focus,.btn-success:hover,.btn-success[disabled],
 .btn-warning.active,.btn-warning.disabled,.btn-warning:active,.btn-warning:focus,.btn-warning:hover,.btn-warning[disabled] {
-    background-color: #191919!important;
+    background-color: $gray3!important;
     color: white;
 }
 .btn-warning {
-    background-color: #faa732!important;
+    background-color: $orange3!important;
     background-image: none;
     border-color: none;
     text-shadow: none;
     &.active,
     &:active {
-        background-color: #faa732 \9!important;
+        background-color: $orange3 \9!important;
     }
 }
 .btn-danger {
@@ -79,23 +79,23 @@
     }
 }
 .btn-inverse {
-    background-color: #191919!important;
+    background-color: $gray3!important;
     background-image: none;
     border-color: none;
     color: white;
     text-shadow: none;
     &.active, &.disabled, &:active, &:focus, &:hover, &[disabled] {
-        background-color: #191919!important;
+        background-color: $gray3!important;
         color: white;
     }
     &.active, &:active {
-        background-color: #191919 \9!important;
+        background-color: $gray3 \9!important;
     }
 }
 .btn-link {
     border-color: transparent;
     border-radius: 0;
-    color: #191919;
+    color: $gray3;
     cursor: pointer;
     &, &:active, &[disabled] {
         background-color: transparent!important;

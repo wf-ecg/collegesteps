@@ -10,7 +10,7 @@
     width: 100%;
 }
 .parentbox {
-    background-color: #65368b;
+    background-color: $purple3;
     font-family: $serif;
     font-size: 18px;
     font-weight: 100;
@@ -64,12 +64,12 @@ h1.light {
             text-align: left;
         }
         h3 {
-            color: #006991;
+            color: $blue1;
             font-size: 26px;
         }
     }
     h2 {
-        color: #006991;
+        color: $blue1;
         font-family: $serif;
         font-size: 18px;
         font-style: normal;
@@ -100,7 +100,7 @@ h1.light {
     padding: 15px;
     z-index: 2;
     h1 {
-        color: #006991;
+        color: $blue1;
         font-family: $sans_cn;
         font-size: 100px;
         font-style: normal;
@@ -180,7 +180,7 @@ ul.fa-ul li {
         margin: 0;
     }
     h4 {
-        color: #65368b;
+        color: $purple3;
         font-family: $serif;
         font-size: 18px;
         font-weight: 700;
@@ -322,7 +322,7 @@ ul.fa-ul li {
         margin-top: 0;
     }
     h3 {
-        color: #478731;
+        color: $green3;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -335,15 +335,15 @@ ul.fa-ul li {
     }
 }
 .orangebox {
-    background: #bc5333;
-    background: -moz-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(188,83,51,1)),color-stop(0%,rgba(226,100,31,1)),color-stop(100%,rgba(226,100,31,1)));
-    background: -webkit-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
-    background: -o-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
-    background: -ms-linear-gradient(left,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
-    background: linear-gradient(to right,rgba(188,83,51,1) 0,rgba(226,100,31,1) 0,rgba(226,100,31,1) 100%);
+    background: $orange1;
+    background: -moz-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$orange1),color-stop(0%,$orange2),color-stop(100%,$orange2));
+    background: -webkit-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
+    background: -o-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
+    background: -ms-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
+    background: linear-gradient(to right,$orange1 0,$orange2 0,$orange2 100%);
     color: white;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc5333',endColorstr='#e2641f',GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange1',endColorstr='$orange2',GradientType=1);
     font-family: $sans;
     font-weight: 600;
     margin-bottom: 5px;
@@ -377,7 +377,7 @@ ul.fa-ul li {
     padding: 15px;
 }
 .blockright h4 {
-    color: #006991;
+    color: $blue1;
     font-family: $sans;
     font-style: italic;
     font-weight: 600;
@@ -472,7 +472,7 @@ ul.fa-ul li {
 .section-header-p {
     margin-bottom: 50px;
     h1 {
-        color: #191919;
+        color: $gray3;
         font-family: $serif;
         font-weight: 700;
         margin-top: 25px;
@@ -481,7 +481,7 @@ ul.fa-ul li {
             position: relative;
             &::after,
             &::before {
-                border-bottom: 75px solid #6a2c9c;
+                border-bottom: 75px solid $purple2;
                 content: '';
                 position: absolute;
                 width: 4px;

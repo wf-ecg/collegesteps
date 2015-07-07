@@ -8,7 +8,7 @@ a {
     -moz-transition: all .2s;
     -o-transition: all .2s;
     -webkit-transition: all .2s;
-    color: #191919;
+    color: $gray3;
     text-decoration: underline;
     transition: all .2s;
     &:hover {
@@ -17,7 +17,7 @@ a {
     }
 }
 h1,h2,h3,h4,h5,h6 {
-    color: #191919;
+    color: $gray3;
     font-family: $serif;
     font-weight: 500;
     line-height: 1.3em;
@@ -46,7 +46,7 @@ blockquote {
     margin: 0;
     padding: 0 20px;
     p {
-        color: #191919;
+        color: $gray3;
         font: 300 20px/26px $serif;
         &::after,
         &::before {
@@ -54,7 +54,7 @@ blockquote {
         }
     }
     small {
-        color: #00a5d9;
+        color: $blue2;
         font: 16px $serif;
         &::before {
             content: '';
@@ -70,7 +70,7 @@ img {
     max-width: 100%;
 }
 footer {
-    background: #191919;
+    background: $gray3;
     color: white;
     padding: 100px 20px;
     position: relative;
