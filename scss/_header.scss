@@ -1,8 +1,8 @@
 /* _header.scss */
 #page-header {
     background: url('../images/home-bg.jpg') bottom center;
-    background-attachment: fixed!important;
-    background-size: cover!important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
     position: relative;
     &::before {
         background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,rgba(0,0,0,.1)),color-stop(40%,rgba(0,0,0,.1)),color-stop(100%,rgba(0,0,0,.4)));

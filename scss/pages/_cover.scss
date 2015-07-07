@@ -86,7 +86,7 @@ header {
         padding: 15px;
         z-index: 3;
         h1 {
-            color: white!important;
+            color: white !important;
             font-family: $sans;
             font-size: 26px;
             font-style: italic;
@@ -195,7 +195,7 @@ header {
         margin-bottom: 0;
     }
     .trigger-fixed {
-        position: absolute!important;
+        position: absolute !important;
     }
     .welcome-overlay {
         margin-left: 45% !important;
@@ -275,7 +275,7 @@ header {
         }
     }
     .letter {
-        padding: 140px 20px 20px!important;
+        padding: 140px 20px 20px !important;
     }
 }
 @media only screen and (max-width:480px) {
@@ -322,9 +322,9 @@ header {
         }
     }
     .letter {
-        padding: 140px 20px 20px!important;
+        padding: 140px 20px 20px !important;
     }
     .executive-info {
-        padding-left: 0!important;
+        padding-left: 0 !important;
     }
 }

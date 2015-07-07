@@ -34,7 +34,7 @@
     padding-top: 69px;
 }
 h1.light {
-    font-weight: 300!important;
+    font-weight: 300 !important;
 }
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
 .parent1 {
@@ -432,7 +432,7 @@ ul.fa-ul li {
         padding-top: 0;
     }
     .section-header-p1 h1 {
-        font-size: 40px!important;
+        font-size: 40px !important;
         text-align: center;
     }
 }
@@ -465,7 +465,7 @@ ul.fa-ul li {
         padding-top: 0;
     }
     .section-header-p1 h1 {
-        font-size: 40px!important;
+        font-size: 40px !important;
         text-align: center;
     }
 }
@@ -506,7 +506,7 @@ ul.fa-ul li {
 @media only screen and (max-width:768px) {
     .section-header-p {
         h1 span {
-            font-size: 18px!important;
+            font-size: 18px !important;
             &::after,
             &::before {
                 top: -50px;
@@ -517,7 +517,7 @@ ul.fa-ul li {
 @media only screen and (max-width:480px) {
     .section-header-p {
         h1 span {
-            font-size: 18px!important;
+            font-size: 18px !important;
             &::after,
             &::before {
                 top: -50px;
