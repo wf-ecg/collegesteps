@@ -126,7 +126,8 @@
             z-index: 2;
             span {
                 color: black;
-                font-size: 72px;
+                font-family: $sans;
+                font-size: 60px;
                 font-style: italic;
                 font-weight: 100;
                 margin-left: 1em;
@@ -160,8 +161,9 @@
         }
     }
     .callout-g {
-        background-color: #ecf5e9;
-        padding: 25px 0 0;
+        background-color: transparentize($blue1, 0.9);
+        margin-top: 20px;
+        padding: 10px 0 0;
         position: relative;
         p {
             color: black;
@@ -169,21 +171,19 @@
             font-size: 21px;
             font-style: normal;
             font-weight: 100;
-            padding: 30px;
+            padding: 10px 30px 10px;
             strong {
-                font-size: 26px;
+                font-size: 36px;
                 font-weight: 100;
             }
         }
     }
-    .green-arrows {
-        background-image: url('../images/arrows-green.png');
-        background-position: right;
-        background-repeat: no-repeat;
-        top: -2em;
-        position: relative;
-        right: 2em;
+    .arrows-right {
+        background-color: $blue1;
+        bottom: -4em;
         height: 42px;
+        position: absolute;
+        right: 1em;
     }
     ul.fa-ul li {
         font-size: 16px;
