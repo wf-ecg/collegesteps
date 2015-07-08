@@ -579,18 +579,70 @@ p {
 }
 /* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
 .student7 {
+    header {
+        text-align: center;
+        h1 {
+            color: black;
+            font-family: $sans;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 100;
+            line-height: 1;
+            margin-bottom: 50px;
+            strong {
+                color: $blue1;
+                font-family: $sans_cn;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 300;
+            }
+        }
+        p {
+            color: black;
+            font-family: $sans;
+            font-size: 20px;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 75%;
+            strong {
+                color: $orange3;
+                font-size: 1.3em;
+                font-weight: 600;
+            }
+        }
+        .arrows-down {
+            background-color: $blue1;
+            display: inline-block;
+        }
+    }
     p {
         margin-bottom: 10px;
         margin-top: 0;
     }
-    h3 {
-        color: $blue1;
-        font-family: $serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        margin-bottom: 10px;
-        margin-top: 0;
+    .greybg {
+        padding: 30px;
+        img {
+            float: right;
+            height: 400px;
+            margin: 2em;
+        }
+        p {
+            font-family: $sans;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            text-indent: -50px;
+            strong {
+                color: $orange3;
+                font-size: 40px;
+                font-weight: 300;
+                b {
+                    font-size: 80px;
+                    font-weight: 500;
+                    line-height: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
     }
 }
 /* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
