@@ -1,17 +1,13 @@
 /* _style.scss */
 .upgradeframe {
-    -khtml-opacity: .8;
-    -moz-opacity: .8;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8);
+    @include opacity( 0.8 );
     background: #b10000;
     color: white;
     font-size: 40px;
     left: 0;
-    opacity: .8;
     padding: 2em 20%;
     position: fixed;
     right: 0;
-    text-align: center;
     text-align: center;
     top: 0;
     width: auto;

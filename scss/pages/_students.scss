@@ -211,12 +211,13 @@ p {
         z-index: 4 !important;
     }
     .listbox-3 {
-        @include transform( rotate(-3deg) );
+        @include transform( rotate(-2deg) );
         margin-left: 10px;
         margin-right: 60px;
         z-index: 3 !important;
     }
     .listbox-4 {
+        @include transform( rotate(-1deg) );
         margin-left: 20px;
         z-index: 2 !important;
     }
