@@ -47,8 +47,8 @@ p {
     padding: 20px;
     width: 100%;
     h4 {
-        color: white;
-        font-weight: 700;
+        color: white !important;
+        font-weight: 800;
         margin-bottom: 5px;
         margin-top: 0;
     }
@@ -93,16 +93,22 @@ p {
         }
     }
     p {
-        line-height: 1.5em;
         margin-bottom: 30px;
         margin-top: 0;
     }
     h3 {
         color: $blue1;
-        font-size: 18px;
+        font-size: 21px;
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 0;
+    }
+    h4 {
+        color: $orange2;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
     a {
         font-weight: 700;
@@ -647,55 +653,45 @@ p {
 }
 /* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
 .student8 {
+    header {
+        margin-bottom: 40px;
+        h1 {
+            background-color: $orange2;
+            color: white;
+            font-family: $serif;
+            font-size: 55px;
+            font-weight: 600;
+            margin-top: 0;
+            padding: 0 20px;
+            text-align: center;
+            strong {
+                font-family: $sans !important;
+            }
+        }
+        h2 {
+            font-family: $sans !important;
+            font-size: 21px;
+            font-weight: 100;
+            margin-left: 20px;
+        }
+    }
     h2 {
-        color: #b51630;
+        color: $red1;
         font-family: $serif;
-        font-size: 36px;
+        font-size: 24px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 5px;
         margin-top: 0;
-    }
-    h3 {
-        font-family: $serif;
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 500;
-        margin-bottom: 10px;
-        margin-top: 0;
-    }
-    h4 {
-        color: $plum1;
-        font-family: $serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        margin-bottom: 10px;
-        margin-top: 0;
-        a {
-            color: $plum1;
-            font-weight: 400;
-            text-decoration: none;
-        }
     }
     p {
         margin-bottom: 10px;
         margin-top: 0;
-        a {
-            color: #b51630;
-            font-weight: 700;
-            text-decoration: none;
-        }
     }
-    ul {
-        margin-left: 0;
-        margin-top: 0;
-        padding-left: 30px;
-        li {
-            padding-bottom: 10px;
-        }
+    a {
+        font-weight: 700;
+        text-decoration: none;
     }
-
 }
 .greybg {
     background-color: #e6e6e6;
