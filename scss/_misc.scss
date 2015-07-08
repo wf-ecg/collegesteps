@@ -2,16 +2,6 @@
 #navbar.scroll-to-fixed-fixed {
     box-shadow: 0 0 22px rgba(0,0,0,0.22);
 }
-/*
-.student1 h4 {
-    color: #f79420;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-}
-*/
 #stickyBar {
     box-shadow: 0 0 22px rgba(0,0,0,0.22);
 }
@@ -25,4 +15,30 @@
     margin-bottom: 30px;
     margin-left: 0;
     padding-left: 20px;
+}
+@media all {
+    .topbot {
+        margin-top: 60px;
+    }
+    .topbott {
+        margin-top: 40px;
+    }
+}
+@media(min-width:768px) and (max-width:991px) {
+    .topbott {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+@media(min-width:481px) and (max-width:767px) {
+    .topbott {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .topbott {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
 }
