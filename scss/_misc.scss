@@ -2,3 +2,55 @@
 #navbar.scroll-to-fixed-fixed {
     box-shadow: 0 0 22px rgba(0,0,0,0.22);
 }
+#stickyBar {
+    box-shadow: 0 0 22px rgba(0,0,0,0.22);
+}
+.note ol {
+    color: #999999;
+    font-family: $sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    a {
+        color: #666666;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}
+
+
+@media all {
+    .topbot {
+        margin-top: 60px;
+    }
+    .topbott {
+        margin-top: 40px;
+    }
+}
+@media(min-width:768px) and (max-width:991px) {
+    .topbott {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+@media(min-width:481px) and (max-width:767px) {
+    .topbott {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .note ol {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .topbott {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}

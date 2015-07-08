@@ -1,15 +1,24 @@
 .p-cover {
-    @import "_cover";
+    $top_bkgr: '../images/bkgr/MV_1013_7899.jpg';
+
+    @import '_cover';
 }
 .p-credit {
-    @import "_credit";
+    $top_bkgr: '../images/bkgr/8152_0211.jpg';
+
+    @import '_credit';
 }
 .p-parents {
-    @import "_parents";
+    $top_bkgr: '../images/bkgr/2002_00425.jpg';
+
+    @import '_parents';
 }
 .p-students {
-    @import "_students";
+    $top_bkgr: '../images/bkgr/MV_1013_4181.jpg';
+
+    @import '_students';
+    @import '_students_misc';
 }
 .p-video {
-    @import "_video";
+    @import '_video';
 }

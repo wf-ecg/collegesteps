@@ -43,7 +43,7 @@ a.jp-pause {
     float: left;
     font-size: 30px;
     margin-left: 21px;
-    outline: 0!important;
+    outline: 0 !important;
 }
 a.jp-unmute {
     float: left;
@@ -66,7 +66,7 @@ a.jp-unmute {
     width: 50%;
 }
 .jp-volume-bar-value {
-    background: #00a5d9;
+    background: $blue2;
     height: 100%;
     position: relative;
     width: 0;
@@ -85,7 +85,7 @@ a.jp-unmute {
     width: 0;
 }
 .jp-play-bar {
-    background: #00a5d9;
+    background: $blue2;
     height: 100%;
     position: relative;
     width: 0;
