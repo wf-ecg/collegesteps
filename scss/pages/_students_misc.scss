@@ -1,230 +1,131 @@
 /* students_misc */
 .g-pink {
-    background: -moz-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$plum1),color-stop(100%,$plum1));
-    background: -webkit-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -o-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: -ms-linear-gradient(left,$plum1 0,$plum1 100%);
-    background: linear-gradient(to right,$plum1 0,$plum1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$plum1',endColorstr='$plum1',GradientType=1);
+    background: $plum1;
+    @include background-image(linear-gradient(left, $plum1 0, $plum2 100%));
 }
 .g-blue {
     background: $blue1;
-    background: -moz-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$blue1),color-stop(79%,$blue2),color-stop(100%,$blue2));
-    background: -webkit-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -o-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: -ms-linear-gradient(left,$blue1 0,$blue2 79%,$blue2 100%);
-    background: linear-gradient(to right,$blue1 0,$blue2 79%,$blue2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue1',endColorstr='$blue2',GradientType=1);
+    @include background-image(linear-gradient(left, $blue1 0, $blue2 79%, $blue2 100%));
 }
 .g-purple {
     background: $purple1;
-    background: -moz-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$purple1),color-stop(12%,$purple1),color-stop(79%,$purple2),color-stop(100%,$purple2));
-    background: -webkit-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -o-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: -ms-linear-gradient(left,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    background: linear-gradient(to right,$purple1 0,$purple1 12%,$purple2 79%,$purple2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$purple1',endColorstr='$purple2',GradientType=1);
+    @include background-image(linear-gradient(left, $purple1 0, $purple1 12%, $purple2 79%, $purple2 100%));
 }
 .g-green {
     background: $green1;
-    background: -moz-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$green1),color-stop(12%,$green1),color-stop(79%,$green2),color-stop(100%,$green2));
-    background: -webkit-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -o-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: -ms-linear-gradient(left,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    background: linear-gradient(to right,$green1 0,$green1 12%,$green2 79%,$green2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$green1',endColorstr='$green2',GradientType=1);
+    @include background-image(linear-gradient(left, $green1 0, $green1 12%, $green2 79%, $green2 100%));
 }
 .g-orange {
     background: $orange1;
-    background: -moz-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$orange1),color-stop(0%,$orange2),color-stop(100%,$orange2));
-    background: -webkit-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -o-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: -ms-linear-gradient(left,$orange1 0,$orange2 0,$orange2 100%);
-    background: linear-gradient(to right,$orange1 0,$orange2 0,$orange2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$orange1',endColorstr='$orange2',GradientType=1);
+    @include background-image(linear-gradient(left, $orange1 0, $orange2 30%, $orange3 100%));
 }
 .g-red {
     background: $red1;
-    background: -moz-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$red1),color-stop(24%,$red1),color-stop(100%,$red2),color-stop(100%,$red3));
-    background: -webkit-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -o-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: -ms-linear-gradient(left,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    background: linear-gradient(to right,$red1 0,$red1 24%,$red2 100%,$red3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$red1',endColorstr='$red3',GradientType=1);
+    @include background-image(linear-gradient(left, $red1 0, $red1 24%, $red2 100%, $red3 100%));
 }
 .g-dkblue {
     background: $dark1;
-    background: -moz-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$dark1),color-stop(100%,$dark2));
-    background: -webkit-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -o-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: -ms-linear-gradient(left,$dark1 0,$dark2 100%);
-    background: linear-gradient(to right,$dark1 0,$dark2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark1',endColorstr='$dark2',GradientType=1);
+    @include background-image(linear-gradient(left, $dark1 0, $dark2 100%));
 }
 
-.arrow-blue-2 {
-    background-image: url('../images/checklist/arrow-blue-2.png');
+.arrow-blue-1, .arrow-blue-2, .arrow-blue-3, .arrow-green-1,
+.arrow-orange-1, .arrow-pink-1, .arrow-purple-1, .arrow-red-1 {
     background-repeat: no-repeat;
-    height: 70px;
-    left: 0;
+    height: 100%;
     position: absolute;
-    top: 0;
     width: 100%;
-    z-index: 10;
-}
-.arrow-blue-3 {
-    background-image: url('../images/checklist/arrow-blue-3.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 60px;
-    z-index: 10;
-}
-.arrow-red-1 {
-    background-image: url('../images/checklist/arrow-red-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
-    position: absolute;
-    right: -70px;
-    top: 0;
-    width: 70px;
     z-index: 10;
 }
 .arrow-blue-1 {
     background-image: url('../images/checklist/arrow-blue-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
     left: 100px;
-    position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 10;
 }
-.arrow-pink-1 {
-    background-image: url('../images/checklist/arrow-pink-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
+.arrow-blue-2 {
+    background-image: url('../images/checklist/arrow-blue-2.png');
+    height: 70px;
     left: 0;
-    position: absolute;
     top: 0;
-    width: 70px;
-    z-index: 10;
+}
+.arrow-blue-3 {
+    background-image: url('../images/checklist/arrow-blue-3.png');
+    left: 0;
+    top: 0;
+    width: 60px;
 }
 .arrow-green-1 {
     background-image: url('../images/checklist/arrow-green-1.png');
-    background-repeat: no-repeat;
-    height: 100%;
     left: 520px;
-    position: absolute;
     top: 0;
     width: 70px;
-    z-index: 10;
-}
-.arrow-purple-1 {
-    background-image: url('../images/checklist/arrow-purple-1.png');
-    background-repeat: no-repeat;
-    bottom: -65px;
-    height: 65px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 11;
 }
 .arrow-orange-1 {
     background-image: url('../images/checklist/arrow-orange-1.png');
-    background-repeat: no-repeat;
     height: 70px;
     left: 0;
-    position: absolute;
     top: 0;
-    width: 100%;
-    z-index: 10;
+}
+.arrow-pink-1 {
+    background-image: url('../images/checklist/arrow-pink-1.png');
+    left: 0;
+    top: 0;
+    width: 70px;
+}
+.arrow-purple-1 {
+    background-image: url('../images/checklist/arrow-purple-1.png');
+    bottom: -65px;
+    height: 65px;
+    left: 0;
+    z-index: 11;
+}
+.arrow-red-1 {
+    background-image: url('../images/checklist/arrow-red-1.png');
+    right: -70px;
+    top: 0;
+    width: 70px;
 }
 
 @media(max-width:1194px) {
-
-    .arrow-blue-2,.arrow-blue-3,.arrow-green-1,.arrow-orange-1,.arrow-pink-1,.arrow-purple-1,.arrow-red-1 {
+    .arrow-blue-1, .arrow-blue-2, .arrow-blue-3, .arrow-green-1,
+    .arrow-orange-1, .arrow-pink-1, .arrow-purple-1, .arrow-red-1 {
         display: none;
     }
 }
 @media(min-width:481px) and (max-width:767px) {
     .arrow-blue-2 {
         background-image: url('../images/checklist/arrow-blue-2.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 0;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
     .arrow-blue-3 {
         background-image: url('../images/checklist/arrow-blue-3.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 0;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
     .arrow-red-1 {
         background-image: url('../images/checklist/arrow-red-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 390px;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
     .arrow-pink-1 {
         background-image: url('../images/checklist/arrow-pink-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 0;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
     .arrow-green-1 {
         background-image: url('../images/checklist/arrow-green-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 520px;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
     .arrow-purple-1 {
         background-image: url('../images/checklist/arrow-purple-1.png');
-        background-repeat: no-repeat;
         bottom: -310px;
-        height: 100%;
         left: 0;
-        position: absolute;
-        width: 100%;
         z-index: 11;
     }
     .arrow-orange-1 {
         background-image: url('../images/checklist/arrow-orange-1.png');
-        background-repeat: no-repeat;
-        height: 100%;
         left: 0;
-        position: absolute;
         top: 0;
-        width: 100%;
-        z-index: 10;
     }
 }

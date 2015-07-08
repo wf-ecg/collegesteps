@@ -55,10 +55,6 @@
         text-align: right;
     }
 }
-header {
-    display: table;
-    position: relative;
-}
 .welcome-overlay {
     margin-left: 60%;
     position: absolute;
@@ -67,14 +63,8 @@ header {
     width: 350px;
     &.back {
         background: $blue2;
-        background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
-        background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
+        @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
         border-radius: 15px;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
         height: 100px;
         opacity: .9;
         padding: 20px;

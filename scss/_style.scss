@@ -1,17 +1,13 @@
 /* _style.scss */
 .upgradeframe {
-    -khtml-opacity: .8;
-    -moz-opacity: .8;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8);
+    @include opacity( 0.8 );
     background: #b10000;
     color: white;
     font-size: 40px;
     left: 0;
-    opacity: .8;
     padding: 2em 20%;
     position: fixed;
     right: 0;
-    text-align: center;
     text-align: center;
     top: 0;
     width: auto;
@@ -62,9 +58,6 @@
     height: 1px;
     margin-bottom: 30px;
     margin-top: 30px;
-}
-header {
-    /* background: white; */
 }
 #home {
     background-attachment: fixed !important;
@@ -202,32 +195,23 @@ header {
 }
 .st-content,
 .st-content-inner {
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    -webkit-transition: -webkit-transform .5s;
+    @include transition( transform .5s );
     background: white;
     position: relative;
-    transition: transform .5s;
 }
 .st-container {
     overflow: hidden;
     position: relative;
 }
 .st-pusher {
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    -webkit-transition: -webkit-transform .5s;
+    @include transition( transform .5s );
     height: 100%;
     left: 0;
     overflow: hidden;
     position: relative;
-    transition: transform .5s;
     z-index: 99;
     &::after {
-        -moz-transition: opacity .5s,width .1s .5s,height .1s .5s;
-        -o-transition: opacity .5s,width .1s .5s,height .1s .5s;
-        -webkit-transition: opacity .5s,width .1s,height .1s;
-        -webkit-transition-delay: 0s,.5s,.5s;
+        @include transition( opacity .5s, width .1s .5s, height .1s .5s );
         background: rgba(0,0,0,.2);
         content: '';
         height: 0;
@@ -235,25 +219,21 @@ header {
         position: absolute;
         right: 0;
         top: 0;
-        transition: opacity .5s,width .1s .5s,height .1s .5s;
         width: 0;
     }
 }
 .st-menu {
-    -webkit-transition: all .5s;
+    @include transition( all .5s );
     background: $gray3;
     height: 100%;
     position: fixed;
     right: 0;
     top: 0;
-    transition: all .5s;
     visibility: hidden;
     width: 300px;
     z-index: 100;
     &::after {
-        -moz-transition: opacity .5s;
-        -o-transition: opacity .5s;
-        -webkit-transition: opacity .5s;
+        @include transition( opacity .5s );
         background: rgba(0,0,0,.2);
         content: '';
         height: 100%;
@@ -261,7 +241,6 @@ header {
         position: absolute;
         right: 0;
         top: 0;
-        transition: opacity .5s;
         width: 100%;
     }
     ul {
@@ -270,16 +249,13 @@ header {
         padding: 0;
         li {
             a {
-                -moz-transition: all .3s;
-                -o-transition: all .3s;
-                -webkit-transition: all .3s;
+                @include transition( all .3s );
                 color: white;
                 display: block;
                 font: 14px $serif;
                 padding: 7px 25px;
                 text-decoration: none;
                 text-transform: uppercase;
-                transition: all .3s;
                 &:hover {
                     background: black;
                     color: white;
@@ -297,23 +273,16 @@ header {
 }
 .st-menu-open {
     .st-pusher::after {
-        -moz-transition: opacity .5s;
-        -o-transition: opacity .5s;
-        -webkit-transition: opacity .5s;
+        @include transition( opacity .5s );
         height: 100%;
         opacity: 1;
-        transition: opacity .5s;
         width: 100%;
         z-index: 999;
     }
     .st-menu::after {
-        -moz-transition: opacity .5s,width .1s .5s,height .1s .5s;
-        -o-transition: opacity .5s,width .1s .5s,height .1s .5s;
-        -webkit-transition: opacity .5s,width .1s,height .1s;
-        -webkit-transition-delay: 0s,.5s,.5s;
+        @include transition( opacity .5s, width .1s .5s, height .1s .5s );
         height: 0;
         opacity: 0;
-        transition: opacity .5s,width .1s .5s,height .1s .5s;
         width: 0;
     }
 }
@@ -341,11 +310,7 @@ header {
     margin: 40px 25px;
 }
 .st-effect-2.st-menu-open .st-pusher {
-    -moz-transform: translate3d(-300px,0,0);
-    -ms-transform: translate3d(-300px,0,0);
-    -o-transform: translate3d(-300px,0,0);
-    -webkit-transform: translate3d(-300px,0,0);
-    transform: translate3d(-300px,0,0);
+    @include transform( translate3d(-300px, 0, 0) );
 }
 .st-effect-2.st-menu {
     z-index: 1;
@@ -354,10 +319,7 @@ header {
     }
 }
 .st-effect-2.st-menu-open .st-effect-2.st-menu {
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    -webkit-transition: -webkit-transform .5s;
-    transition: transform .5s;
+    @include transition( transform .5s );
     visibility: visible;
 }
 .no-csstransforms3d .st-effect-2.st-menu-open .st-pusher,
@@ -392,14 +354,8 @@ header {
 .learnmore-box-4,
 .smgreybox {
     background: $gray1;
-    background: -moz-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$gray1),color-stop(100%,$gray2));
-    background: -webkit-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -o-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -ms-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: linear-gradient(to right,$gray1 0,$gray2 100%);
+    @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
     color: black;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray1',endColorstr='$gray2',GradientType=1);
     float: right;
     font: 14px $sans;
     line-height: 1.3em;

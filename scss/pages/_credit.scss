@@ -11,13 +11,7 @@
 }
 .creditbox {
     background: $blue2;
-    background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
-    background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
-    background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
+    @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
     font-family: $serif;
     font-size: 18px;
     font-weight: 100;
@@ -93,15 +87,9 @@
 }
 .feedback {
     background: $purple2;
-    background: -moz-linear-gradient(left,$purple2 0,$purple1 100%);
-    background: -webkit-gradient(left top,right top,color-stop(0%,$purple2),color-stop(100%,$purple1));
-    background: -webkit-linear-gradient(left,$purple2 0,$purple1 100%);
-    background: -o-linear-gradient(left,$purple2 0,$purple1 100%);
-    background: -ms-linear-gradient(left,$purple2 0,$purple1 100%);
-    background: linear-gradient(to right,$purple2 0,$purple1 100%);
+    @include background-image(linear-gradient(left, $purple2 0, $purple1 100%));
     color: white;
     display: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$purple2',endColorstr='$purple1',GradientType=1);
     font-size: 14px;
     font-weight: 800;
     padding: 20px;
@@ -274,10 +262,7 @@ div.feedback {
 }
 .section-header-c3 {
     h1 {
-        -moz-transform: rotate(-6deg);
-        -ms-transform: rotate(-6deg);
-        -o-transform: rotate(-6deg);
-        -webkit-transform: rotate(-6deg);
+        @include transform( rotate(-6deg) );
         background-color: white;
         border: 5px solid $red1;
         box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
@@ -288,7 +273,6 @@ div.feedback {
         font-weight: 600;
         padding-left: 15px;
         text-transform: uppercase;
-        transform: rotate(-6deg);
         width: 300px;
     }
     h2 {
@@ -370,14 +354,8 @@ div.feedback {
 }
 .didyouknow {
     background: $gray1;
-    background: -moz-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$gray1),color-stop(100%,$gray2));
-    background: -webkit-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -o-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -ms-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: linear-gradient(to right,$gray1 0,$gray2 100%);
+    @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
     color: black;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray1',endColorstr='$gray2',GradientType=1);
     float: right;
     font: 14px $sans;
     line-height: 1.3em;
@@ -486,14 +464,8 @@ div.feedback {
 }
 .pickup-overlay {
     background: $green1;
-    background: -moz-linear-gradient(top,$green1 26%,$green3 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(26%,$green1),color-stop(100%,$green3));
-    background: -webkit-linear-gradient(top,$green1 26%,$green3 100%);
-    background: -o-linear-gradient(top,$green1 26%,$green3 100%);
-    background: -ms-linear-gradient(top,$green1 26%,$green3 100%);
-    background: linear-gradient(to bottom,$green1 26%,$green3 100%);
+    @include background-image(linear-gradient(top, $green1 26%, $green3 100%));
     border-radius: 15px;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$green1',endColorstr='$green3',GradientType=0);
     height: 120px;
     margin-right: 60%;
     opacity: .9;
@@ -563,14 +535,8 @@ div.feedback {
 .credits7 {
     h1 {
         background: $blue2;
-        background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
-        background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
+        @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
         color: white;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
         font-size: 50px;
         padding: 30px;
         text-align: center;
