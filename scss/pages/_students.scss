@@ -356,29 +356,39 @@ p {
 }
 /* . . . 3 . . . */
 .student3 {
-    h3 {
-        color: black;
-        font-family: $sans;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    h4 {
-        color: $blue1;
-        font-family: $sans;
-        font-size: 24px;
-        font-weight: 400;
-        margin-bottom: 2px;
-        margin-top: 30px;
-    }
-    h5 {
-        color: $blue1;
-        font-family: $sans;
-        font-size: 34px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        margin-top: 0;
+    header {
+        h3 {
+            color: black;
+            font-family: $sans;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        h4 {
+            font-family: $sans;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 2px;
+            margin-top: 30px;
+        }
+        h5 {
+            font-family: $sans;
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+        &.semester1 {
+            h4, h5 {
+                color: $blue1;
+            }
+        }
+        &.semester2 {
+            h4, h5 {
+                color: $plum1;
+            }
+        }
     }
     .box-1,.box-2,.box-5,.box-6,.box-7,.box-8,.box-9 {
         height: 310px;
