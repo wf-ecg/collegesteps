@@ -160,8 +160,9 @@
         }
     }
     .callout-g {
-        background-color: #ecf5e9;
-        padding: 25px 0 0;
+        background-color: transparentize($blue1, 0.9);
+        margin-top: 20px;
+        padding: 10px 0 0;
         position: relative;
         p {
             color: black;
@@ -176,14 +177,12 @@
             }
         }
     }
-    .green-arrows {
-        background-image: url('../images/arrows-green.png');
-        background-position: right;
-        background-repeat: no-repeat;
-        top: -2em;
-        position: relative;
-        right: 2em;
+    .arrows-right {
+        background-color: $blue1;
+        bottom: -4em;
         height: 42px;
+        position: absolute;
+        right: 1em;
     }
     ul.fa-ul li {
         font-size: 16px;
