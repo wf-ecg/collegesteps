@@ -37,6 +37,31 @@
 p {
     font-size: 1.2em;
 }
+.mousebox {
+    background-color: #2492bc;
+    background-image: url('../images/icon/mouse-icon-bg.png');
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    h4 {
+        color: white;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgba(255,255,255,.7);
+    }
+}
+
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
 .student1 {
     margin-bottom: 0;
@@ -128,30 +153,6 @@ p {
             width: 180px;
         }
     }
-    .mousebox {
-        background-color: #2492bc;
-        background-image: url('../images/icon/mouse-icon-bg.png');
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        color: white;
-        margin-top: 30px;
-        padding: 20px;
-        width: 100%;
-        h4 {
-            color: white;
-            font-weight: 700;
-            margin-bottom: 5px;
-            margin-top: 0;
-        }
-        a {
-            color: white;
-            font-weight: 700;
-            text-decoration: none;
-        }
-        a:hover {
-            color: rgba(255,255,255,.7);
-        }
-    }
     .progress h4 {
         color: black;
         font-family: $sans;
@@ -170,22 +171,6 @@ p {
         strong {
             font-style: italic;
             font-weight: 700;
-        }
-    }
-    .note ol {
-        color: #999;
-        font-family: $sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        margin-bottom: 30px;
-        margin-left: 0;
-        padding-left: 20px;
-        a {
-            color: #999;
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: none;
         }
     }
     .offsetphoto img {
@@ -540,42 +525,56 @@ p {
 /* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
 .student6 {
     header {
-        float: left;
-        max-width: 550px;
-        img {
-            float: left;
-            margin-bottom: 20px;
-            margin-right: 20px;
-        }
+        text-align: center;
         h1 {
-            color: #ff9930;
-            font-family: $sans_cn;
-            font-style: normal;
-            font-weight: 400;
-            margin-bottom: 50px;
-        }
-        h2 {
             color: black;
             font-family: $sans;
-            font-style: italic;
-            font-weight: 300;
-        }
-        .header-desc-6 {
-            color: black;
-            font-family: $sans_cn;
-            font-size: 24px;
+            font-size: 60px;
             font-style: normal;
-            font-weight: 400;
-            text-align: left;
-            span {
-                color: $plum1;
-                font-family: $sans;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 600;
-                text-align: left;
+            font-weight: 100;
+            line-height: 1;
+            margin-bottom: 50px;
+            strong {
+                color: $green1;
+                text-transform: uppercase;
+                font-weight: 300;
             }
         }
+        p {
+            color: black;
+            font-family: $sans;
+            font-weight: 100;
+            margin: auto;
+            width: 60%;
+        }
+    }
+    h3 {
+        color: $blue2;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    h4 {
+        color: $purple1;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    ul {
+        padding-left: 15px;
+        li {
+            margin-top: 10px;
+            strong {
+                color: $plum1;
+                font-weight: 700;
+            }
+        }
+    }
+    .mousebox {
+        font-family: $sans_cn !important;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 }
 /* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
@@ -883,10 +882,6 @@ fieldset input {
         .quote-s {
             font-size: 30px;
             margin-bottom: 30px;
-        }
-        .note ol {
-            margin-bottom: 30px;
-            margin-top: 30px;
         }
         .overlaybox {
             float: none;
