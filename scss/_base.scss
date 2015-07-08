@@ -5,12 +5,9 @@ body {
     font-size: 15px;
 }
 a {
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    -webkit-transition: all .2s;
+    @include transition( all .2s );
     color: $gray3;
     text-decoration: underline;
-    transition: all .2s;
     &:hover {
         color: #666;
         text-decoration: none;

@@ -274,10 +274,7 @@ div.feedback {
 }
 .section-header-c3 {
     h1 {
-        -moz-transform: rotate(-6deg);
-        -ms-transform: rotate(-6deg);
-        -o-transform: rotate(-6deg);
-        -webkit-transform: rotate(-6deg);
+        @include transform( rotate(-6deg) );
         background-color: white;
         border: 5px solid $red1;
         box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
@@ -288,7 +285,6 @@ div.feedback {
         font-weight: 600;
         padding-left: 15px;
         text-transform: uppercase;
-        transform: rotate(-6deg);
         width: 300px;
     }
     h2 {

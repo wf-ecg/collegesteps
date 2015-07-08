@@ -1,9 +1,6 @@
 /* _pill.scss */
 #scrollUp {
-    -moz-transition: background 200ms linear;
-    -o-transition: background 200ms linear;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: background 200ms linear;
+    @include transition( background 200ms linear );
     background-color: #999;
     bottom: 3px;
     color: white;
@@ -13,7 +10,6 @@
     padding: 7px 20px;
     right: 18px;
     text-decoration: none;
-    transition: background 200ms linear;
     &:hover {
         background-color: black;
     }
