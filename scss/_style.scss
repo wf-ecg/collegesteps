@@ -358,14 +358,8 @@
 .learnmore-box-4,
 .smgreybox {
     background: $gray1;
-    background: -moz-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -webkit-gradient(linear,left top,right top,color-stop(0%,$gray1),color-stop(100%,$gray2));
-    background: -webkit-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -o-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: -ms-linear-gradient(left,$gray1 0,$gray2 100%);
-    background: linear-gradient(to right,$gray1 0,$gray2 100%);
+    @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
     color: black;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray1',endColorstr='$gray2',GradientType=1);
     float: right;
     font: 14px $sans;
     line-height: 1.3em;

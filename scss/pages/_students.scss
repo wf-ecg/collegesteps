@@ -234,15 +234,9 @@ p {
     header {
         h1 {
             background: $gak1;
-            background: -moz-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$gak1),color-stop(100%,$gak2));
-            background: -webkit-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -o-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -ms-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: linear-gradient(to bottom,$gak1 0,$gak2 100%);
+            @include background-image(linear-gradient(top, $gak1 0, $gak2 100%));
             border: 1px solid black;
             color: white;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gak1',endColorstr='$gak2',GradientType=0);
             font-family: $serif;
             font-size: 30px;
             font-weight: 400;

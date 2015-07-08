@@ -354,14 +354,8 @@
         }
         .box0 {
             background: $blue1;
-            background: -moz-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -webkit-gradient(linear,left top,right top,color-stop(0%,$blue1),color-stop(0%,$blue1),color-stop(100%,$blue3));
-            background: -webkit-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -o-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -ms-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: linear-gradient(to right,$blue1 0,$blue1 0,$blue3 100%);
+            @include background-image(linear-gradient(left, $blue1 0, $blue3 100%));
             color: white;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue1',endColorstr='$blue3',GradientType=1);
             font-family: $sans;
             font-weight: 600;
         }
