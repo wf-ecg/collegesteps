@@ -35,7 +35,7 @@
     }
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .mousebox {
     background-color: #2492bc;
@@ -475,7 +475,6 @@ p {
     header {
         margin-bottom: 40px;
         h1 {
-            background-color: $orange2;
             color: white;
             font-family: $sans_cn;
             font-size: 60px;
@@ -635,13 +634,33 @@ p {
             }
         }
     }
+    .getdetails {
+        text-align: center;
+        h4 {
+            color: $plum1;
+            display: inline-block;
+        }
+        a {
+            color: $plum1;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .arrows-right, .arrows-left {
+            background-color: $plum1;
+            display: inline-block;
+            margin: 42px;
+            vertical-align: bottom;
+            img {
+                height: 32px;
+            }
+        }
+    }
 }
 /* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
 .student8 {
     header {
         margin-bottom: 40px;
         h1 {
-            background-color: $orange2;
             color: white;
             font-family: $serif;
             font-size: 55px;

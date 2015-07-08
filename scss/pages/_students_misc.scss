@@ -17,7 +17,7 @@
 }
 .g-orange {
     background: $orange1;
-    @include background-image(linear-gradient(left, $orange1 0, $orange2 0, $orange2 100%));
+    @include background-image(linear-gradient(left, $orange1 0, $orange2 30%, $orange3 100%));
 }
 .g-red {
     background: $red1;
