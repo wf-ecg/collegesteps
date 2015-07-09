@@ -25,30 +25,30 @@
             &::after, &::before { top: -25px; }
         }
     }
-}
-.parent-box {
-    bottom: 200px;
-    position: absolute;
-    width: 100%;
-    div {
-        background-color: transparentize($purple3, 0.1);
-        font-family: $serif;
-        font-size: 18px;
-        font-weight: 100;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 700px;
-        padding: 33px;
-        text-align: left;
-        width: 70%;
-        h3 {
-            color: white;
-            font-size: 21px;
-            font-weight: 500;
-        }
-        p {
-            margin-bottom: 0;
-            margin-top: 10px;
+    .box {
+        bottom: 200px;
+        position: absolute;
+        width: 100%;
+        div {
+            background-color: transparentize($purple3, 0.1);
+            font-family: $serif;
+            font-size: 18px;
+            font-weight: 100;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 700px;
+            padding: 33px;
+            text-align: left;
+            width: 70%;
+            h3 {
+                color: white;
+                font-size: 21px;
+                font-weight: 500;
+            }
+            p {
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
         }
     }
 }

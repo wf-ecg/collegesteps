@@ -140,9 +140,6 @@
 .bottom-gap {
     margin-bottom: 50px;
 }
-.p-big-desc {
-    font: 28px/30px $serif;
-}
 .accent-color {
     color: $blue2;
 }
@@ -207,12 +204,6 @@
     .col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9 {
         margin-bottom: 50px;
     }
-    .si-desc {
-        margin: 30px -15px -15px;
-    }
-    .header-desc span {
-        width: 50%;
-    }
     .team-member-big {
         &:hover .team-member-overlay h5 {
             bottom: 55%;
@@ -271,9 +262,6 @@
     }
     .story-item:nth-child(odd) .story-item-content .si-year {
         right: -30px;
-    }
-    .si-desc {
-        margin: 15px -15px -15px;
     }
     .bottom-gap,
     .resp-no-gap {
