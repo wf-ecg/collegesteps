@@ -4,11 +4,6 @@
     background-repeat: no-repeat;
     z-index: 5;
 }
-.credit-box {
-    bottom: 150px;
-    position: absolute;
-    width: 100%;
-}
 .creditbox {
     background: $blue2;
     @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
@@ -19,7 +14,9 @@
     margin-right: auto;
     max-width: 520px;
     padding: 20px;
+    position: relative;
     text-align: left;
+    top: 500px;
     width: 60%;
     p {
         margin-bottom: 5px;
@@ -31,26 +28,27 @@
     h1 {
         color: $gray3;
         font-family: $serif;
-        font-weight: 700;
-        margin-top: 25px;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 20px;
         text-align: center;
         span {
             position: relative;
             &::after,
             &::before {
-                border-bottom: 75px solid $blue2;
+                border-bottom: 115px solid $blue2;
                 content: '';
                 position: absolute;
                 top: -25px;
-                width: 4px;
+                width: 5px;
             }
-            &::before { left: -15px; }
-            &::after { right: -15px; }
+            &::before { left: -25px; }
+            &::after { right: -25px; }
         }
-    }
-    .header-desc::before {
-        border-bottom: 0;
-        content: '';
+        i {
+            color: gray;
+            font-style: normal;
+        }
     }
 }
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
