@@ -5,31 +5,19 @@
     z-index: 5;
 }
 .home-content {
-    margin-bottom: 100px;
     h1 {
-        color: $gray3;
-        font-family: $serif;
-        font-weight: 800;
-        line-height: 1;
-        margin-top: 20px;
-        text-align: center;
         span {
-            position: relative;
             &::after,
             &::before {
                 border-bottom: 115px solid $blue2;
-                content: '';
-                position: absolute;
                 top: -25px;
-                width: 5px;
             }
-            &::before { left: -25px; }
-            &::after { right: -25px; }
         }
         i {
             color: gray;
             font-style: normal;
             font-weight: 600;
+            margin-left: -0.3em
         }
     }
     .box {

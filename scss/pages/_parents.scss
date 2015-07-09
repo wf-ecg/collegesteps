@@ -5,26 +5,6 @@
     z-index: 5;
 }
 .home-content {
-    margin-bottom: 50px;
-    h1 {
-        color: $gray3;
-        font-family: $serif;
-        font-weight: 700;
-        margin-top: 25px;
-        text-align: center;
-        span {
-            position: relative;
-            &::after, &::before {
-                border-bottom: 75px solid $purple2;
-                content: '';
-                position: absolute;
-                width: 4px;
-            }
-            &::before { left: -15px; }
-            &::after { right: -15px; }
-            &::after, &::before { top: -25px; }
-        }
-    }
     .box {
         bottom: 15em;
     }

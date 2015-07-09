@@ -1,6 +1,27 @@
 /* _misc.scss */
 
 .home-content {
+    margin-bottom: 100px;
+    h1 {
+        color: $gray3;
+        font-family: $serif;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 20px;
+        text-align: center;
+        span {
+            position: relative;
+            &::after, &::before {
+                border-bottom: 75px solid $purple2;
+                content: '';
+                position: absolute;
+                width: 5px;
+            }
+            &::before { left: -25px; }
+            &::after { right: -25px; }
+            &::after, &::before { top: -25px; }
+        }
+    }
     .box {
         background-color: transparentize($purple3, 0.1);
         font-family: $serif;
