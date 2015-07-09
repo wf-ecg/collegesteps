@@ -77,6 +77,7 @@ section {
     a {
         font-weight: 700;
         text-decoration: none;
+        &:hover { color: $dusk7; }
     }
 }
 #navbar.scroll-to-fixed-fixed {

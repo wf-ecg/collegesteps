@@ -283,53 +283,27 @@
 /* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .credit4 {
     header {
-        padding-bottom: 50px;
-        h1 span {
-            display: block;
-            float: left;
+        text-align: center;
+        h1 {
+            color: $plum2;
             font-family: $sans;
-            font-size: 70px;
+            font-size: 111px;
+            font-weight: 600;
+            margin: 0;
+        }
+        h2 {
+            font-family: $sans_cn;
+            font-size: 77px;
             font-style: italic;
-            font-weight: 300;
-            margin-bottom: 0;
-            margin-top: 105px;
-            padding-left: 10px;
-            padding-right: 10px;
-            span.description {
-                display: block;
-                font-size: 30px;
-                font-style: normal;
-                line-height: 1.3em;
-                margin-left: 0;
-                margin-top: 115px;
-                padding-left: 0;
-            }
-            &.vert {
-                color: $plum3;
-                display: block;
-                float: left;
-                font-size: 70px;
-                font-style: normal !important;
-                font-weight: 600;
-                line-height: 1.3em;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-                width: 70px;
-            }
+            font-weight: 100;
+            line-height: 1;
         }
     }
-    h2 {
-        color: $blue1;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        margin-top: 0;
+    h3 {
+        color: $orange3;
+        margin-top: 1em;
     }
     p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.6em;
         margin-bottom: 20px;
         span {
             font-size: 18px;
@@ -340,9 +314,6 @@
         padding-bottom: 10px;
         padding-right: 100px;
         text-align: right;
-    }
-    .credit2o {
-        background-color: $orange3;
     }
     .goingup {
         background-image: url('../images/icon/stairs-up-icon.png');
@@ -382,34 +353,6 @@
             }
         }
     }
-    .bigpad {
-        margin-top: 150px;
-    }
-    .note {
-        margin-bottom: 40px;
-        margin-top: 40px;
-
-        ol {
-            color: #999;
-            font-family: $sans;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            list-style: none;
-            margin-bottom: 30px;
-            margin-left: 0;
-            padding-left: 20px;
-            a {
-                color: #999;
-                font-size: 12px;
-            }
-        }
-    }
-    a {
-        &:hover {
-            color: rgba(51,51,51,.7);
-        }
-    }
 }
 /* 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
 .credit5 {
@@ -434,7 +377,6 @@
             }
         }
     }
-    padding-top: 40px;
     h3 {
         color: #bb0b82;
         font-size: 18px;
@@ -443,20 +385,20 @@
         margin-top: 15px;
     }
     .reminderbox {
-        background-color: #ab0e7d;
+        background-color: $purple1;
         color: white;
         font-size: 26px;
         line-height: 1.7em;
         padding: 30px;
+        img { float: right; }
     }
     .didyouknow {
         background: $gray1;
         @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
         color: black;
         float: right;
-        font: 14px $sans;
-        line-height: 1.3em;
-        margin-left: 20%;
+        margin-right: -20%;
+        padding-right: 20% ;
         h3 {
             color: $blue1 !important;
             font-family: $sans;
@@ -472,11 +414,6 @@
         background-repeat: no-repeat;
         padding: 20px 20px 20px 70px;
     }
-    a {
-        &:hover {
-            color: rgba(51,51,51,.7);
-        }
-    }
 }
 /* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
 .credit6 {
@@ -487,9 +424,6 @@
         display: table;
         margin-bottom: 120px;
         position: relative;
-        img {
-            padding-left: 80px;
-        }
     }
     .pickup-overlay {
         background: $green1;
