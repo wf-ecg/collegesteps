@@ -37,6 +37,58 @@
         }
     }
 }
+#scrollUp {
+    @include transition( background 200ms linear );
+    background-color: #999;
+    bottom: 3px;
+    color: white;
+    font-family: $sans;
+    font-size: 12px;
+    opacity: .9;
+    padding: 7px 20px;
+    right: 18px;
+    text-decoration: none;
+    &:hover {
+        background-color: black;
+    }
+    &::after {
+        content: '\f102';
+        font-family: FontAwesome;
+        padding-left: 10px;
+    }
+}
+
+.section-header {
+    margin-bottom: 100px;
+    h1, h2, h3, h4, h5, h6 {
+        color: $gray3;
+        font-family: $serif;
+        font-weight: 800;
+        margin-top: 25px;
+        text-align: center;
+        span {
+            position: relative;
+            &::after, &::before {
+                border-bottom: 75px solid $plum3;
+                content: '';
+                position: absolute;
+                width: 4px;
+            }
+            &::before { left: -15px; }
+            &::after { right: -15px; }
+        }
+    }
+    h1 span::after, h1 span::before { top: -25px; }
+    h2 span::after, h2 span::before { top: 18px; }
+    h3 span::after, h3 span::before { top: 14px; }
+    h4 span::after, h4 span::before { top: 12px; }
+    h5 span::after, h5 span::before { top: 10px; }
+    h6 span::after, h6 span::before { top: 8.5px; }
+    .header-desc::before {
+        border-bottom: 0;
+        content: '';
+    }
+}
 
 .note ol {
     color: #999999;
