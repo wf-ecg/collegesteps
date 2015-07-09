@@ -375,14 +375,10 @@
             a {
                 color: #999;
                 font-size: 12px;
-                font-weight: 600;
-                text-decoration: none;
             }
         }
     }
     a {
-        font-weight: 700;
-        text-decoration: none;
         &:hover {
             color: rgba(51,51,51,.7);
         }
@@ -434,10 +430,6 @@
         font: 14px $sans;
         line-height: 1.3em;
         margin-left: 20%;
-        a {
-            font-weight: 700;
-            text-decoration: none;
-        }
         h3 {
             color: $blue1 !important;
             font-family: $sans;
@@ -454,8 +446,6 @@
         padding: 20px 20px 20px 70px;
     }
     a {
-        font-weight: 700;
-        text-decoration: none;
         &:hover {
             color: rgba(51,51,51,.7);
         }

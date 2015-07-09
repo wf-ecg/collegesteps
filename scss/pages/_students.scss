@@ -42,8 +42,6 @@ p {
     }
     a {
         color: white;
-        font-weight: 700;
-        text-decoration: none;
     }
     a:hover {
         color: $mist7;
@@ -97,10 +95,6 @@ p {
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 20px;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
     }
     a:hover {
         color: rgba(51,51,51,.7);
@@ -266,8 +260,6 @@ p {
         }
         a {
             color: white;
-            font-weight: 700;
-            text-decoration: none;
             &:hover {
                 color: $mist7;
             }
@@ -495,10 +487,6 @@ p {
         margin-bottom: 10px;
         margin-top: 0;
     }
-    a {
-        font-weight: 700;
-        text-decoration: none;
-    }
 }
 /* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
 .student6 {
@@ -631,8 +619,6 @@ p {
         }
         a {
             color: $plum1;
-            font-weight: 700;
-            text-decoration: none;
         }
         .arrows-right, .arrows-left {
             background-color: $plum1;
@@ -682,10 +668,6 @@ p {
         margin-bottom: 10px;
         margin-top: 0;
     }
-    a {
-        font-weight: 700;
-        text-decoration: none;
-    }
 }
 .greybg {
     background-color: #e6e6e6;
@@ -724,10 +706,6 @@ fieldset input {
     span {
         color: black;
         font-weight: 400;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
     }
     a:hover {
         text-decoration: underline;
