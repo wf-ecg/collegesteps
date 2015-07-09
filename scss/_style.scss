@@ -1,4 +1,5 @@
 /* _style.scss */
+
 .upgradeframe {
     @include opacity( 0.8 );
     background: #b10000;
@@ -193,139 +194,6 @@
     padding: 0 10px;
     text-align: right;
 }
-.st-content,
-.st-content-inner {
-    @include transition( transform .5s );
-    background: white;
-    position: relative;
-}
-.st-container {
-    overflow: hidden;
-    position: relative;
-}
-.st-pusher {
-    @include transition( transform .5s );
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: relative;
-    z-index: 99;
-    &::after {
-        @include transition( opacity .5s, width .1s .5s, height .1s .5s );
-        background: rgba(0,0,0,.2);
-        content: '';
-        height: 0;
-        opacity: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0;
-    }
-}
-.st-menu {
-    @include transition( all .5s );
-    background: $gray3;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    width: 300px;
-    z-index: 100;
-    &::after {
-        @include transition( opacity .5s );
-        background: rgba(0,0,0,.2);
-        content: '';
-        height: 100%;
-        opacity: 1;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 100%;
-    }
-    ul {
-        list-style: none;
-        margin: 20px 0;
-        padding: 0;
-        li {
-            a {
-                @include transition( all .3s );
-                color: white;
-                display: block;
-                font: 14px $serif;
-                padding: 7px 25px;
-                text-decoration: none;
-                text-transform: uppercase;
-                &:hover {
-                    background: black;
-                    color: white;
-                }
-                i {
-                    font-size: 11px;
-                    padding-left: 8px;
-                }
-            }
-            .active {
-                background: black;
-            }
-        }
-    }
-}
-.st-menu-open {
-    .st-pusher::after {
-        @include transition( opacity .5s );
-        height: 100%;
-        opacity: 1;
-        width: 100%;
-        z-index: 999;
-    }
-    .st-menu::after {
-        @include transition( opacity .5s, width .1s .5s, height .1s .5s );
-        height: 0;
-        opacity: 0;
-        width: 0;
-    }
-}
-#st-trigger-effects {
-    display: block;
-    padding-top: 25px;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    z-index: 9999999;
-    a {
-        color: $gray3;
-        font: 16px $serif;
-        text-decoration: none;
-        text-transform: uppercase;
-        i {
-            padding-left: 5px;
-        }
-    }
-}
-.trigger-fixed {
-    position: fixed !important;
-}
-.st-menu-logo {
-    margin: 40px 25px;
-}
-.st-effect-2.st-menu-open .st-pusher {
-    @include transform( translate3d(-300px, 0, 0) );
-}
-.st-effect-2.st-menu {
-    z-index: 1;
-    &::after {
-        display: none;
-    }
-}
-.st-effect-2.st-menu-open .st-effect-2.st-menu {
-    @include transition( transform .5s );
-    visibility: visible;
-}
-.no-csstransforms3d .st-effect-2.st-menu-open .st-pusher,
-.no-js .st-effect-2.st-menu-open .st-pusher {
-    padding-right: 300px;
-}
 .smgreybox {
     background: $gray1;
     @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
@@ -386,7 +254,10 @@
     }
 }
 @media only screen and (max-width:768px) {
-    .col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
+    .col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,
+        .col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,
+        .col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,
+        .col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9 {
         margin-bottom: 50px;
     }
     .story-item-content {
