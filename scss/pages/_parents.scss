@@ -20,15 +20,9 @@
                 position: absolute;
                 width: 4px;
             }
-            &::before {
-                left: -15px;
-            }
-            &::after {
-                right: -15px;
-            }
-            &::after, &::before {
-                top: -25px;
-            }
+            &::before { left: -15px; }
+            &::after { right: -15px; }
+            &::after, &::before { top: -25px; }
         }
     }
 }
