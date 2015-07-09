@@ -1,0 +1,30 @@
+/*
+    <div class="fadeRight offsetphoto"><img src="./images/photo/MV_1013_7740_A.jpg" alt="guy in library"></div>
+    <div class="learnmore-box overlaybox fadeLeft">
+        <div class="lightbulb">
+            <h3>Share</h3>
+            <p>the important factors that helped you decide which educational path to take after high school at
+                <a href="http://wellsfargocommunity.com" title="visit the Wells Fargo Community website" target="_blank">wellsfargocommunity.com</a>.
+            </p>
+        </div>
+    </div>
+*/
+.offsetphoto img {
+    height: auto;
+    width: 95%;
+}
+.overlaybox {
+    margin-top: -50px;
+}
+@media only screen and (max-width:480px) {
+    .offsetphoto img {
+        height: auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .overlaybox {
+        float: none;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+}
