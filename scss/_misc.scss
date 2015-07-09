@@ -1,4 +1,32 @@
 /* _misc.scss */
+.g-pink {
+    background: $plum1;
+    @include background-image(linear-gradient(left, $plum1 0, $plum2 100%));
+}
+.g-blue {
+    background: $blue1;
+    @include background-image(linear-gradient(left, $blue1 0, $blue2 79%, $blue2 100%));
+}
+.g-purple {
+    background: $purple1;
+    @include background-image(linear-gradient(left, $purple1 0, $purple1 12%, $purple2 79%, $purple2 100%));
+}
+.g-green {
+    background: $green1;
+    @include background-image(linear-gradient(left, $green1 0, $green1 12%, $green2 79%, $green2 100%));
+}
+.g-orange {
+    background: $orange1;
+    @include background-image(linear-gradient(left, $orange1 0, $orange2 30%, $orange3 100%));
+}
+.g-red {
+    background: $red1;
+    @include background-image(linear-gradient(left, $red1 0, $red1 24%, $red2 100%, $red3 100%));
+}
+.g-dkblue {
+    background: $dark1;
+    @include background-image(linear-gradient(left, $dark1 0, $dark2 100%));
+}
 
 .home-content {
     margin-bottom: 100px;
