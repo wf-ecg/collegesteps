@@ -26,184 +26,250 @@
         margin-top: 5px;
     }
 }
-.iconbox {
-    padding-bottom: 10px;
-    padding-right: 100px;
-    text-align: right;
-}
-
-#quiz {
-    &>div>fieldset {
-        margin: 0;
-        padding: 0;
-    }
-    &>div>fieldset>legend {
-        border-bottom: 0;
-        border-top: solid 1px #60C;
-        font-size: 14px;
-        font-weight: 800;
-        line-height: 1.3em;
-        list-style-position: inside;
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-        padding-left: 20px;
-        padding-top: 15px;
-        text-indent: -1.5em;
-    }
-    div fieldset {
-        img {
-            vertical-align: middle;
-        }
-        ol {
-            list-style-type: none;
-            margin: 0;
-            padding: 8px 15px 10px 25px;
-
-        }
-        li {
-            clear: left;
-            font-weight: 500;
-            line-height: 18px;
-            list-style-position: inside;
-            margin: 0 0 5px 12px;
-            padding: 2px 20px 0 4px;
+.home-content {
+    margin-bottom: 100px;
+    h1 {
+        color: $gray3;
+        font-family: $serif;
+        font-weight: 700;
+        margin-top: 25px;
+        text-align: center;
+        span {
             position: relative;
-            text-indent: -1.8em;
-            img {
-                left: -23px;
+            &::after,
+            &::before {
+                border-bottom: 75px solid $blue2;
+                content: '';
                 position: absolute;
-                top: 0;
+                top: -25px;
+                width: 4px;
+            }
+            &::before { left: -15px; }
+            &::after { right: -15px; }
+        }
+    }
+    .header-desc::before {
+        border-bottom: 0;
+        content: '';
+    }
+}
+/* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
+.credit1 {
+}
+/* 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 */
+.credit2 {
+    header {
+        h1 {
+            @include transform( rotate(-6deg) );
+            background-color: white;
+            border: 5px solid $red1;
+            box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
+            color: $red1;
+            font-family: $sans_cn;
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 600;
+            padding-left: 15px;
+            text-transform: uppercase;
+            width: 300px;
+        }
+        h2 {
+            font-family: $sans;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            margin-left: 250px;
+            margin-top: -40px;
+        }
+        h3 {
+            color: $blue1;
+            font-size: 33px;
+            font-weight: 300;
+            line-height: 1.5em;
+        }
+    }
+}
+/* 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 */
+.credit3 {
+    margin-bottom: 30px;
+    p span {
+        color: #ee3124;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5em;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    header {
+        h1 {
+            color: black;
+            font-family: $sans;
+            font-size: 60px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            span {
+                color: $lightlav;
+                font-size: 170px;
+                font-weight: 600;
             }
         }
-        input {
-            margin: 3px 4px;
-        }
-        label {
-            display: inline;
-        }
     }
-}
-.correct {
-    background: url('../images/icon/right.png') right center no-repeat;
-}
-.wrong {
-    background: url('../images/icon/wrong.png') right center no-repeat;
-}
-.feedback {
-    background: $purple2;
-    @include background-image(linear-gradient(left, $purple2 0, $purple1 100%));
-    color: white;
-    display: none;
-    font-size: 14px;
-    font-weight: 800;
-    padding: 20px;
-}
-div.feedback {
-    color: white;
-    font-size: 16px;
-    font-weight: 800;
-    div {
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        padding-top: 5px;
-    }
-}
-.submit {
-    background-color: $orange3;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-family: $sans;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.33;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 12px;
-    text-align: center;
-    text-shadow: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    &.active {
-        color: rgba(255,127,0,.75);
-    }
-    &.disabled,
-    &:active, &:focus, &:hover, &[disabled] {
-        background-color: $gray3 !important;
-        color: white;
-    }
-}
-.source {
-    border-top: solid 1px #60C;
-    font-size: 12px;
-    margin-top: 20px;
-    padding: 20px;
-    a {
-        font-weight: 800;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-.section-header-c1 {
-    h1 {
-        color: black;
-        font-family: $sans;
-        font-size: 60px;
-        font-weight: 300;
+    .line-divider {
+        background-color: black;
+        height: 2px;
         margin-bottom: 30px;
         margin-top: 30px;
-        span {
-            color: $lightlav;
-            font-size: 170px;
-            font-weight: 600;
-        }
     }
-}
-.section-header-c2 {
-    padding-bottom: 50px;
-
-    h1 span {
-        display: block;
-        float: left;
-        font-family: $sans;
-        font-size: 70px;
-        font-style: italic;
-        font-weight: 300;
-        margin-bottom: 0;
-        margin-top: 105px;
-        padding-left: 10px;
-        padding-right: 10px;
-        span.description {
-            display: block;
-            font-size: 30px;
-            font-style: normal;
-            line-height: 1.3em;
-            margin-left: 0;
-            margin-top: 115px;
-            padding-left: 0;
-        }
-        &.vert {
-            color: $plum3;
-            display: block;
-            float: left;
-            font-size: 70px;
-            font-style: normal !important;
-            font-weight: 600;
-            line-height: 1.3em;
+    #quiz {
+        &>div>fieldset {
             margin: 0;
             padding: 0;
-            text-align: center;
-            width: 70px;
+        }
+        &>div>fieldset>legend {
+            border-bottom: 0;
+            border-top: solid 1px #60C;
+            font-size: 14px;
+            font-weight: 800;
+            line-height: 1.3em;
+            list-style-position: inside;
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+            padding-left: 20px;
+            padding-top: 15px;
+            text-indent: -1.5em;
+        }
+        div fieldset {
+            img {
+                vertical-align: middle;
+            }
+            ol {
+                list-style-type: none;
+                margin: 0;
+                padding: 8px 15px 10px 25px;
+
+            }
+            li {
+                clear: left;
+                font-weight: 500;
+                line-height: 18px;
+                list-style-position: inside;
+                margin: 0 0 5px 12px;
+                padding: 2px 20px 0 4px;
+                position: relative;
+                text-indent: -1.8em;
+                img {
+                    left: -23px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            input {
+                margin: 3px 4px;
+            }
+            label {
+                display: inline;
+            }
+        }
+    }
+    .correct {
+        background: url('../images/icon/right.png') right center no-repeat;
+    }
+    .wrong {
+        background: url('../images/icon/wrong.png') right center no-repeat;
+    }
+    .feedback {
+        background: $purple2;
+        @include background-image(linear-gradient(left, $purple2 0, $purple1 100%));
+        color: white;
+        display: none;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 20px;
+    }
+    div.feedback {
+        color: white;
+        font-size: 16px;
+        font-weight: 800;
+        div {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 5px;
+        }
+    }
+    .submit {
+        background-color: $orange3;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-family: $sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.33;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 12px;
+        text-align: center;
+        text-shadow: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        &.active {
+            color: rgba(255,127,0,.75);
+        }
+        &.disabled,
+        &:active, &:focus, &:hover, &[disabled] {
+            background-color: $gray3 !important;
+            color: white;
         }
     }
 }
-.credit2 {
+/* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
+.credit4 {
+    padding-bottom: 30px;
+    header {
+        padding-bottom: 50px;
+
+        h1 span {
+            display: block;
+            float: left;
+            font-family: $sans;
+            font-size: 70px;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 0;
+            margin-top: 105px;
+            padding-left: 10px;
+            padding-right: 10px;
+            span.description {
+                display: block;
+                font-size: 30px;
+                font-style: normal;
+                line-height: 1.3em;
+                margin-left: 0;
+                margin-top: 115px;
+                padding-left: 0;
+            }
+            &.vert {
+                color: $plum3;
+                display: block;
+                float: left;
+                font-size: 70px;
+                font-style: normal !important;
+                font-weight: 600;
+                line-height: 1.3em;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                width: 70px;
+            }
+        }
+    }
     h2 {
         color: $blue1;
         font-size: 18px;
@@ -221,124 +287,109 @@ div.feedback {
             text-transform: uppercase;
         }
     }
-}
-.credit2o {
-    background-color: $orange3;
-}
-.goingup {
-    background-image: url('../images/icon/stairs-up-icon.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    min-height: 270px;
-    padding: 20px;
-
-    h3 {
-        color: white;
-        font-family: $sans_cn;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-
-        span {
-            display: block;
-            font-size: 30px;
-        }
+    .iconbox {
+        padding-bottom: 10px;
+        padding-right: 100px;
+        text-align: right;
     }
-}
-.pad20all4 {
-    padding: 20px;
-    p {
-        color: white;
-        font-family: $sans_cn;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5em;
-        span {
+    .credit2o {
+        background-color: $orange3;
+    }
+    .goingup {
+        background-image: url('../images/icon/stairs-up-icon.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        min-height: 270px;
+        padding: 20px;
+
+        h3 {
             color: white;
-            text-transform: capitalize;
+            font-family: $sans_cn;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+
+            span {
+                display: block;
+                font-size: 30px;
+            }
         }
     }
-}
-.bigpad {
-    margin-top: 150px;
-}
-.section-header-c3 {
-    h1 {
-        @include transform( rotate(-6deg) );
-        background-color: white;
-        border: 5px solid $red1;
-        box-shadow: -3px 3px 5px 0 rgba(50,50,50,.38);
-        color: $red1;
-        font-family: $sans_cn;
-        font-size: 74px;
-        font-style: normal;
-        font-weight: 600;
-        padding-left: 15px;
-        text-transform: uppercase;
-        width: 300px;
+    .pad20all4 {
+        padding: 20px;
+        p {
+            color: white;
+            font-family: $sans_cn;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5em;
+            span {
+                color: white;
+                text-transform: capitalize;
+            }
+        }
     }
-    h2 {
-        font-family: $sans;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 300;
-        margin-left: 250px;
-        margin-top: -40px;
+    .bigpad {
+        margin-top: 150px;
     }
-    h3 {
-        color: $blue1;
-        font-size: 33px;
-        font-weight: 300;
-        line-height: 1.5em;
-    }
-}
-.line-divider {
-    background-color: black;
-    height: 2px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.credits3 {
-    margin-bottom: 30px;
+    .note {
+        margin-bottom: 40px;
+        margin-top: 40px;
 
-    p span {
-        color: #ee3124;
-        font-size: 16px;
+        ol {
+            color: #999;
+            font-family: $sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            list-style: none;
+            margin-bottom: 30px;
+            margin-left: 0;
+            padding-left: 20px;
+            a {
+                color: #999;
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+    a {
         font-weight: 700;
-        line-height: 1.5em;
-    }
-    ul {
-        padding-left: 20px;
-    }
-}
-.section-header-c4 {
-    h1 {
-        font-family: $sans;
-        font-size: 65px;
-        font-style: normal;
-        font-weight: 600;
-        margin-bottom: 25px;
-    }
-    h2 {
-        font-family: $sans;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        margin-bottom: 105px;
-        margin-left: 210px;
-        margin-top: -40px;
-        span {
-            color: #bb0b82;
+        text-decoration: none;
+        &:hover {
+            color: rgba(51,51,51,.7);
         }
     }
 }
-.credits4 {
-    padding-bottom: 30px;
-
+/* 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
+.credit5 {
+    header {
+        h1 {
+            font-family: $sans;
+            font-size: 65px;
+            font-style: normal;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-family: $sans;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 105px;
+            margin-left: 210px;
+            margin-top: -40px;
+            span {
+                color: #bb0b82;
+            }
+        }
+    }
+    padding-top: 40px;
     h3 {
         color: #bb0b82;
         font-size: 18px;
@@ -346,76 +397,132 @@ div.feedback {
         margin-bottom: 5px;
         margin-top: 15px;
     }
-    p {
-        font-size: 16px;
+    .reminderbox {
+        background-color: #ab0e7d;
+        color: white;
+        font-size: 26px;
         line-height: 1.7em;
+        padding: 30px;
     }
-}
-.reminderbox {
-    background-color: #ab0e7d;
-    color: white;
-    font-size: 26px;
-    line-height: 1.7em;
-    padding: 30px;
-}
-.didyouknow {
-    background: $gray1;
-    @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
-    color: black;
-    float: right;
-    font: 14px $sans;
-    line-height: 1.3em;
-    margin-left: 20%;
+    .didyouknow {
+        background: $gray1;
+        @include background-image(linear-gradient(left, $gray1 0, $gray2 100%));
+        color: black;
+        float: right;
+        font: 14px $sans;
+        line-height: 1.3em;
+        margin-left: 20%;
+        a {
+            font-weight: 700;
+            text-decoration: none;
+        }
+        h3 {
+            color: $blue1 !important;
+            font-family: $sans;
+            font-size: 22px !important;
+            font-style: italic !important;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+    }
+    .left-arrow {
+        background-image: url('../images/icon/leftarrow.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 20px 20px 20px 70px;
+    }
     a {
         font-weight: 700;
         text-decoration: none;
-    }
-    h3 {
-        color: $blue1 !important;
-        font-family: $sans;
-        font-size: 22px !important;
-        font-style: italic !important;
-        margin-bottom: 5px;
-        margin-top: 0;
-    }
-}
-.left-arrow {
-    background-image: url('../images/icon/leftarrow.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding: 20px 20px 20px 70px;
-}
-.note {
-    margin-bottom: 40px;
-    margin-top: 40px;
-
-    ol {
-        color: #999;
-        font-family: $sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        list-style: none;
-        margin-bottom: 30px;
-        margin-left: 0;
-        padding-left: 20px;
-        a {
-            color: #999;
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: none;
+        &:hover {
+            color: rgba(51,51,51,.7);
         }
     }
 }
-.section-header-c5 h1 {
-    color: #b41730;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 0;
+/* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
+.credit6 {
+    header img {
+        padding-left: 50px;
+    }
+    #pickup {
+        display: table;
+        margin-bottom: 120px;
+        position: relative;
+        img {
+            padding-left: 80px;
+        }
+    }
+    .pickup-overlay {
+        background: $green1;
+        @include background-image(linear-gradient(top, $green1 26%, $green3 100%));
+        border-radius: 15px;
+        height: 120px;
+        margin-right: 60%;
+        opacity: .9;
+        padding: 20px;
+        position: absolute;
+        top: 95%;
+        vertical-align: middle;
+        width: 430px;
+        z-index: 99;
+    }
+    .pickup2-overlay {
+        background-image: url('../images/icon/clock.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        height: 120px;
+        margin-right: 60%;
+        opacity: 1;
+        padding-left: 110px;
+        padding-right: 30px;
+        padding-top: 30px;
+        position: absolute;
+        top: 95%;
+        vertical-align: middle;
+        width: 430px;
+        z-index: 100;
+        h1 {
+            color: white !important;
+            font-family: $sans;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+    }
+    .smgreybox {
+        margin-right: 20px;
+        h4 {
+            color: $green3;
+            font-family: $serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        p {
+            font-family: $serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    p, ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
-.credit5 {
-    padding-top: 40px;
+/* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
+.credit7 {
+    header h1 {
+        color: #b41730;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
     ul {
         padding-left: 20px;
         li {
@@ -445,100 +552,20 @@ div.feedback {
             text-decoration: none;
         }
     }
-}
-.insurance {
-    border: 1px solid black;
-    max-width: 400px;
-    padding: 5px;
+    .insurance {
+        border: 1px solid black;
+        max-width: 400px;
+        padding: 5px;
 
-    ul {
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-left: 20px;
+        ul {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 20px;
+        }
     }
 }
-.section-header-c6 img {
-    padding-left: 50px;
-}
-#pickup {
-    display: table;
-    margin-bottom: 120px;
-    position: relative;
-    img {
-        padding-left: 80px;
-    }
-}
-.pickup-overlay {
-    background: $green1;
-    @include background-image(linear-gradient(top, $green1 26%, $green3 100%));
-    border-radius: 15px;
-    height: 120px;
-    margin-right: 60%;
-    opacity: .9;
-    padding: 20px;
-    position: absolute;
-    top: 95%;
-    vertical-align: middle;
-    width: 430px;
-    z-index: 99;
-}
-.pickup2-overlay {
-    background-image: url('../images/icon/clock.png');
-    background-position: left center;
-    background-repeat: no-repeat;
-    height: 120px;
-    margin-right: 60%;
-    opacity: 1;
-    padding-left: 110px;
-    padding-right: 30px;
-    padding-top: 30px;
-    position: absolute;
-    top: 95%;
-    vertical-align: middle;
-    width: 430px;
-    z-index: 100;
-    h1 {
-        color: white !important;
-        font-family: $sans;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.3em;
-    }
-}
-.smgreybox {
-    margin-right: 20px;
-    h4 {
-        color: $green3;
-        font-family: $serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 800;
-        margin-bottom: 5px;
-        margin-top: 0;
-    }
-    p {
-        font-family: $serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-}
-.credits8 p,
-.credits8 ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.webphone a {
-    color: $red1;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.credits7 {
+/* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
+.credit8 {
     h1 {
         background: $blue2;
         @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
@@ -547,38 +574,37 @@ div.feedback {
         padding: 30px;
         text-align: center;
     }
+    .webphone a {
+        color: $red1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
     p {
         font-size: 30px;
         margin-top: 40px;
     }
-}
-.accent-red {
-    color: $red1;
-    font-family: $serif;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 60px;
-}
-
-.learnmore-box-4 a,
-.credits4 a {
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-        color: rgba(51,51,51,.7);
+    .accent-red {
+        color: $red1;
+        font-family: $serif;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 60px;
     }
 }
 @media(min-width:768px) and (max-width:991px) {
-    .section-header-c1 h1 {
+    .credit1 header h1 {
         font-size: 50px;
-    }
-    .section-header-c1 h1 span {
-        font-size: 142px;
+        span {
+            font-size: 142px;
+        }
     }
     .creditbox {
         display: none;
     }
-    .section-header-c2 h1 {
+    .credit2 header  h1 {
         span {
             font-size: 45px;
             margin-top: 55px;
@@ -618,7 +644,7 @@ div.feedback {
     }
 }
 @media(min-width:481px) and (max-width:767px) {
-    .section-header-c1 h1 {
+    .credit1 header h1 {
         font-size: 34px;
         span {
             font-size: 95px;
@@ -627,7 +653,7 @@ div.feedback {
     .creditbox {
         display: none;
     }
-    .section-header-c2 {
+    .credit2 header {
         h1 span {
             font-size: 34px;
             margin-top: 47px;
@@ -650,7 +676,7 @@ div.feedback {
     .bigpad {
         margin-top: 0;
     }
-    .section-header-c3 {
+    .credit3 header {
         h1 {
             font-size: 54px;
             padding-left: 15px;
@@ -710,7 +736,7 @@ div.feedback {
     }
 }
 @media only screen and (max-width:480px) {
-    .section-header-c1 {
+    .credit1 header {
         h1 {
             font-size: 21px;
             span {
@@ -721,7 +747,7 @@ div.feedback {
     .creditbox {
         display: none;
     }
-    .section-header-c2 {
+    .credit2 header  {
         h1 span {
             font-size: 26px;
             margin-top: 33px;
@@ -744,7 +770,7 @@ div.feedback {
     .bigpad {
         margin-top: 0;
     }
-    .section-header-c3 {
+    .credit3 header  {
         h1 {
             font-size: 54px;
             padding-left: 15px;
@@ -803,35 +829,8 @@ div.feedback {
         margin-top: 10px;
     }
 }
-.section-header-c {
-    margin-bottom: 100px;
-    h1 {
-        color: $gray3;
-        font-family: $serif;
-        font-weight: 700;
-        margin-top: 25px;
-        text-align: center;
-        span {
-            position: relative;
-            &::after,
-                &::before {
-                border-bottom: 75px solid $blue2;
-                content: '';
-                position: absolute;
-                top: -25px;
-                width: 4px;
-            }
-            &::before { left: -15px; }
-            &::after { right: -15px; }
-        }
-    }
-    .header-desc::before {
-        border-bottom: 0;
-        content: '';
-    }
-}
 @media only screen and (max-width:768px) {
-    .section-header-c h1 span {
+    header h1 span {
         font-size: 18px !important;
         &::after, &::before {
             top: -50px;
@@ -839,7 +838,7 @@ div.feedback {
     }
 }
 @media only screen and (max-width:480px) {
-    .section-header-c h1 span {
+    header h1 span {
         font-size: 18px !important;
         &::after, &::before { top: -50px; }
     }
