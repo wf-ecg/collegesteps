@@ -80,7 +80,7 @@ p {
         text-decoration: none;
     }
     a:hover {
-        color: rgba(255,255,255,.7);
+        color: $mist7;
     }
 }
 
@@ -216,7 +216,7 @@ p {
         font-size: 16px;
         font-weight: 500;
         padding: 30px;
-        box-shadow: 1px 2px 33px rgba(0,0,0,0.3);
+        box-shadow: 1px 2px 33px $dusk2;
         strong {
             font-size: 21px;
             font-weight: 800;
@@ -303,7 +303,7 @@ p {
             font-weight: 700;
             text-decoration: none;
             &:hover {
-                color: rgba(255,255,255,.7);
+                color: $mist7;
             }
         }
     }
@@ -476,7 +476,7 @@ p {
         margin-top: 0;
     }
     .lotus {
-        background-color: rgba(255,255,255,0.7);
+        background-color: $mist7;
         margin-bottom: -600px;
         margin-left: 60px;
         margin-top: 200px;

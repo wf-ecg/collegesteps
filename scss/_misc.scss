@@ -1,6 +1,6 @@
 /* _misc.scss */
 #navbar.scroll-to-fixed-fixed {
-    box-shadow: 0 0 22px rgba(0,0,0,0.2);
+    box-shadow: 0 0 22px $dusk2;
 }
 #stickyBar {
     @include transition( all .3s );
@@ -13,8 +13,8 @@
         margin-left: -0.6em;
     }
     td {
-        background-color: rgba(0,0,0,0.7);
-        box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
+        background-color: $dusk7;
+        box-shadow: 0 0 0.5em $dusk2;
         height: 3em;
         text-align: center;
         vertical-align: middle;

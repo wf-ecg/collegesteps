@@ -38,7 +38,7 @@ blockquote {
         font: 300 20px/26px $serif;
         &::after,
         &::before {
-            color: rgba(0,0,0,.5);
+            color: $dusk5;
         }
     }
     small {
