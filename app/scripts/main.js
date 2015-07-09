@@ -9,7 +9,7 @@ document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>'
 document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
 document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
 document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
-document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
+//document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
