@@ -622,6 +622,7 @@ p {
         .arrows-down {
             background-color: $blue1;
             display: inline-block;
+            img { float: right; }
         }
     }
     p {
@@ -670,6 +671,7 @@ p {
             margin: 42px;
             vertical-align: bottom;
             img {
+                float: right;
                 height: 32px;
             }
         }
