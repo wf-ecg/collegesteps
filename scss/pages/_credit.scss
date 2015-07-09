@@ -55,6 +55,57 @@
 }
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
 .credit1 {
+    header {
+        h1 {
+            color: $blue2;
+            font-family: $sans;
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 600;
+            span {
+                color: black;
+                font-size: 99px;
+                font-weight: 100;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            font-family: $sans;
+            font-weight: 100;
+            margin-bottom: 0;
+        }
+    }
+    p {
+        strong {
+            color: $purple2;
+            font-size: 1.2em;
+        }
+    }
+    ul {
+        padding-left: 20px;
+    }
+    .callout {
+        border: 2px solid $blue2;
+        border-radius: 1em;
+        color: $blue2;
+        font-family: $sans;
+        padding: 1em;
+        h3 {
+            color: $blue2;
+            font-family: $sans_cn;
+        }
+        p {
+            strong {
+                color: $blue2;
+                font-family: $sans_cn;
+                font-size: 1.2em;
+            }
+            &.note {
+                font-size: 0.8em;
+                font-style: italic;
+            }
+        }
+    }
 }
 /* 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 */
 .credit2 {
@@ -115,12 +166,6 @@
                 font-weight: 600;
             }
         }
-    }
-    .line-divider {
-        background-color: black;
-        height: 2px;
-        margin-bottom: 30px;
-        margin-top: 30px;
     }
     #quiz {
         &>div>fieldset {
@@ -231,10 +276,8 @@
 }
 /* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .credit4 {
-    padding-bottom: 30px;
     header {
         padding-bottom: 50px;
-
         h1 span {
             display: block;
             float: left;
