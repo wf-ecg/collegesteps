@@ -1,4 +1,29 @@
 /* _misc.scss */
+
+.home-content {
+    .box {
+        background-color: transparentize($purple3, 0.1);
+        font-family: $serif;
+        left: 0; right: 0;
+        margin: auto;
+        padding: 2em;
+        position: absolute;
+        text-align: left;
+        max-width: 50em;
+        width: 70%;
+        h3 {
+            color: white;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+}
 #navbar.scroll-to-fixed-fixed {
     box-shadow: 0 0 22px $dusk2;
 }
