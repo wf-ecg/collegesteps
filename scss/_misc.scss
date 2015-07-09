@@ -1,10 +1,43 @@
 /* _misc.scss */
 #navbar.scroll-to-fixed-fixed {
-    box-shadow: 0 0 22px rgba(0,0,0,0.22);
+    box-shadow: 0 0 22px rgba(0,0,0,0.2);
 }
 #stickyBar {
-    box-shadow: 0 0 22px rgba(0,0,0,0.22);
+    @include transition( all .3s );
+    bottom: 45%;
+    margin-left: -1em;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 4;
+    &:hover {
+        margin-left: -0.6em;
+    }
+    td {
+        background-color: rgba(0,0,0,0.7);
+        box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
+        height: 3em;
+        text-align: center;
+        vertical-align: middle;
+        width: 2em;
+        &:hover {
+            width: 3em;
+        }
+    }
+    ul.socialcount {
+        margin: 0.1em;
+        li {
+            background: none;
+        }
+        a {
+            padding: 0;
+            &:hover {
+                background-color: #777777;
+                width: 3em;
+            }
+        }
+    }
 }
+
 .note ol {
     color: #999999;
     font-family: $sans;
