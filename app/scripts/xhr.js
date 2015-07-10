@@ -18,6 +18,7 @@
         usurp('#navbar');
         usurp('#stickyBar');
         usurp('#menu-4');
+        usurp('.externals');
         usurp('.copyrights');
         usurp('.modal');
     });

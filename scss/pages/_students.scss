@@ -1,13 +1,21 @@
 /* students */
 
 .home-bg-container {
-    background: url($top_bkgr) center top;
+    background: url($top_bkgr) center 1%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
 }
 .home-content {
     margin-bottom: 50px;
+    h1 {
+        span {
+            &::after,
+            &::before {
+                border-bottom: 75px solid $plum1;
+            }
+        }
+    }
     h6 span {
         color: black;
         display: block;
@@ -19,7 +27,8 @@
         margin-left: 15px;
     }
     .box {
-        top: 15em;
+        background-color: transparentize($plum1, 0.2);
+        top: 10em;
     }
 }
 p {
@@ -535,9 +544,26 @@ p {
         }
     }
     .mousebox {
-        font-family: $sans_cn !important;
+        background-image: none;
+        font-family: $sans;
         margin-top: 0;
         margin-bottom: 20px;
+        h4 {
+            font-family: $sans_cn;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        strong {
+            font-family: $sans_cn;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        img {
+            width: 100px;
+        }
+        small {
+            font-style: italic;
+        }
     }
 }
 /* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */

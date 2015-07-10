@@ -58,8 +58,7 @@
         padding: 2em;
         position: absolute;
         text-align: left;
-        max-width: 50em;
-        width: 70%;
+        width: 70%; max-width: 50em;
         h3 {
             color: white;
             font-size: 21px;
@@ -71,13 +70,6 @@
             margin-top: 10px;
             font-weight: 100;
         }
-    }
-}
-section {
-    a {
-        font-weight: 700;
-        text-decoration: none;
-        &:hover { color: $dusk7; }
     }
 }
 #navbar.scroll-to-fixed-fixed {
@@ -113,6 +105,7 @@ section {
             padding: 0;
             &:hover {
                 background-color: #777777;
+                border-radius: 0.5em;
                 width: 3em;
             }
         }
@@ -145,15 +138,22 @@ section {
     margin-top: 20px;
 }
 
-.note ol {
+.note {
     color: #999999;
     font-family: $sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    padding-left: 30px;
+    .fadeBottom & {
+        li {
+            list-style: none;
+        }
+    }
+    ol {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        padding-left: 30px;
+    }
     a {
         color: #666666;
         font-size: 12px;
