@@ -1,5 +1,5 @@
 .home-bg-container {
-    background: url($top_bkgr) center top;
+    background: url($top_bkgr) center 10%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -22,7 +22,7 @@
     }
     .box {
         background-color: transparentize($blue1, 0.2);
-        bottom: 15em;
+        bottom: 10em;
     }
 }
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
@@ -57,21 +57,28 @@
         padding-left: 20px;
     }
     .callout {
-        border: 2px solid $blue2;
+        border: 2px solid $blue1;
         border-radius: 1em;
-        color: $blue2;
+        color: $blue1;
         font-family: $sans;
         padding: 1em;
         h3 {
-            color: $blue2;
+            color: $blue1;
             font-family: $sans_cn;
+            font-size: 1.6em;
+            margin-top: 20px;
         }
         p {
             strong {
-                color: $blue2;
+                color: $blue1;
                 font-family: $sans_cn;
-                font-size: 1.2em;
+                font-size: 1.3em;
+                font-weight: 300;
             }
+        }
+        img {
+            margin-top: -60px;
+            margin-right: -30px;
         }
     }
 }
@@ -309,8 +316,14 @@
     }
     .iconbox {
         padding-bottom: 10px;
-        padding-right: 100px;
         text-align: right;
+    }
+    .learnmore-box-4 {
+        font-size: 1.3em;
+        h3 {
+            font-size: 1.5em !important;
+            margin-top: 0;
+        }
     }
     .goingup {
         background-image: url('../images/icon/stairs-up-icon.png');
@@ -366,7 +379,7 @@
             font-size: 50px;
             font-style: normal;
             font-weight: 400;
-            margin-bottom: 25px;
+            margin-bottom: 65px;
             margin-left: 210px;
             margin-top: -40px;
             span {
@@ -375,7 +388,7 @@
         }
     }
     h3 {
-        color: #bb0b82;
+        color: $orange3;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -421,6 +434,8 @@
         display: table;
         margin-bottom: 120px;
         position: relative;
+        left: 100px;
+        top: -55px;
     }
     .pickup-overlay {
         background: $green1;
@@ -460,11 +475,11 @@
         }
     }
     .smgreybox {
-        margin-right: 20px;
+        padding: 40px 20px;
         h4 {
             color: $green3;
             font-family: $serif;
-            font-size: 16px;
+            font-size: 1.8em;
             font-style: normal;
             font-weight: 800;
             margin-bottom: 5px;
@@ -472,9 +487,10 @@
         }
         p {
             font-family: $serif;
-            font-size: 18px;
+            font-size: 1.5em;
             font-style: normal;
             font-weight: 500;
+            line-height: 1.4;
             margin-bottom: 0;
             margin-top: 0;
         }
