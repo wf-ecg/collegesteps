@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     z-index: 5;
 }
-#logoBox {
+.logo {
     float: left;
     padding-left: 60px;
     padding-top: 60px;
@@ -16,48 +16,33 @@
         width: 100px;
     }
 }
-#box {
+.mag {
     padding-right: 75px;
     position: absolute;
     top: 44px;
     width: 100%;
-    z-index: 5;
+    * {
+        position: relative;
+    }
     h1 {
         color: #b10000;
-        font-family: $serif;
         font-size: 6.2em;
-        font-style: normal;
         font-weight: 700;
         margin: 0;
         text-align: right;
-        sup {
-            font-size: 50%;
-            line-height: 0;
-            position: relative;
-            top: -1em;
-            vertical-align: baseline;
-        }
+        z-index: 5;
+        sup { font-size: 50%; top: -1em; }
     }
-}
-#mag {
-    padding-right: 475px;
-    position: absolute;
-    text-align: right;
-    top: 134px;
-    width: 100%;
-    z-index: 6;
     h2 {
         color: black;
         font-family: $serif;
         font-size: 3.2em;
         font-weight: 400;
-        margin-top: 0;
+        margin-top: -20px;
+        padding-right: 435px;
         text-align: right;
+        z-index: 6;
     }
-}
-header {
-    display: table;
-    position: relative;
 }
 .welcome-overlay {
     margin-left: 60%;
@@ -67,14 +52,8 @@ header {
     width: 350px;
     &.back {
         background: $blue2;
-        background: -moz-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$blue2),color-stop(100%,$blue1));
-        background: -webkit-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -o-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: -ms-linear-gradient(top,$blue2 0,$blue1 100%);
-        background: linear-gradient(to bottom,$blue2 0,$blue1 100%);
+        @include background-image(linear-gradient(top, $blue2 0, $blue1 100%));
         border-radius: 15px;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue2',endColorstr='$blue1',GradientType=0);
         height: 100px;
         opacity: .9;
         padding: 20px;
@@ -113,15 +92,8 @@ header {
     padding-top: 20px;
     width: 350px;
 }
-.letter a {
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-        color: rgba(51,51,51,.7);
-    }
-}
 @media(max-width:991px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -132,32 +104,23 @@ header {
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
-        top: 104px;
+        text-align: center;
         h1 {
             font-size: 4em;
             text-align: center;
+            top: 104px;
         }
-    }
-    #mag {
-        padding-right: 0;
-        text-align: center;
-        top: 165px;
         h2 {
             font-size: 2.8em;
             text-align: center;
+            top: 165px;
         }
     }
     .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,
     .col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
         margin-bottom: 50px;
-    }
-    .si-desc {
-        margin: 30px -15px -15px;
-    }
-    .header-desc span {
-        width: 50%;
     }
     .team-member-big:hover .team-member-overlay h5 {
         bottom: 55%;
@@ -182,12 +145,6 @@ header {
     .sidebar {
         margin-top: 30px;
     }
-    .jp-volume {
-        width: 20%;
-    }
-    .jp-volume-bar {
-        width: 35%;
-    }
     .comment-container .avatar img {
         width: 45px;
     }
@@ -203,7 +160,7 @@ header {
     }
 }
 @media only screen and (max-width:768px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -214,15 +171,13 @@ header {
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
         top: 104px;
         h1 {
             font-size: 4em;
             text-align: center;
         }
-    }
-    #mag {
         padding-right: 0;
         text-align: center;
         top: 165px;
@@ -247,9 +202,6 @@ header {
     }
     .story-item:nth-child(odd) .story-item-content .si-year {
         right: -30px;
-    }
-    .si-desc {
-        margin: 15px -15px -15px;
     }
     .bottom-gap,.resp-no-gap {
         margin-bottom: 0;
@@ -279,7 +231,7 @@ header {
     }
 }
 @media only screen and (max-width:480px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -290,15 +242,13 @@ header {
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
         top: 104px;
         h1 {
             font-size: 4em;
             text-align: center;
         }
-    }
-    #mag {
         padding-right: 0;
         text-align: center;
         top: 165px;

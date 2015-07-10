@@ -1,61 +1,12 @@
 .home-bg-container {
-    background: url($top_bkgr) center top;
+    background: url($top_bkgr) center center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
 }
 .home-content {
-    margin-bottom: 50px;
-    h1 {
-        color: $gray3;
-        font-family: $serif;
-        font-weight: 700;
-        margin-top: 25px;
-        text-align: center;
-        span {
-            position: relative;
-            &::after, &::before {
-                border-bottom: 75px solid $purple2;
-                content: '';
-                position: absolute;
-                width: 4px;
-            }
-            &::before {
-                left: -15px;
-            }
-            &::after {
-                right: -15px;
-            }
-            &::after, &::before {
-                top: -25px;
-            }
-        }
-    }
-}
-.parent-box {
-    bottom: 200px;
-    position: absolute;
-    width: 100%;
-    div {
-        background-color: transparentize($purple3, 0.1);
-        font-family: $serif;
-        font-size: 18px;
-        font-weight: 100;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 700px;
-        padding: 33px;
-        text-align: left;
-        width: 70%;
-        h3 {
-            color: white;
-            font-size: 21px;
-            font-weight: 500;
-        }
-        p {
-            margin-bottom: 0;
-            margin-top: 10px;
-        }
+    .box {
+        bottom: 15em;
     }
 }
 /* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
@@ -146,8 +97,6 @@
             padding-bottom: 20px;
             a {
                 color: black;
-                font-weight: 600;
-                text-decoration: none;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -184,6 +133,7 @@
         height: 42px;
         position: absolute;
         right: 1em;
+        img { float: right; }
     }
     ul.fa-ul li {
         font-size: 16px;
@@ -217,10 +167,6 @@
     .checklist-item {
         font-size: 16px;
         padding-bottom: 20px;
-        a {
-            font-weight: 700;
-            text-decoration: none;
-        }
     }
     .parentCheckbox {
         border: 2px solid black;
@@ -236,9 +182,7 @@
             top: 1px;
             width: 17px;
             &::after {
-                -moz-transform: rotate(-45deg);
-                -ms-transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
+                @include transform( rotate(-45deg) );
                 background: 0;
                 border: 2px solid black;
                 border-right: 0;
@@ -250,7 +194,6 @@
                 opacity: 0;
                 position: absolute;
                 top: 3px;
-                transform: rotate(-45deg);
                 width: 9px;
             }
             &:hover::after {
@@ -331,13 +274,6 @@
             text-align: right;
         }
     }
-    a {
-        font-weight: 700;
-        text-decoration: none;
-        &:hover {
-            color: rgba(51,51,51,.7);
-        }
-    }
     h3 {
         color: $green1;
         font-size: 21px;
@@ -357,14 +293,8 @@
         }
         .box0 {
             background: $blue1;
-            background: -moz-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -webkit-gradient(linear,left top,right top,color-stop(0%,$blue1),color-stop(0%,$blue1),color-stop(100%,$blue3));
-            background: -webkit-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -o-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: -ms-linear-gradient(left,$blue1 0,$blue1 0,$blue3 100%);
-            background: linear-gradient(to right,$blue1 0,$blue1 0,$blue3 100%);
+            @include background-image(linear-gradient(left, $blue1 0, $blue3 100%));
             color: white;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$blue1',endColorstr='$blue3',GradientType=1);
             font-family: $sans;
             font-weight: 600;
         }
@@ -409,7 +339,6 @@
             margin: 0;
         }
         a {
-            font-weight: 700;
             &:hover {
                 text-decoration: underline;
             }

@@ -12,7 +12,7 @@
 
         <link href="./build/screen.css" rel="stylesheet">
 
-        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/lib/jquery/1.11.3/jquery.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-git.js"></script>
         <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
@@ -45,44 +45,36 @@
                                 <div class="home-bg-container"></div>
                                 <div class="overlay">
                                     <div class="home-content">
-                                        <!-- INFO BAR -->
 
-                                        <!-- HOME TEXT -->
-                                        <div id="logoBox">
+                                        <div class="logo">
                                             <img src="./images/Wells_Fargo_logo.jpg" alt="Wells Fargo">
                                         </div>
-                                        <div id="box">
+
+                                        <div class="mag">
                                             <h1>CollegeSTEPS<sup>&reg;</sup></h1>
-                                        </div>
-                                        <div id="mag">
                                             <h2>magazine</h2>
                                         </div>
-                                        <!-- HOME TEXT End -->
 
-                                        <!-- HOME READ MORE BUTTON -->
+
                                         <div class="home-more"> <a href="#" class="btn btn-primary" data-scroll-nav="1" title="read more">Read More</a> </div>
-
                                     </div>
                                 </div>
                             </div>
                             <!-- HOME FULLSCREEN End -->
 
                             <!-- NAVBAR XHR --><script>var navi = 1;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
-
                         </header>
 
                         <!-- SHAREBAR XHR --><div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s"></div>
-
                         <!--
-...
-1.welcome-section
-                        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
                         -->
-                        <section data-scroll-index="1" role="region">
-                            <section id="welcome-section">
-
-                                <div class="container first-section">
-                                    <header id="welcome" class="fadeTop"> <img src="./images/photo/MV_1013_13077_B.jpg" alt="students chatting" style="width:100%">
+                        <section id="welcome-section" data-scroll-index="1" role="region">
+                            <section id="content" class="first-section">
+                                <div class="container">
+                                    <!-- BODY -->
+                                    <header class="fadeTop">
+                                        <img src="./images/photo/MV_1013_13077_B.jpg" alt="students chatting" style="width:100%">
                                         <div class="welcome-overlay back"></div>
                                         <div class="welcome-overlay fore">
                                             <h1>Welcome to<br>
@@ -93,17 +85,20 @@
                                     <div class="letter">
                                         <p>Many of the strategies employed when I was planning and preparing for college were much different than those used
                                             today — yet the underlying fundamentals seem to have remained the same:
-                                            plan early, apply for scholarships and grants, borrow only what you need, and try to stay within your budget. </p>
+                                            plan early, apply for scholarships and grants, borrow only what you need, and try to stay within your budget.</p>
                                         <p>From the beginning, Wells Fargo’s <em><strong>CollegeSTEPS<sup>®</sup></strong> magazine</em> has combined best practices, tested advice,
-                                            and thoughtful information to serve as a valued college and financial planning resource for students, parents, school counselors, and others. </p>
+                                            and thoughtful information to serve as a valued college and financial planning resource for students, parents, school counselors, and others.</p>
                                         <p><em><strong>CollegeSTEPS</strong> magazine’s</em> fresh approach to strategic planning will help you make choices you can feel good about,
-                                            keep you mindful about the importance of budgeting, and ensure that you make the most of your college experience. </p>
+                                            keep you mindful about the importance of budgeting, and ensure that you make the most of your college experience.</p>
                                         <p>After witnessing the eldest of my three children move away to attend college and another getting ready to enroll as a freshman,
                                             I can attest that it takes an incredible amount of commitment, perseverance, and focus for students today to reach the milestone of becoming a first-year college student;
-                                            for that you should always feel a sense of accomplishment. </p>
+                                            for that you should always feel a sense of accomplishment.</p>
                                         <p>Entering your college years is an important and positive milestone in life, of which I hope for you there will be many.
-                                            For more information, I encourage you to visit <a href="http://www.wellsfargo.com/collegesteps" title="visit the Wells Fargo CollegeSteps website" target="_blank">wellsfargo.com/collegesteps</a>,
-                                            where you can sign up for ongoing tips and tools related to college planning and financing.
+                                            For more information, I encourage you to visit
+                                            <a href="http://www.wellsfargo.com/collegesteps"
+                                               title="visit the Wells Fargo CollegeSteps website"
+                                               target="_blank">wellsfargo.com/collegesteps</a>
+                                            , where you can sign up for ongoing tips and tools related to college planning and financing.
                                             Good luck and never stop pursuing your ambitions.</p>
                                         <div class="pad20 fadeRight"><img src="./images/John-Signature.gif" alt="John Rasmussen signature"/></div>
                                         <div class="executive fadeRight"><img src="./images/photo/J-Rasmussen.jpg" alt="John Rasmussen" width="75" height="113"/></div>
@@ -118,7 +113,6 @@
                             </section>
                         </section>
                         <!--
-1.welcome-section
 ...
                         -->
 

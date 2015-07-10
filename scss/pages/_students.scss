@@ -1,13 +1,21 @@
 /* students */
 
 .home-bg-container {
-    background: url($top_bkgr) center top;
+    background: url($top_bkgr) center 1%;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
 }
 .home-content {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    h1 {
+        span {
+            &::after,
+            &::before {
+                border-bottom: 75px solid $plum1;
+            }
+        }
+    }
     h6 span {
         color: black;
         display: block;
@@ -18,24 +26,13 @@
         line-height: 1.3em;
         margin-left: 15px;
     }
-}
-.studentbox {
-    background-color: transparentize($purple3, 0.1);
-    font-family: $serif;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: left;
-    width: 610px;
-    p {
-        margin-bottom: 0;
-        margin-top: 10px;
+    .box {
+        background-color: transparentize($plum1, 0.2);
+        top: 10em;
     }
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .mousebox {
     background-color: #2492bc;
@@ -54,11 +51,9 @@ p {
     }
     a {
         color: white;
-        font-weight: 700;
-        text-decoration: none;
     }
     a:hover {
-        color: rgba(255,255,255,.7);
+        color: $mist7;
     }
 }
 
@@ -109,13 +104,6 @@ p {
         font-weight: 700;
         margin-bottom: 10px;
         margin-top: 20px;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
-    }
-    a:hover {
-        color: rgba(51,51,51,.7);
     }
     .graph {
         h2 {
@@ -194,43 +182,37 @@ p {
         font-size: 16px;
         font-weight: 500;
         padding: 30px;
+        box-shadow: 1px 2px 33px $dusk2;
         strong {
             font-size: 21px;
             font-weight: 800;
         }
     }
     .listbox-1 {
-        -ms-transform: rotate(-2deg);
-        -webkit-transform: rotate(-2deg);
+        @include transform( rotate(-2deg) );
         margin-right: 80px;
-        transform: rotate(-2deg);
         z-index: 5 !important;
     }
     .listbox-2 {
-        -ms-transform: rotate(1deg);
-        -webkit-transform: rotate(1deg);
+        @include transform( rotate(1deg) );
         margin-left: 70px;
-        transform: rotate(1deg);
         z-index: 4 !important;
     }
     .listbox-3 {
-        -ms-transform: rotate(-3deg);
-        -webkit-transform: rotate(-3deg);
+        @include transform( rotate(-2deg) );
         margin-left: 10px;
         margin-right: 60px;
-        transform: rotate(-3deg);
         z-index: 3 !important;
     }
     .listbox-4 {
+        @include transform( rotate(-1deg) );
         margin-left: 20px;
         z-index: 2 !important;
     }
     .listbox-5 {
-        -ms-transform: rotate(-3deg);
-        -webkit-transform: rotate(-3deg);
+        @include transform( rotate(-3deg) );
         margin-left: 60px;
         margin-right: 30px;
-        transform: rotate(-3deg);
         z-index: 1 !important;
     }
 }
@@ -241,15 +223,9 @@ p {
     header {
         h1 {
             background: $gak1;
-            background: -moz-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,$gak1),color-stop(100%,$gak2));
-            background: -webkit-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -o-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: -ms-linear-gradient(top,$gak1 0,$gak2 100%);
-            background: linear-gradient(to bottom,$gak1 0,$gak2 100%);
+            @include background-image(linear-gradient(top, $gak1 0, $gak2 100%));
             border: 1px solid black;
             color: white;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gak1',endColorstr='$gak2',GradientType=0);
             font-family: $serif;
             font-size: 30px;
             font-weight: 400;
@@ -290,10 +266,8 @@ p {
         }
         a {
             color: white;
-            font-weight: 700;
-            text-decoration: none;
             &:hover {
-                color: rgba(255,255,255,.7);
+                color: $mist7;
             }
         }
     }
@@ -312,9 +286,7 @@ p {
             top: 2px;
             width: 18px;
             &::after {
-                -moz-transform: rotate(-45deg);
-                -ms-transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
+                @include transform( rotate(-45deg) );
                 background: 0;
                 border: 3px solid #fcfff4;
                 border-right: 0;
@@ -326,7 +298,6 @@ p {
                 opacity: 0;
                 position: absolute;
                 top: 3px;
-                transform: rotate(-45deg);
                 width: 9px;
             }
         }
@@ -469,7 +440,7 @@ p {
         margin-top: 0;
     }
     .lotus {
-        background-color: rgba(255,255,255,0.7);
+        background-color: $mist7;
         margin-bottom: -600px;
         margin-left: 60px;
         margin-top: 200px;
@@ -490,7 +461,6 @@ p {
     header {
         margin-bottom: 40px;
         h1 {
-            background-color: $orange2;
             color: white;
             font-family: $sans_cn;
             font-size: 60px;
@@ -522,10 +492,6 @@ p {
     p {
         margin-bottom: 10px;
         margin-top: 0;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
     }
 }
 /* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
@@ -578,9 +544,26 @@ p {
         }
     }
     .mousebox {
-        font-family: $sans_cn !important;
+        background-image: none;
+        font-family: $sans;
         margin-top: 0;
         margin-bottom: 20px;
+        h4 {
+            font-family: $sans_cn;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        strong {
+            font-family: $sans_cn;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        img {
+            width: 100px;
+        }
+        small {
+            font-style: italic;
+        }
     }
 }
 /* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
@@ -619,6 +602,7 @@ p {
         .arrows-down {
             background-color: $blue1;
             display: inline-block;
+            img { float: right; }
         }
     }
     p {
@@ -650,13 +634,32 @@ p {
             }
         }
     }
+    .getdetails {
+        text-align: center;
+        h4 {
+            color: $plum1;
+            display: inline-block;
+        }
+        a {
+            color: $plum1;
+        }
+        .arrows-right, .arrows-left {
+            background-color: $plum1;
+            display: inline-block;
+            margin: 42px;
+            vertical-align: bottom;
+            img {
+                float: right;
+                height: 32px;
+            }
+        }
+    }
 }
 /* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
 .student8 {
     header {
         margin-bottom: 40px;
         h1 {
-            background-color: $orange2;
             color: white;
             font-family: $serif;
             font-size: 55px;
@@ -687,10 +690,6 @@ p {
     p {
         margin-bottom: 10px;
         margin-top: 0;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
     }
 }
 .greybg {
@@ -730,10 +729,6 @@ fieldset input {
     span {
         color: black;
         font-weight: 400;
-    }
-    a {
-        font-weight: 700;
-        text-decoration: none;
     }
     a:hover {
         text-decoration: underline;

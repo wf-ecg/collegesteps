@@ -1,28 +1,169 @@
 /* _misc.scss */
+.g-pink {
+    background: $plum1;
+    @include background-image(linear-gradient(left, $plum1 0, $plum2 100%));
+}
+.g-blue {
+    background: $blue1;
+    @include background-image(linear-gradient(left, $blue1 0, $blue2 79%, $blue2 100%));
+}
+.g-purple {
+    background: $purple1;
+    @include background-image(linear-gradient(left, $purple1 0, $purple1 12%, $purple2 79%, $purple2 100%));
+}
+.g-green {
+    background: $green1;
+    @include background-image(linear-gradient(left, $green1 0, $green1 12%, $green2 79%, $green2 100%));
+}
+.g-orange {
+    background: $orange1;
+    @include background-image(linear-gradient(left, $orange1 0, $orange2 30%, $orange3 100%));
+}
+.g-red {
+    background: $red1;
+    @include background-image(linear-gradient(left, $red1 0, $red1 24%, $red2 100%, $red3 100%));
+}
+.g-dkblue {
+    background: $dark1;
+    @include background-image(linear-gradient(left, $dark1 0, $dark2 100%));
+}
+
+.home-content {
+    margin-bottom: 100px;
+    h1 {
+        color: $gray3;
+        font-family: $serif;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 20px;
+        text-align: center;
+        span {
+            position: relative;
+            &::after, &::before {
+                border-bottom: 75px solid $purple2;
+                content: '';
+                position: absolute;
+                width: 5px;
+            }
+            &::before { left: -25px; }
+            &::after { right: -25px; }
+            &::after, &::before { top: -25px; }
+        }
+    }
+    .box {
+        background-color: transparentize($purple3, 0.1);
+        font-family: $serif;
+        left: 0; right: 0;
+        margin: auto;
+        padding: 2em;
+        position: absolute;
+        text-align: left;
+        width: 70%; max-width: 50em;
+        h3 {
+            color: white;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+}
 #navbar.scroll-to-fixed-fixed {
-    box-shadow: 0 0 22px rgba(0,0,0,0.22);
+    box-shadow: 0 0 22px $dusk2;
 }
 #stickyBar {
-    box-shadow: 0 0 22px rgba(0,0,0,0.22);
+    @include transition( all .3s );
+    bottom: 45%;
+    margin-left: -1em;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 4;
+    &:hover {
+        margin-left: -0.6em;
+    }
+    td {
+        background-color: $dusk7;
+        box-shadow: 0 0 0.5em $dusk2;
+        height: 3em;
+        text-align: center;
+        vertical-align: middle;
+        width: 2em;
+        &:hover {
+            width: 3em;
+        }
+    }
+    ul.socialcount {
+        margin: 0.1em;
+        li {
+            background: none;
+        }
+        a {
+            padding: 0;
+            &:hover {
+                background-color: #777777;
+                border-radius: 0.5em;
+                width: 3em;
+            }
+        }
+    }
 }
-.note ol {
+#scrollUp {
+    @include transition( background 200ms linear );
+    background-color: #999;
+    bottom: 3px;
+    color: white;
+    font-family: $sans;
+    font-size: 12px;
+    opacity: .9;
+    padding: 7px 20px;
+    right: 18px;
+    text-decoration: none;
+    &:hover {
+        background-color: black;
+    }
+    &::after {
+        content: '\f102';
+        font-family: FontAwesome;
+        padding-left: 10px;
+    }
+}
+.line-divider {
+    background-color: black;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.note {
     color: #999999;
     font-family: $sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    padding-left: 30px;
+    .fadeBottom & {
+        li {
+            list-style: none;
+        }
+    }
+    ol {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        padding-left: 30px;
+    }
     a {
         color: #666666;
         font-size: 12px;
-        font-weight: 600;
-        text-decoration: none;
         white-space: nowrap;
     }
 }
 
+.fa-bars {
+    position: fixed;
+}
 
 @media all {
     .topbot {

@@ -9,7 +9,7 @@ document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>'
 document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
 document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
 document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
-document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
+//document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
@@ -20,7 +20,6 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         return this.attr(attr) !== undefined;
     };
 
-    var Skrollr = W.skrollr;
     var navbar = $('#navbar');
 
     function navsize1() {
@@ -188,7 +187,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
     function drSkroll() {
         if (!Boolean('ontouchstart' in W || 'onmsgesturechange' in W)) {
-            if (Skrollr) Skrollr.init();
+            if (W.skrollr) W.skrollr.init();
         }
     }
 

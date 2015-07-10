@@ -1,7 +1,6 @@
 /* _modal.scss */
 .modal {
-    background-color: rgba(0,0,0,0.6);
-    /* opacity: 0.6; -ms-filter: alpha(opacity=60); filter: alpha(opacity=60); */
+    background-color: $dusk7;
     z-index: 1000;
     /* cover */
     position: fixed; left: 0; top: 0; width: 100%; height: 100%;
@@ -62,19 +61,13 @@
         margin-left: 15px;
     }
     .dialog .utilitybtn {
-        background: -moz-linear-gradient(top,#5174b8 0,#3d62a3 50%,#336699 52%,#244a87 100%);
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#5174b8),color-stop(50%,#3d62a3),color-stop(52%,#336699),color-stop(100%,#244a87));
-        background: -webkit-linear-gradient(top,#5174b8 0,3d62a3 50%,#336699 52%,#244a87 100%);
-        background: -o-linear-gradient(top,#5174b8 0,#3d62a3 50%,#336699 52%,#244a87 100%);
-        background: -ms-linear-gradient(top,#5174b8 0,#3d62a3 50%,#336699 52%,#244a87 100%);
-        background: linear-gradient(to bottom,#5174b8 0,#3d62a3 50%,#336699 52%,#244a87 100%);
         background-color: #5174b8;
+        @include background-image(linear-gradient(top, #5174b8 0, #3d62a3 50%, #335898 52%, #244a87 100%));
         border: 0;
         border-radius: 4px;
         color: white;
         cursor: pointer;
         display: inline;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5174b8',endColorstr='#244a87',GradientType=0);
         font-weight: 700;
         margin-right: 5px;
         overflow: visible;
@@ -87,4 +80,3 @@
     }
     /* End Customize - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 }
-
