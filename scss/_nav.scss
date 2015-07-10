@@ -7,14 +7,14 @@
 #navbar {
     background: white;
     border-bottom: 1px solid $gray2;
-    height: 70px;
+    height: 5em;
     top: 0 !important;
     width: 100%;
     z-index: 9999;
     &.nav-home-top {
         @include transition( all .2s );
-        background: rgba(255,255,255,.1);
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        background: $mist1;
+        border-bottom: 1px solid $mist1;
         position: absolute !important;
         top: 0;
         z-index: 999;

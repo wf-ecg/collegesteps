@@ -28,17 +28,18 @@ $plum1: #970e76;    $plum2: #8f106e;    $plum3: #bb0e82;    $plum4: #ba0c82;
 $red1: #ae132a;     $red2: #d12327;     $red3: #d53425;
 $dark1: #006893;    $dark2: #0097cd;
 $gray1: #c4c4c4;    $gray2: #f2f2f2;    $gray3: #191919;
-$lightlav: #d4c8e3;
+$lightlav: transparentize($blue3, 0.5);
+$mist1: rgba(255,255,255,0.1); $mist7: rgba(255,255,255,0.7);
+$dusk2: rgba(0,0,0,0.2); $dusk5: rgba(0,0,0,0.5); $dusk7: rgba(0,0,0,0.7);
 
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
 @import 'pages/_all';
 @import '_ani';
 @import '_base';
 @import '_btn';
-@import '_header';
-@import '_jp';
+@import '_learn';
 @import '_nav';
-@import '_pill';
+@import '_st';
 @import '_style';
 @import '_modal';
 @import '_misc';

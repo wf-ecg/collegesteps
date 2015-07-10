@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     z-index: 5;
 }
-#logoBox {
+.logo {
     float: left;
     padding-left: 60px;
     padding-top: 60px;
@@ -16,43 +16,32 @@
         width: 100px;
     }
 }
-#box {
+.mag {
     padding-right: 75px;
     position: absolute;
     top: 44px;
     width: 100%;
-    z-index: 5;
+    * {
+        position: relative;
+    }
     h1 {
         color: #b10000;
-        font-family: $serif;
         font-size: 6.2em;
-        font-style: normal;
         font-weight: 700;
         margin: 0;
         text-align: right;
-        sup {
-            font-size: 50%;
-            line-height: 0;
-            position: relative;
-            top: -1em;
-            vertical-align: baseline;
-        }
+        z-index: 5;
+        sup { font-size: 50%; top: -1em; }
     }
-}
-#mag {
-    padding-right: 475px;
-    position: absolute;
-    text-align: right;
-    top: 134px;
-    width: 100%;
-    z-index: 6;
     h2 {
         color: black;
         font-family: $serif;
         font-size: 3.2em;
         font-weight: 400;
-        margin-top: 0;
+        margin-top: -20px;
+        padding-right: 435px;
         text-align: right;
+        z-index: 6;
     }
 }
 .welcome-overlay {
@@ -103,15 +92,8 @@
     padding-top: 20px;
     width: 350px;
 }
-.letter a {
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-        color: rgba(51,51,51,.7);
-    }
-}
 @media(max-width:991px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -122,32 +104,23 @@
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
-        top: 104px;
+        text-align: center;
         h1 {
             font-size: 4em;
             text-align: center;
+            top: 104px;
         }
-    }
-    #mag {
-        padding-right: 0;
-        text-align: center;
-        top: 165px;
         h2 {
             font-size: 2.8em;
             text-align: center;
+            top: 165px;
         }
     }
     .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,
     .col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
         margin-bottom: 50px;
-    }
-    .si-desc {
-        margin: 30px -15px -15px;
-    }
-    .header-desc span {
-        width: 50%;
     }
     .team-member-big:hover .team-member-overlay h5 {
         bottom: 55%;
@@ -172,12 +145,6 @@
     .sidebar {
         margin-top: 30px;
     }
-    .jp-volume {
-        width: 20%;
-    }
-    .jp-volume-bar {
-        width: 35%;
-    }
     .comment-container .avatar img {
         width: 45px;
     }
@@ -193,7 +160,7 @@
     }
 }
 @media only screen and (max-width:768px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -204,15 +171,13 @@
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
         top: 104px;
         h1 {
             font-size: 4em;
             text-align: center;
         }
-    }
-    #mag {
         padding-right: 0;
         text-align: center;
         top: 165px;
@@ -237,9 +202,6 @@
     }
     .story-item:nth-child(odd) .story-item-content .si-year {
         right: -30px;
-    }
-    .si-desc {
-        margin: 15px -15px -15px;
     }
     .bottom-gap,.resp-no-gap {
         margin-bottom: 0;
@@ -269,7 +231,7 @@
     }
 }
 @media only screen and (max-width:480px) {
-    #logoBox {
+    .logo {
         padding-left: 0;
         padding-right: 0;
         padding-top: 25px;
@@ -280,15 +242,13 @@
             width: 70px;
         }
     }
-    #box {
+    .mag {
         padding-right: 0;
         top: 104px;
         h1 {
             font-size: 4em;
             text-align: center;
         }
-    }
-    #mag {
         padding-right: 0;
         text-align: center;
         top: 165px;
