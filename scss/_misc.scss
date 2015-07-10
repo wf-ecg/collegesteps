@@ -58,8 +58,7 @@
         padding: 2em;
         position: absolute;
         text-align: left;
-        max-width: 50em;
-        width: 70%;
+        width: 70%; max-width: 50em;
         h3 {
             color: white;
             font-size: 21px;
@@ -71,13 +70,6 @@
             margin-top: 10px;
             font-weight: 100;
         }
-    }
-}
-section {
-    a {
-        font-weight: 600;
-        text-decoration: none;
-        &:hover { color: $dusk7 !important; }
     }
 }
 #navbar.scroll-to-fixed-fixed {
