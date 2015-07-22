@@ -244,7 +244,7 @@
         display: none;
     }
 }
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,
         .col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,
         .col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,
@@ -278,7 +278,7 @@
         display: none;
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .studentbox {
         display: none;
     }
