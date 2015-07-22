@@ -11,7 +11,6 @@ module.exports = {
 
     options: {
         compass: true,
-        require: 'animation',
         style: 'compact',
         update: false, /// {Boolean}(Default: false) Only compile changed files.
     },

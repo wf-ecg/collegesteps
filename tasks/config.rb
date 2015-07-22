@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
 # https://github.com/ericam/compass-animation
-require "animation"
+#require "animation"
 
 # Set this to the root of your project when deployed:
 http_path = "app"
