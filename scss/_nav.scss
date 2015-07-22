@@ -1,20 +1,25 @@
 /* _nav.scss */
+$nav-h: 5em;
+
 .nav-logo {
     display: inline-block;
     float: left;
     padding: .7em 1em 0.7em 0;
 }
 #navbar {
-    background: white;
+    background: mist(0.9);
     border-bottom: 1px solid $gray2;
-    height: 5em;
+    height: $nav-h;
     top: 0 !important;
     width: 100%;
     z-index: 9999;
+    &:hover {
+        background: white;
+    }
     &.nav-home-top {
         @include transition( all .2s );
-        background: $mist1;
-        border-bottom: 1px solid $mist1;
+        background: mist(0.1);
+        border-bottom: 1px solid mist(0.1);
         position: absolute !important;
         top: 0;
         z-index: 999;
@@ -51,9 +56,17 @@
             }
         }
     }
+    &.scroll-to-fixed-fixed {
+        box-shadow: 0 0 22px dusk(0.1);
+        &:hover {
+            box-shadow: 0 0 22px dusk(0.2);
+        }
+    }
 }
 .nav-menu {
+    background: mist(0.5);
     float: right;
+    height: $nav-h;
     list-style: none;
     margin-bottom: 0;
     margin-right: 0;

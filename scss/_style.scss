@@ -118,7 +118,7 @@
 }
 .section-bg-overlay {
     &::before {
-        background: $dusk7;
+        background: dusk(0.7);
         content: '';
         height: 100%;
         position: absolute;

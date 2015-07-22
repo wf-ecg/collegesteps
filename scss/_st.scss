@@ -19,7 +19,7 @@
     z-index: 99;
     &::after {
         @include transition( opacity .5s, width .1s .5s, height .1s .5s );
-        background: $dusk2;
+        background: dusk(0.2);
         content: '';
         height: 0;
         opacity: 0;
@@ -41,7 +41,7 @@
     z-index: 100;
     &::after {
         @include transition( opacity .5s );
-        background: $dusk2;
+        background: dusk(0.2);
         content: '';
         height: 100%;
         opacity: 1;
