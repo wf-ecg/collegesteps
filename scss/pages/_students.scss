@@ -135,16 +135,21 @@ p {
                 padding-bottom: 20px;
             }
         }
-        .graphLeft h4 {
-            clear: both;
-            color: black;
-            float: left;
-            font-family: $sans;
-            font-size: 18px;
-            font-weight: 400;
-            margin-bottom: 15px;
-            margin-top: 5px;
-            width: 180px;
+        .graphLeft {
+            h4 {
+                color: black;
+                float: left;
+                font-family: $sans_cn;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 15px;
+                margin-top: 5px;
+                width: 180px;
+            }
+            div h4 {
+                float: none;
+                width: auto;
+            }
         }
     }
     .progress h4 {
