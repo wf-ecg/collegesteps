@@ -1,0 +1,22 @@
+// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
+/* CORE */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@import "animation";
+@import "compass/css3";
+
+@import "_def";
+@import "_fun";
+@import "_mix";
+/*@import "_set";*/
+
+/* xtn */
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+@mixin defani {
+    @include backface-visibility( hidden );
+    @include perspective( 1000 );
+    @include transform( rotate(0) scale(1) translate(0, 0) translateZ(0) );
+    @include transform-style( preserve-3d );
+}
+
+// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
