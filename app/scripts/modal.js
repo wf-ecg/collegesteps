@@ -43,7 +43,12 @@ var Modal = (function ($) { // IIFE
         bind: function (sel, cb) {
             /// map selectors to trigger show and callback
             $(sel).on(ACT, function (evt) {
-                evt.preventDefault();
+                if (evt.keyCode) {
+                    if (evt.keyCode === 13) evt.preventDefault();
+                    if (evt.keyCode !== 32) return;
+                } else {
+                    evt.preventDefault();
+                }
                 Df.modal.show();
                 cb(evt);
             });
