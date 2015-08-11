@@ -28,6 +28,15 @@
         });
     }
 
+    $('label').each(function (i, e) { // ensure the inputs have explicit label
+        var lab = $(e);
+        var inp = lab.prev();
+        var nom = 'Inp' + i;
+
+        lab.attr('for', nom);
+        inp.attr('id', nom);
+    });
+
     function checkQuiz() {
         $('.submit').remove();
 
