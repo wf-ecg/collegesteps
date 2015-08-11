@@ -313,7 +313,8 @@ p {
             }
         }
         input[type=checkbox] {
-            visibility: hidden;
+            @extend %hidden;
+
             &:checked+label::after {
                 filter: alpha(enabled=false);
                 opacity: 1;

@@ -202,7 +202,8 @@
             }
         }
         input[type=checkbox] {
-            visibility: hidden;
+            @extend %hidden;
+
             &:checked+label::after {
                 filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
                 opacity: 1;
