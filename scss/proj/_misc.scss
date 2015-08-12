@@ -29,50 +29,6 @@
     @include background-image(linear-gradient(left, $dark1 0, $dark2 100%));
 }
 
-.home-content {
-    margin-bottom: 100px;
-    h1 {
-        color: $gray3;
-        font-family: $serif;
-        font-weight: 800;
-        line-height: 1;
-        margin-top: 20px;
-        text-align: center;
-        span {
-            position: relative;
-            &::after, &::before {
-                border-bottom: 75px solid $purple2;
-                content: '';
-                position: absolute;
-                width: 5px;
-            }
-            &::before { left: -25px; }
-            &::after { right: -25px; }
-            &::after, &::before { top: -25px; }
-        }
-    }
-    .box {
-        background-color: transparentize($purple3, 0.1);
-        font-family: $serif;
-        left: 0; right: 0;
-        margin: auto;
-        padding: 2em;
-        position: absolute;
-        text-align: left;
-        width: 70%; max-width: 50em;
-        h3 {
-            color: white;
-            font-size: 21px;
-            font-weight: 500;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 0;
-            margin-top: 10px;
-            font-weight: 100;
-        }
-    }
-}
 #stickyBar {
     @include transition( all .3s );
     bottom: 45%;
