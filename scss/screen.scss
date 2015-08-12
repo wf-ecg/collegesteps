@@ -1,13 +1,9 @@
 // - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
+/* PROJ/all */
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 @import 'compass/css3';
-// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
-/*
 @import 'core/_all';
-@import 'flow/_all';
-@import 'proj/_all';
-*/
-// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
-/* CORE / define */
+
 @import url('/lib/fonts/archer.ssm.css'); @import url('/lib/fonts/myriad.css'); @import url('/lib/fonts/myriad.con.css');
 @import url('/lib/bootstrap/3.2.0/bootstrap.min.css');
 @import url('/lib/font-awesome/4.3.0/css/font-awesome.min.css');
@@ -34,17 +30,10 @@ $lightlav: transparentize($blue3, 0.5);
     @return rgba(0,0,0, $num);
 }
 
-// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
+@import 'page/_all';
+@import 'proj/_all';
 @import '_ada';
-@import 'pages/_all';
-@import '_ani';
-@import '_base';
-@import '_btn';
-@import '_learn';
-@import '_nav';
-@import '_st';
-@import '_style';
 @import '_modal';
-@import '_misc';
+@import '_sidebar';
 
-/* >^º!º^< */
+/* >^!^< */

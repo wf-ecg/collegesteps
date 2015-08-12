@@ -1,4 +1,5 @@
-/* _misc.scss */
+/* PROJ/misc */
+
 .g-pink {
     background: $plum1;
     @include background-image(linear-gradient(left, $plum1 0, $plum2 100%));
@@ -192,3 +193,4 @@
         margin-top: 10px;
     }
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

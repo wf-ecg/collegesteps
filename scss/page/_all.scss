@@ -1,3 +1,6 @@
+// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
+/* PAGE/all */
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 .p-cover {
     $top_bkgr: '../images/bkgr/MV_1013_7899.jpg';
 
@@ -17,11 +20,9 @@
     $top_bkgr: '../images/bkgr/MV_1013_4181.jpg';
 
     @import '_students';
-    @import '_students_misc';
+    @import '_students_etc';
 }
 .p-video {
     @import '_video';
 }
-.externals .note {
-    color: #666;
-}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
