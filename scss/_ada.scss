@@ -1,4 +1,5 @@
 /* _ada.scss */
+
 %hidden {
     height: 1px;
     left: -5000px;
@@ -11,6 +12,15 @@
 .hidden {
     @extend %hidden;
 }
+i.fa-external-link::after {
+    @extend %hidden;
+    content: 'External link';
+}
+
 .social-icon {
     color: transparent;
 }
+.externals .note {
+    color: #666;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

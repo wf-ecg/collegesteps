@@ -1,0 +1,74 @@
+// - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - - + - //
+/* PAGE/all */
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+.p-cover {
+    $top_bkgr: '../images/bkgr/MV_1013_7899.jpg';
+
+    @import '_cover';
+}
+.p-credit {
+    $top_bkgr: '../images/bkgr/8152_0211.jpg';
+
+    @import '_credit';
+}
+.p-parents {
+    $top_bkgr: '../images/bkgr/2002_00425.jpg';
+
+    @import '_parents';
+}
+.p-students {
+    $top_bkgr: '../images/bkgr/MV_1013_4181.jpg';
+
+    @import '_students';
+    @import '_students_arrows';
+}
+.p-video {
+    @import '_video';
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+.home-content {
+    margin-bottom: 100px;
+    h1 {
+        color: $gray3;
+        font-family: $serif;
+        font-weight: 800;
+        line-height: 1;
+        margin-top: 20px;
+        text-align: center;
+        text-shadow: white -1px 0 1px;
+        span {
+            position: relative;
+            &::after, &::before {
+                border-bottom: 75px solid $purple2;
+                content: '';
+                position: absolute;
+                width: 5px;
+            }
+            &::before { left: -25px; }
+            &::after { right: -25px; }
+            &::after, &::before { top: -25px; }
+        }
+    }
+    .box {
+        background-color: transparentize($purple3, 0.1);
+        font-family: $serif;
+        left: 0; right: 0;
+        margin: auto;
+        padding: 2em;
+        position: absolute;
+        text-align: left;
+        width: 70%; max-width: 50em;
+        h3 {
+            color: white;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

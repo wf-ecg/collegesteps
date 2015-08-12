@@ -1,31 +1,35 @@
-.home-bg-container {
-    background: url($top_bkgr) center 10%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 5;
-}
-.home-content {
-    h1 {
-        span {
-            &::after,
-            &::before {
-                border-bottom: 115px solid $blue2;
-                top: -25px;
+/* credit */
+
+header {
+    .home-bg-container {
+        background: url($top_bkgr) 50% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+    .home-content {
+        h1 {
+            span {
+                &::after,
+                &::before {
+                    border-bottom: 115px solid $blue2;
+                    top: -25px;
+                }
+            }
+            i {
+                color: gray;
+                font-style: normal;
+                font-weight: 600;
+                margin-left: -0.3em
             }
         }
-        i {
-            color: gray;
-            font-style: normal;
-            font-weight: 600;
-            margin-left: -0.3em
+        .box {
+            background-color: transparentize($blue1, 0.2);
+            bottom: 10em;
         }
     }
-    .box {
-        background-color: transparentize($blue1, 0.2);
-        bottom: 10em;
-    }
 }
-/* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
+// 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 .credit1 {
     header {
         h1 {
@@ -82,7 +86,7 @@
         }
     }
 }
-/* 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 */
+// 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 .credit2 {
     header {
         h1 {
@@ -123,7 +127,7 @@
         line-height: 1.5em;
     }
 }
-/* 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 */
+// 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
 .credit3 {
     header {
         text-align: center;
@@ -284,7 +288,7 @@
         }
     }
 }
-/* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
+// 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
 .credit4 {
     header {
         text-align: center;
@@ -364,7 +368,7 @@
         }
     }
 }
-/* 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
+// 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
 .credit5 {
     header {
         h1 {
@@ -425,7 +429,7 @@
         padding: 20px 20px 20px 70px;
     }
 }
-/* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
+// 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6
 .credit6 {
     header img {
         padding-left: 50px;
@@ -500,7 +504,7 @@
         margin-bottom: 10px;
     }
 }
-/* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
+// 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
 .credit7 {
     header h1 {
         color: #b41730;
@@ -550,7 +554,7 @@
         }
     }
 }
-/* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
+// 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
 .credit8 {
     h1 {
         background: $blue2;

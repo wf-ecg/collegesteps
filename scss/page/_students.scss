@@ -1,63 +1,108 @@
 /* students */
 
-.home-bg-container {
-    background: url($top_bkgr) center 1%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 5;
-}
-.home-content {
-    margin-bottom: 50px;
-    h1 {
-        span {
-            &::after,
-            &::before {
-                border-bottom: 75px solid $plum1;
+header {
+    .home-bg-container {
+        background: url($top_bkgr) 50% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+    .home-content {
+        margin-bottom: 50px;
+        h1 {
+            span {
+                &::after,
+                &::before {
+                    border-bottom: 75px solid $plum1;
+                }
             }
         }
-    }
-    h6 span {
-        color: black;
-        display: block;
-        font-family: $sans;
-        font-size: 66px;
-        font-weight: 300;
-        letter-spacing: .25em;
-        line-height: 1.3em;
-        margin-left: 15px;
-    }
-    .box {
-        background-color: transparentize($plum1, 0.2);
-        top: 10em;
+        h6 span {
+            color: black;
+            display: block;
+            font-family: $sans;
+            font-size: 66px;
+            font-weight: 300;
+            letter-spacing: .25em;
+            line-height: 1.3em;
+            margin-left: 15px;
+        }
+        .box {
+            background-color: transparentize($plum1, 0.2);
+            top: 10em;
+        }
     }
 }
-p {
-    font-size: 1.1em;
-}
-.mousebox {
-    background-color: #2492bc;
-    background-image: url('../images/icon/mouse-icon-bg.png');
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    color: white;
-    margin-top: 30px;
-    padding: 20px;
-    width: 100%;
-    h4 {
-        color: white !important;
-        font-weight: 800;
-        margin-bottom: 5px;
-        margin-top: 0;
+section {
+    p {
+        font-size: 1.1em;
     }
-    a {
+    .mousebox {
+        background-color: #2492bc;
+        background-image: url('../images/icon/mouse-icon-bg.png');
+        background-repeat: no-repeat;
+        border-radius: 15px;
         color: white;
+        margin-top: 30px;
+        padding: 20px;
+        width: 100%;
+        h4 {
+            color: white !important;
+            font-weight: 800;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        a {
+            color: white;
+        }
+        a:hover {
+            color: mist(0.7);
+        }
     }
-    a:hover {
-        color: mist(0.7);
+    .greybg {
+        background-color: #e6e6e6;
+    }
+    label {
+        display: block;
+        font-weight: 400;
+        padding-left: 40px;
+        text-indent: -20px;
+    }
+    fieldset {
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+    fieldset input {
+        margin-right: 3px;
+    }
+    .wrong {
+        color: #ff9930;
+        display: none;
+        font-weight: 700;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .correct {
+        background-color: white;
+        border-radius: 5px;
+        color: $plum4;
+        display: none;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        padding: 15px;
+        span {
+            color: black;
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
-
-/* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 */
+// 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 .student1 {
     margin-bottom: 0;
     margin-top: 0;
@@ -180,7 +225,7 @@ p {
         margin-top: -50px;
     }
 }
-/* 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 */
+// 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
 .student2 {
     .listbox-1, .listbox-2, .listbox-3, .listbox-4, .listbox-5 {
         color: white;
@@ -221,7 +266,7 @@ p {
         z-index: 1 !important;
     }
 }
-/* 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 */
+// 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
 .student2, .student3 {
     $gak1: #a80303;
     $gak2: #ff3019;
@@ -322,7 +367,7 @@ p {
         }
     }
 }
-/* . . . 3 . . . */
+// . . . 3 . . .
 .student3 {
     header {
         h3 {
@@ -412,7 +457,7 @@ p {
         }
     }
 }
-/* 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
+// 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
 .student4 {
     header {
         margin-bottom: 70px;
@@ -460,7 +505,7 @@ p {
         }
     }
 }
-/* 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
+// 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
 .student5 {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -488,19 +533,20 @@ p {
         color: $plum1;
         font-size: 21px;
         font-weight: 700;
-        margin-bottom: 0px;
-        margin-top: 40px;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     b {
         font-size: 42px;
         font-weight: 800;
+        line-height: 1;
     }
     p {
-        margin-bottom: 10px;
+        margin-bottom: 1em;
         margin-top: 0;
     }
 }
-/* 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
+// 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6
 .student6 {
     header {
         text-align: center;
@@ -572,7 +618,7 @@ p {
         }
     }
 }
-/* 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 */
+// 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7
 .student7 {
     header {
         text-align: center;
@@ -624,13 +670,14 @@ p {
         }
         p {
             font-family: $sans;
-            margin-bottom: 20px;
-            padding-left: 50px;
+            margin-bottom: 2em;
+            padding-left: 4em;
             text-indent: -50px;
             strong {
                 color: $orange3;
                 font-size: 40px;
                 font-weight: 300;
+                line-height: 1;
                 b {
                     font-size: 80px;
                     font-weight: 500;
@@ -661,7 +708,7 @@ p {
         }
     }
 }
-/* 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
+// 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
 .student8 {
     header {
         margin-bottom: 40px;
@@ -696,48 +743,6 @@ p {
     p {
         margin-bottom: 10px;
         margin-top: 0;
-    }
-}
-.greybg {
-    background-color: #e6e6e6;
-}
-label {
-    display: block;
-    font-weight: 400;
-    padding-left: 40px;
-    text-indent: -20px;
-}
-fieldset {
-    margin-bottom: 1em;
-    padding-right: 1em;
-}
-fieldset input {
-    margin-right: 3px;
-}
-.wrong {
-    color: #ff9930;
-    display: none;
-    font-weight: 700;
-    margin-left: 20px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
-.correct {
-    background-color: white;
-    border-radius: 5px;
-    color: $plum4;
-    display: none;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding: 15px;
-    span {
-        color: black;
-        font-weight: 400;
-    }
-    a:hover {
-        text-decoration: underline;
     }
 }
 @media(max-width:1194px) {
