@@ -1,62 +1,107 @@
 /* students */
 
-.home-bg-container {
-    background: url($top_bkgr) 50% 10%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 5;
-}
-.home-content {
-    margin-bottom: 50px;
-    h1 {
-        span {
-            &::after,
-            &::before {
-                border-bottom: 75px solid $plum1;
+header {
+    .home-bg-container {
+        background: url($top_bkgr) 50% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+    .home-content {
+        margin-bottom: 50px;
+        h1 {
+            span {
+                &::after,
+                &::before {
+                    border-bottom: 75px solid $plum1;
+                }
             }
         }
-    }
-    h6 span {
-        color: black;
-        display: block;
-        font-family: $sans;
-        font-size: 66px;
-        font-weight: 300;
-        letter-spacing: .25em;
-        line-height: 1.3em;
-        margin-left: 15px;
-    }
-    .box {
-        background-color: transparentize($plum1, 0.2);
-        top: 10em;
+        h6 span {
+            color: black;
+            display: block;
+            font-family: $sans;
+            font-size: 66px;
+            font-weight: 300;
+            letter-spacing: .25em;
+            line-height: 1.3em;
+            margin-left: 15px;
+        }
+        .box {
+            background-color: transparentize($plum1, 0.2);
+            top: 10em;
+        }
     }
 }
-p {
-    font-size: 1.1em;
-}
-.mousebox {
-    background-color: #2492bc;
-    background-image: url('../images/icon/mouse-icon-bg.png');
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    color: white;
-    margin-top: 30px;
-    padding: 20px;
-    width: 100%;
-    h4 {
-        color: white !important;
-        font-weight: 800;
-        margin-bottom: 5px;
-        margin-top: 0;
+section {
+    p {
+        font-size: 1.1em;
     }
-    a {
+    .mousebox {
+        background-color: #2492bc;
+        background-image: url('../images/icon/mouse-icon-bg.png');
+        background-repeat: no-repeat;
+        border-radius: 15px;
         color: white;
+        margin-top: 30px;
+        padding: 20px;
+        width: 100%;
+        h4 {
+            color: white !important;
+            font-weight: 800;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+        a {
+            color: white;
+        }
+        a:hover {
+            color: mist(0.7);
+        }
     }
-    a:hover {
-        color: mist(0.7);
+    .greybg {
+        background-color: #e6e6e6;
+    }
+    label {
+        display: block;
+        font-weight: 400;
+        padding-left: 40px;
+        text-indent: -20px;
+    }
+    fieldset {
+        margin-bottom: 1em;
+        padding-right: 1em;
+    }
+    fieldset input {
+        margin-right: 3px;
+    }
+    .wrong {
+        color: #ff9930;
+        display: none;
+        font-weight: 700;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .correct {
+        background-color: white;
+        border-radius: 5px;
+        color: $plum4;
+        display: none;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        padding: 15px;
+        span {
+            color: black;
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
-
 // 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 .student1 {
     margin-bottom: 0;
@@ -698,48 +743,6 @@ p {
     p {
         margin-bottom: 10px;
         margin-top: 0;
-    }
-}
-.greybg {
-    background-color: #e6e6e6;
-}
-label {
-    display: block;
-    font-weight: 400;
-    padding-left: 40px;
-    text-indent: -20px;
-}
-fieldset {
-    margin-bottom: 1em;
-    padding-right: 1em;
-}
-fieldset input {
-    margin-right: 3px;
-}
-.wrong {
-    color: #ff9930;
-    display: none;
-    font-weight: 700;
-    margin-left: 20px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
-.correct {
-    background-color: white;
-    border-radius: 5px;
-    color: $plum4;
-    display: none;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    padding: 15px;
-    span {
-        color: black;
-        font-weight: 400;
-    }
-    a:hover {
-        text-decoration: underline;
     }
 }
 @media(max-width:1194px) {

@@ -1,14 +1,16 @@
 /* parents */
 
-.home-bg-container {
-    background: url($top_bkgr) 50% 30%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 5;
-}
-.home-content {
-    .box {
-        bottom: 15em;
+header {
+    .home-bg-container {
+        background: url($top_bkgr) 50% 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+    .home-content {
+        .box {
+            bottom: 15em;
+        }
     }
 }
 // 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
