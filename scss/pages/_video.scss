@@ -70,7 +70,7 @@ footer .back-to-top-v .btn::before {
 }
 .vjs-default-skin .vjs-text-track {
     background: black;
-    background: $dusk5;
+    background: dusk(0.5);
     color: white;
     display: none;
     font-size: 1.4em;

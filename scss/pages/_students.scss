@@ -53,7 +53,7 @@ p {
         color: white;
     }
     a:hover {
-        color: $mist7;
+        color: mist(0.7);
     }
 }
 
@@ -135,16 +135,21 @@ p {
                 padding-bottom: 20px;
             }
         }
-        .graphLeft h4 {
-            clear: both;
-            color: black;
-            float: left;
-            font-family: $sans;
-            font-size: 18px;
-            font-weight: 400;
-            margin-bottom: 15px;
-            margin-top: 5px;
-            width: 180px;
+        .graphLeft {
+            h4 {
+                color: black;
+                float: left;
+                font-family: $sans_cn;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 15px;
+                margin-top: 5px;
+                width: 180px;
+            }
+            div h4 {
+                float: none;
+                width: auto;
+            }
         }
     }
     .progress h4 {
@@ -182,7 +187,7 @@ p {
         font-size: 16px;
         font-weight: 500;
         padding: 30px;
-        box-shadow: 1px 2px 33px $dusk2;
+        box-shadow: 1px 2px 33px dusk(0.2);
         strong {
             font-size: 21px;
             font-weight: 800;
@@ -267,7 +272,7 @@ p {
         a {
             color: white;
             &:hover {
-                color: $mist7;
+                color: mist(0.7);
             }
         }
     }
@@ -308,7 +313,8 @@ p {
             }
         }
         input[type=checkbox] {
-            visibility: hidden;
+            @extend %hidden;
+
             &:checked+label::after {
                 filter: alpha(enabled=false);
                 opacity: 1;
@@ -440,7 +446,7 @@ p {
         margin-top: 0;
     }
     .lotus {
-        background-color: $mist7;
+        background-color: mist(0.7);
         margin-bottom: -600px;
         margin-left: 60px;
         margin-top: 200px;
@@ -891,7 +897,7 @@ fieldset input {
         }
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .studentbox {
         display: none;
     }

@@ -72,9 +72,6 @@
         }
     }
 }
-#navbar.scroll-to-fixed-fixed {
-    box-shadow: 0 0 22px $dusk2;
-}
 #stickyBar {
     @include transition( all .3s );
     bottom: 45%;
@@ -86,8 +83,8 @@
         margin-left: -0.6em;
     }
     td {
-        background-color: $dusk7;
-        box-shadow: 0 0 0.5em $dusk2;
+        background-color: dusk(0.7);
+        box-shadow: 0 0 0.5em dusk(0.2);
         height: 3em;
         text-align: center;
         vertical-align: middle;
@@ -185,7 +182,7 @@
         margin-top: 10px;
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .note ol {
         margin-bottom: 30px;
         margin-top: 30px;

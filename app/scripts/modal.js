@@ -26,6 +26,7 @@ var Modal = (function ($) { // IIFE
     Df = { // DEFAULTS
         El: {},
         modal: {},
+        trigger: null,
         inits: function () {
             // expose elements
             this.El = $.reify(El);
@@ -40,24 +41,43 @@ var Modal = (function ($) { // IIFE
     Df.modal = {
         cleanup: $.Callbacks(), // clean routines
         closers: $('.closer, .cancel'), // all "closers"
-        bind: function (sel, cb) {
+        bind: function (sel, target, cb) {
+            sel = $(sel);
             /// map selectors to trigger show and callback
-            $(sel).on(ACT, function (evt) {
-                evt.preventDefault();
-                Df.modal.show();
+            sel.on(ACT, function (evt) {
+                Df.modal.trigger = this;
+
+                if (evt.keyCode) {
+                    if (evt.keyCode === 13)
+                        evt.preventDefault();
+                    if (evt.keyCode !== 32)
+                        return;
+                } else {
+                    evt.preventDefault();
+                }
+                Df.modal.show(target);
                 cb(evt);
             });
         },
         show: function (ele) {
+            ele = $(ele);
             /// activate container, hide all kids, then feature one
             El.modal.addClass('active').children().hide();
-            if (ele) $(ele).fadeIn();
+            if (ele.length) {
+                ele.fadeIn(function () {
+                    ele.find('a, button') //
+                            .attr('tabindex', '0') //
+                            .first().focus().end() //
+                            .last().one('blur', Df.modal.hide);
+                });
+            }
             return this;
         },
         hide: function () {
             /// deactivate container and do whatever cleaning
-            El.modal.removeClass('active');
+            El.modal.removeClass('active').focus();
             Df.modal.cleanup.fire();
+            Df.modal.trigger.focus();
             return this;
         },
         init: function () {
@@ -69,7 +89,8 @@ var Modal = (function ($) { // IIFE
                 }
             });
             El.body.on('keydown', function (evt) {
-                if (evt.keyCode === 27) Df.modal.hide(); // escape key
+                if (evt.keyCode === 27)
+                    Df.modal.hide(); // escape key
             });
             return this;
         }
@@ -103,10 +124,9 @@ jQuery(function () {
     var dialog = $('.modal .dialog'); // thing to show
     var urls = $('#stickyBar .sidesocial a'); // intercept these
 
-    Modal.bind(urls, function (evt) {
-        dialog.fadeIn() // show it nicely
-        .find('.utilitybtn') // find the go button
-        .attr('href', evt.delegateTarget.href); // transfer url
+    Modal.bind(urls, dialog, function (evt) {
+        dialog.find('.utilitybtn') // find the go button
+                .attr('href', evt.delegateTarget.href); // transfer url
     });
 
 });

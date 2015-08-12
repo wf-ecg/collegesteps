@@ -1,6 +1,6 @@
 /* _modal.scss */
 .modal {
-    background-color: $dusk7;
+    background-color: dusk(0.7);
     z-index: 1000;
     /* cover */
     position: fixed; left: 0; top: 0; width: 100%; height: 100%;

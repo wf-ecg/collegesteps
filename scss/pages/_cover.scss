@@ -32,16 +32,16 @@
         text-align: right;
         z-index: 5;
         sup { font-size: 50%; top: -1em; }
-    }
-    h2 {
-        color: black;
-        font-family: $serif;
-        font-size: 3.2em;
-        font-weight: 400;
-        margin-top: -20px;
-        padding-right: 435px;
-        text-align: right;
-        z-index: 6;
+        small {
+            color: black;
+            font-family: $serif;
+            font-size: 0.5em;
+            font-weight: 400;
+            float: right;
+            padding-right: 435px;
+            text-align: right;
+            z-index: 6;
+        }
     }
 }
 .welcome-overlay {
@@ -159,7 +159,7 @@
         top: 75% !important;
     }
 }
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .logo {
         padding-left: 0;
         padding-right: 0;
@@ -230,7 +230,7 @@
         padding: 140px 20px 20px !important;
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .logo {
         padding-left: 0;
         padding-right: 0;

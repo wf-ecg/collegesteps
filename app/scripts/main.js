@@ -271,5 +271,5 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 }(window, jQuery));
 
-// document.writeln('<script src="./scripts/libs/ecg-beacon.js"><\/script>');
+// document.writeln('<script src="./scripts/vendor/ecg-beacon.js"><\/script>');
 document.writeln('<script src="http://localhost:7200/livereload.js?snipver=1"><\/script>');

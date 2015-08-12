@@ -1,0 +1,16 @@
+/* _ada.scss */
+%hidden {
+    height: 1px;
+    left: -5000px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.hidden {
+    @extend %hidden;
+}
+.social-icon {
+    color: transparent;
+}

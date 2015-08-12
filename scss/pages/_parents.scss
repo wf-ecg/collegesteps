@@ -202,7 +202,8 @@
             }
         }
         input[type=checkbox] {
-            visibility: hidden;
+            @extend %hidden;
+
             &:checked+label::after {
                 filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
                 opacity: 1;
@@ -375,7 +376,7 @@
         text-align: center;
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .parentbox {
         display: none;
     }
@@ -402,7 +403,7 @@
         background-image: url('../images/arrows-green-down.png');
     }
 }
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .home-content {
         h1 span {
             font-size: 18px !important;
@@ -413,7 +414,7 @@
         }
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .home-content {
         h1 span {
             font-size: 18px !important;

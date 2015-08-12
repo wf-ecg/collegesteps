@@ -32,7 +32,7 @@ section {
         font-weight: 600;
         text-decoration: none;
         white-space: nowrap;
-        &:hover { color: $dusk5; }
+        &:hover { color: dusk(0.5); }
         i { padding-right: 3px; }
     }
 }
@@ -46,7 +46,7 @@ blockquote {
         font: 300 20px/26px $serif;
         &::after,
         &::before {
-            color: $dusk5;
+            color: dusk(0.5);
         }
     }
     small {
