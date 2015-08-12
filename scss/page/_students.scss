@@ -488,15 +488,16 @@ p {
         color: $plum1;
         font-size: 21px;
         font-weight: 700;
-        margin-bottom: 0px;
-        margin-top: 40px;
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
     b {
         font-size: 42px;
         font-weight: 800;
+        line-height: 1;
     }
     p {
-        margin-bottom: 10px;
+        margin-bottom: 1em;
         margin-top: 0;
     }
 }
@@ -624,13 +625,14 @@ p {
         }
         p {
             font-family: $sans;
-            margin-bottom: 20px;
-            padding-left: 50px;
+            margin-bottom: 2em;
+            padding-left: 4em;
             text-indent: -50px;
             strong {
                 color: $orange3;
                 font-size: 40px;
                 font-weight: 300;
+                line-height: 1;
                 b {
                     font-size: 80px;
                     font-weight: 500;
