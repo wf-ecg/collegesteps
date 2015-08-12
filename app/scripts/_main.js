@@ -14,6 +14,7 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 (function (W, $) {
+    var C = W.console;
     W.debug = 1;
 
     $.fn.hasAttr = function (attr) {
@@ -255,6 +256,31 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         .addClass('active');
     }
 
+    function footnotes() {
+        // find data-footnotes
+        var trigs = $('[data-footnote]');
+        var ACT = 'keypress.footnote click.footnote';
+
+        // turn into triggers
+        trigs.each(function () {
+            var trig = $(this);
+            var targ = trig.data('footnote');
+
+            // target the value as classname
+            targ = $('.footnote-' + targ).attr('tabindex', 0);
+            trig.attr('tabindex', 0);
+
+            // on target.ACT focus is returned to trigger
+            trig.on(ACT, function () {
+                targ.focus()
+                    .off(ACT)
+                    .on(ACT, function () {
+                        trig.focus();
+                    });
+            });
+        });
+    }
+
     $(function init() {
         navsize1();
         navTrig();
@@ -267,6 +293,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         drEtc();
         drVid();
         drSetnav();
+        footnotes();
     });
 
 }(window, jQuery));
