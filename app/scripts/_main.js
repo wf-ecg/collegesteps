@@ -14,14 +14,13 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 (function (W, $) {
-    var C = W.console;
+    var C = W.console, navbar;
+
     W.debug = 1;
 
     $.fn.hasAttr = function (attr) {
         return this.attr(attr) !== undefined;
     };
-
-    var navbar = $('#navbar');
 
     function navsize1() {
         var winh = $(W).height();
@@ -83,7 +82,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         $('.main-nav ul li a').click(function (l) {
             var ref = $(this).attr('href');
 
-            if (ref == '#' || ref === '') {
+            if (ref === '#' || ref === '') {
                 l.preventDefault();
             }
         });
@@ -282,6 +281,8 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     }
 
     $(function init() {
+        navbar = $('#navbar');
+
         navsize1();
         navTrig();
         navClick();
