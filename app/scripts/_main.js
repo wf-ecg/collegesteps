@@ -1,5 +1,5 @@
 /*jslint white:false, evil:true */
-/*globals window, jQuery, $, skrollr */
+/*global window, jQuery, $, skrollr, _V_ */
 
 document.writeln('<script src="./scripts/modal.js"><\/script>');
 document.writeln('<script src="./scripts/classie.js"><\/script>');
@@ -14,9 +14,11 @@ document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
 (function (W, $) {
-    var C = W.console, navbar;
+    var C = W.console, navbar, sidbar;
 
     W.debug = 1;
+    navbar = '#navbar';
+    sidbar = '#menu-4';
 
     $.fn.hasAttr = function (attr) {
         return this.attr(attr) !== undefined;
@@ -233,25 +235,24 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     function drSetnav() {
         if (!W.navi) return;
 
-        var navb, navi, navs, i = W.navi - 1;
+        var inum, item;
 
-        navb = $('#navbar');
-        navi = navb.find('.nav-item').eq(i);
-        navs = $('#menu-4');
+        inum = (W.navi - 1);
+        item = navbar.find('.nav-item').eq(inum);
 
-        navb.find('.nav-item').not(navi) //
-        .find('.sub-nav-group a').attr('data-scroll-nav', -1) //
-        .mouseup(function () {
+        navbar.find('.nav-item').not(item) // get other page links
+        .find('.sub-nav-group a').attr('data-scroll-nav', -1) // disable scroll
+        .click(function () { // passthru click
             W.location = this.href;
         });
 
-        navi.addClass('active') //
-        .find('a').first().attr('href', '#') //
-        .attr('data-scroll-nav', 0);
+        item.addClass('active') // indicate current
+        .find('a').first().attr('href', '#') // disable link
+        .attr('data-scroll-nav', 0); // scroll to top
 
-        navs.find('a').eq(i) //
-        .attr('data-scroll-nav', 0) //
-        .attr('href', '#') //
+        sidbar.find('a').eq(inum) // get link to current page
+        .attr('data-scroll-nav', 0) // disable
+        .attr('href', '#') // disable
         .addClass('active');
     }
 
@@ -279,9 +280,9 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
             });
         });
     }
-
-    $(function init() {
-        navbar = $('#navbar');
+    function init() {
+        navbar = $(navbar);
+        sidbar = $(sidbar);
 
         navsize1();
         navTrig();
@@ -295,8 +296,9 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         drVid();
         drSetnav();
         footnotes();
-    });
+    }
 
+    $(init);
 }(window, jQuery));
 
 // document.writeln('<script src="./scripts/vendor/ecg-beacon.js"><\/script>');
