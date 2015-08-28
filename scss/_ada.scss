@@ -19,11 +19,16 @@ i.fa-external-link::after {
 
 .social-icon {
     color: transparent;
+    font-size: 1px;
 }
 .externals .note {
     color: #666;
 }
 [data-footnote] {
     cursor: pointer;
+}
+:focus {
+    outline: yellow auto 5px !important;
+    outline-offset: -1px !important;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
