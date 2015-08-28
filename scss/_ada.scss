@@ -27,8 +27,8 @@ i.fa-external-link::after {
 [data-footnote] {
     cursor: pointer;
 }
-:focus {
-    outline: yellow auto 5px !important;
-    outline-offset: -1px !important;
+.video-js :focus {
+    outline: yellow solid 4px !important;
+    outline-offset: -2px !important;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
