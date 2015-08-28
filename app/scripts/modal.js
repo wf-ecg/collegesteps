@@ -24,7 +24,7 @@ var Modal = (function ($) { // IIFE
     };
 
     Df = { // DEFAULTS
-        El: {},
+        El: El,
         modal: {},
         trigger: null,
         inits: function () {
@@ -34,26 +34,23 @@ var Modal = (function ($) { // IIFE
         },
     };
     El = { // ELEMENTS
-        body: 'body',
+        closers: '.closer, .cancel', // all "closers"
         modal: 'body > div.modal', // only top level containers
+        watcher: 'body',
     };
 
     Df.modal = {
         cleanup: $.Callbacks(), // clean routines
-        closers: $('.closer, .cancel'), // all "closers"
         bind: function (sel, target, cb) {
             sel = $(sel);
             /// map selectors to trigger show and callback
             sel.on(ACT, function (evt) {
-                Df.modal.trigger = this;
+                Df.trigger = this; // remember departure
 
-                if (evt.keyCode) {
-                    if (evt.keyCode === 13)
-                        evt.preventDefault();
-                    if (evt.keyCode !== 32)
-                        return;
-                } else {
-                    evt.preventDefault();
+                if (evt.keyCode === undefined || evt.keyCode === 13) {
+                    evt.preventDefault(); // do not trigger
+                } else if (evt.keyCode !== 0 && evt.keyCode !== 32) {
+                    return; // allow for spacebar open
                 }
                 Df.modal.show(target);
                 cb(evt);
@@ -77,20 +74,21 @@ var Modal = (function ($) { // IIFE
             /// deactivate container and do whatever cleaning
             El.modal.removeClass('active').focus();
             Df.modal.cleanup.fire();
-            Df.modal.trigger.focus();
+            Df.trigger.focus(); // restore focus
             return this;
         },
         init: function () {
             /// bind container actions to .hide
-            El.modal.on(ACT, function (evt) {
+            El.modal.click(function (evt) {
                 var ele = $(evt.target);
-                if (Df.modal.closers.contains(ele) || ele.is(El.modal)) {
+                if (El.closers.contains(ele) || ele.is(El.modal)) {
                     Df.modal.hide();
                 }
             });
-            El.body.on('keydown', function (evt) {
-                if (evt.keyCode === 27)
-                    Df.modal.hide(); // escape key
+            El.watcher.on('keydown', function (evt) {
+                if (evt.keyCode === 27) { // escape key
+                    Df.modal.hide();
+                }
             });
             return this;
         }
@@ -122,9 +120,9 @@ var Modal = (function ($) { // IIFE
 // Begin Customize
 jQuery(function () {
     var dialog = $('.modal .dialog'); // thing to show
-    var urls = $('#stickyBar .sidesocial a'); // intercept these
+    var triggers = $('#stickyBar .sidesocial a'); // intercept these
 
-    Modal.bind(urls, dialog, function (evt) {
+    Modal.bind(triggers, dialog, function (evt) {
         dialog.find('.utilitybtn') // find the go button
                 .attr('href', evt.delegateTarget.href); // transfer url
     });
