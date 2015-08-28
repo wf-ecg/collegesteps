@@ -58,7 +58,7 @@
         position: absolute;
         text-align: left;
         width: 70%; max-width: 50em;
-        h3 {
+        :first-child {
             color: white;
             font-size: 21px;
             font-weight: 500;
