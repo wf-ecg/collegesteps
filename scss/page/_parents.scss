@@ -147,8 +147,24 @@ header {
 // 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
 .parent3 {
     header {
-        h2 {
+        h1 {
+            color: black;
+            font-family: $sans;
+            font-size: 60px;
+            font-variant: normal;
+            font-weight: 300;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .intro {
             color: $red2;
+            font-family: $sans;
+            font-size: 20px;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 2em;
+            padding: 20px;
+            text-align: center;
         }
     }
     .checklist div {
@@ -213,25 +229,6 @@ header {
                 opacity: 1;
             }
         }
-    }
-    h1 {
-        color: black;
-        font-family: $sans;
-        font-size: 60px;
-        font-variant: normal;
-        font-weight: 300;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    h2 {
-        color: black;
-        font-family: $sans;
-        font-size: 20px;
-        font-variant: normal;
-        font-weight: 400;
-        line-height: 2em;
-        padding: 20px;
-        text-align: center;
     }
     .topbott {
         margin-top: 40px;

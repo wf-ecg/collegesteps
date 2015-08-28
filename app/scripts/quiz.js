@@ -12,7 +12,7 @@
 
     $(function () {
         $('input[type="radio"]').attr('disabled', false);
-        $('input[type="radio"]').attr('checked', false);
+        $('input[type="radio"]').prop('checked', false); // from jq migrate
         $('.submit').click(function (evt) {
             evt.preventDefault();
             checkQuiz();

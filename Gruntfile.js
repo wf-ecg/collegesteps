@@ -32,32 +32,28 @@ module.exports = function (grunt) {
                 //separator: ';',
                 separator: '/* = = = = = = = = = = */\n',
                 banner: '/* = = = = = = =' +
-                        ' <%= pkg.name %>:' +
-                        ':<%= grunt.task.current.target %>:' +
-                        ':<%= grunt.task.current.name %>:' +
-                        ':<%= grunt.template.today("isoDateTime") %> ' +
-                        '= = = = = = = */\n',
+                    ' <%= pkg.name %>:' +
+                    ':<%= grunt.task.current.target %>:' +
+                    ':<%= grunt.task.current.name %>:' +
+                    ':<%= grunt.template.today("isoDateTime") %> ' +
+                    '= = = = = = = */\n',
                 process: function (src, filepath) {
                     return ('//\n// ' + filepath + '\n//\n' + src + '\n');
                 },
                 sourceMap: true,
             },
-            dist: {
-                //src: ['src/**/*.js'],
-                //dest: 'dist/<%= pkg.name %>.js'
-            },
+            //dist: {
+            //src: ['src/**/*.js'],
+            //dest: 'dist/<%= pkg.name %>.js'
+            //},
             boot: {
-                options: {
-                    sourceMap: false, // see uglify for map
-                },
+                options: {sourceMap: false, }, // see uglify for map
                 files: {
                     'app/build/boot.js': ['libs/_boot/*.js'],
                 },
             },
             libs: {
-                options: {
-                    sourceMap: false, // see uglify for map
-                },
+                options: {sourceMap: false, }, // see uglify for map
                 files: {
                     'app/build/libs.js': ['libs/**/*.js', '!libs/_boot/**'],
                 },
@@ -79,11 +75,11 @@ module.exports = function (grunt) {
                 },
                 mangle: false,
             },
-            dist: {
-                files: {
-                    //'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-                }
-            },
+            //dist: {
+            //files: {
+            //'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+            //}
+            //},
             boot: {
                 options: {
                     sourceMap: false,
@@ -136,7 +132,7 @@ module.exports = function (grunt) {
                         dest: '/web/<%= pkg.group %>/',
                     }],
                 //pretend: true,
-                updateOnly: false,
+                updateOnly: false, // true = Don't remove any files from `dest` (works around 30% faster)
                 verbose: true,
             },
             update: {
@@ -179,15 +175,15 @@ module.exports = function (grunt) {
             options: {
                 debounceDelay: 33,
             },
-            cap: {
+            libs: {
                 files: ['libs/**/*.js'],
                 tasks: ['jshint', 'concat:libs', 'concat:boot', 'uglify'],
             },
-            cat: {
+            main: {
                 files: ['scripts/*.js'],
                 tasks: ['jshint', 'concat:main'],
             },
-            css: {
+            sass: {
                 files: ['scss/**/*.scss'],
                 tasks: ['sass:full'],
             },
