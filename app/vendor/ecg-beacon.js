@@ -1,6 +1,6 @@
 /*jslint white:false */
 /*globals window, console, document, ga */
-
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 //<!-- Google Analytics -->
 //<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -15,7 +15,7 @@ ga('send', 'pageview');
 
 var Beacon = (function (W) {
 
-    var self, start = 0;
+    var self, start = 0, debug = (W.debug > 0);
 
     function log() {
         if (!W.console) return;
@@ -63,7 +63,7 @@ var Beacon = (function (W) {
             };
         },
         beacon: function (act) {
-            ((W.ga && (!W.debug || W.debug < 1)) ? ga : log)('send', {
+            ((W.ga && debug) ? ga : log)('send', {
                 'hitType': 'event',             // !
                 'eventCategory': 'engagement',  // !
                 'eventAction': act,             // !
@@ -72,7 +72,7 @@ var Beacon = (function (W) {
             });
         },
         pulse: function () {
-            log('Beacon running ' + (W.debug ? 'in console' : 'live'));
+            log('Beacon running ' + (debug ? 'in console' : 'live'));
             return self.throttle(function () {
                 self.beacon('movement');
             }, self.interval);
