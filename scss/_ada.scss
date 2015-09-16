@@ -1,11 +1,13 @@
 /* _ada.scss */
 
 %hidden {
+    display: initial!important;
     height: 1px;
     left: -5000px;
     overflow: hidden;
     position: absolute;
     top: 0;
+    visibility: visible!important;
     width: 1px;
 }
 
