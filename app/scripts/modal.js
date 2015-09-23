@@ -1,15 +1,38 @@
 /*jslint white:false, laxcomma:true */
-/*globals _, console, window, jQuery, Modal:true,
-        , */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-var Modal = (function ($) { // IIFE
+/*globals define */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ created drt 2015-09
+
+ USE
+ single use
+ create command object for manipulating lightbox
+
+ TODO
+ document a bit
+
+ */
+var Modal = (function ($) {
     'use strict';
-    var self =  {
-        name: 'Modal',
-    },  W = window
-    ,   C = console
-    ,   ACT = 'keypress click'
-    ,   Df, El;
+
+    var Nom = 'Modal';
+    var W = (W && W.window || window), C = (W.C || W.console || {});
+    var Db = W.debug > 1;
+    var Df, El, self;
+
+    var Act = 'keypress click';
+    var cleanup = $.Callbacks();
+
+    // DEFAULTS
+    Df = {
+        inited: false,
+        closer: '',
+    };
+    // ELEMENTS
+    El = {
+        closers: '.closer, .cancel', // all "closers"
+        modal: 'body > div.modal', // only top level containers
+        watcher: 'body',
+    };
 
     // EXTEND
     $.reify = function (x, y) { // jq-reify props w/selector vals
@@ -23,28 +46,35 @@ var Modal = (function ($) { // IIFE
         return Boolean(this.is(x) || this.has(x).length);
     };
 
-    Df = { // DEFAULTS
-        El: El,
-        modal: {},
-        trigger: null,
-        inits: function () {
-            // expose elements
-            this.El = $.reify(El);
-            this.inited = true;
-        },
-    };
-    El = { // ELEMENTS
-        closers: '.closer, .cancel', // all "closers"
-        modal: 'body > div.modal', // only top level containers
-        watcher: 'body',
+    $.fn.addCloser = function () {
+        if (Df.closer) {
+            El.closers = El.closers.add($(Df.closer).prependTo(this));
+        }
+        return this;
     };
 
-    Df.modal = {
-        cleanup: $.Callbacks(), // clean routines
-        bind: function (sel, target, cb) {
-            sel = $(sel);
+//  PRIVATE
+    self = {
+        bind: function (source, target, fixer, cleaner) {
+            self.init(); // double check
+
+            var data = {
+                source: $(source),
+                target: $(target),
+                df: Df
+            };
+
+            if (data.source.length > 1) {
+                return data.source.each(function (i, e) {
+                    self.bind(e, target, fixer, cleaner);
+                });
+            } else if (data.source.data(Nom)) {
+                throw new Error('Already Modal');
+            }
+            cleanup.add(cleaner);
+            data.target.addCloser();
             /// map selectors to trigger show and callback
-            sel.on(ACT, function (evt) {
+            data.source.on(Act, function (evt) {
                 Df.trigger = this; // remember departure
 
                 if (evt.keyCode === undefined || evt.keyCode === 13) {
@@ -52,81 +82,58 @@ var Modal = (function ($) { // IIFE
                 } else if (evt.keyCode !== 0 && evt.keyCode !== 32) {
                     return; // allow for spacebar open
                 }
-                Df.modal.show(target);
-                cb(evt);
-            });
+                if (fixer) {
+                    fixer(evt);
+                }
+                self.show(data.target);
+            }).data(Nom, data);
         },
         show: function (ele) {
-            ele = $(ele);
             /// activate container, hide all kids, then feature one
             El.modal.addClass('active').children().hide();
             if (ele.length) {
                 ele.fadeIn(function () {
                     ele.find('a, button') //
-                            .attr('tabindex', '0') //
-                            .first().focus().end() //
-                            .last().one('blur', Df.modal.hide);
+                        .attr('tabindex', '0') //
+                        .first().focus().end() //
+                        .last().one('blur', self.hide);
                 });
             }
-            return this;
+            return self;
         },
         hide: function () {
             /// deactivate container and do whatever cleaning
-            El.modal.removeClass('active').focus();
-            Df.modal.cleanup.fire();
+            El.modal.removeClass('active');
+            cleanup.fire();
             Df.trigger.focus(); // restore focus
-            return this;
+            return self;
         },
-        init: function () {
-            /// bind container actions to .hide
-            El.modal.click(function (evt) {
-                var ele = $(evt.target);
-                if (El.closers.contains(ele) || ele.is(El.modal)) {
-                    Df.modal.hide();
-                }
-            });
-            El.watcher.on('keydown', function (evt) {
-                if (evt.keyCode === 27) { // escape key
-                    Df.modal.hide();
-                }
-            });
-            return this;
-        }
-    };
-
-    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-    $.extend(self, {
-        __: Df,
         init: function () {
             if (Df.inited) {
                 return null;
             }
-            Df.inits();
-            C.info('Modal init @ ' + Date() + ' debug:', W.debug);
+            if (Db) {
+                C.info(Nom, 'debug:', Db, self);
+                self[Nom] = Df;
+            }
+            Df.inited = true;
+            Df.El = $.reify(El);
 
-            $(Df.modal.init);
-            return self;
-        },
-        bind: Df.modal.bind,
-        hide: Df.modal.hide,
-        show: Df.modal.show,
-    });
+            /// bind container actions to .hide
+            El.modal.on(Act, function (evt) {
+                var ele = $(evt.target);
 
-    return self.init();
+                if (El.closers.contains(ele) || ele.is(El.modal)) {
+                    self.hide();
+                }
+            });
+            El.watcher.on('keydown', function (evt) {
+                if (evt.keyCode === 27) {
+                    self.hide(); // escape key
+                }
+            });
+        }
+    };
+
+    return self;
 }(jQuery));
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-// Begin Customize
-jQuery(function () {
-    var dialog = $('.modal .dialog'); // thing to show
-    var triggers = $('#stickyBar .sidesocial a'); // intercept these
-
-    Modal.bind(triggers, dialog, function (evt) {
-        dialog.find('.utilitybtn') // find the go button
-                .attr('href', evt.delegateTarget.href); // transfer url
-    });
-
-});
-// End Customize
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
