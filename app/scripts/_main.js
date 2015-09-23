@@ -1,9 +1,9 @@
 /*jslint white:false, evil:true */
-/*global window, jQuery, $, skrollr, Modal, _V_ */
+/*global window, jQuery, skrollr, Modal, _V_ */
 
-document.writeln('<script src="./scripts/modal.js"><\/script>');
-document.writeln('<script src="./scripts/classie.js"><\/script>');
-document.writeln('<script src="./scripts/sidebarEffects.js"><\/script>');
+document.writeln('<script src="./scripts/libs/modal.js"><\/script>');
+document.writeln('<script src="./scripts/libs/classie.js"><\/script>');
+document.writeln('<script src="./scripts/libs/sidebarEffects.js"><\/script>');
 document.writeln('<script src="./vendor/waypoints.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>');
 document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
