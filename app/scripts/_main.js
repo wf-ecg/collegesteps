@@ -1,14 +1,14 @@
 /*jslint white:false, evil:true */
-/*global window, jQuery, $, skrollr, _V_ */
+/*global window, jQuery, skrollr, Modal, _V_ */
 
-document.writeln('<script src="./scripts/modal.js"><\/script>');
-document.writeln('<script src="./scripts/classie.js"><\/script>');
-document.writeln('<script src="./scripts/sidebarEffects.js"><\/script>');
+document.writeln('<script src="./scripts/libs/modal.js"><\/script>');
+document.writeln('<script src="./scripts/libs/classie.js"><\/script>');
+document.writeln('<script src="./scripts/libs/sidebarEffects.js"><\/script>');
 document.writeln('<script src="./vendor/waypoints.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>');
 document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
 document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
-document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
+//document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
 //document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
 document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
 document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
@@ -280,6 +280,16 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
             });
         });
     }
+
+    function bindModal() {
+        var dialog = $('.modal .dialog'); // thing to show
+        var triggers = $('#stickyBar .sidesocial a'); // intercept these
+
+        Modal.bind(triggers, dialog, function (evt) {
+            dialog.find('.utilitybtn') // find the go button
+                    .attr('href', evt.delegateTarget.href); // transfer url
+        });
+    }
     function init() {
         navbar = $(navbar);
         sidbar = $(sidbar);
@@ -296,6 +306,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
         drVid();
         drSetnav();
         footnotes();
+        bindModal();
     }
 
     $(init);
