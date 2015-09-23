@@ -1,7 +1,7 @@
 /*jslint white:false, laxcomma:true */
-/*globals console, window, jQuery */
+/*global jQuery */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-(function (W, $) {
+(function ($) {
     /*!
      * Easy jQuery-Based Quiz ~ Copyright (c) 2012 Meredith Dodge, http://meredithdodge.com
      * Released under MIT license
@@ -53,7 +53,7 @@
                 obj[id] = cla;
                 $('#' + id + ' .' + keys[id]).append('<img src="' + imgpath + 'icon/circle.png" class="png_bg" alt="correct answer">');
 
-                if (keys[id] == cla) {
+                if (keys[id] === cla) {
                     me.addClass('correct');
                 } else {
                     me.addClass('wrong');
@@ -76,4 +76,4 @@
         });
     }
 
-}(window, jQuery));
+}(jQuery));

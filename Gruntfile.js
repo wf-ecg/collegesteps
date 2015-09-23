@@ -4,8 +4,8 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
             files: ['Gruntfile.js',
-                'src/**/*.js', 'test/**/*.js', 'libs/*.js', 'scripts/*.js',
-                'app/**/*.js', '!app/build/**/*.js', '!app/vendor/**/*.js'],
+                'src/**/*.js', 'test/**/*.js', 'app/scripts/**/*.js',
+                '!app/build/**/*.js', '!app/vendor/**/*.js'],
             options: {
                 // options here to override JSHint defaults
                 globals: {
@@ -42,22 +42,6 @@ module.exports = function (grunt) {
                 },
                 sourceMap: true,
             },
-            //dist: {
-            //src: ['src/**/*.js'],
-            //dest: 'dist/<%= pkg.name %>.js'
-            //},
-            boot: {
-                options: {sourceMap: false, }, // see uglify for map
-                files: {
-                    'app/build/boot.js': ['libs/_boot/*.js'],
-                },
-            },
-            libs: {
-                options: {sourceMap: false, }, // see uglify for map
-                files: {
-                    'app/build/libs.js': ['libs/**/*.js', '!libs/_boot/**'],
-                },
-            },
             main: {
                 options: {sourceMap: true, },
                 files: {
@@ -74,27 +58,6 @@ module.exports = function (grunt) {
                     unused: false,
                 },
                 mangle: false,
-            },
-            //dist: {
-            //files: {
-            //'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-            //}
-            //},
-            boot: {
-                options: {
-                    sourceMap: false,
-                },
-                files: {
-                    'app/build/boot.min.js': ['app/build/boot.js'],
-                }
-            },
-            libs: {
-                options: {
-                    sourceMap: false,
-                },
-                files: {
-                    'app/build/libs.min.js': ['app/build/libs.js'],
-                }
             },
             // https://github.com/gruntjs/grunt-contrib-uglify
         },
@@ -149,7 +112,6 @@ module.exports = function (grunt) {
         connect: {
             // CONNECT
             options: {
-                livereload: '<%= pkg.port0 %>',
                 port: '<%= pkg.port1 %>',
             },
             base: {
@@ -173,17 +135,9 @@ module.exports = function (grunt) {
             // WATCH
 
             options: {
-                debounceDelay: 33,
+                debounceDelay: 333,
             },
-            libs: {
-                files: ['libs/**/*.js'],
-                tasks: ['jshint', 'concat:libs', 'concat:boot', 'uglify'],
-            },
-            main: {
-                files: ['scripts/*.js'],
-                tasks: ['jshint', 'concat:main'],
-            },
-            sass: {
+            css: {
                 files: ['scss/**/*.scss'],
                 tasks: ['sass:full'],
             },
@@ -211,7 +165,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
 
     grunt.registerTask('test', ['jshint', 'qunit']);
-    grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'sass:full', 'sync:clean']);
+    grunt.registerTask('default', ['jshint', /*'concat', 'uglify',*/ 'sass:full', 'sync:clean']);
     grunt.registerTask('watcher', ['connect:full', 'watch']);
 
 };
