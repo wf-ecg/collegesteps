@@ -1,7 +1,11 @@
 /*jslint white:false */
-/*globals window, classie */
+/*globals window */
 
-var SidebarMenuEffects = (function (W, Classie) {
+// SidebarMenuEffects
+
+define(['lib/classie'], function (Classie) {
+    var W = window;
+
     function hasParentClass(e, classname) {
         if (e === W.document) {
             return false;
@@ -56,4 +60,4 @@ var SidebarMenuEffects = (function (W, Classie) {
         });
     }
     init();
-}(window, classie));
+});

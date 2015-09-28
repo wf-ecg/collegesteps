@@ -1,7 +1,7 @@
 /*jslint white:false, evil:true */
-/*global jQuery */
+/*global $ */
 
-(function ($) {
+$(function () {
     var Cache = $('<div>');
 
     function usurp(sel) {
@@ -23,4 +23,4 @@
         usurp('.modal');
     });
 
-}(jQuery));
+});
