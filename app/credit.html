@@ -11,15 +11,15 @@
         <meta name="viewport" content="width=device-width">
 
         <link href="./build/screen.css" rel="stylesheet">
-
-        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
-        <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
 
-        <script src="./scripts/xhr.js"></script>
+        <script src="/lib/requirejs/2.1.17/require.js"
+                data-main="./config"
+                data-main="./build/app"
+        ></script>
     </head>
 
-    <body class="p-credit">
+    <body class="p-credit" data-navi="4">
         <!--[if lt IE 9]><div class="upgradeframe"><h3>You are using an <strong>OUTDATED</strong> browser.</h3>
         <p>Please consider installing and using a <a href="http://whatbrowser.org">modern browser</a>
         to improve your web experience and view the Wells Fargo interactive online CollegeSTEPS magazine.
@@ -61,7 +61,7 @@
                             </div>
                             <!-- HOME FULLSCREEN End -->
 
-                            <!-- NAVBAR XHR --><script>var navi = 4;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
+                            <!-- NAVBAR XHR --><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
                         </header>
 
                         <!-- SHAREBAR XHR --><div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s"></div>
@@ -749,7 +749,8 @@ END CALLOUTS
 
         <!-- MODAL XHR --><div class="modal"></div>
 
-        <script src="./scripts/quiz.js"></script>
-        <script src="./scripts/_main.js"></script>
+        <script>
+            require(['scripts/quiz']);
+        </script>
     </body>
 </html>

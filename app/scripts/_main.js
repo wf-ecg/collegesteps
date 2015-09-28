@@ -1,20 +1,13 @@
-/*jslint white:false, evil:true */
-/*global window, jQuery, skrollr, Modal, _V_ */
+/*jslint white:false */
+/*global define, window, _V_ */
 
-document.writeln('<script src="./scripts/libs/modal.js"><\/script>');
-document.writeln('<script src="./scripts/libs/classie.js"><\/script>');
-document.writeln('<script src="./scripts/libs/sidebarEffects.js"><\/script>');
-document.writeln('<script src="./vendor/waypoints.min.js"><\/script>');
-document.writeln('<script src="./vendor/jquery-scrolltofixed-min.js"><\/script>');
-document.writeln('<script src="./vendor/scrollIt.min.js"><\/script>');
-document.writeln('<script src="./vendor/skrollr.min.js"><\/script>');
-//document.writeln('<script src="./vendor/socialcount/socialcount.js"><\/script>');
-//document.writeln('<script src="./vendor/retina-1.1.0.min.js"><\/script>');
-document.writeln('<script src="./vendor/jquery-accessibleMegaMenu.js"><\/script>');
-document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
 
-(function (W, $) {
-    var C = W.console, navbar, sidbar;
+define(['jquery', 'modal',
+    'megamenu', 'sidebar', 'waypoints',
+    'skrollr', 'scrollit', 'scrollto', 'scrollup',
+], function ($, Modal) {
+    'use strict';
+    var W = window, C = W.console, navbar, sidbar;
 
     W.debug = 1;
     navbar = '#navbar';
@@ -194,10 +187,10 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     }
 
     function drEtc() {
-        $(W).load(function () {
-            $('.loader').delay(300).fadeOut();
-            $('#page-loader').delay(500).fadeOut('slow');
-        }).resize(function () {
+        $('.loader').fadeOut();
+        $('#page-loader').fadeOut('slow');
+
+        $(W).resize(function () {
             navsize1();
             navsize2();
         });
@@ -233,11 +226,12 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     }
 
     function drSetnav() {
-        if (!W.navi) return;
+        var inum, item, navi;
 
-        var inum, item;
+        navi = $('body').data('navi');
+        if (!navi) return;
 
-        inum = (W.navi - 1);
+        inum = (navi - 1);
         item = navbar.find('.nav-item').eq(inum);
 
         navbar.find('.nav-item').not(item) // get other page links
@@ -290,6 +284,7 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
                     .attr('href', evt.delegateTarget.href); // transfer url
         });
     }
+
     function init() {
         navbar = $(navbar);
         sidbar = $(sidbar);
@@ -310,7 +305,4 @@ document.writeln('<script src="./vendor/jquery.scrollUp.min.js"><\/script>');
     }
 
     $(init);
-}(window, jQuery));
-
-document.writeln('<script src="./vendor/ecg-beacon.js"><\/script>');
-//document.writeln('<script src="http://localhost:7200/livereload.js?snipver=1"><\/script>');
+});

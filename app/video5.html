@@ -11,18 +11,18 @@
         <meta name="viewport" content="width=device-width">
 
         <link href="./build/screen.css" rel="stylesheet">
-
-        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
-        <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
+
+        <script src="/lib/requirejs/2.1.17/require.js"
+                data-main="./config"
+                data-main="./build/app"
+        ></script>
 
         <link href="http://wellsfargomedia.com/lib/video-js/3.2.2/video-js.css" rel="stylesheet">
         <script src="http://wellsfargomedia.com/lib/video-js/3.2.2/video.js"></script>
-
-        <script src="./scripts/xhr.js"></script>
     </head>
 
-    <body class="p-video">
+    <body class="p-video" data-navi="5">
         <!--[if lt IE 9]><div class="upgradeframe"><h3>You are using an <strong>OUTDATED</strong> browser.</h3>
         <p>Please consider installing and using a <a href="http://whatbrowser.org">modern browser</a>
         to improve your web experience and view the Wells Fargo interactive online CollegeSTEPS magazine.
@@ -41,7 +41,7 @@
 
                         <header data-scroll-index="0" role="banner" style="z-index:5">
 
-                            <!-- NAVBAR XHR --><script>var navi = 5;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
+                            <!-- NAVBAR XHR --><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
 
                         </header>
 
@@ -158,6 +158,5 @@
 
         <!-- MODAL XHR --><div class="modal"></div>
 
-        <script src="./scripts/_main.js"></script>
     </body>
 </html>
