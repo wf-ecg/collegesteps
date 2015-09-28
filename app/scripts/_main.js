@@ -3,7 +3,7 @@
 
 
 define(['jquery', 'modal', 'xhr',
-    'megamenu', 'sidebar', 'waypoints',
+    'bootstrap', 'megamenu', 'sidebar', 'waypoints',
     'skrollr', 'scrollit', 'scrollto', 'scrollup',
 ], function ($, Modal, XHR) {
     'use strict';

@@ -13,7 +13,7 @@ require.config({
         lib: 'libs',
         ven: '../vendor',
         jquery: '/lib/jquery/1.11.3/jquery.min',
-        bootst: '/lib/bootstrap/3.2.0/bootstrap.min',
+        bootstrap: '/lib/bootstrap/3.2.0/bootstrap.min',
         lodash: '/lib/underscore/js-1.4.4/lodash.underscore',
         modal: 'libs/modal',
         sidebar: 'libs/sidebarEffects',
