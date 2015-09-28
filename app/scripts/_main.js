@@ -2,10 +2,10 @@
 /*global define, window, _V_ */
 
 
-define(['jquery', 'modal',
+define(['jquery', 'modal', 'xhr',
     'megamenu', 'sidebar', 'waypoints',
     'skrollr', 'scrollit', 'scrollto', 'scrollup',
-], function ($, Modal) {
+], function ($, Modal, XHR) {
     'use strict';
     var W = window, C = W.console, navbar, sidbar;
 
@@ -187,10 +187,11 @@ define(['jquery', 'modal',
     }
 
     function drEtc() {
-        $('.loader').fadeOut();
-        $('#page-loader').fadeOut('slow');
+        $('#page-loader').delay(500).fadeOut('slow');
 
-        $(W).resize(function () {
+        $(W).load(function () {
+            $('.loader').delay(300).fadeOut();
+        }).resize(function () {
             navsize1();
             navsize2();
         });
@@ -304,5 +305,5 @@ define(['jquery', 'modal',
         bindModal();
     }
 
-    $(init);
+    $(XHR.doit(init));
 });

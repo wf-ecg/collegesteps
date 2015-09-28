@@ -1,7 +1,7 @@
 /*jslint white:false, evil:true */
-/*global $ */
+/*global define */
 
-$(function () {
+define(['jquery'], function XHR($) {
     var Cache = $('<div>');
 
     function usurp(sel) {
@@ -13,14 +13,20 @@ $(function () {
         self.append(fill.children());
     }
 
-    Cache.load('_parts.html', function () {
-        usurp('#page-loader');
-        usurp('#navbar');
-        usurp('#stickyBar');
-        usurp('#menu-4');
-        usurp('.externals');
-        usurp('.copyrights');
-        usurp('.modal');
-    });
+    function doit(done) {
+        Cache.load('_parts.html', function () {
+            usurp('#page-loader');
+            usurp('#navbar');
+            usurp('#stickyBar');
+            usurp('#menu-4');
+            usurp('.externals');
+            usurp('.copyrights');
+            usurp('.modal');
+            done();
+        });
+    }
 
+    return {
+        doit: doit,
+    };
 });

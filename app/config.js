@@ -41,7 +41,7 @@ require.config({
     }
 });
 
-require(['xhr', 'lib/console'], function () {
+require(['lib/console'], function () {
     try {
         W.SHIET.init();
 
