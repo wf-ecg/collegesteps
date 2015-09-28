@@ -11,7 +11,7 @@
  document a bit
 
  */
-var Modal = (function ($) {
+define(['jquery'], function ($) {
     'use strict';
 
     var Nom = 'Modal';
@@ -136,4 +136,4 @@ var Modal = (function ($) {
     };
 
     return self;
-}(jQuery));
+});

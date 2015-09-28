@@ -11,15 +11,15 @@
         <meta name="viewport" content="width=device-width">
 
         <link href="./build/screen.css" rel="stylesheet">
-
-        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
-        <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
 
-        <script src="./scripts/xhr.js"></script>
+        <script src="/lib/requirejs/2.1.17/require.js"
+                data-main="./config"
+                data-main="./build/app"
+        ></script>
     </head>
 
-    <body class="p-students">
+    <body class="p-students" data-navi="2">
         <!--[if lt IE 9]><div class="upgradeframe"><h3>You are using an <strong>OUTDATED</strong> browser.</h3>
         <p>Please consider installing and using a <a href="http://whatbrowser.org">modern browser</a>
         to improve your web experience and view the Wells Fargo interactive online CollegeSTEPS magazine.
@@ -27,7 +27,26 @@
         </div><![endif]-->
         <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
-        <!-- PAGELOADER XHR --><div id="page-loader"></div>
+        <!-- PAGELOADER XHR -->
+        <div id="page-loader">
+            <div class="loader">
+                <div class="spinner">
+                    <div class="spinner-container container1">
+                        <div class="circle1"></div><div class="circle2"></div>
+                        <div class="circle3"></div><div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container2">
+                        <div class="circle1"></div><div class="circle2"></div>
+                        <div class="circle3"></div><div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container3">
+                        <div class="circle1"></div><div class="circle2"></div>
+                        <div class="circle3"></div><div class="circle4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div id="st-trigger-effects" class="trigger-fixed visible-xs visible-sm"> <a href="#" data-effect="st-effect-2">Menu<i class="fa fa-bars"></i></a> </div>
 
@@ -61,7 +80,7 @@
                             </div>
                             <!-- HOME FULLSCREEN End -->
 
-                            <!-- NAVBAR XHR --><script>var navi = 2;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
+                            <!-- NAVBAR XHR --><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
                         </header>
 
                         <!-- SHAREBAR XHR --><div id="stickyBar" data-scroll-reveal="enter left and move 62px over 1.33s"></div>
@@ -908,6 +927,5 @@
 
         <!-- MODAL XHR --><div class="modal"></div>
 
-        <script src="./scripts/_main.js"></script>
     </body>
 </html>

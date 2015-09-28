@@ -1,7 +1,7 @@
 /*jslint white:false, laxcomma:true */
 /*global jQuery */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-(function ($) {
+define(['jquery'], function ($) {
     /*!
      * Easy jQuery-Based Quiz ~ Copyright (c) 2012 Meredith Dodge, http://meredithdodge.com
      * Released under MIT license
@@ -76,4 +76,4 @@
         });
     }
 
-}(jQuery));
+});

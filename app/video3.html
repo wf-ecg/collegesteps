@@ -11,24 +11,31 @@
         <meta name="viewport" content="width=device-width">
 
         <link href="./build/screen.css" rel="stylesheet">
-
-        <script src="/lib/jquery/1.11.3/jquery.min.js"></script>
-        <script src="/lib/bootstrap/3.2.0/bootstrap.min.js"></script>
         <script src="/lib/modernizr/2.6.2/modernizr.min.js"></script>
+
+        <script src="/lib/requirejs/2.1.17/require.js"
+                data-main="./config"
+                data-main="./build/app"
+        ></script>
 
         <link href="http://wellsfargomedia.com/lib/video-js/3.2.2/video-js.css" rel="stylesheet">
         <script src="http://wellsfargomedia.com/lib/video-js/3.2.2/video.js"></script>
-
-        <script src="./scripts/xhr.js"></script>
     </head>
 
-    <body class="p-video">
+    <body class="p-video" data-navi="5">
         <!--[if lt IE 9]><div class="upgradeframe"><h3>You are using an <strong>OUTDATED</strong> browser.</h3>
         <p>Please consider installing and using a <a href="http://whatbrowser.org">modern browser</a>
         to improve your web experience and view the Wells Fargo interactive online CollegeSTEPS magazine.
         You may also download the <a href="./docs/CollegeSTEPS_online_magazine.pdf">CollegeSTEPS magazine PDF</a>.</p>
         </div><![endif]-->
         <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- PAGELOADER -->
+<div id="page-loader"><div class="loader"><div class="spinner">
+<div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div>
+<div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div>
+<div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div>
+</div></div></div>
 
         <div id="st-trigger-effects" class="trigger-fixed visible-xs visible-sm"> <a href="#" data-effect="st-effect-2">Menu<i class="fa fa-bars"></i></a> </div>
 
@@ -41,7 +48,7 @@
 
                         <header data-scroll-index="0" role="banner" style="z-index:5">
 
-                            <!-- NAVBAR XHR --><script>var navi = 5;</script><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
+                            <!-- NAVBAR XHR --><div id="navbar" class="nav-fixed hidden-xs hidden-sm"></div>
 
                         </header>
 
@@ -76,42 +83,32 @@
                                                     <div class="panel-heading clearfix"> <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapse11">Toggle the Transcript</a> </div>
                                                     <div id="collapse11" class="panel-collapse collapse">
                                                         <div class="panel-body">
-                                                            <div>Oh, hi, Mr. Fellows here once again to guide you on the five step journey to financial aid.
-                                                                Today I’m going to talk about the Net Price Calculator.</div>
+                                                            <div> Hello once again, it's me, Mr. Fellows, your favorite College Advisor. </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Now, you might be saying to yourself...</div>
-                                                            <div>"But Mr. Fellows, I’m awful at math."</div>
-                                                            <div>That’s okay...the Net Price Calculator is so easy, even Monty here can do it.</div>
+                                                            <div> Today Monty and I are very excited to tell you all about Step number 3. </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Ain’t that right, Monty?</div>
+                                                            <div> Isn't that right Monty? </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Sure is friends!</div>
+                                                            <div> Anyways, if grants... scholarships, institutional awards... </div>
+                                                            <div> Federal Work Study, and Federal Loans covers all your college-related expenses, then that's great! You're all set. </div>
                                                             <div>&nbsp;</div>
-                                                            <div>You’ll want to estimate your college’s approximate costs by visiting the Net Price Calculator on your school’s website.</div>
+                                                            <div> But... you might have additional costs not covered by your financial aid and...well...that's okay. </div>
                                                             <div>&nbsp;</div>
-                                                            <div>This fancy tool, just kidding...</div>
-                                                            <div>This fancy tool will estimate the total costs of college and help you understand what types of financing resources may be available to you.</div>
-                                                            <div>Now don’t be afraid to play around with the variables to see how your total cost of college could change.</div>
+                                                            <div> I'll help you explore these other financing options with... Steps 4 and 5... </div>
                                                             <div>&nbsp;</div>
-                                                            <div>For example, look closely at the differences between living on-campus, off-campus, or living at home with your parents. </div>
-                                                            <div>And keep in mind, this calculator will only give you an estimate.
-                                                                Your actual costs may vary.</div>
+                                                            <div> Ah!... Whew!... Ahh!... Yes! </div>
                                                             <div>&nbsp;</div>
-                                                            <div>To find this magical calculator,</div>
-                                                            <div>(“pirate”)</div>
-                                                            <div>use the search feature on your college’s website and type in: NET...PRICE...CALCULATOR.</div>
+                                                            <div> It's working out. Whooh!... And...that is that! Ahh! </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Shhh!</div>
+                                                            <div> And remember what I always say... with college comes great knowledge. </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Sorry.</div>
+                                                            <div> Take care! </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Well, that, my friends, just about wraps it up for Step 2.
-                                                                Thank you for watching this video. </div>
-                                                            <div>And remember what I always say...with college comes great knowledge.</div>
+                                                            <div> 30,500... </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Take care.</div>
+                                                            <div> 30,501... </div>
                                                             <div>&nbsp;</div>
-                                                            <div>Sorry again.</div>
+                                                            <div> 30,502... </div>
                                                             <div>&nbsp;</div>
                                                             <div>Sign up for the CollegeSTEPS<sup>®</sup> program and get handy information throughout the year</div>
                                                             <div> <a href="students.html">wellsfargo.com/collegesteps</a> </div>
@@ -157,6 +154,5 @@
 
         <!-- MODAL XHR --><div class="modal"></div>
 
-        <script src="./scripts/_main.js"></script>
     </body>
 </html>
