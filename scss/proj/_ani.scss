@@ -1,16 +1,5 @@
 /* PROJ/ani */
 
-@include keyframes( read-more ) {
-    0% { bottom: 70px; }
-    50% { bottom: 60px; }
-    100% { bottom: 70px; }
-}
-
-@include keyframes( bouncedelay ) {
-    0%, 100%, 80% { @include transform( scale(0) ); }
-    40% { @include transform( scale(1) ); }
-}
-
 #home .home-more {
     @include animation( read-more 2s infinite );
     bottom: 70px;
@@ -123,5 +112,16 @@
     .circle2 { @include animation-delay( -0.7s ); }
     .circle3 { @include animation-delay( -0.4s ); }
     .circle4 { @include animation-delay( -0.1s ); }
+}
+
+@include keyframes( read-more ) {
+    0% { bottom: 70px; }
+    50% { bottom: 60px; }
+    100% { bottom: 70px; }
+}
+
+@include keyframes( bouncedelay ) {
+    0%, 100%, 80% { @include transform( scale(0) ); }
+    40% { @include transform( scale(1) ); }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

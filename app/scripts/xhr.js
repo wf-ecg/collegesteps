@@ -15,7 +15,6 @@ define(['jquery'], function XHR($) {
 
     function doit(done) {
         Cache.load('_parts.html', function () {
-            usurp('#page-loader');
             usurp('#navbar');
             usurp('#stickyBar');
             usurp('#menu-4');
