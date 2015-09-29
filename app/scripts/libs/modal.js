@@ -25,7 +25,9 @@ define(['jquery'], function ($) {
     // DEFAULTS
     Df = {
         inited: false,
-        closer: '',
+        begin: '<span class="ada" tabindex="0"> Beginning of dialog content </span>',
+        closer: '<a class="closer" href="#"><span class="ada"> Close </span></a>',
+        finish: '<span class="ada" tabindex="0"> End of dialog content </span>'
     };
     // ELEMENTS
     El = {
@@ -47,7 +49,7 @@ define(['jquery'], function ($) {
     };
 
     $.fn.addCloser = function () {
-        if (Df.closer) {
+        if (Df.closer && !this.contains('.closer')) {
             El.closers = El.closers.add($(Df.closer).prependTo(this));
         }
         return this;
@@ -90,7 +92,7 @@ define(['jquery'], function ($) {
         },
         show: function (ele) {
             /// activate container, hide all kids, then feature one
-            El.modal.addClass('active').children().hide();
+            El.modal.addClass('active').find('> div').hide();
             if (ele.length) {
                 ele.fadeIn(function () {
                     ele.find('a, button') //
@@ -118,12 +120,14 @@ define(['jquery'], function ($) {
             }
             Df.inited = true;
             Df.El = $.reify(El);
+            El.modal.prepend(Df.begin).append(Df.finish);
 
             /// bind container actions to .hide
             El.modal.on(Act, function (evt) {
                 var ele = $(evt.target);
 
                 if (El.closers.contains(ele) || ele.is(El.modal)) {
+                    evt.preventDefault(); // do change hash
                     self.hide();
                 }
             });

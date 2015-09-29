@@ -4,7 +4,7 @@
 var W = (W && W.window || window), C = (W.C || W.console || {});
 
 W.SHIET = {};
-W.debug = 1;
+W.debug = 0;
 
 require.config({
     baseUrl: 'scripts',
