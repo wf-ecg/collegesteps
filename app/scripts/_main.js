@@ -286,6 +286,16 @@ define(['jquery', 'modal', 'xhr',
         });
     }
 
+    function watchInputDevice() {
+        var body = $('body').on('keydown', function () {
+            body.removeClass('mouse');
+            body.addClass('keyboard');
+        }).on('mousemove', function () {
+            body.removeClass('keyboard');
+            body.addClass('mouse');
+        });
+    }
+
     function init() {
         navbar = $(navbar);
         sidbar = $(sidbar);
@@ -303,6 +313,7 @@ define(['jquery', 'modal', 'xhr',
         drSetnav();
         footnotes();
         bindModal();
+        watchInputDevice();
     }
 
     $(XHR.doit(init));
