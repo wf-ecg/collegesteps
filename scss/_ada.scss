@@ -1,6 +1,6 @@
 /* _ada.scss */
 
-%hidden {
+.ada, %hidden, .hidden {
     display: initial!important;
     height: 1px;
     left: -5000px;
@@ -9,6 +9,19 @@
     top: 0;
     visibility: visible!important;
     width: 1px;
+}
+::selection, .selection {
+    text-shadow: 1px 3px 3px gray;
+}
+.keyboard {
+    :focus, .focus {
+        outline-color: yellow;
+    }
+}
+.mouse {
+    :focus, .focus {
+        outline: none;
+    }
 }
 
 .hidden {
