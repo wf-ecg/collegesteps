@@ -1,7 +1,6 @@
 /*jslint white:false */
 /*global define, window, _V_ */
 
-
 define(['jquery', 'modal', 'xhr',
     'bootstrap', 'megamenu', 'sidebar', 'waypoints',
     'skrollr', 'scrollit', 'scrollto', 'scrollup',
@@ -182,7 +181,9 @@ define(['jquery', 'modal', 'xhr',
 
     function drSkroll() {
         if (!Boolean('ontouchstart' in W || 'onmsgesturechange' in W)) {
-            if (W.skrollr) W.skrollr.init();
+            if (W.skrollr) {
+                W.skrollr.init();
+            }
         }
     }
 
@@ -196,10 +197,11 @@ define(['jquery', 'modal', 'xhr',
             navsize2();
         });
 
-        if ($.scrollUp) $.scrollUp({
-            animation: 'fade',
-        });
-
+        if ($.scrollUp) {
+            $.scrollUp({
+                animation: 'fade',
+            });
+        }
         $('nav:first').accessibleMegaMenu({
             uuidPrefix: 'accessible-megamenu',
             menuClass: 'nav-menu',
@@ -213,42 +215,45 @@ define(['jquery', 'modal', 'xhr',
     }
 
     function drVid() {
-        if (W._V_) _V_('video_1').ready(function () {
-            var myPlayer = this;
-            var aspectRatio = 9 / 16;
-            var resizeVideoJS = function () {
-                var width = W.document.getElementById(myPlayer.id).parentElement.offsetWidth;
-                myPlayer.width(width).height(width * aspectRatio);
-            };
+        if (W._V_) {
+            _V_('video_1').ready(function () {
+                var myPlayer = this;
+                var aspectRatio = 9 / 16;
+                var resizeVideoJS = function () {
+                    var width = W.document.getElementById(myPlayer.id).parentElement.offsetWidth;
+                    myPlayer.width(width).height(width * aspectRatio);
+                };
 
-            resizeVideoJS();
-            W.onresize = resizeVideoJS;
-        });
+                resizeVideoJS();
+                W.onresize = resizeVideoJS;
+            });
+        }
     }
 
     function drSetnav() {
         var inum, item, navi;
 
         navi = $('body').data('navi');
-        if (!navi) return;
-
+        if (!navi) {
+            return;
+        }
         inum = (navi - 1);
         item = navbar.find('.nav-item').eq(inum);
 
         navbar.find('.nav-item').not(item) // get other page links
-        .find('.sub-nav-group a').attr('data-scroll-nav', -1) // disable scroll
-        .click(function () { // passthru click
-            W.location = this.href;
-        });
+            .find('.sub-nav-group a').attr('data-scroll-nav', -1) // disable scroll
+            .click(function () { // passthru click
+                W.location = this.href;
+            });
 
         item.addClass('active') // indicate current
-        .find('a').first().attr('href', '#') // disable link
-        .attr('data-scroll-nav', 0); // scroll to top
+            .find('a').first().attr('href', '#') // disable link
+            .attr('data-scroll-nav', 0); // scroll to top
 
         sidbar.find('a').eq(inum) // get link to current page
-        .attr('data-scroll-nav', 0) // disable
-        .attr('href', '#') // disable
-        .addClass('active');
+            .attr('data-scroll-nav', 0) // disable
+            .attr('href', '#') // disable
+            .addClass('active');
     }
 
     function footnotes() {
@@ -282,17 +287,15 @@ define(['jquery', 'modal', 'xhr',
 
         Modal.bind(triggers, dialog, function (evt) {
             dialog.find('.utilitybtn') // find the go button
-                    .attr('href', evt.delegateTarget.href); // transfer url
+                .attr('href', evt.delegateTarget.href); // transfer url
         });
     }
 
     function watchInputDevice() {
         var body = $('body').on('keydown', function () {
-            body.removeClass('mouse');
-            body.addClass('keyboard');
+            body.removeClass('mouse').addClass('keyboard');
         }).on('mousemove', function () {
-            body.removeClass('keyboard');
-            body.addClass('mouse');
+            body.removeClass('keyboard').addClass('mouse');
         });
     }
 
