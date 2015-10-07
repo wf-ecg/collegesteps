@@ -20,7 +20,7 @@ require.config({
         beacon: '../vendor/ecg-beacon',
         megamenu: '../vendor/jquery-accessibleMegaMenu',
         migrate: '../vendor/jquery-migrate-git',
-        skrollr: '../vendor/skrollr.min',
+        skrollr: '../vendor/skrollr',
         scrollit: '../vendor/scrollIt.min',
         scrollto: '../vendor/jquery-scrolltofixed-min',
         scrollup: '../vendor/jquery.scrollUp.min',
