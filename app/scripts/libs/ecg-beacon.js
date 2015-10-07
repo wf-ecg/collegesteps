@@ -1,11 +1,18 @@
-/*jslint white:false */
-/*global window, define */
+/*jslint white:false, -W069, -W009 */
+/*global define, ga, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-recreated drt 2015-09
- try to make analytics event for every page interaction
+ recreated drt 2015-10
+
+ USE
+ constructor
+ buffer analytics event for every page interaction
  prevent new events for set interval (def:15s)
-*/
-(function () {
+
+ TODO
+ document a bit
+
+ */
+define(function () {
     'use strict';
 
     var Api,
@@ -28,41 +35,49 @@ recreated drt 2015-09
         m.parentNode.insertBefore(a, m);
     }
 
-    function log() {
-        if (C.log.apply) {
-            C.log.apply(C, arguments);
+// HELPERS (defaults dependancy only)
+    function _dump() {
+        _log(Nom, '(dump)', arguments[1]);
+    }
+    function _log() {
+        if (C.debug.apply) {
+            C.debug.apply(C, arguments);
         } else {
             C.log(arguments); // IE
         }
     }
-    function time() {
+    function _now() {
         return (1 * new Date());
     }
 
+// EXPOSED (prototype interface)
     Api = {
-        interval: 15e3, // 15 second intervals
         _: Nom,
         db: null,
+        interval: 15e3, // 15 second intervals
+        nom: Nom,
+        act: 'engagement',
+        lab: 'movement',
         getStart: function () {
-            start = (start || time());
+            start = (start || _now());
             return start;
         },
         getSpent: function () {
-            return time() - Api.getStart();
+            return _now() - this.getStart();
         },
         throttle: function (func, wait) {
             var args, result, thisArg,
-                previous = time(),
+                previous = _now(),
                 timeoutId = null;
 
             function trailingCall() {
-                previous = time();
+                previous = _now();
                 timeoutId = null;
                 result = func.apply(thisArg, args);
             }
 
             return function () {
-                var now = time(),
+                var now = _now(),
                     elapsed = now - previous,
                     remaining = wait - elapsed;
 
@@ -80,38 +95,50 @@ recreated drt 2015-09
                 return result;
             };
         },
-        sendBeacon: function (act) {
-            (W.ga ? W.ga : log)('send', {
-                'eventLabel': Nom,
-                'hitType': 'event',
-                'eventCategory': 'engagement',
-                'eventAction': act,
-                'eventValue': (Api.getSpent() / 1000 | 0)
+        sendBeacon: function () {
+            (W.ga ? W.ga : _dump)('send', {
+                hitType: 'event',
+                eventCategory: this.nom,
+                eventAction: this.act,
+                eventLabel: this.lab,
+                eventValue: (this.getSpent() / 1000 | 0), // seconds > 0
             });
         },
         makeLimitedSend: function () {
-            log(Nom, 'running ' + (W.ga ? 'LIVE' : 'in debug'), Api);
+            var self = this;
+            _log(this.nom, 'running ' + (W.ga ? 'LIVE' : 'in debug'), this);
 
-            return Api.throttle(function () {
-                Api.sendBeacon('movement');
-            }, Api.interval);
+            return this.throttle(function () {
+                self.sendBeacon();
+            }, this.interval);
         },
         init: function (sec) {
-            start = time();
-            Api.db = W.debug > 0;
-            Api.interval = sec ? sec * 1000 : Api.interval;
+            start = _now();
+            this.db = W.debug > 0;
+            this.interval = sec ? sec * 1000 : this.interval;
 
-            if (!W.ga && !Api.db) { // really load analytics?
+            if (!W.ga && !this.db) { // really load analytics?
                 isogram(W, W.document, 'script', goog, 'ga');
                 W.ga('create', 'UA-5483042-1', 'auto');
                 W.ga('send', 'pageview');
             }
 
-            Api.init = W.addEventListener ? // respond to any movement
-                W.document.addEventListener('mousemove', Api.makeLimitedSend()) :
-                W.document.attachEvent('onmousemove', Api.makeLimitedSend()); // IE
-            delete Api.init; // prevent double-bind
-        }
+            this.init = W.addEventListener ? // respond to any movement
+                W.document.addEventListener('mousemove', this.makeLimitedSend()) :
+                W.document.attachEvent('onmousemove', this.makeLimitedSend()); // IE
+            delete this.init; // prevent double-bind
+        },
     };
-    return Api;
-}()).init();
+
+// CONSTRUCT
+    function Beacon(sec, nom) {
+        if (nom) {
+            this.nom = nom;
+        }
+        this.init(sec, nom);
+        this.constructor = Beacon;
+    }
+
+    Beacon.prototype = Api;
+    return Beacon;
+});

@@ -1,5 +1,5 @@
 /*jslint  white:false, evil:true, -W011 */
-/*global W, C, window */
+/*global define, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*!
  * Console: MSIE Workarounds v1.5.6
@@ -7,8 +7,9 @@
  * Copyright: 2015-06-01 @ WF via drt
  * http //ecgsolutions.hosting.wellsfargo.com/wordpress/?cat=6
  */
+var W = (W && W.window || window), C = (W.C || W.console || {});
 
-define('lib/console', ['jquery'], function ($) {
+define(['jquery'], function ($) {
     'use strict';
 
     var W = (W || window), C = (C || W.console || {

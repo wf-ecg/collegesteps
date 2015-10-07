@@ -150,6 +150,29 @@ module.exports = function (grunt) {
             },
             // https://github.com/gruntjs/grunt-contrib-watch
         },
+        requirejs: {
+            compile: {
+                options: {
+                    name: '../config',
+                    mainConfigFile: 'app/config.js',
+                    out: 'app/build/app.js',
+                    findNestedDependencies: true,
+                    fileExclusionRegExp: /^\./,
+                    //baseUrl: 'path/to/base',
+                    //logLevel: 0,  // http://jaketrent.com/post/run-requirejs-with-gruntjs/
+                    //inlineText: true,
+                    //generateSourceMaps: true,
+                    //optimize: 'none',
+                    uglify: {
+                        beautify: false,
+                        max_line_length: 255,
+                        no_mangle: true
+                    },
+                    _runcmd_: 'node /usr/local/bin/r.js -o build.js'
+                },
+            },
+            // https://github.com/gruntjs/grunt-contrib-requirejs
+        },
     };
 
     grunt.initConfig(conf);
@@ -163,9 +186,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-sync');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     grunt.registerTask('test', ['jshint', 'qunit']);
-    grunt.registerTask('default', ['jshint', /*'concat', 'uglify',*/ 'sass:full', 'sync:clean']);
+    grunt.registerTask('default', ['jshint', /*'concat', 'uglify',*/ 'sass:full', 'requirejs', 'sync:clean']);
     grunt.registerTask('watcher', ['connect:full', 'watch']);
 
 };

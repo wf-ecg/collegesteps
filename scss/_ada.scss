@@ -11,7 +11,7 @@
     width: 1px;
 }
 ::selection, .selection {
-    text-shadow: 1px 3px 3px gray;
+    text-shadow: 1px 2px 3px gray;
 }
 .keyboard {
     :focus, .focus {
@@ -45,5 +45,14 @@ i.fa-external-link::after {
 .video-js :focus {
     outline: yellow solid 4px !important;
     outline-offset: -2px !important;
+}
+
+.accordion-toggle {
+    &::after {
+        content: ' Closed';
+    }
+    &.collapsed::after {
+        content: ' Open';
+    }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
