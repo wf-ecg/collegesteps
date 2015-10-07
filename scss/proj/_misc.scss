@@ -41,6 +41,7 @@
     }
     td {
         background-color: dusk(0.7);
+        border-radius: 0 3px 3px 0;
         box-shadow: 0 0 0.5em dusk(0.2);
         height: 3em;
         text-align: center;
@@ -56,11 +57,11 @@
             background: none;
         }
         a {
+            border-radius: 6px;
             padding: 0;
             &:hover {
                 background-color: #777777;
-                border-radius: 0.5em;
-                width: 3em;
+                width: 2.5em;
             }
         }
     }
