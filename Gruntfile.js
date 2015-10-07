@@ -158,10 +158,11 @@ module.exports = function (grunt) {
                     out: 'app/build/app.js',
                     findNestedDependencies: true,
                     fileExclusionRegExp: /^\./,
-                    //baseUrl: "path/to/base",
+                    //baseUrl: 'path/to/base',
                     //logLevel: 0,  // http://jaketrent.com/post/run-requirejs-with-gruntjs/
                     //inlineText: true,
-                    //optimize: "none",
+                    //generateSourceMaps: true,
+                    //optimize: 'none',
                     uglify: {
                         beautify: false,
                         max_line_length: 255,

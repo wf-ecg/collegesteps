@@ -3,7 +3,7 @@
 
 define(['jquery', 'modal', 'xhr',
     'bootstrap', 'megamenu', 'sidebar', 'waypoints',
-    'skrollr', 'scrollit', 'scrollto', 'scrollup',
+    'skrollr', 'scrollit', 'scrollto', 'scrollup', 'quiz'
 ], function ($, Modal, XHR) {
     'use strict';
     var W = window, C = W.console, navbar, sidbar;
@@ -319,5 +319,7 @@ define(['jquery', 'modal', 'xhr',
         drEtc();
     }
 
-    $(XHR.doit(init));
+    _.defer(function () {
+        XHR.doit(init);
+    });
 });

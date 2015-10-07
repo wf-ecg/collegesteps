@@ -9,15 +9,28 @@ define(['jquery'], function ($) {
     var imgpath = 'images/';
     var jsonpath = 'data/';
     var jsonfile = '';
+    var main = '#quiz';
 
     $(function () {
+        main = $(main);
+        if (!main.length) {
+            return;
+        }
+        $('label').each(function (i, e) { // ensure the inputs have explicit label
+            var lab = $(e);
+            var inp = lab.prev();
+            var nom = 'Inp' + i;
+
+            lab.attr('for', nom);
+            inp.attr('id', nom);
+        });
         $('input[type="radio"]').attr('disabled', false);
         $('input[type="radio"]').prop('checked', false); // from jq migrate
         $('.submit').click(function (evt) {
             evt.preventDefault();
             checkQuiz();
         });
-        jsonfile = $('#quiz').attr('rel') + '.json';
+        jsonfile = main.attr('rel') + '.json';
     });
 
     function getData(cb) {
@@ -27,15 +40,6 @@ define(['jquery'], function ($) {
             alert('error');
         });
     }
-
-    $('label').each(function (i, e) { // ensure the inputs have explicit label
-        var lab = $(e);
-        var inp = lab.prev();
-        var nom = 'Inp' + i;
-
-        lab.attr('for', nom);
-        inp.attr('id', nom);
-    });
 
     function checkQuiz() {
         $('.submit').remove();
