@@ -56,7 +56,7 @@ require(['lib/console'], function () {
         }
         if (W.debug > 0) { // any debug should attempt livereload
             require(['lr']);
-            C.log('LiveReloading');
+            C.warn('LiveReloading');
         }
     } catch (err) {
         C.error('config', err);
