@@ -662,6 +662,10 @@ section {
             img { float: right; }
         }
     }
+    ol {
+        list-style-type: none;
+        padding: 0;
+    }
     p {
         margin-bottom: 10px;
         margin-top: 0;
