@@ -46,4 +46,13 @@ i.fa-external-link::after {
     outline: yellow solid 4px !important;
     outline-offset: -2px !important;
 }
+
+.accordion-toggle {
+    &::after {
+        content: ' Closed';
+    }
+    &.collapsed::after {
+        content: ' Open';
+    }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
