@@ -1,5 +1,5 @@
 /*jslint white:false */
-/*global require, window */
+/*global _, require, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 var W = (W && W.window || window), C = (W.C || W.console || {});
 
@@ -12,14 +12,17 @@ require.config({
         lr: 'http://localhost:7200/livereload.js?snipver=1',
         lib: 'libs',
         ven: '../vendor',
-        jquery: '/lib/jquery/1.11.3/jquery.min',
+        jquery: '/lib/jquery/1.11.3/jquery',
         bootstrap: '/lib/bootstrap/3.2.0/bootstrap.min',
         lodash: '/lib/underscore/js-1.4.4/lodash.underscore',
+        //
+        beacon: 'libs/ecg-beacon',
+        console: 'libs/console',
         modal: 'libs/modal',
         sidebar: 'libs/sidebarEffects',
-        beacon: '../vendor/ecg-beacon',
-        megamenu: '../vendor/jquery-accessibleMegaMenu',
-        migrate: '../vendor/jquery-migrate-git',
+        stats: 'libs/ecg-stats',
+        //
+        megamenu: '../vendor/jquery-accessibleMegaMenu', //migrate: '../vendor/jquery-migrate-git',
         skrollr: '../vendor/skrollr',
         scrollit: '../vendor/scrollIt.min',
         scrollto: '../vendor/jquery-scrolltofixed-min',
@@ -41,7 +44,7 @@ require.config({
     }
 });
 
-require(['lib/console'], function () {
+require(['console'], function () {
     try {
         W.SHIET.init();
 
@@ -62,8 +65,17 @@ require(['lib/console'], function () {
         C.error('config', err);
     }
 
-    // Load the main app module to start the app
-    require(['_main']);
+    /// CUSTOM
+
+    require(['lodash', '_main'], function (_) {
+        _.delay(function () {
+            if (W.debug < 2) {
+                require(['stats'], function (stats) {
+                    stats.init('COLLEGESTEPS');
+                });
+            }
+        }, 1e3);
+    });
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

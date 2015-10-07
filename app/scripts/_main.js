@@ -311,12 +311,12 @@ define(['jquery', 'modal', 'xhr',
         navsize2();
         quizzer();
         drSkroll();
-        drEtc();
         drVid();
         drSetnav();
         footnotes();
         bindModal();
         watchInputDevice();
+        drEtc();
     }
 
     $(XHR.doit(init));
