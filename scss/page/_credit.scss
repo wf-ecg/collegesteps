@@ -9,18 +9,16 @@ header {
     }
     .home-content {
         h1 {
+            color: white;
             span {
                 &::after,
                 &::before {
-                    border-bottom: 115px solid $blue2;
-                    top: -25px;
+                    border-bottom-color: $blue2;
                 }
             }
             i {
-                color: gray;
+                color: $blue2;
                 font-style: normal;
-                font-weight: 600;
-                margin-left: -0.3em
             }
         }
         .box {
