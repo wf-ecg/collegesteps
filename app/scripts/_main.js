@@ -8,7 +8,6 @@ define(['jquery', 'modal', 'xhr',
     'use strict';
     var W = window, C = W.console, navbar, sidbar;
 
-    W.debug = 1;
     navbar = '#navbar';
     sidbar = '#menu-4';
 
