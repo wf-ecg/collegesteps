@@ -4,7 +4,7 @@
 var W = (W && W.window || window), C = (W.C || W.console || {});
 
 W.SHIET = {};
-W.debug = 0;
+W.debug = Number(new Date('2015/10/01') > new Date());
 
 require.config({
     baseUrl: 'scripts',
@@ -15,6 +15,7 @@ require.config({
         jquery: '/lib/jquery/1.11.3/jquery',
         bootstrap: '/lib/bootstrap/3.2.0/bootstrap.min',
         lodash: '/lib/underscore/js-1.4.4/lodash.underscore',
+        modern: '/lib/modernizr/2.6.2/modernizr.min',
         //
         beacon: 'libs/ecg-beacon',
         console: 'libs/console',
@@ -44,7 +45,7 @@ require.config({
     }
 });
 
-require(['console'], function () {
+require(['modern', 'console'], function () {
     try {
         W.SHIET.init();
 
