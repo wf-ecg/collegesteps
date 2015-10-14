@@ -282,7 +282,7 @@ define(['jquery', 'modal', 'xhr',
 
     function bindModal() {
         var dialog = $('.modal .dialog'); // thing to show
-        var triggers = $('#stickyBar .sidesocial a'); // intercept these
+        var triggers = $('#stickyBar .shares a'); // intercept these
 
         Modal.bind(triggers, dialog, function (data) {
             dialog.find('.utilitybtn') // find the go button
