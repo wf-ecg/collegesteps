@@ -284,9 +284,9 @@ define(['jquery', 'modal', 'xhr',
         var dialog = $('.modal .dialog'); // thing to show
         var triggers = $('#stickyBar .sidesocial a'); // intercept these
 
-        Modal.bind(triggers, dialog, function (evt) {
+        Modal.bind(triggers, dialog, function (data) {
             dialog.find('.utilitybtn') // find the go button
-                .attr('href', evt.delegateTarget.href); // transfer url
+                .attr('href', data.source[0].href); // transfer url
         });
     }
 
