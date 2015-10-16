@@ -222,7 +222,7 @@ header {
             }
         }
         input[type=checkbox] {
-            @extend %hidden;
+            @extend .ada;
 
             &:checked+label::after {
                 filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);

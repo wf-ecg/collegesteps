@@ -1,6 +1,6 @@
 /* _ada.scss */
 
-.ada, %hidden, .hidden {
+.ada {
     display: initial!important;
     height: 1px;
     left: -5000px;
@@ -25,11 +25,12 @@
     }
 }
 
-.hidden {
-    @extend %hidden;
+.hidden { // fix bootstrap
+    display: inherit!important;
+    visibility: hidden;
 }
 i.fa-external-link::after {
-    @extend %hidden;
+    @extend .ada;
     content: 'External link';
 }
 

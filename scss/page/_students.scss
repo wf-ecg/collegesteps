@@ -318,7 +318,7 @@ section {
             }
         }
         input[type=checkbox] {
-            @extend %hidden;
+            @extend .ada;
 
             &:checked+label::after {
                 filter: alpha(enabled=false);
