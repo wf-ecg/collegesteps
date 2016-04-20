@@ -3,7 +3,9 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 var W = (W && W.window || window), C = (W.C || W.console || {});
 
-W.SHIET = {};
+W.SHIET = {
+  trident: W.navigator.userAgent.indexOf('rident') + 1,
+};
 W.debug = Number(new Date('2015/10/01') > new Date());
 
 require.config({
@@ -45,10 +47,8 @@ require.config({
     }
 });
 
-require(['modern', 'console'], function () {
+require(['modern'], function () {
     try {
-        W.SHIET.init();
-
         if (W.SHIET.trident) { // debug IE less
             W.debug--;
         }
