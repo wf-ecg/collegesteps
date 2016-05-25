@@ -1,13 +1,13 @@
 [
-     {
-     "title": "HTML5 Video",
-     "type": "video",
-     "free": true,
-     "downloadName": "financial_aid_5step-step1.mp4",
-     "mp4": "/videos/financial_aid_5step-step1.mp4",
-     "webm": "/videos/financial_aid_5step-step1.webm",
-     "ogv": "/videos/financial_aid_5step-step1.ogv",
-     "poster": "/videos/financial_aid_5step-step1.jpg"
-     }
+  {
+    "title": "HTML5 Video",
+    "type": "video",
+    "free": true,
+    "downloadName": "financial_aid_5step-step1.mp4",
+    "mp4": "/videos/financial_aid_5step-step1.mp4",
+    "webm": "/videos/financial_aid_5step-step1.webm",
+    "ogv": "/videos/financial_aid_5step-step1.ogv",
+    "poster": "/videos/financial_aid_5step-step1.jpg"
+  }
 
 ]
