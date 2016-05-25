@@ -15,7 +15,7 @@ require.config({
         lib: 'libs',
         ven: '../vendor',
         jquery: '/lib/jquery/1.11.3/jquery',
-        bootstrap: '/lib/bootstrap/3.2.0/bootstrap.min',
+        bootstrap: '/lib/bootstrap/3.2.0/bootstrap',
         lodash: '/lib/underscore/js-1.4.4/lodash.underscore',
         modern: '/lib/modernizr/2.6.2/modernizr.min',
         //
@@ -68,7 +68,7 @@ require(['modern'], function () {
 
     /// CUSTOM
 
-    require(['lodash', '_main'], function (_) {
+    require(['lodash', 'jquery', '_main'], function (_) {
         _.delay(function () {
             if (W.debug < 2) {
                 require(['stats'], function (stats) {
