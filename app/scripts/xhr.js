@@ -4,6 +4,10 @@
 define(['jquery'], function XHR($) {
   var Cache = $('<div>');
 
+  $.ajax({
+    cache: false,
+  });
+
   function usurp(sel) {
     var fill, self;
 
